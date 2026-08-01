@@ -1,6 +1,11 @@
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&pause=1000&color=7F77DD&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Rajat+Bhardwaj+%F0%9F%91%8B;AI+%2F+ML+Engineer;DSA+Enthusiast;Space+%26+Tech+Explorer+%F0%9F%9A%80" alt="Typing SVG" />
+  <!-- <h1 align="center">
+  <span style="color:#7F77DD;">AI</span>
+  <span style="color:#FFD166;">&</span>
+  <span style="color:#7F77DD;">ML Engineer</span>
+</h1> -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&pause=1000&color=7F77DD&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Rajat+Bhardwaj.;AI+%26+ML+Engineer" alt="Typing SVG"/>
 </h1>
 
 <p align="center">
@@ -200,6 +205,7 @@ Practicing regularly on LeetCode with focus on:
 <a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/CSS">
 <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
 </a>
+<hr width="100%">
 
 </p>
 📈 GitHub Activity
@@ -238,9 +244,6 @@ Practicing regularly on LeetCode with focus on:
   <b>⭐ If you find my work interesting, consider starring my repos — it motivates me to build more!</b>
 </p>
 
-<h2>
-  <p align="center">
-    <i>Made with ❤️ by Rajat Bhardwaj</i>
-  </p>
+<h2 align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1500&color=FFD166&center=true&vCenter=true&width=600&lines=Made+with+%E2%9D%A4%EF%B8%8F+by+Rajat+Bhardwaj;Thanks+for+visiting+my+profile!" alt="Typing SVG" />
 </h2>
-
