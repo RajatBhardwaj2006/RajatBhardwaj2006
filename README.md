@@ -1,10 +1,6 @@
 
 <h1 align="center">
-  <!-- <h1 align="center">
-  <span style="color:#7F77DD;">AI</span>
-  <span style="color:#FFD166;">&</span>
-  <span style="color:#7F77DD;">ML Engineer</span>
-</h1> -->
+
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&pause=1000&color=7F77DD&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Rajat+Bhardwaj.;AI+%26+ML+Engineer" alt="Typing SVG"/>
 </h1>
 
@@ -207,41 +203,28 @@ Practicing regularly on LeetCode with focus on:
 </a>
 <hr width="100%">
 
-</p>
-📈 GitHub Activity
+<h2>📈 GitHub Activity</h2>
 
-<p>
-  <img src="https://streak-stats.demolab.com?user=LearnWithCherry&theme=github-dark-blue&hide_border=true", align="left"/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=LearnWithCherry&theme=github-dark&hide_border=true&area=true", align="left"/>
-</p>
-🌐 Connect With Me
-<br>
-<p align="center">
+<table>
+<td width="70%">
+<img src="https://streak-stats.demolab.com?user=LearnWithCherry&theme=github-dark-blue&hide_border=true"/>
 
-<a href="https://github.com/LearnWithCherry" target="_blank">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-</a>
-&nbsp;
-<a href="https://linkedin.com/in/rajatbhardwaj2006" target="_blank">
-<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-&nbsp;
-<a href="https://instagram.com/cher.r.y.y.y" target="_blank">
-<img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
-</a>
-&nbsp;
-<a href="https://leetcode.com/u/cherry_2006/" target="_blank">
-<img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/>
-</a>
+</td>
 
-</p>
+<td width="30%" align="center">
+
+<img src="https://komarev.com/ghpvc/?username=LearnWithCherry&label=Profile%20Views&color=7F77DD&style=flat-square"/>
+
+<br><br>
+
+⭐ <b>If you find my work interesting,<br>
+consider starring my repositories!</b>
+
+</td>
+</table>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=LearnWithCherry&label=Profile%20Views&color=7F77DD&style=flat-square" alt="Profile views"/>
-</p>
-
-<p align="center">
-  <b>⭐ If you find my work interesting, consider starring my repos — it motivates me to build more!</b>
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=LearnWithCherry&theme=dracula&hide_border=true&area=true"/>
 </p>
 
 <h2 align="center">
