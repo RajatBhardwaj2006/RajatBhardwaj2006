@@ -160,11 +160,26 @@ Practicing regularly on LeetCode with focus on:
 
 > **Click any badge below to explore the code 👇**
 
-<p align="left">
+<!-- <p align="left">
 <hr width="100%">
 <h3>Artificial Intelligence & Machine Learning</h3>
 <a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning">
-<img src="https://img.shields.io/badge/AI_&_ML_Repo-7F77DD?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/AI_&_ML_Repo-7F77DD?style=for-the-badge&logo=github&logoColor=white"/> -->
+
+<p align="left">
+<hr width="100%">
+
+<h3>Artificial Intelligence & Machine Learning</h3>
+
+<a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning">
+  <img src="https://img.shields.io/badge/AI_&_ML_Repo-7F77DD?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+<h3>Deep Learning</h3>
+
+<a href="https://github.com/LearnWithCherry/Deep Learning">
+  <img src="https://img.shields.io/badge/Deep_Learning_Repo-FF6F00?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
 </a>
 <hr width="100%">
 <h3>Data Structures & Algorithms(C++)</h3>
