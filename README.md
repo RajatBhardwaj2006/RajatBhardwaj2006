@@ -128,31 +128,41 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 
 </details>
 
----
-
 # 🚀 Featured Projects
 
-## 🔐 Fraud Detection System
-> *ML-powered system to catch fraudulent transactions in real-time*
+## 💊 Smart Medication Management & Health Assistant
 
-Built an end-to-end fraud detection pipeline using Python & Scikit-learn. Handled class imbalance, engineered meaningful features, and benchmarked multiple classifiers to maximize precision-recall.
+> AI-powered health assistant designed to help users manage medications and health-related information.
 
-**What I did:**
-- 🧹 Data cleaning & preprocessing on imbalanced financial datasets
-- 🔧 Feature engineering to extract fraud-indicative signals
-- 📊 Model evaluation with ROC-AUC, F1-score & confusion matrices
-- ⚡ Applied `RandomForest`, `XGBoost` & `Logistic Regression`
+<a href="https://github.com/LearnWithCherry/Smart-Medication-Management-Health-Assistant">
+<img src="https://img.shields.io/badge/Smart%20Medication%20Management-Health%20Assistant-7F77DD?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
 
-`Python` · `NumPy` · `Pandas` · `Matplotlib` · `Seaborn` · `Scikit-Learn`
+`Python` · `Machine Learning` · `AI` · `Healthcare`
 
 ---
 
-## 🧩 DSA & Problem Solving
-> *Algorithmic thinking, one problem at a time*
+## 🔐 Fraudulent Online Transaction Detection System
 
-Practicing regularly on LeetCode with focus on:
+> Machine learning system designed to identify and detect fraudulent online transactions.
 
-`Arrays` · `Trees` · `Graphs` · `Dynamic Programming` · `Recursion` · `Backtracking`
+<a href="https://github.com/LearnWithCherry/Fraudulent-Online-Transaction-Detection-System">
+<img src="https://img.shields.io/badge/Fraudulent%20Transaction-Detection%20System-D85A30?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+`Python` · `NumPy` · `Pandas` · `Scikit-Learn` · `Machine Learning`
+
+---
+
+## 🤖 Artificial Intelligence & Machine Learning
+
+> Collection of AI and machine learning implementations, experiments, algorithms, and projects.
+
+<a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/Projects">
+<img src="https://img.shields.io/badge/AI%20%26%20ML-Projects-1D9E75?style=for-the-badge&logo=python&logoColor=white"/>
+</a>
+
+`Python` · `NumPy` · `Pandas` · `Matplotlib` · `Scikit-Learn` · `AI` · `ML`
 
 ---
 
