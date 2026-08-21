@@ -165,64 +165,56 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 `Python` · `NumPy` · `Pandas` · `Matplotlib` · `Scikit-Learn` · `AI` · `ML`
 
 ---
-
-# 🗂️ Repositories
+## 📁 Repositories
 
 > **Click any badge below to explore the code 👇**
 
-<!-- <p align="left">
-<hr width="100%">
-<h3>Artificial Intelligence & Machine Learning</h3>
+### 🧠 AI & Machine Learning
 <a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning">
-<img src="https://img.shields.io/badge/AI_&_ML_Repo-7F77DD?style=for-the-badge&logo=github&logoColor=white"/> -->
-
-<p align="left">
-<hr width="100%">
-
-<h3>Machine Learning & Deep Learning</h3>
-
-<a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning">
-  <img src="https://img.shields.io/badge/AI_&_ML_Repo-7F77DD?style=for-the-badge&logo=github&logoColor=white"/>
-
+<img src="https://img.shields.io/badge/AI%20%26%20ML%20REPO-7F77DD?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
 <a href="https://github.com/LearnWithCherry/Deep-Learning">
-  <img src="https://img.shields.io/badge/Deep_Learning_Repo-FF6F00?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/DEEP%20LEARNING-FF6F00?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
-<hr width="100%">
-<h3>Data Structures & Algorithms(C++)</h3>
-<a href="https://github.com/LearnWithCherry/Data-Structure-and-Algorithms.git">
-<img src="https://img.shields.io/badge/DSA_in_C++-00599C?style=for-the-badge&logo=thealgorithms&logoColor=white"/>
+
+### 🧩 DSA & Problem Solving
+<a href="https://github.com/LearnWithCherry/Data-Structure-and-Algorithms">
+<img src="https://img.shields.io/badge/DSA%20IN%20C%2B%2B-00599C?style=for-the-badge&logo=thealgorithms&logoColor=white"/>
 </a>
-<hr width="100%">
-<h2>Programming Languages</h2>
-<h3>🐍 PYTHON, JAVA, SQL</h3>
+
+### 💻 Languages
 <a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/Python">
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+</a>
 <a href="https://github.com/LearnWithCherry/Java">
-<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
+<img src="https://img.shields.io/badge/JAVA-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
+</a>
 <a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/SQL">
 <img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
 </a>
-<hr width="100%">
-<h2>Libraries </h2>
-<h3>🔢 NumPy, Pandas, MatplotLib, Seaborn</h3>
+
+### 📊 Libraries
 <a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/Numpy">
-<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
-<a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/Pandas">
-<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
-<a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/Matplotlib">
-<img src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=plotly&logoColor=white"/>
-<a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/Seaborn">
-<img src="https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/NUMPY-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
 </a>
-<hr width="100%">
-<h2>Frontend </h2>
-<h3>🌐 HTML & CSS</h3>
+<a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/Pandas">
+<img src="https://img.shields.io/badge/PANDAS-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+</a>
+<a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/Matplotlib">
+<img src="https://img.shields.io/badge/MATPLOTLIB-11557c?style=for-the-badge&logo=python&logoColor=white"/>
+</a>
+<a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/Seaborn">
+<img src="https://img.shields.io/badge/SEABORN-4C72B0?style=for-the-badge&logo=python&logoColor=white"/>
+</a>
+
+### 🌐 Frontend
 <a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/HTML">
 <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+</a>
 <a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/CSS">
 <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
 </a>
-<hr width="100%">
+
 
 <h2>📈 GitHub Activity</h2>
 
