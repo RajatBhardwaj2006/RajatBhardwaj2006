@@ -177,9 +177,13 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 <img src="https://img.shields.io/badge/DEEP%20LEARNING-FF6F00?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
-### 🧩 DSA & Problem Solving
+**🧩 DSA & Problem Solving**
+
 <a href="https://github.com/LearnWithCherry/Data-Structure-and-Algorithms">
 <img src="https://img.shields.io/badge/DSA%20IN%20C%2B%2B-00599C?style=for-the-badge&logo=thealgorithms&logoColor=white"/>
+</a>
+<a href="https://github.com/LearnWithCherry/LeetCode">
+<img src="https://img.shields.io/badge/LEETCODE-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/>
 </a>
 
 ### 💻 Languages
@@ -243,3 +247,6 @@ consider starring my repositories!</b>
 <h2 align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1500&color=FFD166&center=true&vCenter=true&width=600&lines=Made+with+%E2%9D%A4%EF%B8%8F+by+Rajat+Bhardwaj;Thanks+for+visiting+my+profile!" alt="Typing SVG" />
 </h2>
+
+
+
