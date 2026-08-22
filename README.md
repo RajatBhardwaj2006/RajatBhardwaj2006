@@ -138,7 +138,7 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 <img src="https://img.shields.io/badge/Smart%20Medication%20Management-Health%20Assistant-7F77DD?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
-`Python` · `Machine Learning` · `AI` · `Healthcare`
+`Healthcare` . `Java` . `File Handling` . `Data Structure`
 
 ---
 
@@ -167,9 +167,10 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 ---
 ## 📁 Repositories
 
-> **Click any badge below to explore the code 👇**
+> `Click any badge below to explore the code 👇`
 
-### 🧠 AI & Machine Learning
+`Artificial Intelligence & Machine Learning`
+<br>
 <a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning">
 <img src="https://img.shields.io/badge/AI%20%26%20ML%20REPO-7F77DD?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
@@ -177,8 +178,8 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 <img src="https://img.shields.io/badge/DEEP%20LEARNING-FF6F00?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
-**🧩 DSA & Problem Solving**
-
+`DSA & Problem Solving`
+<br>
 <a href="https://github.com/LearnWithCherry/Data-Structure-and-Algorithms">
 <img src="https://img.shields.io/badge/DSA%20IN%20C%2B%2B-00599C?style=for-the-badge&logo=thealgorithms&logoColor=white"/>
 </a>
@@ -186,7 +187,8 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 <img src="https://img.shields.io/badge/LEETCODE-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/>
 </a>
 
-### 💻 Languages
+`Languages`
+<br>
 <a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/Python">
 <img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
 </a>
@@ -197,7 +199,8 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 <img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
 </a>
 
-### 📊 Libraries
+`Libraries`
+<br>
 <a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/Numpy">
 <img src="https://img.shields.io/badge/NUMPY-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
 </a>
@@ -211,7 +214,8 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 <img src="https://img.shields.io/badge/SEABORN-4C72B0?style=for-the-badge&logo=python&logoColor=white"/>
 </a>
 
-### 🌐 Frontend
+`Frontend`
+<br>
 <a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/HTML">
 <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
 </a>
