@@ -198,6 +198,9 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 <a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/SQL">
 <img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
 </a>
+<a href="https://github.com/LearnWithCherry/CPP">
+<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"/>
+</a>
 
 `Libraries`
 <br>
