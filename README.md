@@ -159,7 +159,7 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 > Collection of AI and machine learning implementations, experiments, algorithms, and projects.
 
 <a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/Projects">
-<img src="https://img.shields.io/badge/AI%20%26%20ML-Projects-1D9E75?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Minor%20ML%20Projects-1D9E75?style=for-the-badge&logo=python&logoColor=white"/>
 </a>
 
 `Python` · `NumPy` · `Pandas` · `Matplotlib` · `Scikit-Learn` · `AI` · `ML`
