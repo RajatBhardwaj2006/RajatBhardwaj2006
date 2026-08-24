@@ -26,8 +26,6 @@
 
 ## 👨‍💻 About Me
 
-> *"Code is my canvas, algorithms are my brushstrokes."*
-
 - 🎓 CS student focused on **Artificial Intelligence & Machine Learning**
 - 🔬 Building real-world projects at the intersection of **ML × Problem Solving**
 - 🏆 Regular competitive programmer — sharpening skills on **LeetCode** daily
