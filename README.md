@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/LearnWithCherry"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+  <a href="https://github.com/RajatBhardwaj2006"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
   <a href="https://linkedin.com/in/rajatbhardwaj2006"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="https://leetcode.com/u/cherry_2006/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/></a>
   <a href="https://instagram.com/cher.r.y.y.y"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
@@ -120,7 +120,7 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 | Platform | Link |
 |----------|------|
 | 💼 LinkedIn | [rajatbhardwaj2006](https://linkedin.com/in/rajatbhardwaj2006) |
-| 🐙 GitHub | [LearnWithCherry](https://github.com/LearnWithCherry) |
+| 🐙 GitHub | [RajatBhardwaj2006](https://github.com/RajatBhardwaj2006) |
 | 💻 LeetCode | [cherry_2006](https://leetcode.com/u/cherry_2006/) |
 | 📸 Instagram | [@cher.r.y.y.y](https://instagram.com/cher.r.y.y.y) |
 
@@ -132,7 +132,7 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 
 > AI-powered health assistant designed to help users manage medications and health-related information.
 
-<a href="https://github.com/LearnWithCherry/Smart-Medication-Management-Health-Assistant">
+<a href="https://github.com/RajatBhardwaj2006/Smart-Medication-Management-Health-Assistant">
 <img src="https://img.shields.io/badge/Smart%20Medication%20Management-Health%20Assistant-7F77DD?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
@@ -144,7 +144,7 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 
 > Machine learning system designed to identify and detect fraudulent online transactions.
 
-<a href="https://github.com/LearnWithCherry/Fraudulent-Online-Transaction-Detection-System">
+<a href="https://github.com/RajatBhardwaj2006/Fraudulent-Online-Transaction-Detection-System">
 <img src="https://img.shields.io/badge/Fraudulent%20Transaction-Detection%20System-D85A30?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
@@ -156,7 +156,7 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 
 > Collection of AI and machine learning implementations, experiments, algorithms, and projects.
 
-<a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/Projects">
+<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Projects">
 <img src="https://img.shields.io/badge/Minor%20ML%20Projects-1D9E75?style=for-the-badge&logo=python&logoColor=white"/>
 </a>
 
@@ -169,58 +169,58 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 
 `Artificial Intelligence & Machine Learning`
 <br>
-<a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning">
+<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning">
 <img src="https://img.shields.io/badge/AI%20%26%20ML%20REPO-7F77DD?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
-<a href="https://github.com/LearnWithCherry/Deep-Learning">
+<a href="https://github.com/RajatBhardwaj2006/Deep-Learning">
 <img src="https://img.shields.io/badge/DEEP%20LEARNING-FF6F00?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 `DSA & Problem Solving`
 <br>
-<a href="https://github.com/LearnWithCherry/Data-Structure-and-Algorithms">
+<a href="https://github.com/RajatBhardwaj2006/Data-Structure-and-Algorithms">
 <img src="https://img.shields.io/badge/DSA%20IN%20C%2B%2B-00599C?style=for-the-badge&logo=thealgorithms&logoColor=white"/>
 </a>
-<a href="https://github.com/LearnWithCherry/LeetCode">
+<a href="https://github.com/RajatBhardwaj2006/LeetCode">
 <img src="https://img.shields.io/badge/LEETCODE-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/>
 </a>
 
 `Languages`
 <br>
-<a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/Python">
+<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Python">
 <img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
 </a>
-<a href="https://github.com/LearnWithCherry/Java">
+<a href="https://github.com/RajatBhardwaj2006/Java">
 <img src="https://img.shields.io/badge/JAVA-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
 </a>
-<a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/SQL">
+<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/SQL">
 <img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
 </a>
-<a href="https://github.com/LearnWithCherry/CPP">
+<a href="https://github.com/RajatBhardwaj2006/CPP">
 <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"/>
 </a>
 
 `Libraries`
 <br>
-<a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/Numpy">
+<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Numpy">
 <img src="https://img.shields.io/badge/NUMPY-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
 </a>
-<a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/Pandas">
+<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Pandas">
 <img src="https://img.shields.io/badge/PANDAS-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
 </a>
-<a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/Matplotlib">
+<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Matplotlib">
 <img src="https://img.shields.io/badge/MATPLOTLIB-11557c?style=for-the-badge&logo=python&logoColor=white"/>
 </a>
-<a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/Seaborn">
+<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Seaborn">
 <img src="https://img.shields.io/badge/SEABORN-4C72B0?style=for-the-badge&logo=python&logoColor=white"/>
 </a>
 
 `Frontend`
 <br>
-<a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/HTML">
+<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/HTML">
 <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
 </a>
-<a href="https://github.com/LearnWithCherry/Artificial-Intelligence-and-Machine-Learning/tree/main/CSS">
+<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/CSS">
 <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
 </a>
 
@@ -229,13 +229,13 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 
 <table>
 <td width="70%">
-<img src="https://streak-stats.demolab.com?user=LearnWithCherry&theme=github-dark-blue&hide_border=true"/>
+<img src="https://streak-stats.demolab.com?user=RajatBhardwaj2006&theme=github-dark-blue&hide_border=true"/>
 
 </td>
 
 <td width="30%" align="center">
 
-<img src="https://komarev.com/ghpvc/?username=LearnWithCherry&label=Profile%20Views&color=7F77DD&style=flat-square"/>
+<img src="https://komarev.com/ghpvc/?username=RajatBhardwaj2006&label=Profile%20Views&color=7F77DD&style=flat-square"/>
 
 <br><br>
 
@@ -246,7 +246,7 @@ consider starring my repositories!</b>
 </table>
 
 <p align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=LearnWithCherry&theme=dracula&hide_border=true&area=true"/>
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=RajatBhardwaj2006&theme=dracula&hide_border=true&area=true"/>
 </p>
 
 <h2 align="center">
