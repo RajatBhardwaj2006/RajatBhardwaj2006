@@ -174,16 +174,19 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 `Python` · `Pandas` · `NumPy` · `Scikit-Learn` · `Machine Learning` · `Supervised Learning`
 
 ---
+## 🤖 Machine Learning and Deep Learning Projects
 
-## 🤖 Machine Learning and Deep Learning Projects 
-
-> Collection of AI and machine learning implementations, experiments, algorithms, and projects.
+> Collection of AI, machine learning, and deep learning projects.
 
 <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Projects">
-<img src="https://img.shields.io/badge/Minor%20ML%20Projects-1D9E75?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/ML%20Projects-1D9E75?style=for-the-badge&logo=python&logoColor=white"/>
 </a>
 
-`Python` · `NumPy` · `Pandas` · `Matplotlib` · `Scikit-Learn` · `AI` · `ML`
+<a href="https://github.com/RajatBhardwaj2006/Deep-Learning/tree/acb8014b21d5fbe839b543601e41d598b330faaf/CNN">
+<img src="https://img.shields.io/badge/CNN%20Project-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
+</a>
+
+`Python` · `NumPy` · `Pandas` · `Scikit-Learn` · `Deep Learning` · `CNN` · `AI` · `ML`
 
 ---
 
