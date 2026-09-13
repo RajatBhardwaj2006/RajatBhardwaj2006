@@ -1,4 +1,3 @@
-                          
 <h1 align="center">
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&pause=1000&color=7F77DD&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Rajat+Bhardwaj.;AI+%26+ML+Engineer" alt="Typing SVG"/>
@@ -26,11 +25,11 @@
 
 ## 👨‍💻 About Me
 
-- 🎓 CS student focused on **Artificial Intelligence & Machine Learning**
-- 🔬 Building real-world projects at the intersection of **ML × Problem Solving**
-- 🏆 Regular competitive programmer — sharpening skills on **LeetCode** daily
-- 🚀 Fascinated by **Cars, Space Tech, Startups & Future Technologies**
-- 🌱 Currently diving deep into **Deep Learning · Advanced DSA · AI Engineering · System Design**
+* 🎓 CS student focused on **Artificial Intelligence & Machine Learning**
+* 🔬 Building real-world projects at the intersection of **ML × Problem Solving**
+* 🏆 Regular competitive programmer — sharpening skills on **LeetCode** daily
+* 🚀 Fascinated by **Cars, Space Tech, Startups & Future Technologies**
+* 🌱 Currently diving deep into **Deep Learning · Advanced DSA · AI Engineering · System Design**
 
 ---
 
@@ -42,10 +41,10 @@
 
 > I believe the next decade belongs to those who can combine **deep technical skills** with **creative problem solving**. My goal is to build AI systems that are not just intelligent — but genuinely useful.
 
-- 🌍 Long-term: Build products that solve real problems at scale
-- 🤖 Contribute to open-source AI/ML projects
-- 📚 Master the entire ML pipeline — from data to deployment
-- 💡 Start something meaningful at the intersection of AI & space tech
+* 🌍 Long-term: Build products that solve real problems at scale
+* 🤖 Contribute to open-source AI/ML projects
+* 📚 Master the entire ML pipeline — from data to deployment
+* 💡 Start something meaningful at the intersection of AI & space tech
 
 </details>
 
@@ -55,27 +54,27 @@
 
 **Languages**
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square\&logo=python\&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square\&logo=openjdk\&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square\&logo=c%2B%2B\&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square\&logo=postgresql\&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square\&logo=html5\&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square\&logo=css3\&logoColor=white)
 
 **ML / Data Science**
 
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=flat-square&logo=python&logoColor=white)
-![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?style=flat-square&logo=python&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square\&logo=numpy\&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square\&logo=pandas\&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square\&logo=scikit-learn\&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=flat-square\&logo=python\&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?style=flat-square\&logo=python\&logoColor=white)
 
 **Tools & Platforms**
 
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square\&logo=git\&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square\&logo=github\&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square\&logo=visual-studio-code\&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square\&logo=jupyter\&logoColor=white)
 
 </details>
 
@@ -83,16 +82,16 @@
 <summary><b>📊 My DSA Journey</b></summary>
 <br>
 
-| Topic | Status |
-|-------|--------|
-| Arrays & Strings | ✅ Strong |
-| Linked Lists | ✅ Strong |
-| Trees & BST | ✅ Strong |
-| Graphs (BFS/DFS) | 🔄 Practicing |
-| Dynamic Programming | 🔄 Practicing |
-| Recursion & Backtracking | 🔄 Practicing |
-| System Design | 📖 Learning |
-| Advanced Graph Algorithms | 📖 Learning |
+| Topic                     | Status        |
+| ------------------------- | ------------- |
+| Arrays & Strings          | ✅ Strong      |
+| Linked Lists              | ✅ Strong      |
+| Trees & BST               | ✅ Strong      |
+| Graphs (BFS/DFS)          | 🔄 Practicing |
+| Dynamic Programming       | 🔄 Practicing |
+| Recursion & Backtracking  | 🔄 Practicing |
+| System Design             | 📖 Learning   |
+| Advanced Graph Algorithms | 📖 Learning   |
 
 > 💡 Solving problems daily on [LeetCode](https://leetcode.com/u/cherry_2006/) — consistency is the key!
 
@@ -102,10 +101,10 @@
 <summary><b>🌌 What Drives Me</b></summary>
 <br>
 
-- 🚗 **Cars** — The engineering behind modern EVs and autonomous driving fascinates me
-- 🛸 **Space Tech** — SpaceX's reusable rockets changed how I think about impossible problems
-- 💼 **Startups** — I love the energy of building something from nothing
-- 🤖 **AI Future** — I genuinely believe AI will be the most transformative technology of our lifetime
+* 🚗 **Cars** — The engineering behind modern EVs and autonomous driving fascinates me
+* 🛸 **Space Tech** — SpaceX's reusable rockets changed how I think about impossible problems
+* 💼 **Startups** — I love the energy of building something from nothing
+* 🤖 **AI Future** — I genuinely believe AI will be the most transformative technology of our lifetime
 
 > *"Stay hungry. Stay foolish."* — Steve Jobs
 
@@ -117,12 +116,12 @@
 
 I'm always open to collaborating on interesting projects, discussing ideas, or just chatting about tech and space!
 
-| Platform | Link |
-|----------|------|
-| 💼 LinkedIn | [rajatbhardwaj2006](https://linkedin.com/in/rajatbhardwaj2006) |
-| 🐙 GitHub | [RajatBhardwaj2006](https://github.com/RajatBhardwaj2006) |
-| 💻 LeetCode | [cherry_2006](https://leetcode.com/u/cherry_2006/) |
-| 📸 Instagram | [@cher.r.y.y.y](https://instagram.com/cher.r.y.y.y) |
+| Platform     | Link                                                           |
+| ------------ | -------------------------------------------------------------- |
+| 💼 LinkedIn  | [rajatbhardwaj2006](https://linkedin.com/in/rajatbhardwaj2006) |
+| 🐙 GitHub    | [RajatBhardwaj2006](https://github.com/RajatBhardwaj2006)      |
+| 💻 LeetCode  | [cherry_2006](https://leetcode.com/u/cherry_2006/)             |
+| 📸 Instagram | [@cher.r.y.y.y](https://instagram.com/cher.r.y.y.y)            |
 
 </details>
 
@@ -136,7 +135,7 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 <img src="https://img.shields.io/badge/Smart%20Medication%20Management-Health%20Assistant-7F77DD?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
-`Healthcare` . `Java` . `File Handling` . `Data Structure`
+`Healthcare` · `Java` · `File Handling` · `Data Structure`
 
 ---
 
@@ -152,7 +151,31 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 
 ---
 
-## 🤖 Artificial Intelligence & Machine Learning
+## 🔍 VisionInspect — Industrial Defect Detection
+
+> Computer vision and AI-powered system for detecting and inspecting defects in industrial products.
+
+<a href="https://github.com/RajatBhardwaj2006/VisionInspect-Industrial-Defect-Detection-">
+<img src="https://img.shields.io/badge/VisionInspect-Industrial%20Defect%20Detection-1D9E75?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+`Computer Vision` · `Deep Learning` · `AI` · `Industrial Inspection`
+
+---
+
+## 🛫 SkyCast AI
+
+> **A supervised machine learning application that predicts flight prices based on factors such as travel distance, seat class, departure and arrival airports, airline, and other flight-related features.**
+
+<a href="https://github.com/RajatBhardwaj2006/Skycast-ai">
+<img src="https://img.shields.io/badge/SkyCast-AI%20Flight%20Price%20Prediction-4C72B0?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+`Python` · `Pandas` · `NumPy` · `Scikit-Learn` · `Machine Learning` · `Supervised Learning`
+
+---
+
+## 🤖 Machine Learning and Deep Learning Projects 
 
 > Collection of AI and machine learning implementations, experiments, algorithms, and projects.
 
@@ -163,67 +186,78 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 `Python` · `NumPy` · `Pandas` · `Matplotlib` · `Scikit-Learn` · `AI` · `ML`
 
 ---
-## 📁 Repositories
+
+# 📁 Repositories
 
 > `Click any badge below to explore the code 👇`
 
-`Artificial Intelligence & Machine Learning`
-<br>
+`Artificial Intelligence & Machine Learning` <br>
+
 <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning">
 <img src="https://img.shields.io/badge/AI%20%26%20ML%20REPO-7F77DD?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
+
 <a href="https://github.com/RajatBhardwaj2006/Deep-Learning">
 <img src="https://img.shields.io/badge/DEEP%20LEARNING-FF6F00?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
-`DSA & Problem Solving`
-<br>
+`DSA & Problem Solving` <br>
+
 <a href="https://github.com/RajatBhardwaj2006/Data-Structure-and-Algorithms">
 <img src="https://img.shields.io/badge/DSA%20IN%20C%2B%2B-00599C?style=for-the-badge&logo=thealgorithms&logoColor=white"/>
 </a>
+
 <a href="https://github.com/RajatBhardwaj2006/LeetCode">
 <img src="https://img.shields.io/badge/LEETCODE-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/>
 </a>
 
-`Languages`
-<br>
+`Languages` <br>
+
 <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Python">
 <img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
 </a>
+
 <a href="https://github.com/RajatBhardwaj2006/Java">
 <img src="https://img.shields.io/badge/JAVA-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
 </a>
+
 <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/SQL">
 <img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
 </a>
+
 <a href="https://github.com/RajatBhardwaj2006/CPP">
 <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"/>
 </a>
 
-`Libraries`
-<br>
+`Libraries` <br>
+
 <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Numpy">
 <img src="https://img.shields.io/badge/NUMPY-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
 </a>
+
 <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Pandas">
 <img src="https://img.shields.io/badge/PANDAS-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
 </a>
+
 <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Matplotlib">
 <img src="https://img.shields.io/badge/MATPLOTLIB-11557c?style=for-the-badge&logo=python&logoColor=white"/>
 </a>
+
 <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Seaborn">
 <img src="https://img.shields.io/badge/SEABORN-4C72B0?style=for-the-badge&logo=python&logoColor=white"/>
 </a>
 
-`Frontend`
-<br>
+`Frontend` <br>
+
 <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/HTML">
 <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
 </a>
+
 <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/CSS">
 <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
 </a>
 
+---
 
 <h2>📈 GitHub Activity</h2>
 
@@ -252,6 +286,3 @@ consider starring my repositories!</b>
 <h2 align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1500&color=FFD166&center=true&vCenter=true&width=600&lines=Made+with+%E2%9D%A4%EF%B8%8F+by+Rajat+Bhardwaj;Thanks+for+visiting+my+profile!" alt="Typing SVG" />
 </h2>
-
-
-
