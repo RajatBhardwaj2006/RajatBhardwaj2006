@@ -283,9 +283,8 @@ consider starring my repositories!</b>
 </table>
 
 <p align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=RajatBhardwaj2006&theme=dracula&hide_border=true&area=true"/>
+  <img width="100%" src="https://raw.githubusercontent.com/RajatBhardwaj2006/RajatBhardwaj2006/main/assets/contributions.svg"/>
 </p>
-
 <h2 align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1500&color=FFD166&center=true&vCenter=true&width=600&lines=Made+with+%E2%9D%A4%EF%B8%8F+by+Rajat+Bhardwaj;Thanks+for+visiting+my+profile!" alt="Typing SVG" />
 </h2>
