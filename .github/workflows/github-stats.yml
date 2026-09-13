@@ -1,0 +1,29 @@
+name: GitHub Profile Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate GitHub Stats
+        uses: shinpr/github-profile-stats@v1
+        with:
+          username: RajatBhardwaj2006
+          token: ${{ github.token }}
+
+      - name: Commit Stats
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "Update GitHub profile stats"
+          add: "profile/"
