@@ -1,29 +1,47 @@
-name: GitHub Profile Stats
+name: Update GitHub Profile Stats
 
 on:
-  schedule:
-    - cron: "0 0 * * *"
   workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
 
 permissions:
   contents: write
 
+concurrency:
+  group: update-profile-stats
+  cancel-in-progress: false
+
 jobs:
-  stats:
+  update:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Generate GitHub Stats
-        uses: shinpr/github-profile-stats@v1
+      - name: Generate Profile Stats
+        uses: shinpr/github-profile-stats@49b5f7091182a45f3ef93923505b660c6da5f835
+        id: stats
         with:
-          username: RajatBhardwaj2006
+          username: ${{ github.repository_owner }}
           token: ${{ github.token }}
+          profile: activity-consistency
 
-      - name: Commit Stats
-        uses: EndBug/add-and-commit@v9
-        with:
-          message: "Update GitHub profile stats"
-          add: "profile/"
+      - name: Save Compact Graph
+        env:
+          READY_DIR: ${{ steps.stats.outputs.ready-dir }}
+        run: |
+          mkdir -p profile
+          cp "$READY_DIR"/activity-consistency-*.svg profile/
+          git add profile/activity-consistency-*.svg
+
+      - name: Commit Updated Graph
+        run: |
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update GitHub profile stats"
+          git push
