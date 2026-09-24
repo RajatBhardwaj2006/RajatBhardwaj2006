@@ -318,27 +318,65 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 
 ---
 
-<h2>📈 GitHub Activity</h2>
+# 📊 GitHub Activity
+
+<p align="center">
+  <i>Consistency, contribution, and continuous learning.</i>
+</p>
+
+<br>
+
+<div align="center">
 
 <table>
-<td width="70%">
-<img src="https://streak-stats.demolab.com?user=RajatBhardwaj2006&theme=github-dark-blue&hide_border=true"/>
+<tr>
+
+<td align="center" width="60%">
+
+### 🔥 Contribution Streak
+
+<br>
+
+<img src="https://streak-stats.demolab.com?user=RajatBhardwaj2006&theme=github-dark-blue&hide_border=true&background=0D1117&ring=7F77DD&fire=FFD166&currStreakLabel=7F77DD&sideLabels=58A6FF&dates=8B949E"/>
 
 </td>
 
-<td width="30%" align="center">
+<td align="center" width="40%">
 
-<img src="https://komarev.com/ghpvc/?username=RajatBhardwaj2006&label=Profile%20Views&color=7F77DD&style=flat-square"/>
+### 👀 Profile
+
+<br>
+
+<img src="https://komarev.com/ghpvc/?username=RajatBhardwaj2006&label=PROFILE%20VIEWS&color=7F77DD&style=for-the-badge"/>
 
 <br><br>
 
-⭐ <b>If you find my work interesting,<br>
-consider starring my repositories!</b>
+⭐ **Enjoying my work?**
+
+<br>
+
+If you find something useful or interesting,
+
+**consider starring the repository!**
+
+<br>
+
+<a href="https://github.com/RajatBhardwaj2006?tab=repositories">
+<img src="https://img.shields.io/badge/EXPLORE%20MY%20REPOSITORIES-7F77DD?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
 
 </td>
+
+</tr>
 </table>
 
-[![Rajat's GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=RajatBhardwaj2006&theme=dracula)](https://github.com/ashutosh00710/github-readme-activity-graph)
-<h2 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1500&color=FFD166&center=true&vCenter=true&width=600&lines=Made+with+%E2%9D%A4%EF%B8%8F+by+Rajat+Bhardwaj;Thanks+for+visiting+my+profile!" alt="Typing SVG" />
-</h2>
+</div>
+
+<br>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=7F77DD&height=2&section=footer"/>
+</p>
+
+<h3 align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1800&color=FFD166&center=true&vCenter=true&width=650&lines=Made+with+%E2%9D%A4%EF%B8%8F+by+Rajat+Bhardwaj;Thanks+for+visiting+my+profile!;Keep+building.+Keep+learning.+Keep+shipping." alt="Typing SVG"/>
