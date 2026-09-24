@@ -204,6 +204,10 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 <img src="https://img.shields.io/badge/DEEP%20LEARNING-FF6F00?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
+<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/14e0a7e58157fe24a35f0b1bec77307f55d3ac90/Reinforcement_Learning">
+<img src="https://img.shields.io/badge/REINFORCEMENT%20LEARNING-00A67E?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
 `DSA & Problem Solving` <br>
 
 <a href="https://github.com/RajatBhardwaj2006/Data-Structure-and-Algorithms">
