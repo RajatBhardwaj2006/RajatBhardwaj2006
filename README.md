@@ -197,26 +197,30 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 `Artificial Intelligence & Machine Learning` <br>
 
 <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning">
-<img src="https://img.shields.io/badge/AI%20%26%20ML%20REPO-7F77DD?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/AI%20%26%20ML%20REPO-6C5CE7?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 <a href="https://github.com/RajatBhardwaj2006/Deep-Learning">
-<img src="https://img.shields.io/badge/DEEP%20LEARNING-FF6F00?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/DEEP%20LEARNING-F97316?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/14e0a7e58157fe24a35f0b1bec77307f55d3ac90/Reinforcement_Learning">
-<img src="https://img.shields.io/badge/REINFORCEMENT%20LEARNING-00A67E?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/REINFORCEMENT%20LEARNING-00B894?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
+
+<br>
 
 `DSA & Problem Solving` <br>
 
 <a href="https://github.com/RajatBhardwaj2006/Data-Structure-and-Algorithms">
-<img src="https://img.shields.io/badge/DSA%20IN%20C%2B%2B-00599C?style=for-the-badge&logo=thealgorithms&logoColor=white"/>
+<img src="https://img.shields.io/badge/DSA%20IN%20C%2B%2B-0984E3?style=for-the-badge&logo=thealgorithms&logoColor=white"/>
 </a>
 
 <a href="https://github.com/RajatBhardwaj2006/LeetCode">
-<img src="https://img.shields.io/badge/LEETCODE-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/>
+<img src="https://img.shields.io/badge/LEETCODE-E17055?style=for-the-badge&logo=leetcode&logoColor=white"/>
 </a>
+
+<br>
 
 `Languages` <br>
 
@@ -225,43 +229,91 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 </a>
 
 <a href="https://github.com/RajatBhardwaj2006/Java">
-<img src="https://img.shields.io/badge/JAVA-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
+<img src="https://img.shields.io/badge/JAVA-B7472A?style=for-the-badge&logo=openjdk&logoColor=white"/>
 </a>
 
 <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/SQL">
-<img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
+<img src="https://img.shields.io/badge/SQL-2D98DA?style=for-the-badge&logo=postgresql&logoColor=white"/>
 </a>
 
 <a href="https://github.com/RajatBhardwaj2006/CPP">
-<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"/>
+<img src="https://img.shields.io/badge/C%2B%2B-0984E3?style=for-the-badge&logo=cplusplus&logoColor=white"/>
+</a>
+
+<br>
+
+`AI Engineering & Development` <br>
+
+<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/14e0a7e58157fe24a35f0b1bec77307f55d3ac90/Flask">
+<img src="https://img.shields.io/badge/FLASK-111111?style=for-the-badge&logo=flask&logoColor=white"/>
+</a>
+
+<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/14e0a7e58157fe24a35f0b1bec77307f55d3ac90/OpenAI">
+<img src="https://img.shields.io/badge/OPENAI-8E44AD?style=for-the-badge&logo=openai&logoColor=white"/>
+</a>
+
+<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/14e0a7e58157fe24a35f0b1bec77307f55d3ac90/AIAgent">
+<img src="https://img.shields.io/badge/AI%20AGENTS-FF4757?style=for-the-badge&logo=probot&logoColor=white"/>
+</a>
+
+<br>
+
+`Frontend` <br>
+
+<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/HTML">
+<img src="https://img.shields.io/badge/HTML-E34C26?style=for-the-badge&logo=html5&logoColor=white"/>
+</a>
+
+<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/CSS">
+<img src="https://img.shields.io/badge/CSS-00A8FF?style=for-the-badge&logo=css3&logoColor=white"/>
+</a>
+
+`Development Tools` <br>
+
+<a href="https://github.com/RajatBhardwaj2006">
+<img src="https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+</a>
+
+<a href="https://github.com/RajatBhardwaj2006">
+<img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/JupyterLab">
+<img src="https://img.shields.io/badge/JUPYTERLAB-F37626?style=for-the-badge&logo=jupyter&logoColor=white"/>
 </a>
 
 `Libraries` <br>
 
 <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Numpy">
-<img src="https://img.shields.io/badge/NUMPY-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
+<img src="https://img.shields.io/badge/NUMPY-00A8CC?style=for-the-badge&logo=numpy&logoColor=white"/>
 </a>
 
 <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Pandas">
-<img src="https://img.shields.io/badge/PANDAS-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
-</a>
-
-<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Matplotlib">
-<img src="https://img.shields.io/badge/MATPLOTLIB-11557c?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/PANDAS-4834D4?style=for-the-badge&logo=pandas&logoColor=white"/>
 </a>
 
 <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Seaborn">
-<img src="https://img.shields.io/badge/SEABORN-4C72B0?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/SEABORN-6C5CE7?style=for-the-badge&logo=python&logoColor=white"/>
 </a>
 
-`Frontend` <br>
-
-<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/HTML">
-<img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Matplotlib">
+<img src="https://img.shields.io/badge/MATPLOTLIB-D63031?style=for-the-badge&logo=python&logoColor=white"/>
+</a>
+<br>
+<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/SciPy">
+<img src="https://img.shields.io/badge/SCIPY-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white"/>
 </a>
 
-<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/CSS">
-<img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Scikit-Learn">
+<img src="https://img.shields.io/badge/SCIKIT--LEARN-F39C12?style=for-the-badge&logo=scikit-learn&logoColor=white"/>
+</a>
+
+<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/PyTorch">
+<img src="https://img.shields.io/badge/PYTORCH-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"/>
+</a>
+
+<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/BeautifulSoup">
+<img src="https://img.shields.io/badge/BEAUTIFUL%20SOUP-2E8B57?style=for-the-badge&logo=python&logoColor=white"/>
 </a>
 
 ---
