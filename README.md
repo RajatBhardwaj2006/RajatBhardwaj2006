@@ -175,21 +175,49 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 `Python` · `Pandas` · `NumPy` · `Scikit-Learn` · `Machine Learning` · `Supervised Learning`
 
 ---
-## 🤖 Machine Learning and Deep Learning Projects
+## 🤖 Machine Learning & Deep Learning Projects
 
-> Collection of AI, machine learning, and deep learning projects.
+> Explore my machine learning, deep learning, and reinforcement learning projects.
 
-<a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Projects">
-<img src="https://img.shields.io/badge/ML%20Projects-1D9E75?style=for-the-badge&logo=python&logoColor=white"/>
-</a>
+<details>
+<summary><b>🧠 Machine Learning Projects</b></summary>
 
-<a href="https://github.com/RajatBhardwaj2006/Deep-Learning/tree/acb8014b21d5fbe839b543601e41d598b330faaf/CNN">
-<img src="https://img.shields.io/badge/CNN%20Project-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
-</a>
+<br>
 
-`Python` · `NumPy` · `Pandas` · `Scikit-Learn` · `Deep Learning` · `CNN` · `AI` · `ML`
+| # | Project | Description |
+|---|---------|-------------|
+| 1 | [🎥 YouTube Video Analyzer](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/dd66fc73d72017335bc7700d0d2aec6a7b4093d7/Projects/Youtube_video_analyzer) | Analyze and extract useful information from YouTube videos |
+| 2 | [🛒 SmartCart Cluster System](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/dd66fc73d72017335bc7700d0d2aec6a7b4093d7/Projects/SmartCart_Cluster_system) | Customer/product clustering and segmentation system |
+| 3 | [📊 Prediction Models](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/dd66fc73d72017335bc7700d0d2aec6a7b4093d7/Projects/Minor_Projects) | Collection of machine learning prediction models |
+| 4 | [💳 CreditWise Loan System](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/dd66fc73d72017335bc7700d0d2aec6a7b4093d7/Projects/CreditWise_Loan_System) | Machine learning based loan analysis and prediction system |
 
----
+</details>
+
+<details>
+<summary><b>🧬 Deep Learning Projects</b></summary>
+
+<br>
+
+| # | Project | Description |
+|---|---------|-------------|
+| 1 | [📝 Text Summarizer](https://github.com/RajatBhardwaj2006/Deep-Learning/tree/313b41ab0388991da59bdae95219568038c613ad/Text%20Summarizer) | T5 Transformer based text summarization application |
+| 2 | [🖼️ CNN](https://github.com/RajatBhardwaj2006/Deep-Learning/tree/313b41ab0388991da59bdae95219568038c613ad/CNN) | Convolutional Neural Network project |
+| 3 | [🧠 ANN](https://github.com/RajatBhardwaj2006/Deep-Learning/tree/313b41ab0388991da59bdae95219568038c613ad/ANN) | Artificial Neural Network project |
+| 4 | [🔄 RNN](https://github.com/RajatBhardwaj2006/Deep-Learning/tree/313b41ab0388991da59bdae95219568038c613ad/RNN) | Recurrent Neural Network project |
+
+</details>
+
+<details>
+<summary><b>🎮 Reinforcement Learning Projects</b></summary>
+
+<br>
+
+| # | Project | Description |
+|---|---------|-------------|
+| 1 | [🏔️ Cliff Walking](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/14e0a7e58157fe24a35f0b1bec77307f55d3ac90/Reinforcement_Learning/CliffWalking) | Reinforcement learning implementation of the Cliff Walking environment |
+
+</details>
+
 
 # 📁 Repositories
 
