@@ -214,7 +214,8 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 
 | # | Project | Description |
 |---|---------|-------------|
-| 1 | [🏔️ Cliff Walking](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/14e0a7e58157fe24a35f0b1bec77307f55d3ac90/Reinforcement_Learning) | Reinforcement learning implementation of the Cliff Walking environment |
+| 1 | [🏔️ Cliff Walking](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/14e0a7e58157fe24a35f0b1bec77307f55d3ac90/Reinforcement_Learning) | Reinforcement learning implementation of the Cliff 
+| 2 | [🐤Flappy Bird](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/dd66fc73d72017335bc7700d0d2aec6a7b4093d7/Reinforcement_Learning/Flappy_bird) |  Reinforcement learning implementation of Flappy bird |
 
 </details>
 
