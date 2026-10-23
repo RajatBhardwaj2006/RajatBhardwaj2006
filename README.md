@@ -162,6 +162,17 @@ I'm always open to collaborating on interesting projects, discussing ideas, or j
 `Computer Vision` · `Deep Learning` · `AI` · `Industrial Inspection`
 
 ---
+## 📋 Quick Attendance
+
+> A streamlined attendance management application designed to simplify attendance tracking and record management.
+
+<a href="https://github.com/RajatBhardwaj2006/Quick-Attendance">
+<img src="https://img.shields.io/badge/Quick%20Attendance-Attendance%20Management-7F77DD?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+`Python` · `Streamlit` · `Attendance Management` · `Data Handling`
+
+---
 
 ## 🛫 SkyCast AI
 
