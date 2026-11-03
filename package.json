@@ -1,0 +1,13 @@
+{
+  "name": "rajat-github-observatory",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "sync": "node scripts/sync-profile.mjs",
+    "build": "node scripts/render-profile.mjs",
+    "test": "node --test",
+    "check": "node scripts/check.mjs",
+    "preview": "node scripts/preview.mjs"
+  }
+}

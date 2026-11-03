@@ -1,0 +1,1118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="564" viewBox="0 0 1200 564" role="img" aria-labelledby="title desc">
+<title id="title">A year of GitHub contributions in three dimensions</title><desc id="desc">1147 contributions. 231 active days. Longest streak: 199 days. Highest daily count: 35. Each block uses an exact GitHub daily count. The newest week is gently highlighted.</desc>
+<style>
+text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:none}
+@keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes sweep{from{stroke-dashoffset:0}to{stroke-dashoffset:-180}}
+@keyframes breathe{0%,100%{opacity:.45}50%{opacity:1}}
+.float{animation:drift 9s ease-in-out infinite}.flow{animation:sweep 14s linear infinite}.pulse{animation:breathe 6s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){.motion{display:none}.still{display:inline}.float,.flow,.pulse{animation:none}}
+</style>
+<rect width="1200" height="564" rx="4" fill="#111411"/>
+<text x="42" y="59" font-size="29" font-weight="600" fill="#f3f6ef">A year, built one day at a time.</text>
+<text x="42" y="92" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" fill="#a4afa1">02 Nov 2025 → 03 Nov 2026</text>
+<g transform="translate(-13 70)"><g><title>2025-11-02: 0 contributions</title>
+<path d="M98 253.5l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M98 253.5l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M109.7 260.5l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-03: 0 contributions</title>
+<path d="M112.4 262.2l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M112.4 262.2l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M124.1 269.2l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-04: 0 contributions</title>
+<path d="M126.8 270.9l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M126.8 270.9l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M138.5 277.9l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-05: 0 contributions</title>
+<path d="M141.2 279.6l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M141.2 279.6l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M152.9 286.6l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-06: 0 contributions</title>
+<path d="M155.6 288.3l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M155.6 288.3l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M167.3 295.3l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-07: 0 contributions</title>
+<path d="M170 297l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M170 297l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M181.7 304l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-08: 0 contributions</title>
+<path d="M184.4 305.7l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M184.4 305.7l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M196.1 312.7l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-09: 0 contributions</title>
+<path d="M116.6 251.95l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M116.6 251.95l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M128.3 258.95l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-10: 0 contributions</title>
+<path d="M131 260.65l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M131 260.65l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M142.7 267.65l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-11: 0 contributions</title>
+<path d="M145.4 269.35l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M145.4 269.35l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M157.1 276.35l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-12: 0 contributions</title>
+<path d="M159.8 278.05l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M159.8 278.05l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M171.5 285.05l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-13: 0 contributions</title>
+<path d="M174.2 286.75l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M174.2 286.75l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M185.9 293.75l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-14: 0 contributions</title>
+<path d="M188.6 295.45l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M188.6 295.45l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M200.3 302.45l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-15: 0 contributions</title>
+<path d="M203 304.15l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M203 304.15l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M214.7 311.15l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-16: 0 contributions</title>
+<path d="M135.2 250.4l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M135.2 250.4l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M146.9 257.4l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-17: 0 contributions</title>
+<path d="M149.6 259.1l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M149.6 259.1l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M161.3 266.1l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-18: 0 contributions</title>
+<path d="M164 267.8l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M164 267.8l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M175.7 274.8l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-19: 0 contributions</title>
+<path d="M178.4 276.5l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M178.4 276.5l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M190.1 283.5l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-20: 0 contributions</title>
+<path d="M192.8 285.2l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M192.8 285.2l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M204.5 292.2l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-21: 0 contributions</title>
+<path d="M207.2 293.9l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M207.2 293.9l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M218.9 300.9l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-22: 0 contributions</title>
+<path d="M221.6 302.6l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M221.6 302.6l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M233.3 309.6l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-23: 0 contributions</title>
+<path d="M153.8 248.85l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M153.8 248.85l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M165.5 255.85l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-24: 0 contributions</title>
+<path d="M168.2 257.55l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M168.2 257.55l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M179.9 264.55l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-25: 0 contributions</title>
+<path d="M182.6 266.25l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M182.6 266.25l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M194.3 273.25l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-26: 0 contributions</title>
+<path d="M197 274.95l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M197 274.95l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M208.7 281.95l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-27: 3 contributions</title>
+<path d="M211.4 245.43l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 41%)"/>
+<path d="M211.4 245.43l11.7 7v39.72l-11.7 -7Z" fill="#42582c"/>
+<path d="M223.1 252.43l15.8 -2.7v39.72l-15.8 2.7Z" fill="#77994b"/></g><g><title>2025-11-28: 3 contributions</title>
+<path d="M225.8 254.13l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 41%)"/>
+<path d="M225.8 254.13l11.7 7v39.72l-11.7 -7Z" fill="#42582c"/>
+<path d="M237.5 261.13l15.8 -2.7v39.72l-15.8 2.7Z" fill="#77994b"/></g><g><title>2025-11-29: 0 contributions</title>
+<path d="M240.2 301.05l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M240.2 301.05l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M251.9 308.05l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-11-30: 0 contributions</title>
+<path d="M172.4 247.3l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M172.4 247.3l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M184.1 254.3l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-01: 0 contributions</title>
+<path d="M186.8 256l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M186.8 256l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M198.5 263l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-02: 1 contributions</title>
+<path d="M201.2 241.58l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M201.2 241.58l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M212.9 248.58l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2025-12-03: 2 contributions</title>
+<path d="M215.6 241.74l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M215.6 241.74l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M227.3 248.74l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2025-12-04: 0 contributions</title>
+<path d="M230 282.1l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M230 282.1l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M241.7 289.1l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-05: 0 contributions</title>
+<path d="M244.4 290.8l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M244.4 290.8l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M256.1 297.8l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-06: 0 contributions</title>
+<path d="M258.8 299.5l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M258.8 299.5l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M270.5 306.5l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-07: 0 contributions</title>
+<path d="M191 245.75l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M191 245.75l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M202.7 252.75l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-08: 0 contributions</title>
+<path d="M205.4 254.45l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M205.4 254.45l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M217.1 261.45l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-09: 0 contributions</title>
+<path d="M219.8 263.15l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M219.8 263.15l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M231.5 270.15l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-10: 0 contributions</title>
+<path d="M234.2 271.85l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M234.2 271.85l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M245.9 278.85l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-11: 0 contributions</title>
+<path d="M248.6 280.55l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M248.6 280.55l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M260.3 287.55l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-12: 0 contributions</title>
+<path d="M263 289.25l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M263 289.25l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M274.7 296.25l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-13: 0 contributions</title>
+<path d="M277.4 297.95l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M277.4 297.95l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M289.1 304.95l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-14: 0 contributions</title>
+<path d="M209.6 244.2l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M209.6 244.2l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M221.3 251.2l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-15: 0 contributions</title>
+<path d="M224 252.9l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M224 252.9l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M235.7 259.9l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-16: 0 contributions</title>
+<path d="M238.4 261.6l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M238.4 261.6l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M250.1 268.6l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-17: 0 contributions</title>
+<path d="M252.8 270.3l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M252.8 270.3l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M264.5 277.3l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-18: 0 contributions</title>
+<path d="M267.2 279l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M267.2 279l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M278.9 286l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-19: 0 contributions</title>
+<path d="M281.6 287.7l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M281.6 287.7l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M293.3 294.7l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-20: 0 contributions</title>
+<path d="M296 296.4l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M296 296.4l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M307.7 303.4l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-21: 0 contributions</title>
+<path d="M228.2 242.65l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M228.2 242.65l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M239.9 249.65l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-22: 0 contributions</title>
+<path d="M242.6 251.35l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M242.6 251.35l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M254.3 258.35l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-23: 0 contributions</title>
+<path d="M257 260.05l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M257 260.05l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M268.7 267.05l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-24: 0 contributions</title>
+<path d="M271.4 268.75l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M271.4 268.75l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M283.1 275.75l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-25: 0 contributions</title>
+<path d="M285.8 277.45l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M285.8 277.45l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M297.5 284.45l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-26: 0 contributions</title>
+<path d="M300.2 286.15l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M300.2 286.15l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M311.9 293.15l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-27: 0 contributions</title>
+<path d="M314.6 294.85l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M314.6 294.85l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M326.3 301.85l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-28: 10 contributions</title>
+<path d="M246.8 173.39l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 51%)"/>
+<path d="M246.8 173.39l11.7 7v69.21l-11.7 -7Z" fill="#42582c"/>
+<path d="M258.5 180.39l15.8 -2.7v69.21l-15.8 2.7Z" fill="#77994b"/></g><g><title>2025-12-29: 0 contributions</title>
+<path d="M261.2 249.8l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M261.2 249.8l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M272.9 256.8l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-30: 0 contributions</title>
+<path d="M275.6 258.5l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M275.6 258.5l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M287.3 265.5l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2025-12-31: 0 contributions</title>
+<path d="M290 267.2l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M290 267.2l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M301.7 274.2l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-01-01: 0 contributions</title>
+<path d="M304.4 275.9l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M304.4 275.9l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M316.1 282.9l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-01-02: 6 contributions</title>
+<path d="M318.8 231.59l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 46%)"/>
+<path d="M318.8 231.59l11.7 7v54.51l-11.7 -7Z" fill="#42582c"/>
+<path d="M330.5 238.59l15.8 -2.7v54.51l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-01-03: 3 contributions</title>
+<path d="M333.2 255.08l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 41%)"/>
+<path d="M333.2 255.08l11.7 7v39.72l-11.7 -7Z" fill="#42582c"/>
+<path d="M344.9 262.08l15.8 -2.7v39.72l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-01-04: 12 contributions</title>
+<path d="M265.4 165.61l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 53%)"/>
+<path d="M265.4 165.61l11.7 7v75.44l-11.7 -7Z" fill="#42582c"/>
+<path d="M277.1 172.61l15.8 -2.7v75.44l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-01-05: 2 contributions</title>
+<path d="M279.8 216.59l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M279.8 216.59l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M291.5 223.59l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-01-06: 0 contributions</title>
+<path d="M294.2 256.95l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M294.2 256.95l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M305.9 263.95l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-01-07: 5 contributions</title>
+<path d="M308.6 217.04l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 45%)"/>
+<path d="M308.6 217.04l11.7 7v50.11l-11.7 -7Z" fill="#42582c"/>
+<path d="M320.3 224.04l15.8 -2.7v50.11l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-01-08: 15 contributions</title>
+<path d="M323 191.98l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 56%)"/>
+<path d="M323 191.98l11.7 7v83.87l-11.7 -7Z" fill="#42582c"/>
+<path d="M334.7 198.98l15.8 -2.7v83.87l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-01-09: 20 contributions</title>
+<path d="M337.4 188.33l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 59%)"/>
+<path d="M337.4 188.33l11.7 7v96.22l-11.7 -7Z" fill="#42582c"/>
+<path d="M349.1 195.33l15.8 -2.7v96.22l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-01-10: 28 contributions</title>
+<path d="M351.8 180.13l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 65%)"/>
+<path d="M351.8 180.13l11.7 7v113.12l-11.7 -7Z" fill="#42582c"/>
+<path d="M363.5 187.13l15.8 -2.7v113.12l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-01-11: 20 contributions</title>
+<path d="M284 143.28l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 59%)"/>
+<path d="M284 143.28l11.7 7v96.22l-11.7 -7Z" fill="#42582c"/>
+<path d="M295.7 150.28l15.8 -2.7v96.22l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-01-12: 18 contributions</title>
+<path d="M298.4 156.71l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 58%)"/>
+<path d="M298.4 156.71l11.7 7v91.49l-11.7 -7Z" fill="#42582c"/>
+<path d="M310.1 163.71l15.8 -2.7v91.49l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-01-13: 4 contributions</title>
+<path d="M312.8 211.66l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 43%)"/>
+<path d="M312.8 211.66l11.7 7v45.24l-11.7 -7Z" fill="#42582c"/>
+<path d="M324.5 218.66l15.8 -2.7v45.24l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-01-14: 2 contributions</title>
+<path d="M327.2 232.44l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M327.2 232.44l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M338.9 239.44l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-01-15: 0 contributions</title>
+<path d="M341.6 272.8l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M341.6 272.8l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M353.3 279.8l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-01-16: 1 contributions</title>
+<path d="M356 258.38l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M356 258.38l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M367.7 265.38l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-01-17: 0 contributions</title>
+<path d="M370.4 290.2l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M370.4 290.2l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M382.1 297.2l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-01-18: 2 contributions</title>
+<path d="M302.6 204.79l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M302.6 204.79l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M314.3 211.79l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-01-19: 15 contributions</title>
+<path d="M317 162.78l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 56%)"/>
+<path d="M317 162.78l11.7 7v83.87l-11.7 -7Z" fill="#42582c"/>
+<path d="M328.7 169.78l15.8 -2.7v83.87l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-01-20: 19 contributions</title>
+<path d="M331.4 161.46l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 59%)"/>
+<path d="M331.4 161.46l11.7 7v93.89l-11.7 -7Z" fill="#42582c"/>
+<path d="M343.1 168.46l15.8 -2.7v93.89l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-01-21: 9 contributions</title>
+<path d="M345.8 198.18l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 50%)"/>
+<path d="M345.8 198.18l11.7 7v65.87l-11.7 -7Z" fill="#42582c"/>
+<path d="M357.5 205.18l15.8 -2.7v65.87l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-01-22: 7 contributions</title>
+<path d="M360.2 214.19l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 47%)"/>
+<path d="M360.2 214.19l11.7 7v58.56l-11.7 -7Z" fill="#42582c"/>
+<path d="M371.9 221.19l15.8 -2.7v58.56l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-01-23: 2 contributions</title>
+<path d="M374.6 248.29l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M374.6 248.29l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M386.3 255.29l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-01-24: 33 contributions</title>
+<path d="M389 167.69l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 68%)"/>
+<path d="M389 167.69l11.7 7v122.46l-11.7 -7Z" fill="#42582c"/>
+<path d="M400.7 174.69l15.8 -2.7v122.46l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-01-25: 0 contributions</title>
+<path d="M321.2 234.9l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M321.2 234.9l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M332.9 241.9l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-01-26: 0 contributions</title>
+<path d="M335.6 243.6l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M335.6 243.6l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M347.3 250.6l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-01-27: 0 contributions</title>
+<path d="M350 252.3l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M350 252.3l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M361.7 259.3l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-01-28: 0 contributions</title>
+<path d="M364.4 261l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M364.4 261l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M376.1 268l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-01-29: 0 contributions</title>
+<path d="M378.8 269.7l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M378.8 269.7l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M390.5 276.7l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-01-30: 0 contributions</title>
+<path d="M393.2 278.4l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M393.2 278.4l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M404.9 285.4l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-01-31: 0 contributions</title>
+<path d="M407.6 287.1l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M407.6 287.1l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M419.3 294.1l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-02-01: 0 contributions</title>
+<path d="M339.8 233.35l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M339.8 233.35l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M351.5 240.35l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-02-02: 0 contributions</title>
+<path d="M354.2 242.05l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M354.2 242.05l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M365.9 249.05l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-02-03: 0 contributions</title>
+<path d="M368.6 250.75l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M368.6 250.75l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M380.3 257.75l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-02-04: 0 contributions</title>
+<path d="M383 259.45l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M383 259.45l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M394.7 266.45l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-02-05: 1 contributions</title>
+<path d="M397.4 245.03l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M397.4 245.03l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M409.1 252.03l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-02-06: 2 contributions</title>
+<path d="M411.8 245.19l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M411.8 245.19l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M423.5 252.19l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-02-07: 0 contributions</title>
+<path d="M426.2 285.55l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M426.2 285.55l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M437.9 292.55l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-02-08: 0 contributions</title>
+<path d="M358.4 231.8l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M358.4 231.8l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M370.1 238.8l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-02-09: 0 contributions</title>
+<path d="M372.8 240.5l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M372.8 240.5l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M384.5 247.5l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-02-10: 0 contributions</title>
+<path d="M387.2 249.2l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M387.2 249.2l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M398.9 256.2l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-02-11: 2 contributions</title>
+<path d="M401.6 226.24l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M401.6 226.24l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M413.3 233.24l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-02-12: 2 contributions</title>
+<path d="M416 234.94l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M416 234.94l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M427.7 241.94l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-02-13: 0 contributions</title>
+<path d="M430.4 275.3l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M430.4 275.3l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M442.1 282.3l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-02-14: 2 contributions</title>
+<path d="M444.8 252.34l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M444.8 252.34l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M456.5 259.34l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-02-15: 0 contributions</title>
+<path d="M377 230.25l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M377 230.25l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M388.7 237.25l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-02-16: 0 contributions</title>
+<path d="M391.4 238.95l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M391.4 238.95l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M403.1 245.95l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-02-17: 0 contributions</title>
+<path d="M405.8 247.65l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M405.8 247.65l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M417.5 254.65l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-02-18: 0 contributions</title>
+<path d="M420.2 256.35l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M420.2 256.35l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M431.9 263.35l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-02-19: 0 contributions</title>
+<path d="M434.6 265.05l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M434.6 265.05l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M446.3 272.05l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-02-20: 0 contributions</title>
+<path d="M449 273.75l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M449 273.75l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M460.7 280.75l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-02-21: 0 contributions</title>
+<path d="M463.4 282.45l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M463.4 282.45l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M475.1 289.45l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-02-22: 0 contributions</title>
+<path d="M395.6 228.7l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M395.6 228.7l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M407.3 235.7l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-02-23: 0 contributions</title>
+<path d="M410 237.4l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M410 237.4l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M421.7 244.4l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-02-24: 0 contributions</title>
+<path d="M424.4 246.1l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M424.4 246.1l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M436.1 253.1l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-02-25: 0 contributions</title>
+<path d="M438.8 254.8l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M438.8 254.8l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M450.5 261.8l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-02-26: 0 contributions</title>
+<path d="M453.2 263.5l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M453.2 263.5l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M464.9 270.5l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-02-27: 0 contributions</title>
+<path d="M467.6 272.2l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M467.6 272.2l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M479.3 279.2l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-02-28: 0 contributions</title>
+<path d="M482 280.9l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M482 280.9l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M493.7 287.9l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-01: 0 contributions</title>
+<path d="M414.2 227.15l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M414.2 227.15l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M425.9 234.15l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-02: 0 contributions</title>
+<path d="M428.6 235.85l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M428.6 235.85l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M440.3 242.85l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-03: 0 contributions</title>
+<path d="M443 244.55l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M443 244.55l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M454.7 251.55l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-04: 0 contributions</title>
+<path d="M457.4 253.25l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M457.4 253.25l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M469.1 260.25l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-05: 1 contributions</title>
+<path d="M471.8 238.83l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M471.8 238.83l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M483.5 245.83l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-03-06: 5 contributions</title>
+<path d="M486.2 222.04l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 45%)"/>
+<path d="M486.2 222.04l11.7 7v50.11l-11.7 -7Z" fill="#42582c"/>
+<path d="M497.9 229.04l15.8 -2.7v50.11l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-03-07: 0 contributions</title>
+<path d="M500.6 279.35l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M500.6 279.35l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M512.3 286.35l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-08: 0 contributions</title>
+<path d="M432.8 225.6l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M432.8 225.6l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M444.5 232.6l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-09: 0 contributions</title>
+<path d="M447.2 234.3l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M447.2 234.3l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M458.9 241.3l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-10: 0 contributions</title>
+<path d="M461.6 243l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M461.6 243l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M473.3 250l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-11: 0 contributions</title>
+<path d="M476 251.7l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M476 251.7l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M487.7 258.7l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-12: 0 contributions</title>
+<path d="M490.4 260.4l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M490.4 260.4l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M502.1 267.4l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-13: 0 contributions</title>
+<path d="M504.8 269.1l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M504.8 269.1l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M516.5 276.1l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-14: 0 contributions</title>
+<path d="M519.2 277.8l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M519.2 277.8l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M530.9 284.8l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-15: 0 contributions</title>
+<path d="M451.4 224.05l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M451.4 224.05l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M463.1 231.05l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-16: 0 contributions</title>
+<path d="M465.8 232.75l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M465.8 232.75l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M477.5 239.75l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-17: 0 contributions</title>
+<path d="M480.2 241.45l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M480.2 241.45l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M491.9 248.45l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-18: 0 contributions</title>
+<path d="M494.6 250.15l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M494.6 250.15l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M506.3 257.15l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-19: 0 contributions</title>
+<path d="M509 258.85l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M509 258.85l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M520.7 265.85l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-20: 0 contributions</title>
+<path d="M523.4 267.55l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M523.4 267.55l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M535.1 274.55l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-21: 0 contributions</title>
+<path d="M537.8 276.25l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M537.8 276.25l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M549.5 283.25l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-22: 0 contributions</title>
+<path d="M470 222.5l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M470 222.5l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M481.7 229.5l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-23: 0 contributions</title>
+<path d="M484.4 231.2l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M484.4 231.2l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M496.1 238.2l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-24: 0 contributions</title>
+<path d="M498.8 239.9l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M498.8 239.9l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M510.5 246.9l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-25: 0 contributions</title>
+<path d="M513.2 248.6l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M513.2 248.6l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M524.9 255.6l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-26: 0 contributions</title>
+<path d="M527.6 257.3l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M527.6 257.3l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M539.3 264.3l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-27: 0 contributions</title>
+<path d="M542 266l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M542 266l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M553.7 273l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-28: 0 contributions</title>
+<path d="M556.4 274.7l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M556.4 274.7l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M568.1 281.7l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-29: 0 contributions</title>
+<path d="M488.6 220.95l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M488.6 220.95l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M500.3 227.95l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-30: 0 contributions</title>
+<path d="M503 229.65l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M503 229.65l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M514.7 236.65l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-03-31: 0 contributions</title>
+<path d="M517.4 238.35l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M517.4 238.35l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M529.1 245.35l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-04-01: 0 contributions</title>
+<path d="M531.8 247.05l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M531.8 247.05l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M543.5 254.05l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-04-02: 0 contributions</title>
+<path d="M546.2 255.75l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M546.2 255.75l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M557.9 262.75l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-04-03: 0 contributions</title>
+<path d="M560.6 264.45l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M560.6 264.45l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M572.3 271.45l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-04-04: 0 contributions</title>
+<path d="M575 273.15l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M575 273.15l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M586.7 280.15l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-04-05: 0 contributions</title>
+<path d="M507.2 219.4l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M507.2 219.4l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M518.9 226.4l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-04-06: 0 contributions</title>
+<path d="M521.6 228.1l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M521.6 228.1l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M533.3 235.1l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-04-07: 0 contributions</title>
+<path d="M536 236.8l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M536 236.8l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M547.7 243.8l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-04-08: 0 contributions</title>
+<path d="M550.4 245.5l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M550.4 245.5l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M562.1 252.5l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-04-09: 0 contributions</title>
+<path d="M564.8 254.2l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M564.8 254.2l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M576.5 261.2l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-04-10: 0 contributions</title>
+<path d="M579.2 262.9l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M579.2 262.9l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M590.9 269.9l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-04-11: 0 contributions</title>
+<path d="M593.6 271.6l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M593.6 271.6l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M605.3 278.6l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-04-12: 0 contributions</title>
+<path d="M525.8 217.85l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M525.8 217.85l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M537.5 224.85l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-04-13: 0 contributions</title>
+<path d="M540.2 226.55l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M540.2 226.55l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M551.9 233.55l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-04-14: 0 contributions</title>
+<path d="M554.6 235.25l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M554.6 235.25l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M566.3 242.25l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-04-15: 0 contributions</title>
+<path d="M569 243.95l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M569 243.95l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M580.7 250.95l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-04-16: 0 contributions</title>
+<path d="M583.4 252.65l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M583.4 252.65l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M595.1 259.65l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-04-17: 0 contributions</title>
+<path d="M597.8 261.35l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M597.8 261.35l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M609.5 268.35l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-04-18: 0 contributions</title>
+<path d="M612.2 270.05l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="#293027"/>
+<path d="M612.2 270.05l11.7 7v1.5l-11.7 -7Z" fill="#1b211a"/>
+<path d="M623.9 277.05l15.8 -2.7v1.5l-15.8 2.7Z" fill="#222a20"/></g><g><title>2026-04-19: 8 contributions</title>
+<path d="M544.4 155.47l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 49%)"/>
+<path d="M544.4 155.47l11.7 7v62.33l-11.7 -7Z" fill="#42582c"/>
+<path d="M556.1 162.47l15.8 -2.7v62.33l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-04-20: 13 contributions</title>
+<path d="M558.8 148.15l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 54%)"/>
+<path d="M558.8 148.15l11.7 7v78.35l-11.7 -7Z" fill="#42582c"/>
+<path d="M570.5 155.15l15.8 -2.7v78.35l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-04-21: 12 contributions</title>
+<path d="M573.2 159.76l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 53%)"/>
+<path d="M573.2 159.76l11.7 7v75.44l-11.7 -7Z" fill="#42582c"/>
+<path d="M584.9 166.76l15.8 -2.7v75.44l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-04-22: 7 contributions</title>
+<path d="M587.6 185.34l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 47%)"/>
+<path d="M587.6 185.34l11.7 7v58.56l-11.7 -7Z" fill="#42582c"/>
+<path d="M599.3 192.34l15.8 -2.7v58.56l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-04-23: 13 contributions</title>
+<path d="M602 174.25l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 54%)"/>
+<path d="M602 174.25l11.7 7v78.35l-11.7 -7Z" fill="#42582c"/>
+<path d="M613.7 181.25l15.8 -2.7v78.35l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-04-24: 1 contributions</title>
+<path d="M616.4 236.68l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M616.4 236.68l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M628.1 243.68l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-04-25: 8 contributions</title>
+<path d="M630.8 207.67l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 49%)"/>
+<path d="M630.8 207.67l11.7 7v62.33l-11.7 -7Z" fill="#42582c"/>
+<path d="M642.5 214.67l15.8 -2.7v62.33l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-04-26: 8 contributions</title>
+<path d="M563 153.92l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 49%)"/>
+<path d="M563 153.92l11.7 7v62.33l-11.7 -7Z" fill="#42582c"/>
+<path d="M574.7 160.92l15.8 -2.7v62.33l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-04-27: 4 contributions</title>
+<path d="M577.4 179.71l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 43%)"/>
+<path d="M577.4 179.71l11.7 7v45.24l-11.7 -7Z" fill="#42582c"/>
+<path d="M589.1 186.71l15.8 -2.7v45.24l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-04-28: 3 contributions</title>
+<path d="M591.8 193.93l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 41%)"/>
+<path d="M591.8 193.93l11.7 7v39.72l-11.7 -7Z" fill="#42582c"/>
+<path d="M603.5 200.93l15.8 -2.7v39.72l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-04-29: 1 contributions</title>
+<path d="M606.2 217.73l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M606.2 217.73l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M617.9 224.73l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-04-30: 4 contributions</title>
+<path d="M620.6 205.81l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 43%)"/>
+<path d="M620.6 205.81l11.7 7v45.24l-11.7 -7Z" fill="#42582c"/>
+<path d="M632.3 212.81l15.8 -2.7v45.24l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-01: 1 contributions</title>
+<path d="M635 235.13l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M635 235.13l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M646.7 242.13l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-02: 1 contributions</title>
+<path d="M649.4 243.83l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M649.4 243.83l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M661.1 250.83l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-03: 8 contributions</title>
+<path d="M581.6 152.37l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 49%)"/>
+<path d="M581.6 152.37l11.7 7v62.33l-11.7 -7Z" fill="#42582c"/>
+<path d="M593.3 159.37l15.8 -2.7v62.33l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-04: 1 contributions</title>
+<path d="M596 198.78l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M596 198.78l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M607.7 205.78l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-05: 2 contributions</title>
+<path d="M610.4 198.94l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M610.4 198.94l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M622.1 205.94l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-06: 2 contributions</title>
+<path d="M624.8 207.64l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M624.8 207.64l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M636.5 214.64l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-07: 3 contributions</title>
+<path d="M639.2 209.78l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 41%)"/>
+<path d="M639.2 209.78l11.7 7v39.72l-11.7 -7Z" fill="#42582c"/>
+<path d="M650.9 216.78l15.8 -2.7v39.72l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-08: 18 contributions</title>
+<path d="M653.6 166.71l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 58%)"/>
+<path d="M653.6 166.71l11.7 7v91.49l-11.7 -7Z" fill="#42582c"/>
+<path d="M665.3 173.71l15.8 -2.7v91.49l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-09: 1 contributions</title>
+<path d="M668 242.28l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M668 242.28l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M679.7 249.28l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-10: 31 contributions</title>
+<path d="M600.2 94.33l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 67%)"/>
+<path d="M600.2 94.33l11.7 7v118.82l-11.7 -7Z" fill="#42582c"/>
+<path d="M611.9 101.33l15.8 -2.7v118.82l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-11: 4 contributions</title>
+<path d="M614.6 176.61l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 43%)"/>
+<path d="M614.6 176.61l11.7 7v45.24l-11.7 -7Z" fill="#42582c"/>
+<path d="M626.3 183.61l15.8 -2.7v45.24l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-12: 13 contributions</title>
+<path d="M629 152.2l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 54%)"/>
+<path d="M629 152.2l11.7 7v78.35l-11.7 -7Z" fill="#42582c"/>
+<path d="M640.7 159.2l15.8 -2.7v78.35l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-13: 4 contributions</title>
+<path d="M643.4 194.01l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 43%)"/>
+<path d="M643.4 194.01l11.7 7v45.24l-11.7 -7Z" fill="#42582c"/>
+<path d="M655.1 201.01l15.8 -2.7v45.24l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-14: 8 contributions</title>
+<path d="M657.8 185.62l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 49%)"/>
+<path d="M657.8 185.62l11.7 7v62.33l-11.7 -7Z" fill="#42582c"/>
+<path d="M669.5 192.62l15.8 -2.7v62.33l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-15: 35 contributions</title>
+<path d="M672.2 130.65l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 69%)"/>
+<path d="M672.2 130.65l11.7 7v126l-11.7 -7Z" fill="#42582c"/>
+<path d="M683.9 137.65l15.8 -2.7v126l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-16: 1 contributions</title>
+<path d="M686.6 240.73l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M686.6 240.73l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M698.3 247.73l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-17: 2 contributions</title>
+<path d="M618.8 178.44l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M618.8 178.44l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M630.5 185.44l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-18: 1 contributions</title>
+<path d="M633.2 195.68l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M633.2 195.68l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M644.9 202.68l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-19: 3 contributions</title>
+<path d="M647.6 189.28l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 41%)"/>
+<path d="M647.6 189.28l11.7 7v39.72l-11.7 -7Z" fill="#42582c"/>
+<path d="M659.3 196.28l15.8 -2.7v39.72l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-20: 1 contributions</title>
+<path d="M662 213.08l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M662 213.08l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M673.7 220.08l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-21: 6 contributions</title>
+<path d="M676.4 191.89l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 46%)"/>
+<path d="M676.4 191.89l11.7 7v54.51l-11.7 -7Z" fill="#42582c"/>
+<path d="M688.1 198.89l15.8 -2.7v54.51l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-22: 2 contributions</title>
+<path d="M690.8 221.94l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M690.8 221.94l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M702.5 228.94l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-23: 1 contributions</title>
+<path d="M705.2 239.18l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M705.2 239.18l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M716.9 246.18l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-24: 1 contributions</title>
+<path d="M637.4 185.43l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M637.4 185.43l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M649.1 192.43l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-25: 1 contributions</title>
+<path d="M651.8 194.13l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M651.8 194.13l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M663.5 201.13l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-26: 1 contributions</title>
+<path d="M666.2 202.83l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M666.2 202.83l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M677.9 209.83l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-27: 1 contributions</title>
+<path d="M680.6 211.53l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M680.6 211.53l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M692.3 218.53l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-28: 1 contributions</title>
+<path d="M695 220.23l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M695 220.23l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M706.7 227.23l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-29: 1 contributions</title>
+<path d="M709.4 228.93l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M709.4 228.93l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M721.1 235.93l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-30: 1 contributions</title>
+<path d="M723.8 237.63l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M723.8 237.63l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M735.5 244.63l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-05-31: 5 contributions</title>
+<path d="M656 158.39l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 45%)"/>
+<path d="M656 158.39l11.7 7v50.11l-11.7 -7Z" fill="#42582c"/>
+<path d="M667.7 165.39l15.8 -2.7v50.11l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-01: 1 contributions</title>
+<path d="M670.4 192.58l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M670.4 192.58l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M682.1 199.58l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-02: 1 contributions</title>
+<path d="M684.8 201.28l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M684.8 201.28l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M696.5 208.28l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-03: 1 contributions</title>
+<path d="M699.2 209.98l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M699.2 209.98l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M710.9 216.98l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-04: 1 contributions</title>
+<path d="M713.6 218.68l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M713.6 218.68l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M725.3 225.68l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-05: 4 contributions</title>
+<path d="M728 206.76l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 43%)"/>
+<path d="M728 206.76l11.7 7v45.24l-11.7 -7Z" fill="#42582c"/>
+<path d="M739.7 213.76l15.8 -2.7v45.24l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-06: 3 contributions</title>
+<path d="M742.4 220.98l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 41%)"/>
+<path d="M742.4 220.98l11.7 7v39.72l-11.7 -7Z" fill="#42582c"/>
+<path d="M754.1 227.98l15.8 -2.7v39.72l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-07: 1 contributions</title>
+<path d="M674.6 182.33l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M674.6 182.33l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M686.3 189.33l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-08: 1 contributions</title>
+<path d="M689 191.03l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M689 191.03l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M700.7 198.03l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-09: 5 contributions</title>
+<path d="M703.4 174.24l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 45%)"/>
+<path d="M703.4 174.24l11.7 7v50.11l-11.7 -7Z" fill="#42582c"/>
+<path d="M715.1 181.24l15.8 -2.7v50.11l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-10: 2 contributions</title>
+<path d="M717.8 199.89l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M717.8 199.89l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M729.5 206.89l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-11: 1 contributions</title>
+<path d="M732.2 217.13l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M732.2 217.13l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M743.9 224.13l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-12: 5 contributions</title>
+<path d="M746.6 200.34l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 45%)"/>
+<path d="M746.6 200.34l11.7 7v50.11l-11.7 -7Z" fill="#42582c"/>
+<path d="M758.3 207.34l15.8 -2.7v50.11l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-13: 2 contributions</title>
+<path d="M761 225.99l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M761 225.99l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M772.7 232.99l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-14: 1 contributions</title>
+<path d="M693.2 180.78l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M693.2 180.78l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M704.9 187.78l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-15: 5 contributions</title>
+<path d="M707.6 163.99l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 45%)"/>
+<path d="M707.6 163.99l11.7 7v50.11l-11.7 -7Z" fill="#42582c"/>
+<path d="M719.3 170.99l15.8 -2.7v50.11l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-16: 11 contributions</title>
+<path d="M722 150.41l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 52%)"/>
+<path d="M722 150.41l11.7 7v72.39l-11.7 -7Z" fill="#42582c"/>
+<path d="M733.7 157.41l15.8 -2.7v72.39l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-17: 1 contributions</title>
+<path d="M736.4 206.88l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M736.4 206.88l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M748.1 213.88l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-18: 3 contributions</title>
+<path d="M750.8 200.48l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 41%)"/>
+<path d="M750.8 200.48l11.7 7v39.72l-11.7 -7Z" fill="#42582c"/>
+<path d="M762.5 207.48l15.8 -2.7v39.72l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-19: 2 contributions</title>
+<path d="M765.2 215.74l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M765.2 215.74l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M776.9 222.74l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-20: 1 contributions</title>
+<path d="M779.6 232.98l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M779.6 232.98l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M791.3 239.98l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-21: 6 contributions</title>
+<path d="M711.8 149.34l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 46%)"/>
+<path d="M711.8 149.34l11.7 7v54.51l-11.7 -7Z" fill="#42582c"/>
+<path d="M723.5 156.34l15.8 -2.7v54.51l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-22: 2 contributions</title>
+<path d="M726.2 179.39l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M726.2 179.39l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M737.9 186.39l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-23: 12 contributions</title>
+<path d="M740.6 145.81l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 53%)"/>
+<path d="M740.6 145.81l11.7 7v75.44l-11.7 -7Z" fill="#42582c"/>
+<path d="M752.3 152.81l15.8 -2.7v75.44l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-24: 1 contributions</title>
+<path d="M755 205.33l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M755 205.33l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M766.7 212.33l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-25: 5 contributions</title>
+<path d="M769.4 188.54l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 45%)"/>
+<path d="M769.4 188.54l11.7 7v50.11l-11.7 -7Z" fill="#42582c"/>
+<path d="M781.1 195.54l15.8 -2.7v50.11l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-26: 2 contributions</title>
+<path d="M783.8 214.19l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M783.8 214.19l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M795.5 221.19l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-27: 1 contributions</title>
+<path d="M798.2 231.43l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M798.2 231.43l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M809.9 238.43l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-28: 5 contributions</title>
+<path d="M730.4 152.19l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 45%)"/>
+<path d="M730.4 152.19l11.7 7v50.11l-11.7 -7Z" fill="#42582c"/>
+<path d="M742.1 159.19l15.8 -2.7v50.11l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-29: 1 contributions</title>
+<path d="M744.8 186.38l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M744.8 186.38l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M756.5 193.38l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-06-30: 1 contributions</title>
+<path d="M759.2 195.08l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M759.2 195.08l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M770.9 202.08l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-01: 1 contributions</title>
+<path d="M773.6 203.78l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M773.6 203.78l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M785.3 210.78l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-02: 5 contributions</title>
+<path d="M788 186.99l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 45%)"/>
+<path d="M788 186.99l11.7 7v50.11l-11.7 -7Z" fill="#42582c"/>
+<path d="M799.7 193.99l15.8 -2.7v50.11l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-03: 1 contributions</title>
+<path d="M802.4 221.18l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M802.4 221.18l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M814.1 228.18l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-04: 2 contributions</title>
+<path d="M816.8 221.34l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M816.8 221.34l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M828.5 228.34l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-05: 14 contributions</title>
+<path d="M749 119.59l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 55%)"/>
+<path d="M749 119.59l11.7 7v81.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M760.7 126.59l15.8 -2.7v81.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-06: 9 contributions</title>
+<path d="M763.4 143.58l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 50%)"/>
+<path d="M763.4 143.58l11.7 7v65.87l-11.7 -7Z" fill="#42582c"/>
+<path d="M775.1 150.58l15.8 -2.7v65.87l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-07: 17 contributions</title>
+<path d="M777.8 129.12l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 57%)"/>
+<path d="M777.8 129.12l11.7 7v89.03l-11.7 -7Z" fill="#42582c"/>
+<path d="M789.5 136.12l15.8 -2.7v89.03l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-08: 6 contributions</title>
+<path d="M792.2 172.34l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 46%)"/>
+<path d="M792.2 172.34l11.7 7v54.51l-11.7 -7Z" fill="#42582c"/>
+<path d="M803.9 179.34l15.8 -2.7v54.51l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-09: 1 contributions</title>
+<path d="M806.6 210.93l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M806.6 210.93l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M818.3 217.93l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-10: 2 contributions</title>
+<path d="M821 211.09l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M821 211.09l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M832.7 218.09l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-11: 1 contributions</title>
+<path d="M835.4 228.33l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M835.4 228.33l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M847.1 235.33l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-12: 1 contributions</title>
+<path d="M767.6 174.58l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M767.6 174.58l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M779.3 181.58l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-13: 1 contributions</title>
+<path d="M782 183.28l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M782 183.28l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M793.7 190.28l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-14: 1 contributions</title>
+<path d="M796.4 191.98l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M796.4 191.98l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M808.1 198.98l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-15: 2 contributions</title>
+<path d="M810.8 192.14l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M810.8 192.14l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M822.5 199.14l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-16: 2 contributions</title>
+<path d="M825.2 200.84l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M825.2 200.84l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M836.9 207.84l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-17: 9 contributions</title>
+<path d="M839.6 176.83l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 50%)"/>
+<path d="M839.6 176.83l11.7 7v65.87l-11.7 -7Z" fill="#42582c"/>
+<path d="M851.3 183.83l15.8 -2.7v65.87l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-18: 1 contributions</title>
+<path d="M854 226.78l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M854 226.78l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M865.7 233.78l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-19: 1 contributions</title>
+<path d="M786.2 173.03l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M786.2 173.03l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M797.9 180.03l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-20: 6 contributions</title>
+<path d="M800.6 151.84l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 46%)"/>
+<path d="M800.6 151.84l11.7 7v54.51l-11.7 -7Z" fill="#42582c"/>
+<path d="M812.3 158.84l15.8 -2.7v54.51l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-21: 6 contributions</title>
+<path d="M815 160.54l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 46%)"/>
+<path d="M815 160.54l11.7 7v54.51l-11.7 -7Z" fill="#42582c"/>
+<path d="M826.7 167.54l15.8 -2.7v54.51l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-22: 2 contributions</title>
+<path d="M829.4 190.59l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M829.4 190.59l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M841.1 197.59l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-23: 6 contributions</title>
+<path d="M843.8 177.94l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 46%)"/>
+<path d="M843.8 177.94l11.7 7v54.51l-11.7 -7Z" fill="#42582c"/>
+<path d="M855.5 184.94l15.8 -2.7v54.51l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-24: 1 contributions</title>
+<path d="M858.2 216.53l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M858.2 216.53l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M869.9 223.53l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-25: 3 contributions</title>
+<path d="M872.6 210.13l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 41%)"/>
+<path d="M872.6 210.13l11.7 7v39.72l-11.7 -7Z" fill="#42582c"/>
+<path d="M884.3 217.13l15.8 -2.7v39.72l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-26: 2 contributions</title>
+<path d="M804.8 162.94l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M804.8 162.94l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M816.5 169.94l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-27: 6 contributions</title>
+<path d="M819.2 150.29l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 46%)"/>
+<path d="M819.2 150.29l11.7 7v54.51l-11.7 -7Z" fill="#42582c"/>
+<path d="M830.9 157.29l15.8 -2.7v54.51l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-28: 1 contributions</title>
+<path d="M833.6 188.88l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M833.6 188.88l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M845.3 195.88l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-29: 1 contributions</title>
+<path d="M848 197.58l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M848 197.58l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M859.7 204.58l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-30: 2 contributions</title>
+<path d="M862.4 197.74l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M862.4 197.74l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M874.1 204.74l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-07-31: 8 contributions</title>
+<path d="M876.8 177.27l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 49%)"/>
+<path d="M876.8 177.27l11.7 7v62.33l-11.7 -7Z" fill="#42582c"/>
+<path d="M888.5 184.27l15.8 -2.7v62.33l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-01: 2 contributions</title>
+<path d="M891.2 215.14l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M891.2 215.14l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M902.9 222.14l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-02: 6 contributions</title>
+<path d="M823.4 140.04l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 46%)"/>
+<path d="M823.4 140.04l11.7 7v54.51l-11.7 -7Z" fill="#42582c"/>
+<path d="M835.1 147.04l15.8 -2.7v54.51l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-03: 8 contributions</title>
+<path d="M837.8 140.92l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 49%)"/>
+<path d="M837.8 140.92l11.7 7v62.33l-11.7 -7Z" fill="#42582c"/>
+<path d="M849.5 147.92l15.8 -2.7v62.33l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-04: 2 contributions</title>
+<path d="M852.2 178.79l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M852.2 178.79l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M863.9 185.79l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-05: 3 contributions</title>
+<path d="M866.6 180.93l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 41%)"/>
+<path d="M866.6 180.93l11.7 7v39.72l-11.7 -7Z" fill="#42582c"/>
+<path d="M878.3 187.93l15.8 -2.7v39.72l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-06: 2 contributions</title>
+<path d="M881 196.19l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M881 196.19l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M892.7 203.19l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-07: 1 contributions</title>
+<path d="M895.4 213.43l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M895.4 213.43l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M907.1 220.43l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-08: 1 contributions</title>
+<path d="M909.8 222.13l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M909.8 222.13l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M921.5 229.13l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-09: 2 contributions</title>
+<path d="M842 159.84l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M842 159.84l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M853.7 166.84l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-10: 2 contributions</title>
+<path d="M856.4 168.54l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M856.4 168.54l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M868.1 175.54l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-11: 1 contributions</title>
+<path d="M870.8 185.78l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M870.8 185.78l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M882.5 192.78l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-12: 1 contributions</title>
+<path d="M885.2 194.48l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M885.2 194.48l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M896.9 201.48l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-13: 1 contributions</title>
+<path d="M899.6 203.18l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M899.6 203.18l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M911.3 210.18l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-14: 3 contributions</title>
+<path d="M914 196.78l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 41%)"/>
+<path d="M914 196.78l11.7 7v39.72l-11.7 -7Z" fill="#42582c"/>
+<path d="M925.7 203.78l15.8 -2.7v39.72l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-15: 3 contributions</title>
+<path d="M928.4 205.48l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 41%)"/>
+<path d="M928.4 205.48l11.7 7v39.72l-11.7 -7Z" fill="#42582c"/>
+<path d="M940.1 212.48l15.8 -2.7v39.72l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-16: 10 contributions</title>
+<path d="M860.6 122.24l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 51%)"/>
+<path d="M860.6 122.24l11.7 7v69.21l-11.7 -7Z" fill="#42582c"/>
+<path d="M872.3 129.24l15.8 -2.7v69.21l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-17: 8 contributions</title>
+<path d="M875 137.82l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 49%)"/>
+<path d="M875 137.82l11.7 7v62.33l-11.7 -7Z" fill="#42582c"/>
+<path d="M886.7 144.82l15.8 -2.7v62.33l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-18: 1 contributions</title>
+<path d="M889.4 184.23l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M889.4 184.23l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M901.1 191.23l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-19: 6 contributions</title>
+<path d="M903.8 163.04l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 46%)"/>
+<path d="M903.8 163.04l11.7 7v54.51l-11.7 -7Z" fill="#42582c"/>
+<path d="M915.5 170.04l15.8 -2.7v54.51l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-20: 6 contributions</title>
+<path d="M918.2 171.74l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 46%)"/>
+<path d="M918.2 171.74l11.7 7v54.51l-11.7 -7Z" fill="#42582c"/>
+<path d="M929.9 178.74l15.8 -2.7v54.51l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-21: 4 contributions</title>
+<path d="M932.6 189.71l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 43%)"/>
+<path d="M932.6 189.71l11.7 7v45.24l-11.7 -7Z" fill="#42582c"/>
+<path d="M944.3 196.71l15.8 -2.7v45.24l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-22: 15 contributions</title>
+<path d="M947 159.78l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 56%)"/>
+<path d="M947 159.78l11.7 7v83.87l-11.7 -7Z" fill="#42582c"/>
+<path d="M958.7 166.78l15.8 -2.7v83.87l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-23: 8 contributions</title>
+<path d="M879.2 127.57l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 49%)"/>
+<path d="M879.2 127.57l11.7 7v62.33l-11.7 -7Z" fill="#42582c"/>
+<path d="M890.9 134.57l15.8 -2.7v62.33l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-24: 7 contributions</title>
+<path d="M893.6 140.04l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 47%)"/>
+<path d="M893.6 140.04l11.7 7v58.56l-11.7 -7Z" fill="#42582c"/>
+<path d="M905.3 147.04l15.8 -2.7v58.56l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-25: 4 contributions</title>
+<path d="M908 162.06l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 43%)"/>
+<path d="M908 162.06l11.7 7v45.24l-11.7 -7Z" fill="#42582c"/>
+<path d="M919.7 169.06l15.8 -2.7v45.24l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-26: 2 contributions</title>
+<path d="M922.4 182.84l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M922.4 182.84l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M934.1 189.84l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-27: 2 contributions</title>
+<path d="M936.8 191.54l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M936.8 191.54l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M948.5 198.54l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-28: 7 contributions</title>
+<path d="M951.2 174.84l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 47%)"/>
+<path d="M951.2 174.84l11.7 7v58.56l-11.7 -7Z" fill="#42582c"/>
+<path d="M962.9 181.84l15.8 -2.7v58.56l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-29: 1 contributions</title>
+<path d="M965.6 217.48l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M965.6 217.48l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M977.3 224.48l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-30: 1 contributions</title>
+<path d="M897.8 163.73l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M897.8 163.73l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M909.5 170.73l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-08-31: 15 contributions</title>
+<path d="M912.2 113.18l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 56%)"/>
+<path d="M912.2 113.18l11.7 7v83.87l-11.7 -7Z" fill="#42582c"/>
+<path d="M923.9 120.18l15.8 -2.7v83.87l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-01: 2 contributions</title>
+<path d="M926.6 172.59l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M926.6 172.59l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M938.3 179.59l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-02: 2 contributions</title>
+<path d="M941 181.29l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M941 181.29l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M952.7 188.29l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-03: 18 contributions</title>
+<path d="M955.4 131.66l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 58%)"/>
+<path d="M955.4 131.66l11.7 7v91.49l-11.7 -7Z" fill="#42582c"/>
+<path d="M967.1 138.66l15.8 -2.7v91.49l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-04: 2 contributions</title>
+<path d="M969.8 198.69l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M969.8 198.69l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M981.5 205.69l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-05: 13 contributions</title>
+<path d="M984.2 162.2l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 54%)"/>
+<path d="M984.2 162.2l11.7 7v78.35l-11.7 -7Z" fill="#42582c"/>
+<path d="M995.9 169.2l15.8 -2.7v78.35l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-06: 8 contributions</title>
+<path d="M916.4 124.47l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 49%)"/>
+<path d="M916.4 124.47l11.7 7v62.33l-11.7 -7Z" fill="#42582c"/>
+<path d="M928.1 131.47l15.8 -2.7v62.33l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-07: 2 contributions</title>
+<path d="M930.8 162.34l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M930.8 162.34l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M942.5 169.34l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-08: 10 contributions</title>
+<path d="M945.2 134.99l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 51%)"/>
+<path d="M945.2 134.99l11.7 7v69.21l-11.7 -7Z" fill="#42582c"/>
+<path d="M956.9 141.99l15.8 -2.7v69.21l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-09: 4 contributions</title>
+<path d="M959.6 167.66l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 43%)"/>
+<path d="M959.6 167.66l11.7 7v45.24l-11.7 -7Z" fill="#42582c"/>
+<path d="M971.3 174.66l15.8 -2.7v45.24l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-10: 2 contributions</title>
+<path d="M974 188.44l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M974 188.44l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M985.7 195.44l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-11: 7 contributions</title>
+<path d="M988.4 171.74l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 47%)"/>
+<path d="M988.4 171.74l11.7 7v58.56l-11.7 -7Z" fill="#42582c"/>
+<path d="M1000.1 178.74l15.8 -2.7v58.56l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-12: 22 contributions</title>
+<path d="M1002.8 138.28l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 61%)"/>
+<path d="M1002.8 138.28l11.7 7v100.72l-11.7 -7Z" fill="#42582c"/>
+<path d="M1014.5 145.28l15.8 -2.7v100.72l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-13: 26 contributions</title>
+<path d="M935 76.1l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 64%)"/>
+<path d="M935 76.1l11.7 7v109.15l-11.7 -7Z" fill="#42582c"/>
+<path d="M946.7 83.1l15.8 -2.7v109.15l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-14: 2 contributions</title>
+<path d="M949.4 160.79l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M949.4 160.79l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M961.1 167.79l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-15: 3 contributions</title>
+<path d="M963.8 162.93l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 41%)"/>
+<path d="M963.8 162.93l11.7 7v39.72l-11.7 -7Z" fill="#42582c"/>
+<path d="M975.5 169.93l15.8 -2.7v39.72l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-16: 2 contributions</title>
+<path d="M978.2 178.19l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M978.2 178.19l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M989.9 185.19l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-17: 2 contributions</title>
+<path d="M992.6 186.89l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M992.6 186.89l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M1004.3 193.89l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-18: 6 contributions</title>
+<path d="M1007 174.24l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 46%)"/>
+<path d="M1007 174.24l11.7 7v54.51l-11.7 -7Z" fill="#42582c"/>
+<path d="M1018.7 181.24l15.8 -2.7v54.51l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-19: 3 contributions</title>
+<path d="M1021.4 197.73l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 41%)"/>
+<path d="M1021.4 197.73l11.7 7v39.72l-11.7 -7Z" fill="#42582c"/>
+<path d="M1033.1 204.73l15.8 -2.7v39.72l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-20: 12 contributions</title>
+<path d="M953.6 108.26l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 53%)"/>
+<path d="M953.6 108.26l11.7 7v75.44l-11.7 -7Z" fill="#42582c"/>
+<path d="M965.3 115.26l15.8 -2.7v75.44l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-21: 1 contributions</title>
+<path d="M968 167.78l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M968 167.78l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M979.7 174.78l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-22: 17 contributions</title>
+<path d="M982.4 112.07l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 57%)"/>
+<path d="M982.4 112.07l11.7 7v89.03l-11.7 -7Z" fill="#42582c"/>
+<path d="M994.1 119.07l15.8 -2.7v89.03l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-23: 11 contributions</title>
+<path d="M996.8 137.41l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 52%)"/>
+<path d="M996.8 137.41l11.7 7v72.39l-11.7 -7Z" fill="#42582c"/>
+<path d="M1008.5 144.41l15.8 -2.7v72.39l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-24: 17 contributions</title>
+<path d="M1011.2 129.47l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 57%)"/>
+<path d="M1011.2 129.47l11.7 7v89.03l-11.7 -7Z" fill="#42582c"/>
+<path d="M1022.9 136.47l15.8 -2.7v89.03l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-25: 4 contributions</title>
+<path d="M1025.6 181.96l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 43%)"/>
+<path d="M1025.6 181.96l11.7 7v45.24l-11.7 -7Z" fill="#42582c"/>
+<path d="M1037.3 188.96l15.8 -2.7v45.24l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-26: 6 contributions</title>
+<path d="M1040 181.39l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 46%)"/>
+<path d="M1040 181.39l11.7 7v54.51l-11.7 -7Z" fill="#42582c"/>
+<path d="M1051.7 188.39l15.8 -2.7v54.51l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-27: 1 contributions</title>
+<path d="M972.2 157.53l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M972.2 157.53l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M983.9 164.53l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-28: 1 contributions</title>
+<path d="M986.6 166.23l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M986.6 166.23l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M998.3 173.23l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-29: 3 contributions</title>
+<path d="M1001 159.83l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 41%)"/>
+<path d="M1001 159.83l11.7 7v39.72l-11.7 -7Z" fill="#42582c"/>
+<path d="M1012.7 166.83l15.8 -2.7v39.72l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-09-30: 5 contributions</title>
+<path d="M1015.4 158.14l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 45%)"/>
+<path d="M1015.4 158.14l11.7 7v50.11l-11.7 -7Z" fill="#42582c"/>
+<path d="M1027.1 165.14l15.8 -2.7v50.11l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-01: 1 contributions</title>
+<path d="M1029.8 192.33l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M1029.8 192.33l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M1041.5 199.33l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-02: 9 contributions</title>
+<path d="M1044.2 159.78l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 50%)"/>
+<path d="M1044.2 159.78l11.7 7v65.87l-11.7 -7Z" fill="#42582c"/>
+<path d="M1055.9 166.78l15.8 -2.7v65.87l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-03: 1 contributions</title>
+<path d="M1058.6 209.73l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M1058.6 209.73l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M1070.3 216.73l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-04: 4 contributions</title>
+<path d="M990.8 135.36l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 43%)"/>
+<path d="M990.8 135.36l11.7 7v45.24l-11.7 -7Z" fill="#42582c"/>
+<path d="M1002.5 142.36l15.8 -2.7v45.24l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-05: 3 contributions</title>
+<path d="M1005.2 149.58l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 41%)"/>
+<path d="M1005.2 149.58l11.7 7v39.72l-11.7 -7Z" fill="#42582c"/>
+<path d="M1016.9 156.58l15.8 -2.7v39.72l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-06: 5 contributions</title>
+<path d="M1019.6 147.89l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 45%)"/>
+<path d="M1019.6 147.89l11.7 7v50.11l-11.7 -7Z" fill="#42582c"/>
+<path d="M1031.3 154.89l15.8 -2.7v50.11l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-07: 6 contributions</title>
+<path d="M1034 152.19l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 46%)"/>
+<path d="M1034 152.19l11.7 7v54.51l-11.7 -7Z" fill="#42582c"/>
+<path d="M1045.7 159.19l15.8 -2.7v54.51l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-08: 6 contributions</title>
+<path d="M1048.4 160.89l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 46%)"/>
+<path d="M1048.4 160.89l11.7 7v54.51l-11.7 -7Z" fill="#42582c"/>
+<path d="M1060.1 167.89l15.8 -2.7v54.51l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-09: 1 contributions</title>
+<path d="M1062.8 199.48l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M1062.8 199.48l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M1074.5 206.48l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-10: 3 contributions</title>
+<path d="M1077.2 193.08l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 41%)"/>
+<path d="M1077.2 193.08l11.7 7v39.72l-11.7 -7Z" fill="#42582c"/>
+<path d="M1088.9 200.08l15.8 -2.7v39.72l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-11: 10 contributions</title>
+<path d="M1009.4 109.84l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 51%)"/>
+<path d="M1009.4 109.84l11.7 7v69.21l-11.7 -7Z" fill="#42582c"/>
+<path d="M1021.1 116.84l15.8 -2.7v69.21l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-12: 8 contributions</title>
+<path d="M1023.8 125.42l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 49%)"/>
+<path d="M1023.8 125.42l11.7 7v62.33l-11.7 -7Z" fill="#42582c"/>
+<path d="M1035.5 132.42l15.8 -2.7v62.33l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-13: 3 contributions</title>
+<path d="M1038.2 156.73l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 41%)"/>
+<path d="M1038.2 156.73l11.7 7v39.72l-11.7 -7Z" fill="#42582c"/>
+<path d="M1049.9 163.73l15.8 -2.7v39.72l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-14: 1 contributions</title>
+<path d="M1052.6 180.53l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M1052.6 180.53l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M1064.3 187.53l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-15: 3 contributions</title>
+<path d="M1067 174.13l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 41%)"/>
+<path d="M1067 174.13l11.7 7v39.72l-11.7 -7Z" fill="#42582c"/>
+<path d="M1078.7 181.13l15.8 -2.7v39.72l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-16: 1 contributions</title>
+<path d="M1081.4 197.93l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M1081.4 197.93l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M1093.1 204.93l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-17: 1 contributions</title>
+<path d="M1095.8 206.63l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M1095.8 206.63l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M1107.5 213.63l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-18: 1 contributions</title>
+<path d="M1028 152.88l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M1028 152.88l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M1039.7 159.88l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-19: 1 contributions</title>
+<path d="M1042.4 161.58l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M1042.4 161.58l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M1054.1 168.58l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-20: 1 contributions</title>
+<path d="M1056.8 170.28l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M1056.8 170.28l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M1068.5 177.28l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-21: 1 contributions</title>
+<path d="M1071.2 178.98l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M1071.2 178.98l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M1082.9 185.98l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-22: 2 contributions</title>
+<path d="M1085.6 179.14l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M1085.6 179.14l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M1097.3 186.14l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-23: 2 contributions</title>
+<path d="M1100 187.84l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M1100 187.84l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M1111.7 194.84l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-24: 1 contributions</title>
+<path d="M1114.4 205.08l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M1114.4 205.08l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M1126.1 212.08l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-25: 1 contributions</title>
+<path d="M1046.6 151.33l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M1046.6 151.33l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M1058.3 158.33l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-26: 1 contributions</title>
+<path d="M1061 160.03l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M1061 160.03l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M1072.7 167.03l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-27: 2 contributions</title>
+<path d="M1075.4 160.19l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 39%)"/>
+<path d="M1075.4 160.19l11.7 7v33.16l-11.7 -7Z" fill="#42582c"/>
+<path d="M1087.1 167.19l15.8 -2.7v33.16l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-28: 1 contributions</title>
+<path d="M1089.8 177.43l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M1089.8 177.43l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M1101.5 184.43l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-29: 1 contributions</title>
+<path d="M1104.2 186.13l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M1104.2 186.13l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M1115.9 193.13l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-30: 1 contributions</title>
+<path d="M1118.6 194.83l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M1118.6 194.83l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M1130.3 201.83l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g><title>2026-10-31: 4 contributions</title>
+<path d="M1133 182.91l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 43%)"/>
+<path d="M1133 182.91l11.7 7v45.24l-11.7 -7Z" fill="#42582c"/>
+<path d="M1144.7 189.91l15.8 -2.7v45.24l-15.8 2.7Z" fill="#77994b"/></g><g class="pulse"><title>2026-11-01: 1 contributions</title>
+<path d="M1065.2 149.78l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M1065.2 149.78l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M1076.9 156.78l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g class="pulse"><title>2026-11-02: 1 contributions</title>
+<path d="M1079.6 158.48l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M1079.6 158.48l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M1091.3 165.48l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g><g class="pulse"><title>2026-11-03: 1 contributions</title>
+<path d="M1094 167.18l15.8 -2.7l11.7 7l-15.8 2.7Z" fill="hsl(85 65% 37%)"/>
+<path d="M1094 167.18l11.7 7v24.62l-11.7 -7Z" fill="#42582c"/>
+<path d="M1105.7 174.18l15.8 -2.7v24.62l-15.8 2.7Z" fill="#77994b"/></g></g>
+<text x="56" y="449" font-size="36" font-weight="600" fill="#f3f6ef">231</text><text x="56" y="479" font-size="17" fill="#a4afa1">active days</text><text x="450" y="449" font-size="36" font-weight="600" fill="#f3f6ef">199</text><text x="450" y="479" font-size="17" fill="#a4afa1">days · longest streak</text><text x="844" y="449" font-size="36" font-weight="600" fill="#f3f6ef">35</text><text x="844" y="479" font-size="17" fill="#a4afa1">contributions on best day</text>
+<text x="42" y="533" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" fill="#a4afa1">Each block is one GitHub contribution day. Height follows the daily count.</text>
+</svg>
