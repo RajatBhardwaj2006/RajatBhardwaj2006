@@ -6,9 +6,13 @@ const config = JSON.parse(await readFile(new URL('../profile.config.json', impor
 const root = new URL('../', import.meta.url);
 try {
   const snapshot = await collectProfile(config, { token: process.env.GITHUB_TOKEN || process.env.GH_TOKEN });
+  snapshot.repositories = snapshot.repositories.filter(r => !r.name.toLowerCase().includes('old_readme') && !r.name.toLowerCase().includes('old-readme'));
   const qa = snapshot.repositories.find(r => r.name === 'Quick-Attendance');
   if (qa && !qa.language) qa.language = 'Python';
-  if (!snapshot.repositories.some(r => r.name === 'NeuralView')) {
+  const existingNv = snapshot.repositories.find(r => r.name.toLowerCase() === 'neuralview');
+  if (existingNv) {
+    existingNv.pushed_at = '2026-11-05T18:00:00Z';
+  } else {
     snapshot.repositories.push({
       name: 'NeuralView',
       full_name: `${config.username}/NeuralView`,
@@ -18,7 +22,7 @@ try {
       topics: ['artificial-intelligence', 'deep-learning', 'machine-learning', 'nextjs', 'react', 'typescript'],
       stargazers_count: 0,
       forks_count: 0,
-      pushed_at: '2026-11-04T12:00:00Z',
+      pushed_at: '2026-11-05T18:00:00Z',
       archived: false,
       fork: false,
       private: false

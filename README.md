@@ -7,11 +7,11 @@
   </picture>
 </a>
 
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/che.r.r.y.y.y?igsh=MTVrN3o1aXB6N3dxeA==) &nbsp; [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rajatbhardwaj2006) &nbsp; [![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/cherry_2006) &nbsp; [![All Repositories](https://img.shields.io/badge/All%20Repositories-161b16?style=for-the-badge&logo=github&logoColor=c5f277)](https://github.com/RajatBhardwaj2006?tab=repositories)
+[![Instagram](https://img.shields.io/badge/Instagram-c5f277?style=for-the-badge&logo=instagram&logoColor=c5f277&labelColor=111411)](https://www.instagram.com/che.r.r.y.y.y?igsh=MTVrN3o1aXB6N3dxeA==) &nbsp; [![LinkedIn](https://img.shields.io/badge/LinkedIn-c5f277?style=for-the-badge&logo=linkedin&logoColor=c5f277&labelColor=111411)](https://www.linkedin.com/in/rajatbhardwaj2006) &nbsp; [![LeetCode](https://img.shields.io/badge/LeetCode-c5f277?style=for-the-badge&logo=leetcode&logoColor=c5f277&labelColor=111411)](https://leetcode.com/u/cherry_2006) &nbsp; [![All Repositories](https://img.shields.io/badge/All%20Repositories-c5f277?style=for-the-badge&logo=github&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006?tab=repositories)
 
 <picture><source media="(max-width: 600px)" srcset="assets/generated/metrics-mobile.svg"><img src="assets/generated/metrics.svg" width="1200" alt="16 public repositories, 1,156 contributions in the past year, 8 followers, 4 stars across public repositories."></picture>
 
-## 🚀 Featured Projects
+## Featured Projects
 
 Featured from my GitHub pins.
 
@@ -42,59 +42,68 @@ Featured from my GitHub pins.
 
 </details>
 
-## 📁 Repositories
+## Repositories & Tech Stack
 
-> Click any badge below to explore the code 👇
+> Click any badge below to explore the code.
 
-`Artificial Intelligence & Machine Learning`
+### Artificial Intelligence & Machine Learning
 
-[![AI & ML REPO](https://img.shields.io/badge/AI_%26_ML_REPO-7952DE?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning)
-[![DEEP LEARNING](https://img.shields.io/badge/DEEP_LEARNING-F16B24?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RajatBhardwaj2006/Deep-Learning)
-[![REINFORCEMENT LEARNING](https://img.shields.io/badge/REINFORCEMENT_LEARNING-00B48A?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning)
+[![AI & ML REPO](https://img.shields.io/badge/AI_%26_ML_REPO-c5f277?style=for-the-badge&logo=github&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning)
+[![DEEP LEARNING](https://img.shields.io/badge/DEEP_LEARNING-c5f277?style=for-the-badge&logo=github&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006/Deep-Learning)
+[![REINFORCEMENT LEARNING](https://img.shields.io/badge/REINFORCEMENT_LEARNING-c5f277?style=for-the-badge&logo=github&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning)
 
-`DSA & Problem Solving`
+### DSA & Problem Solving
 
-[![DSA IN C++](https://img.shields.io/badge/DSA_IN_C++-007ACC?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/RajatBhardwaj2006/Data-Structures)
-[![LEETCODE](https://img.shields.io/badge/LEETCODE-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/cherry_2006)
+[![DSA IN C++](https://img.shields.io/badge/DSA_IN_C%2B%2B-c5f277?style=for-the-badge&logo=c%2B%2B&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006/Data-Structures)
+[![LEETCODE](https://img.shields.io/badge/LEETCODE-c5f277?style=for-the-badge&logo=leetcode&logoColor=c5f277&labelColor=111411)](https://leetcode.com/u/cherry_2006)
 
-`Languages`
+### Languages
 
-[![PYTHON](https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/RajatBhardwaj2006)
-[![JAVA](https://img.shields.io/badge/JAVA-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://github.com/RajatBhardwaj2006/Java)
-[![SQL](https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=postgresql&logoColor=white)](https://github.com/RajatBhardwaj2006)
-[![C++](https://img.shields.io/badge/C++-00599E?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/RajatBhardwaj2006/CPP)
+[![PYTHON](https://img.shields.io/badge/PYTHON-c5f277?style=for-the-badge&logo=python&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006)
+[![JAVA](https://img.shields.io/badge/JAVA-c5f277?style=for-the-badge&logo=openjdk&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006/Java)
+[![SQL](https://img.shields.io/badge/SQL-c5f277?style=for-the-badge&logo=postgresql&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006)
+[![C++](https://img.shields.io/badge/C%2B%2B-c5f277?style=for-the-badge&logo=c%2B%2B&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006/CPP)
 
-`AI Engineering & Development`
+### AI Engineering & Development
 
-[![FLASK](https://img.shields.io/badge/FLASK-000000?style=for-the-badge&logo=flask&logoColor=white)](https://github.com/RajatBhardwaj2006/Fraudulent-Online-Transaction-Detection-System)
-[![OPENAI](https://img.shields.io/badge/OPENAI-412991?style=for-the-badge&logo=openai&logoColor=white)](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning)
-[![AI AGENTS](https://img.shields.io/badge/AI_AGENTS-E91E63?style=for-the-badge&logo=probot&logoColor=white)](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning)
+[![FLASK](https://img.shields.io/badge/FLASK-c5f277?style=for-the-badge&logo=flask&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006/Fraudulent-Online-Transaction-Detection-System)
+[![OPENAI](https://img.shields.io/badge/OPENAI-c5f277?style=for-the-badge&logo=openai&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning)
+[![AI AGENTS](https://img.shields.io/badge/AI_AGENTS-c5f277?style=for-the-badge&logo=probot&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning)
 
-`Frontend`
+### Frontend
 
-[![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://github.com/RajatBhardwaj2006)
-[![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://github.com/RajatBhardwaj2006)
+[![HTML](https://img.shields.io/badge/HTML-c5f277?style=for-the-badge&logo=html5&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006)
+[![CSS](https://img.shields.io/badge/CSS-c5f277?style=for-the-badge&logo=css3&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006)
 
-`Development Tools`
+### Development Tools
 
-[![GIT](https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white)](https://github.com/RajatBhardwaj2006)
-[![GITHUB](https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RajatBhardwaj2006)
-[![JUPYTERLAB](https://img.shields.io/badge/JUPYTERLAB-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://github.com/RajatBhardwaj2006)
+[![GIT](https://img.shields.io/badge/GIT-c5f277?style=for-the-badge&logo=git&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006)
+[![GITHUB](https://img.shields.io/badge/GITHUB-c5f277?style=for-the-badge&logo=github&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006)
+[![JUPYTERLAB](https://img.shields.io/badge/JUPYTERLAB-c5f277?style=for-the-badge&logo=jupyter&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006)
 
-`Libraries`
+### Libraries
 
-[![NUMPY](https://img.shields.io/badge/NUMPY-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://github.com/RajatBhardwaj2006)
-[![PANDAS](https://img.shields.io/badge/PANDAS-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://github.com/RajatBhardwaj2006)
-[![SEABORN](https://img.shields.io/badge/SEABORN-4C72B0?style=for-the-badge&logo=seaborn&logoColor=white)](https://github.com/RajatBhardwaj2006)
-[![MATPLOTLIB](https://img.shields.io/badge/MATPLOTLIB-C0392B?style=for-the-badge&logo=matplotlib&logoColor=white)](https://github.com/RajatBhardwaj2006)
-[![SCIPY](https://img.shields.io/badge/SCIPY-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white)](https://github.com/RajatBhardwaj2006)
-[![SCIKIT-LEARN](https://img.shields.io/badge/SCIKIT--LEARN-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://github.com/RajatBhardwaj2006)
-[![PYTORCH](https://img.shields.io/badge/PYTORCH-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://github.com/RajatBhardwaj2006/VisionInspect-Industrial-Defect-Detection-)
-[![BEAUTIFUL SOUP](https://img.shields.io/badge/BEAUTIFUL_SOUP-0B7D3B?style=for-the-badge&logo=beautifulsoup&logoColor=white)](https://github.com/RajatBhardwaj2006)
+[![NUMPY](https://img.shields.io/badge/NUMPY-c5f277?style=for-the-badge&logo=numpy&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006)
+[![PANDAS](https://img.shields.io/badge/PANDAS-c5f277?style=for-the-badge&logo=pandas&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006)
+[![SEABORN](https://img.shields.io/badge/SEABORN-c5f277?style=for-the-badge&logo=seaborn&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006)
+[![MATPLOTLIB](https://img.shields.io/badge/MATPLOTLIB-c5f277?style=for-the-badge&logo=matplotlib&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006)
+[![SCIPY](https://img.shields.io/badge/SCIPY-c5f277?style=for-the-badge&logo=scipy&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006)
+[![SCIKIT-LEARN](https://img.shields.io/badge/SCIKIT-LEARN-c5f277?style=for-the-badge&logo=scikit-learn&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006)
+[![PYTORCH](https://img.shields.io/badge/PYTORCH-c5f277?style=for-the-badge&logo=pytorch&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006/VisionInspect-Industrial-Defect-Detection-)
+[![BEAUTIFUL SOUP](https://img.shields.io/badge/BEAUTIFUL_SOUP-c5f277?style=for-the-badge&logo=beautifulsoup&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006)
 
 ## The code behind the work
 
-<picture><source media="(max-width: 600px)" srcset="assets/generated/languages-mobile.svg"><img src="assets/generated/languages.svg" width="1200" alt="Primary language by public repository count, excluding forks: C++ 18.8%, Jupyter Notebook 18.8%, Java 12.5%, JavaScript 12.5%, Python 12.5%. These describe repositories, not proficiency."></picture>
+<p>
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/generated/languages-mobile.svg">
+    <img src="assets/generated/languages.svg" width="49%" alt="Primary language by public repository count, excluding forks: C++ 18.8%, Jupyter Notebook 18.8%, Java 12.5%, JavaScript 12.5%, Python 12.5%. These describe repositories, not proficiency.">
+  </picture>
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/generated/commits-mobile.svg">
+    <img src="assets/generated/commits.svg" width="49%" alt="Total commits and active days committed: 1,156 contributions across 233 active days.">
+  </picture>
+</p>
 
 <details>
 <summary>Language data</summary>
@@ -129,9 +138,9 @@ Each owned public repository counts once, using its primary language reported by
 
 1,156 contributions across 233 active days between 02 Nov 2025 and 05 Nov 2026. Longest streak within this window: 201 days. Best day: 35 contributions.
 
-- [OLD\_readme](https://github.com/RajatBhardwaj2006/OLD_readme) · pushed 05 Nov 2026
-- [NeuralView](https://github.com/RajatBhardwaj2006/NeuralView) · pushed 04 Nov 2026
+- [NeuralView](https://github.com/RajatBhardwaj2006/NeuralView) · pushed 05 Nov 2026
 - [Java](https://github.com/RajatBhardwaj2006/Java) · pushed 31 Oct 2026
+- [Smart-Medication-Management-Health-Assistant](https://github.com/RajatBhardwaj2006/Smart-Medication-Management-Health-Assistant) · pushed 31 Oct 2026
 
 Daily counts follow GitHub's contribution calendar visibility and counting rules. Private repository names and content are never requested or published.
 

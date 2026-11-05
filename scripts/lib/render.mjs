@@ -68,75 +68,64 @@ function manifold(animated = true) {
   const slices = 48, sides = 10;
   const faces = [];
   for (let i = 0; i < slices; i++) {
+    const u1 = (i / slices) * Math.PI * 2, u2 = ((i + 1) / slices) * Math.PI * 2;
     for (let j = 0; j < sides; j++) {
-      const points = [[i, j], [i + 1, j], [i + 1, j + 1], [i, j + 1]].map(([u, v]) => torus(u / slices * Math.PI * 2, v / sides * Math.PI * 2));
-      const projected = points.map(point => project3D(point));
-      const depth = projected.reduce((sum, point) => sum + point[2], 0) / 4;
-      const light = Math.round(21 + (Math.cos(j / sides * Math.PI * 2 - 1.2) + 1) * 19 + (Math.sin(i / slices * Math.PI * 2) + 1) * 5);
-      const fill = `hsl(85 51% ${light}%)`;
-      const poses = [-.10, 0, .10, 0, -.10].map(phase => pathFor(points.map(point => project3D(point, phase))));
-      faces.push({ depth, markup: `<path d="${animated ? poses[0] : pathFor(projected)}" fill="${fill}" stroke="#bded7a" stroke-opacity=".24" stroke-width=".65" stroke-linejoin="round">${animated ? `<animate attributeName="d" values="${poses.join(';')}" dur="16s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.25;.5;.75;1" keySplines=".42 0 .58 1;.42 0 .58 1;.42 0 .58 1;.42 0 .58 1"/>` : ''}</path>` });
+      const v1 = (j / sides) * Math.PI * 2, v2 = ((j + 1) / sides) * Math.PI * 2;
+      const pts = [torus(u1, v1), torus(u2, v1), torus(u2, v2), torus(u1, v2)].map(p => project3D(p, animated ? 0 : .1));
+      faces.push({ z: (pts[0][2] + pts[1][2] + pts[2][2] + pts[3][2]) / 4, path: pathFor(pts) });
     }
   }
-  // The geometry is projected in 3D at build time. Slow vertical motion works in img embeds.
-  return `<g class="${animated ? 'float' : ''}">${faces.sort((a, b) => a.depth - b.depth).map(face => face.markup).join('')}</g>`;
+  faces.sort((a, b) => a.z - b.z);
+  return faces.map(face => {
+    const shade = Math.round(52 + (face.z + 1.6) * 17);
+    const stroke = Math.round(36 + (face.z + 1.6) * 12);
+    return `<path d="${face.path}" fill="hsl(85 62% ${shade}% / .72)" stroke="hsl(85 55% ${stroke}% / .55)" stroke-width=".6"/>`;
+  }).join('');
 }
 
 function hero(snapshot, config, mobile = false) {
-  const { user } = snapshot;
-  const parts = clean(user.name).split(' ');
-  const first = parts.length > 1 ? parts.slice(0, -1).join(' ') : user.name;
-  const last = parts.length > 1 ? parts.at(-1) : '';
-  const bio = clean(user.bio).replace(new RegExp(`^${user.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*[,|:-]?\\s*`, 'i'), '');
-  const nameSize = Math.min(100, Math.floor(570 / (Math.max(first.length, last.length + 1) * .59)));
-  let body = `${mono(64, 62, `@${user.login}`, C.accent, 16)}
-${text(59, 174, first, `font-size="${nameSize}" font-weight="700" letter-spacing="-6" fill="${C.text}"`)}
-${text(59, 274, last ? `${last}.` : '', `font-size="${nameSize}" font-weight="700" letter-spacing="-6" fill="${C.text}"`)}
-${lines(64, 336, bio, 48, 3, 22, C.muted, 31)}
-${rule(64, 442, 640, 442)}${mono(64, 478, user.location || 'On GitHub', C.muted, 15)}
-<defs><radialGradient id="halo"><stop stop-color="#c5f277" stop-opacity=".08"/><stop offset="1" stop-color="#c5f277" stop-opacity="0"/></radialGradient></defs>
-<circle cx="920" cy="245" r="255" fill="url(#halo)"/>
-<ellipse cx="920" cy="250" rx="241" ry="191" fill="none" stroke="${C.line}" transform="rotate(-24 920 250)"/>
-<ellipse cx="920" cy="250" rx="250" ry="65" fill="none" stroke="${C.line}" transform="rotate(-24 920 250)"/>
-<g class="motion">${manifold(true)}</g><g class="still">${manifold(false)}</g>
-<path class="flow" d="M716 338C695 212 793 63 978 61" fill="none" stroke="${C.accent}" stroke-width="1.3" stroke-dasharray="12 168" opacity=".75"/>
-${mono(831, 494, 'Learning, in motion.', C.muted, 15)}`;
-  if (mobile) {
-    body = `${mono(32, 48, `@${user.login}`, C.accent, 18)}
-${text(29, 132, first, `font-size="${Math.min(nameSize, 74)}" font-weight="700" letter-spacing="-4" fill="${C.text}"`)}
-${text(29, 210, last ? `${last}.` : '', `font-size="${Math.min(nameSize, 74)}" font-weight="700" letter-spacing="-4" fill="${C.text}"`)}
-${lines(32, 258, bio, 39, 3, 20, C.muted, 29)}
-<g transform="translate(-510 300) scale(.87)"><g class="motion">${manifold(true)}</g><g class="still">${manifold(false)}</g></g>
-${mono(32, 790, user.location || 'On GitHub', C.muted, 17)}`;
-  }
-  return svg(user.name, `${user.name}. ${user.bio}. A sculptural three-dimensional manifold moves gently beside the profile.`, mobile ? 560 : 1200, mobile ? 826 : 520, body, config.accent);
+  const sub = snapshot.user.location ? `${snapshot.user.location} · Learning, in motion.` : 'Learning, in motion.';
+  const body = mobile ? `<g transform="translate(-560 30) scale(.8)">${manifold(false)}</g>
+${text(30, 48, config.greeting, `font-size="28" font-weight="600" fill="${C.text}"`)}
+${lines(30, 110, snapshot.user.bio || 'Public work, tracked honestly.', 24, 3, 21, C.muted, 29)}
+${text(30, 230, sub, `font-size="14" fill="${C.muted}"`)}` :
+    `<g class="motion">${manifold(true)}</g><g class="still">${manifold(false)}</g>
+${text(42, 60, config.greeting, `font-size="34" font-weight="600" fill="${C.text}"`)}
+${lines(42, 130, snapshot.user.bio || 'Public work, tracked honestly.', 46, 3, 22, C.muted, 31)}
+${rule(42, 235, 780, 235)}
+${text(42, 268, snapshot.user.location || 'India', `font-size="16" fill="${C.muted}"`)}
+${text(780, 268, 'Learning, in motion.', `text-anchor="end" font-size="16" fill="${C.muted}"`)}`;
+  return svg(`${snapshot.user.name} GitHub profile hero`, `${clean(snapshot.user.bio)}. ${sub}`, mobile ? 560 : 1200, mobile ? 260 : 300, body, config.accent);
 }
 
 function metrics(snapshot, config, mobile = false) {
-  const metrics = [[snapshot.user.public_repos, 'Public repositories'], [snapshot.calendar.total, 'Contributions / past year'], [snapshot.user.followers, 'GitHub followers'], [snapshot.repositories.reduce((sum, repo) => sum + repo.stargazers_count, 0), 'Stars across public repos']];
-  const body = mobile ? metrics.map(([value, label], index) => {
-    const x = 28 + index % 2 * 280, y = 68 + Math.floor(index / 2) * 138;
-    return `${text(x, y, format(value), `font-size="48" font-weight="600" letter-spacing="-2" fill="${index === 1 ? C.accent : C.text}"`)}${text(x, y + 32, label, `font-size="15" fill="${C.muted}"`)}`;
-  }).join('') :
-    metrics.map(([value, label], index) => `${index ? `<path d="M${index * 300} 32V132" stroke="${C.line}"/>` : ''}${text(36 + index * 300, 89, format(value), `font-size="48" font-weight="600" letter-spacing="-2" fill="${index === 1 ? C.accent : C.text}"`)}${text(36 + index * 300, 126, label, `font-size="16" fill="${C.muted}"`)}`).join('');
-  return svg('GitHub at a glance', metrics.map(([value, label]) => `${format(value)} ${label}`).join('. '), mobile ? 560 : 1200, mobile ? 280 : 164, body, config.accent);
+  const stats = [
+    [snapshot.user.public_repos, 'public repositories'],
+    [snapshot.calendar.total, 'contributions in the past year'],
+    [snapshot.user.followers, 'followers'],
+    [snapshot.repositories.reduce((sum, repo) => sum + repo.stargazers_count, 0), 'stars earned across repositories'],
+  ];
+  const body = mobile ? stats.map(([val, label], i) => `
+<rect x="30" y="${30 + i * 94}" width="500" height="78" rx="6" fill="${C.panel}"/>
+${text(50, 78 + i * 94, format(val), `font-size="36" font-weight="700" letter-spacing="-1" fill="${C.text}"`)}
+${text(210, 78 + i * 94, label, `font-size="17" fill="${C.muted}"`)}`).join('') :
+    stats.map(([val, label], i) => `
+<rect x="${42 + i * 285}" y="30" width="260" height="152" rx="6" fill="${C.panel}"/>
+${text(66 + i * 285, 102, format(val), `font-size="44" font-weight="700" letter-spacing="-2" fill="${C.text}"`)}
+${lines(66 + i * 285, 140, label, 20, 2, 16, C.muted, 22)}`).join('');
+  return svg('Profile snapshot metrics', stats.map(([val, label]) => `${format(val)} ${label}`).join(', '), mobile ? 560 : 1200, mobile ? 420 : 212, body, config.accent);
 }
 
 function projectArt(index, repo) {
-  const seed = [...repo.name].reduce((sum, char) => sum + char.charCodeAt(0), 0);
-  if (index % 4 === 0) {
-    return `<g transform="translate(384 76)" fill="none" stroke="${C.accent}" stroke-width=".9" opacity=".7">${Array.from({ length: 9 }, (_, i) => `<ellipse cx="0" cy="0" rx="${16 + i * 8}" ry="${48 - i * 3}" transform="rotate(${i * 12 - 45})"/>`).join('')}</g>`;
-  }
-  if (index % 4 === 1) {
-    return `<g transform="translate(315 18)" stroke="${C.accent}" stroke-width=".8" fill="none" opacity=".65">${Array.from({ length: 7 }, (_, i) => `<path d="M${i * 17} 24L${i * 17 + 45} 0L${i * 17 + 45} 92L${i * 17} 116Z"/>`).join('')}</g>`;
-  }
-  if (index % 4 === 2) {
-    return `<g stroke="${C.accent}" fill="none" opacity=".65">${Array.from({ length: 10 }, (_, row) => {
-      const pts = Array.from({ length: 28 }, (_, i) => `${n(301 + i * 6)},${n(38 + row * 7 + Math.sin(i * .48 + row * .32 + seed) * 14)}`).join(' ');
-      return `<polyline points="${pts}" stroke-width=".8"/>`;
-    }).join('')}</g>`;
-  }
-  return `<g transform="translate(382 72)" stroke="${C.accent}" stroke-width="1" fill="none" opacity=".65">${Array.from({ length: 7 }, (_, i) => `<rect x="${-42 + i * 3}" y="${-42 + i * 3}" width="${84 - i * 6}" height="${84 - i * 6}" transform="rotate(${i * 11})"/>`).join('')}</g>`;
+  const seeds = [
+    '<circle cx="488" cy="180" r="110" fill="none" stroke="hsl(85 65% 58% / .45)" stroke-width="2"/><ellipse cx="488" cy="180" rx="110" ry="46" fill="none" stroke="hsl(85 65% 58% / .35)" stroke-width="1.5" transform="rotate(-24 488 180)"/><circle cx="488" cy="180" r="5" fill="#c5f277"/>',
+    '<rect x="400" y="90" width="160" height="160" rx="12" fill="none" stroke="hsl(85 65% 58% / .45)" stroke-width="2"/><path d="M400 170H560M480 90V250" stroke="hsl(85 65% 58% / .3)"/><circle cx="480" cy="170" r="42" fill="none" stroke="#c5f277" stroke-width="2"/>',
+    '<path d="M420 230L480 100L540 230Z" fill="none" stroke="hsl(85 65% 58% / .45)" stroke-width="2"/><path d="M450 165H510" stroke="#c5f277" stroke-width="2"/><circle cx="480" cy="100" r="5" fill="#c5f277"/>',
+    '<path d="M410 180Q480 110 550 180T690 180" fill="none" stroke="hsl(85 65% 58% / .45)" stroke-width="2"/><path d="M410 180Q480 250 550 180" fill="none" stroke="#c5f277" stroke-width="2"/>',
+    '<polygon points="480,95 550,135 550,215 480,255 410,215 410,135" fill="none" stroke="hsl(85 65% 58% / .45)" stroke-width="2"/><circle cx="480" cy="175" r="28" fill="none" stroke="#c5f277" stroke-width="1.8"/>',
+    '<circle cx="480" cy="175" r="70" fill="none" stroke="hsl(85 65% 58% / .45)" stroke-width="1.8"/><path d="M440 175H520M480 135V215" stroke="#c5f277" stroke-width="2"/>'
+  ];
+  return seeds[index % seeds.length];
 }
 
 function projectCard(repo, index, config, mobile = false) {
@@ -158,33 +147,123 @@ ${text(552, 351, 'Explore ↗', `text-anchor="end" font-size="14" fill="${C.acce
   return svg(repo.name, `${repo.description || repo.name}. ${repo.language || 'Source repository'}. ${repo.stargazers_count} stars. Last pushed ${dateLabel(repo.pushed_at)}.`, mobile ? 340 : 580, mobile ? 340 : 370, body, config.accent);
 }
 
-function languagesPanel(snapshot, config, mobile = false) {
+export function languagesPanel(snapshot, config, mobile = false) {
   const languages = aggregateLanguages(snapshot.repositories);
   const top = languages.slice(0, 5);
   const total = languages.reduce((sum, language) => sum + language.repositories, 0);
   const used = top.reduce((sum, language) => sum + language.percent, 0);
   const segments = used < 99.95 ? [...top, { name: 'Other', percent: 100 - used }] : top;
   const shades = [C.accent, '#95b85c', '#748e4a', '#526a38', '#394c2a', '#283522'];
+
+  if (mobile) {
+    const cx = 280, cy = 250, radius = 100, stroke = 26;
+    let angle = -Math.PI / 2;
+    const arcs = segments.map((language, i) => {
+      const span = language.percent / 100 * Math.PI * 2;
+      const end = angle + span;
+      const gap = Math.min(.018, span * .15);
+      const d = `M${n(cx + radius * Math.cos(angle + gap))} ${n(cy + radius * Math.sin(angle + gap))} A${radius} ${radius} 0 ${span - gap * 2 > Math.PI ? 1 : 0} 1 ${n(cx + radius * Math.cos(end - gap))} ${n(cy + radius * Math.sin(end - gap))}`;
+      angle = end;
+      return `<path d="${d}" fill="none" stroke="${shades[i] || '#30382f'}" stroke-width="${stroke}"><title>${escapeXML(language.name)} ${language.percent.toFixed(1)}%</title></path>`;
+    }).join('');
+    const body = `${text(30, 50, 'Across the codebase.', `font-size="28" font-weight="600" fill="${C.text}"`)}
+${arcs}${text(cx, 245, languages.length, `text-anchor="middle" font-size="60" font-weight="600" fill="${C.text}"`)}
+<text x="${cx}" y="${280}" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="16" fill="${C.muted}">languages</text>
+${segments.map((language, i) => `${text(60, 440 + i * 44, language.name, `font-size="20" fill="${C.text}"`)}${text(510, 440 + i * 44, `${language.percent.toFixed(1)}%`, `text-anchor="end" font-size="20" fill="${i === 0 ? C.accent : C.muted}"`)}<rect x="30" y="${425 + i * 44}" width="8" height="18" fill="${shades[i] || '#30382f'}"/>`).join('')}
+${text(30, 744, `${total} repositories, one primary language per repo`, `font-size="16" fill="${C.muted}"`)}`;
+    return svg('Languages across the codebase', `Primary language distribution by repository count. ${top.map(language => `${language.name} ${language.percent.toFixed(1)}%`).join(', ')}.`, 560, 780, body, config.accent);
+  }
+
+  // Desktop: 580 x 462
+  const cx = 150, cy = 230, radius = 86, stroke = 22;
   let angle = -Math.PI / 2;
-  const cx = 266, cy = 247, radius = 132, stroke = 32;
   const arcs = segments.map((language, i) => {
     const span = language.percent / 100 * Math.PI * 2;
     const end = angle + span;
     const gap = Math.min(.018, span * .15);
     const d = `M${n(cx + radius * Math.cos(angle + gap))} ${n(cy + radius * Math.sin(angle + gap))} A${radius} ${radius} 0 ${span - gap * 2 > Math.PI ? 1 : 0} 1 ${n(cx + radius * Math.cos(end - gap))} ${n(cy + radius * Math.sin(end - gap))}`;
     angle = end;
-    return `<path d="${d}" fill="none" stroke="${shades[i]}" stroke-width="${stroke}"><title>${escapeXML(language.name)} ${language.percent.toFixed(1)}%</title></path>`;
+    return `<path d="${d}" fill="none" stroke="${shades[i] || '#30382f'}" stroke-width="${stroke}"><title>${escapeXML(language.name)} ${language.percent.toFixed(1)}%</title></path>`;
   }).join('');
-  const body = mobile ? `${text(30, 50, 'Across the codebase.', `font-size="29" font-weight="600" fill="${C.text}"`)}
-${arcs}${text(cx, 241, languages.length, `text-anchor="middle" font-size="64" font-weight="600" fill="${C.text}"`)}${mono(cx - 55, 275, 'languages', C.muted, 17)}
-${segments.map((language, i) => `${text(60, 447 + i * 44, language.name, `font-size="22" fill="${C.text}"`)}${text(514, 447 + i * 44, `${language.percent.toFixed(1)}%`, `text-anchor="end" font-size="22" fill="${i === 0 ? C.accent : C.muted}"`)}<rect x="30" y="${432 + i * 44}" width="8" height="18" fill="${shades[i]}"/>`).join('')}
-${text(30, 744, `${total} repositories · one primary language per repo`, `font-size="16" fill="${C.muted}"`)}` :
-    `${text(42, 59, 'Across the codebase.', `font-size="29" font-weight="600" fill="${C.text}"`)}
-${arcs}${text(cx, 241, languages.length, `text-anchor="middle" font-size="64" font-weight="600" letter-spacing="-3" fill="${C.text}"`)}
-${mono(cx - 55, 275, 'languages', C.muted, 17)}
-${segments.map((language, i) => `${text(530, 135 + i * 45, language.name, `font-size="20" fill="${C.text}"`)}${text(1138, 135 + i * 45, `${language.percent.toFixed(1)}%`, `text-anchor="end" font-size="20" fill="${i === 0 ? C.accent : C.muted}"`)}<rect x="500" y="${122 + i * 45}" width="8" height="16" fill="${shades[i]}"/>`).join('')}
-${mono(42, 427, `${format(total)} repositories · primary language per repo · forks excluded`, C.muted, 14)}`;
-  return svg('Languages across the codebase', `Primary language distribution by repository count, excluding forks and repositories with no detected language. ${top.map(language => `${language.name} ${language.percent.toFixed(1)}%`).join(', ')}.`, mobile ? 560 : 1200, mobile ? 780 : 462, body, config.accent);
+
+  const body = `${text(36, 54, 'Across the codebase.', `font-size="26" font-weight="600" fill="${C.text}"`)}
+${arcs}${text(cx, 224, languages.length, `text-anchor="middle" font-size="48" font-weight="700" letter-spacing="-2" fill="${C.text}"`)}
+<text x="${cx}" y="${252}" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" fill="${C.muted}">languages</text>
+${segments.map((language, i) => `<rect x="300" y="${96 + i * 42}" width="7" height="16" rx="2" fill="${shades[i] || '#30382f'}"/><text x="320" y="${110 + i * 42}" font-size="18" fill="${C.text}">${escapeXML(language.name)}</text><text x="546" y="${110 + i * 42}" text-anchor="end" font-size="18" fill="${i === 0 ? C.accent : C.muted}">${language.percent.toFixed(1)}%</text>`).join('')}
+${text(36, 422, `${format(total)} repositories, primary language per repo`, `font-size="14" fill="${C.muted}"`)}`;
+
+  return svg('Languages across the codebase', `Primary language distribution by repository count, excluding forks and repositories with no detected language. ${top.map(language => `${language.name} ${language.percent.toFixed(1)}%`).join(', ')}.`, 580, 462, body, config.accent);
+}
+
+export function commitsPanel(snapshot, config, mobile = false) {
+  const calendar = snapshot.calendar;
+  const summary = calendarSummary(calendar);
+  const total = calendar.total;
+  const activeDays = summary.active;
+  const consistency = ((activeDays / 365) * 100).toFixed(1);
+
+  if (mobile) {
+    const cx = 280, cy = 250, radius = 100, stroke = 24;
+    const circ = n(2 * Math.PI * radius);
+    const progress = n(circ * Math.min(1, activeDays / 365));
+    const body = `${text(30, 50, 'Commit history & activity.', `font-size="28" font-weight="600" fill="${C.text}"`)}
+<circle cx="${cx}" cy="${cy}" r="${radius}" fill="none" stroke="#232a21" stroke-width="${stroke}"/>
+<circle cx="${cx}" cy="${cy}" r="${radius}" fill="none" stroke="${C.accent}" stroke-width="${stroke}" stroke-dasharray="${progress} ${circ}" stroke-linecap="round" transform="rotate(-90 ${cx} ${cy})"/>
+${text(cx, cy - 8, activeDays, `text-anchor="middle" font-size="56" font-weight="700" letter-spacing="-2" fill="${C.text}"`)}
+<text x="${cx}" y="${cy + 24}" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="16" fill="${C.muted}">days committed</text>
+<text x="${cx}" y="${cy + 50}" text-anchor="middle" font-size="15" fill="${C.accent}">${consistency}% of year</text>
+
+<rect x="30" y="415" width="500" height="66" rx="6" fill="${C.panel}"/>
+<text x="50" y="442" font-size="14" fill="${C.muted}">Total contributions</text>
+<text x="50" y="468" font-size="22" font-weight="700" fill="${C.accent}">${format(total)}</text>
+
+<rect x="30" y="495" width="500" height="66" rx="6" fill="${C.panel}"/>
+<text x="50" y="522" font-size="14" fill="${C.muted}">Active days committed</text>
+<text x="50" y="548" font-size="22" font-weight="700" fill="${C.text}">${activeDays} <tspan font-size="15" font-weight="400" fill="${C.muted}">/ 365 days</tspan></text>
+
+<rect x="30" y="575" width="500" height="66" rx="6" fill="${C.panel}"/>
+<text x="50" y="602" font-size="14" fill="${C.muted}">Longest streak</text>
+<text x="50" y="628" font-size="22" font-weight="700" fill="${C.text}">${summary.longest} <tspan font-size="15" font-weight="400" fill="${C.muted}">days</tspan></text>
+
+<rect x="30" y="655" width="500" height="66" rx="6" fill="${C.panel}"/>
+<text x="50" y="682" font-size="14" fill="${C.muted}">Busiest day</text>
+<text x="50" y="708" font-size="22" font-weight="700" fill="${C.accent}">${summary.peak} <tspan font-size="15" font-weight="400" fill="${C.muted}">contributions</tspan></text>
+
+${text(30, 755, '365-day tracking, GitHub contribution calendar', `font-size="15" fill="${C.muted}"`)}`;
+
+    return svg('Total commits and active days committed', `${format(total)} contributions across ${activeDays} active days. Longest streak: ${summary.longest} days. Consistency: ${consistency}%.`, 560, 780, body, config.accent);
+  }
+
+  // Desktop: 580 x 462
+  const cx = 150, cy = 230, radius = 86, stroke = 22;
+  const circ = n(2 * Math.PI * radius);
+  const progress = n(circ * Math.min(1, activeDays / 365));
+  const body = `${text(36, 54, 'Commit history & activity.', `font-size="26" font-weight="600" fill="${C.text}"`)}
+<circle cx="${cx}" cy="${cy}" r="${radius}" fill="none" stroke="#232a21" stroke-width="${stroke}"/>
+<circle cx="${cx}" cy="${cy}" r="${radius}" fill="none" stroke="${C.accent}" stroke-width="${stroke}" stroke-dasharray="${progress} ${circ}" stroke-linecap="round" transform="rotate(-90 ${cx} ${cy})"/>
+${text(cx, cy - 6, activeDays, `text-anchor="middle" font-size="46" font-weight="700" letter-spacing="-2" fill="${C.text}"`)}
+<text x="${cx}" y="${cy + 22}" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" fill="${C.muted}">days committed</text>
+<text x="${cx}" y="${cy + 44}" text-anchor="middle" font-size="13" fill="${C.accent}">${consistency}% of year</text>
+
+<rect x="300" y="92" width="245" height="64" rx="6" fill="${C.panel}"/>
+<text x="320" y="117" font-size="13" fill="${C.muted}">Total contributions</text>
+<text x="320" y="143" font-size="22" font-weight="700" fill="${C.accent}">${format(total)}</text>
+
+<rect x="300" y="168" width="245" height="64" rx="6" fill="${C.panel}"/>
+<text x="320" y="193" font-size="13" fill="${C.muted}">Active days committed</text>
+<text x="320" y="219" font-size="22" font-weight="700" fill="${C.text}">${activeDays} <tspan font-size="15" font-weight="400" fill="${C.muted}">/ 365 days</tspan></text>
+
+<rect x="300" y="244" width="245" height="64" rx="6" fill="${C.panel}"/>
+<text x="320" y="269" font-size="13" fill="${C.muted}">Longest streak</text>
+<text x="320" y="295" font-size="22" font-weight="700" fill="${C.text}">${summary.longest} <tspan font-size="15" font-weight="400" fill="${C.muted}">days</tspan></text>
+
+<rect x="300" y="320" width="245" height="64" rx="6" fill="${C.panel}"/>
+<text x="320" y="345" font-size="13" fill="${C.muted}">Busiest day</text>
+<text x="320" y="371" font-size="22" font-weight="700" fill="${C.accent}">${summary.peak} <tspan font-size="15" font-weight="400" fill="${C.muted}">contributions</tspan></text>
+
+${text(36, 422, '365-day tracking, GitHub contribution calendar', `font-size="14" fill="${C.muted}"`)}`;
+
+  return svg('Total commits and active days committed', `${format(total)} contributions across ${activeDays} active days. Longest streak: ${summary.longest} days. Consistency: ${consistency}%.`, 580, 462, body, config.accent);
 }
 
 export function calendarSummary(calendar) {
@@ -194,48 +273,188 @@ export function calendarSummary(calendar) {
   return { active: days.filter(day => day.count > 0).length, longest, peak: Math.max(...days.map(day => day.count), 0) };
 }
 
+export function extendedCalendarStats(days) {
+  let longest = 0, longestStart = '', longestEnd = '';
+  let curRun = 0, curRunStart = '';
+  let peak = 0, peakDate = '';
+  for (const day of days) {
+    if (day.count > peak) { peak = day.count; peakDate = day.date; }
+    if (day.count > 0) {
+      if (curRun === 0) curRunStart = day.date;
+      curRun++;
+      if (curRun > longest) {
+        longest = curRun;
+        longestStart = curRunStart;
+        longestEnd = day.date;
+      }
+    } else {
+      curRun = 0;
+      curRunStart = '';
+    }
+  }
+  let current = 0, currentStart = '', currentEnd = days[days.length - 1]?.date || '';
+  for (let i = days.length - 1; i >= 0; i--) {
+    if (days[i].count > 0) {
+      current++;
+      currentStart = days[i].date;
+    } else {
+      if (i === days.length - 1) continue;
+      break;
+    }
+  }
+  return { peak, peakDate, longest, longestStart, longestEnd, current, currentStart, currentEnd };
+}
+
 function contributionScene(snapshot, config, mobile = false) {
   const calendar = snapshot.calendar;
   const summary = calendarSummary(calendar);
   const dates = calendar.days;
+  const total = calendar.total;
+  const stats = extendedCalendarStats(dates);
+  const peak = summary.peak || 1;
+
   const start = new Date(`${dates[0].date}T00:00:00Z`);
   start.setUTCDate(start.getUTCDate() - start.getUTCDay());
-  const cellX = 18.6, cellY = 8.7;
-  const latestWeek = Math.floor((Date.parse(`${dates.at(-1).date}T00:00:00Z`) - start) / 86_400_000 / 7);
-  const blocks = dates.map(day => {
+
+  const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const seenMonths = new Set();
+  const monthLabels = [];
+
+  const tiles = dates.map(day => {
     const dt = new Date(`${day.date}T00:00:00Z`);
     const offset = Math.round((dt - start) / 86_400_000);
-    const col = Math.floor(offset / 7), row = dt.getUTCDay();
-    const x = 98 + col * cellX + row * 14.4;
-    const y = 255 + row * cellY - col * 1.55;
-    const h = day.count > 0 ? 4 + Math.sqrt(day.count / (summary.peak || 1)) * 122 : 1.5;
-    const w = 15.8, dx = 11.7, dy = 7;
-    const lightness = day.count ? Math.round(30 + Math.sqrt(day.count / (summary.peak || 1)) * 39) : 15;
-    const top = day.count ? `hsl(85 65% ${lightness}%)` : '#293027';
-    return `<g${col === latestWeek ? ' class="pulse"' : ''}><title>${escapeXML(day.date)}: ${day.count} contributions</title>
-<path d="M${n(x)} ${n(y - h)}l${w} -2.7l${dx} ${dy}l-${w} 2.7Z" fill="${top}"/>
-<path d="M${n(x)} ${n(y - h)}l${dx} ${dy}v${n(h)}l-${dx} -${dy}Z" fill="${day.count ? '#42582c' : '#1b211a'}"/>
-<path d="M${n(x + dx)} ${n(y + dy - h)}l${w} -2.7v${n(h)}l-${w} 2.7Z" fill="${day.count ? '#77994b' : '#222a20'}"/></g>`;
+    const col = Math.floor(offset / 7);
+    const row = dt.getUTCDay();
+    const mKey = `${dt.getUTCFullYear()}-${dt.getUTCMonth()}`;
+    if (!seenMonths.has(mKey) && dt.getUTCDate() <= 7) {
+      seenMonths.add(mKey);
+      monthLabels.push({ col, month: monthNames[dt.getUTCMonth()] });
+    }
+    return { ...day, col, row };
+  });
+
+  tiles.sort((a, b) => (a.col + a.row) - (b.col + b.row) || a.col - b.col);
+
+  const sx = 15.2, sy = 6.4;
+  const tx = -10.5, ty = 5.2;
+  const wx = 11.8, wy = 5.0;
+  const dx = -8.2, dy = 4.0;
+  const x0 = 175, y0 = 195;
+
+  const formatRange = (d1, d2) => {
+    if (!d1 || !d2) return '';
+    const dt1 = new Date(`${d1}T00:00:00Z`);
+    const dt2 = new Date(`${d2}T00:00:00Z`);
+    return `${monthNames[dt1.getUTCMonth()]} ${dt1.getUTCDate()}, ${dt1.getUTCFullYear()} -> ${monthNames[dt2.getUTCMonth()]} ${dt2.getUTCDate()}, ${dt2.getUTCFullYear()}`;
+  };
+  const formatMonthDay = d => {
+    if (!d) return '';
+    const dt = new Date(`${d}T00:00:00Z`);
+    return `${monthNames[dt.getUTCMonth()]} ${dt.getUTCDate()}`;
+  };
+  const formatStreakRange = (d1, d2) => {
+    if (!d1 || !d2) return '';
+    const dt1 = new Date(`${d1}T00:00:00Z`);
+    const dt2 = new Date(`${d2}T00:00:00Z`);
+    return `${monthNames[dt1.getUTCMonth()]} ${dt1.getUTCDate()} -> ${monthNames[dt2.getUTCMonth()]} ${dt2.getUTCDate()}`;
+  };
+
+  const blocks = tiles.map(d => {
+    const px = x0 + d.col * sx + d.row * tx;
+    const py = y0 + d.col * sy + d.row * ty;
+    const ratio = d.count / peak;
+    const h = d.count > 0 ? 5 + Math.pow(ratio, 0.65) * 125 : 2;
+
+    const t0 = [n(px), n(py - h)];
+    const t1 = [n(px + wx), n(py + wy - h)];
+    const t2 = [n(px + wx + dx), n(py + wy + dy - h)];
+    const t3 = [n(px + dx), n(py + dy - h)];
+
+    const b1 = [n(px + wx), n(py + wy)];
+    const b2 = [n(px + wx + dx), n(py + wy + dy)];
+    const b3 = [n(px + dx), n(py + dy)];
+
+    let fillTop, fillLeft, fillRight;
+    if (d.count === 0) {
+      fillTop = '#1c221b';
+      fillLeft = '#121612';
+      fillRight = '#151a14';
+    } else {
+      const lTop = 38 + Math.round(Math.pow(ratio, 0.5) * 38);
+      const lLeft = 20 + Math.round(Math.pow(ratio, 0.5) * 25);
+      const lRight = 28 + Math.round(Math.pow(ratio, 0.5) * 30);
+      fillTop = `hsl(95 78% ${lTop}%)`;
+      fillLeft = `hsl(95 65% ${lLeft}%)`;
+      fillRight = `hsl(95 70% ${lRight}%)`;
+    }
+
+    const topFace = `<path d="M${t0[0]} ${t0[1]}L${t1[0]} ${t1[1]}L${t2[0]} ${t2[1]}L${t3[0]} ${t3[1]}Z" fill="${fillTop}"/>`;
+    const leftFace = `<path d="M${t3[0]} ${t3[1]}L${t2[0]} ${t2[1]}L${b2[0]} ${b2[1]}L${b3[0]} ${b3[1]}Z" fill="${fillLeft}"/>`;
+    const rightFace = `<path d="M${t2[0]} ${t2[1]}L${t1[0]} ${t1[1]}L${b1[0]} ${b1[1]}L${b2[0]} ${b2[1]}Z" fill="${fillRight}"/>`;
+
+    return `<g><title>${d.date}: ${d.count} contributions</title>${leftFace}${rightFace}${topFace}</g>`;
   }).join('');
-  const stats = [[summary.active, 'active days'], [summary.longest, 'days · longest streak'], [summary.peak, 'contributions on best day']];
-  let body = `${text(42, 59, 'A year, built one day at a time.', `font-size="29" font-weight="600" fill="${C.text}"`)}
-${mono(42, 92, `${dateLabel(dates[0].date)} → ${dateLabel(dates.at(-1).date)}`, C.muted, 14)}
-<g transform="translate(-13 70)">${blocks}</g>
-${stats.map(([value, label], i) => `${text(56 + i * 394, 449, format(value), `font-size="36" font-weight="600" fill="${C.text}"`)}${text(56 + i * 394, 479, label, `font-size="17" fill="${C.muted}"`)}`).join('')}
-${mono(42, 533, 'Each block is one GitHub contribution day. Height follows the daily count.', C.muted, 14)}`;
+
+  const labels = monthLabels.map(m => {
+    const lx = n(x0 + m.col * sx + 6 * tx + dx / 2);
+    const ly = n(y0 + m.col * sy + 6 * ty + dy + 18);
+    return `<text x="${lx}" y="${ly}" text-anchor="middle" font-size="12" fill="${C.muted}">${m.month}</text>`;
+  }).join('');
+
   if (mobile) {
-    // Keep the same actual days, reprojected into a taller mobile silhouette.
-    body = `${text(30, 48, 'A year, one day at a time.', `font-size="26" font-weight="600" fill="${C.text}"`)}
-${mono(30, 80, `${dateLabel(dates[0].date)} → ${dateLabel(dates.at(-1).date)}`, C.muted, 13)}
-<g transform="translate(15 80) scale(.43 .8)">${blocks}</g>
-${stats.map(([value, label], i) => `${text(30, 410 + i * 60, `${format(value)} ${label}`, `font-size="22" fill="${C.text}"`)}`).join('')}
-${lines(30, 596, 'One block per contribution day. Taller blocks mean more contributions.', 45, 2, 16, C.muted, 24)}`;
+    const body = `${text(30, 48, '1 year total', `font-size="13" fill="${C.muted}"`)}
+<text x="30" y="85" font-size="34" font-weight="700" fill="${C.accent}">${format(total)}<tspan dx="8" font-size="15" font-weight="400" fill="${C.text}">contributions</tspan></text>
+${mono(30, 108, formatRange(dates[0].date, dates.at(-1).date), C.muted, 12)}
+
+${text(340, 48, 'Busiest day', `font-size="13" fill="${C.muted}"`)}
+<text x="340" y="85" font-size="30" font-weight="700" fill="${C.accent}">${stats.peak}<tspan dx="8" font-size="14" font-weight="400" fill="${C.text}">contributions</tspan></text>
+${mono(340, 108, formatMonthDay(stats.peakDate), C.muted, 12)}
+
+<g transform="translate(-10 20) scale(.46 .66)">${blocks}${labels}</g>
+
+<rect x="30" y="525" width="240" height="88" rx="6" fill="${C.panel}"/>
+${text(45, 552, 'Longest streak', `font-size="13" fill="${C.muted}"`)}
+<text x="45" y="582" font-size="28" font-weight="700" fill="${C.accent}">${stats.longest}<tspan dx="8" font-size="15" font-weight="400" fill="${C.text}">days</tspan></text>
+${mono(45, 602, formatStreakRange(stats.longestStart, stats.longestEnd), C.muted, 12)}
+
+<rect x="290" y="525" width="240" height="88" rx="6" fill="${C.panel}"/>
+${text(305, 552, 'Current streak', `font-size="13" fill="${C.muted}"`)}
+<text x="305" y="582" font-size="28" font-weight="700" fill="${C.accent}">${stats.current}<tspan dx="8" font-size="15" font-weight="400" fill="${C.text}">days</tspan></text>
+${mono(305, 602, formatStreakRange(stats.currentStart, stats.currentEnd), C.muted, 12)}
+
+${mono(30, 646, '3D isometric skyline, GitHub contribution history', C.muted, 13)}`;
+
+    return svg('A 3D skyline of GitHub contributions', `${format(total)} contributions across ${summary.active} active days. Longest streak: ${stats.longest} days. Highest daily count: ${stats.peak}.`, 560, 674, body, config.accent);
   }
-  return svg('A year of GitHub contributions in three dimensions', `${calendar.total} contributions. ${summary.active} active days. Longest streak: ${summary.longest} days. Highest daily count: ${summary.peak}. Each block uses an exact GitHub daily count. The newest week is gently highlighted.`, mobile ? 560 : 1200, mobile ? 654 : 564, body, config.accent);
+
+  // Desktop 1200 x 640
+  const body = `${text(830, 56, '1 year total', `font-size="14" fill="${C.muted}"`)}
+<text x="830" y="96" font-size="44" font-weight="700" fill="${C.accent}">${format(total)}<tspan dx="10" font-size="16" font-weight="400" fill="${C.text}">contributions</tspan></text>
+${mono(830, 120, formatRange(dates[0].date, dates.at(-1).date), C.muted, 13)}
+
+${text(940, 162, 'Busiest day', `font-size="14" fill="${C.muted}"`)}
+<text x="940" y="200" font-size="38" font-weight="700" fill="${C.accent}">${stats.peak}<tspan dx="10" font-size="16" font-weight="400" fill="${C.text}">contributions</tspan></text>
+${mono(940, 224, formatMonthDay(stats.peakDate), C.muted, 13)}
+
+${blocks}
+${labels}
+
+${text(45, 475, 'Longest streak', `font-size="14" fill="${C.muted}"`)}
+<text x="45" y="512" font-size="38" font-weight="700" fill="${C.accent}">${stats.longest}<tspan dx="10" font-size="16" font-weight="400" fill="${C.text}">days</tspan></text>
+${mono(45, 534, formatStreakRange(stats.longestStart, stats.longestEnd), C.muted, 13)}
+
+${text(45, 572, 'Current streak', `font-size="14" fill="${C.muted}"`)}
+<text x="45" y="605" font-size="32" font-weight="700" fill="${C.accent}">${stats.current}<tspan dx="10" font-size="15" font-weight="400" fill="${C.text}">days</tspan></text>
+${mono(45, 626, formatStreakRange(stats.currentStart, stats.currentEnd), C.muted, 13)}`;
+
+  return svg('A 3D skyline of GitHub contributions', `${format(total)} contributions across ${summary.active} active days. Longest streak: ${stats.longest} days. Highest daily count: ${stats.peak}.`, 1200, 640, body, config.accent);
 }
 
 function activityPanel(snapshot, config, mobile = false) {
-  const recent = snapshot.repositories.filter(repo => !repo.fork && repo.name.toLowerCase() !== snapshot.user.login.toLowerCase()).sort((a, b) => b.pushed_at.localeCompare(a.pushed_at)).slice(0, 3);
+  const recent = snapshot.repositories
+    .filter(repo => !repo.fork && repo.name.toLowerCase() !== snapshot.user.login.toLowerCase() && !repo.name.toLowerCase().includes('old_readme') && !repo.name.toLowerCase().includes('old-readme'))
+    .sort((a, b) => b.pushed_at.localeCompare(a.pushed_at))
+    .slice(0, 3);
   const body = mobile ? `${text(30, 52, 'Still in the making.', `font-size="29" font-weight="600" fill="${C.text}"`)}
 ${recent.map((repo, i) => `${mono(30, 112 + i * 106, dateLabel(repo.pushed_at), C.accent, 15)}${lines(30, 143 + i * 106, repo.name.replaceAll(/[-_]+/g, ' ').trim(), 40, 2, 21, C.text, 27)}`).join('')}` :
     `${text(42, 58, 'Still in the making.', `font-size="29" font-weight="600" fill="${C.text}"`)}
@@ -255,7 +474,6 @@ export function safeSocial(snapshot) {
   const unique = new Map();
   for (const account of candidates) {
     try {
-      // Whitespace in the original LinkedIn profile URL is normalised, not copied as a broken link.
       const url = new URL(account.url.replaceAll(/\s/g, ''));
       if (url.protocol !== 'https:') continue;
       const hostname = url.hostname.replace(/^www\./, '');
@@ -267,69 +485,71 @@ export function safeSocial(snapshot) {
 }
 
 export function formatSocialBadge(link) {
-  const configs = {
-    Instagram: { color: 'E4405F', logo: 'instagram' },
-    LinkedIn: { color: '0A66C2', logo: 'linkedin' },
-    LeetCode: { color: 'FFA116', logo: 'leetcode' },
-    X: { color: '000000', logo: 'x' },
-    YouTube: { color: 'FF0000', logo: 'youtube' },
-    Website: { color: '161b16', logo: 'safari', logoColor: 'c5f277' },
+  const logos = {
+    Instagram: 'instagram',
+    LinkedIn: 'linkedin',
+    LeetCode: 'leetcode',
+    X: 'x',
+    YouTube: 'youtube',
+    Website: 'safari',
   };
-  const cfg = configs[link.label] || { color: '161b16', logo: 'link' };
-  const badgeUrl = `https://img.shields.io/badge/${encodeURIComponent(link.label)}-${cfg.color}?style=for-the-badge&logo=${cfg.logo}&logoColor=${cfg.logoColor || 'white'}`;
+  const logo = logos[link.label] || 'link';
+  const badgeUrl = `https://img.shields.io/badge/${encodeURIComponent(link.label)}-c5f277?style=for-the-badge&logo=${logo}&logoColor=c5f277&labelColor=111411`;
   return `[![${escapeMD(link.label)}](${badgeUrl})](${link.url})`;
 }
 
 export function repositoriesSection() {
-  return `## 📁 Repositories
+  const badge = (label, logo, url) => `[![${escapeMD(label)}](https://img.shields.io/badge/${encodeURIComponent(label.replace(/\s+/g, '_'))}-c5f277?style=for-the-badge&logo=${logo}&logoColor=c5f277&labelColor=111411)](${url})`;
 
-> Click any badge below to explore the code 👇
+  return `## Repositories & Tech Stack
 
-\`Artificial Intelligence & Machine Learning\`
+> Click any badge below to explore the code.
 
-[![AI & ML REPO](https://img.shields.io/badge/AI_%26_ML_REPO-7952DE?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning)
-[![DEEP LEARNING](https://img.shields.io/badge/DEEP_LEARNING-F16B24?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RajatBhardwaj2006/Deep-Learning)
-[![REINFORCEMENT LEARNING](https://img.shields.io/badge/REINFORCEMENT_LEARNING-00B48A?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning)
+### Artificial Intelligence & Machine Learning
 
-\`DSA & Problem Solving\`
+${badge('AI & ML REPO', 'github', 'https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning')}
+${badge('DEEP LEARNING', 'github', 'https://github.com/RajatBhardwaj2006/Deep-Learning')}
+${badge('REINFORCEMENT LEARNING', 'github', 'https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning')}
 
-[![DSA IN C++](https://img.shields.io/badge/DSA_IN_C++-007ACC?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/RajatBhardwaj2006/Data-Structures)
-[![LEETCODE](https://img.shields.io/badge/LEETCODE-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/cherry_2006)
+### DSA & Problem Solving
 
-\`Languages\`
+${badge('DSA IN C++', 'c%2B%2B', 'https://github.com/RajatBhardwaj2006/Data-Structures')}
+${badge('LEETCODE', 'leetcode', 'https://leetcode.com/u/cherry_2006')}
 
-[![PYTHON](https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/RajatBhardwaj2006)
-[![JAVA](https://img.shields.io/badge/JAVA-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://github.com/RajatBhardwaj2006/Java)
-[![SQL](https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=postgresql&logoColor=white)](https://github.com/RajatBhardwaj2006)
-[![C++](https://img.shields.io/badge/C++-00599E?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/RajatBhardwaj2006/CPP)
+### Languages
 
-\`AI Engineering & Development\`
+${badge('PYTHON', 'python', 'https://github.com/RajatBhardwaj2006')}
+${badge('JAVA', 'openjdk', 'https://github.com/RajatBhardwaj2006/Java')}
+${badge('SQL', 'postgresql', 'https://github.com/RajatBhardwaj2006')}
+${badge('C++', 'c%2B%2B', 'https://github.com/RajatBhardwaj2006/CPP')}
 
-[![FLASK](https://img.shields.io/badge/FLASK-000000?style=for-the-badge&logo=flask&logoColor=white)](https://github.com/RajatBhardwaj2006/Fraudulent-Online-Transaction-Detection-System)
-[![OPENAI](https://img.shields.io/badge/OPENAI-412991?style=for-the-badge&logo=openai&logoColor=white)](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning)
-[![AI AGENTS](https://img.shields.io/badge/AI_AGENTS-E91E63?style=for-the-badge&logo=probot&logoColor=white)](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning)
+### AI Engineering & Development
 
-\`Frontend\`
+${badge('FLASK', 'flask', 'https://github.com/RajatBhardwaj2006/Fraudulent-Online-Transaction-Detection-System')}
+${badge('OPENAI', 'openai', 'https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning')}
+${badge('AI AGENTS', 'probot', 'https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning')}
 
-[![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://github.com/RajatBhardwaj2006)
-[![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://github.com/RajatBhardwaj2006)
+### Frontend
 
-\`Development Tools\`
+${badge('HTML', 'html5', 'https://github.com/RajatBhardwaj2006')}
+${badge('CSS', 'css3', 'https://github.com/RajatBhardwaj2006')}
 
-[![GIT](https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white)](https://github.com/RajatBhardwaj2006)
-[![GITHUB](https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RajatBhardwaj2006)
-[![JUPYTERLAB](https://img.shields.io/badge/JUPYTERLAB-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://github.com/RajatBhardwaj2006)
+### Development Tools
 
-\`Libraries\`
+${badge('GIT', 'git', 'https://github.com/RajatBhardwaj2006')}
+${badge('GITHUB', 'github', 'https://github.com/RajatBhardwaj2006')}
+${badge('JUPYTERLAB', 'jupyter', 'https://github.com/RajatBhardwaj2006')}
 
-[![NUMPY](https://img.shields.io/badge/NUMPY-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://github.com/RajatBhardwaj2006)
-[![PANDAS](https://img.shields.io/badge/PANDAS-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://github.com/RajatBhardwaj2006)
-[![SEABORN](https://img.shields.io/badge/SEABORN-4C72B0?style=for-the-badge&logo=seaborn&logoColor=white)](https://github.com/RajatBhardwaj2006)
-[![MATPLOTLIB](https://img.shields.io/badge/MATPLOTLIB-C0392B?style=for-the-badge&logo=matplotlib&logoColor=white)](https://github.com/RajatBhardwaj2006)
-[![SCIPY](https://img.shields.io/badge/SCIPY-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white)](https://github.com/RajatBhardwaj2006)
-[![SCIKIT-LEARN](https://img.shields.io/badge/SCIKIT--LEARN-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://github.com/RajatBhardwaj2006)
-[![PYTORCH](https://img.shields.io/badge/PYTORCH-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://github.com/RajatBhardwaj2006/VisionInspect-Industrial-Defect-Detection-)
-[![BEAUTIFUL SOUP](https://img.shields.io/badge/BEAUTIFUL_SOUP-0B7D3B?style=for-the-badge&logo=beautifulsoup&logoColor=white)](https://github.com/RajatBhardwaj2006)`;
+### Libraries
+
+${badge('NUMPY', 'numpy', 'https://github.com/RajatBhardwaj2006')}
+${badge('PANDAS', 'pandas', 'https://github.com/RajatBhardwaj2006')}
+${badge('SEABORN', 'seaborn', 'https://github.com/RajatBhardwaj2006')}
+${badge('MATPLOTLIB', 'matplotlib', 'https://github.com/RajatBhardwaj2006')}
+${badge('SCIPY', 'scipy', 'https://github.com/RajatBhardwaj2006')}
+${badge('SCIKIT-LEARN', 'scikit-learn', 'https://github.com/RajatBhardwaj2006')}
+${badge('PYTORCH', 'pytorch', 'https://github.com/RajatBhardwaj2006/VisionInspect-Industrial-Defect-Detection-')}
+${badge('BEAUTIFUL SOUP', 'beautifulsoup', 'https://github.com/RajatBhardwaj2006')}`;
 }
 
 export function readme(snapshot, config, projects) {
@@ -347,11 +567,11 @@ export function readme(snapshot, config, projects) {
   </picture>
 </a>
 
-${socials.join(' &nbsp; ')}${socials.length ? ' &nbsp; ' : ''}[![All Repositories](https://img.shields.io/badge/All%20Repositories-161b16?style=for-the-badge&logo=github&logoColor=c5f277)](${github}?tab=repositories)
+${socials.join(' &nbsp; ')}${socials.length ? ' &nbsp; ' : ''}[![All Repositories](https://img.shields.io/badge/All%20Repositories-c5f277?style=for-the-badge&logo=github&logoColor=c5f277&labelColor=111411)](${github}?tab=repositories)
 
 ${embedded('metrics', `${snapshot.user.public_repos} public repositories, ${format(snapshot.calendar.total)} contributions in the past year, ${snapshot.user.followers} followers, ${snapshot.repositories.reduce((sum, repo) => sum + repo.stargazers_count, 0)} stars across public repositories.`)}
 
-## 🚀 Featured Projects
+## Featured Projects
 
 ${snapshot.pinned.length ? 'Featured from my GitHub pins.' : 'A selection of my public work.'}
 
@@ -368,7 +588,16 @@ ${repositoriesSection()}
 
 ## The code behind the work
 
-${embedded('languages', `Primary language by public repository count, excluding forks: ${languages.slice(0, 5).map(language => `${language.name} ${language.percent.toFixed(1)}%`).join(', ')}. These describe repositories, not proficiency.`)}
+<p>
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/generated/languages-mobile.svg">
+    <img src="assets/generated/languages.svg" width="49%" alt="Primary language by public repository count, excluding forks: ${languages.slice(0, 5).map(language => `${language.name} ${language.percent.toFixed(1)}%`).join(', ')}. These describe repositories, not proficiency.">
+  </picture>
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/generated/commits-mobile.svg">
+    <img src="assets/generated/commits.svg" width="49%" alt="Total commits and active days committed: ${format(snapshot.calendar.total)} contributions across ${summary.active} active days.">
+  </picture>
+</p>
 
 <details>
 <summary>Language data</summary>
@@ -395,7 +624,7 @@ ${languages.map(language => `| ${escapeMD(language.name)} | ${format(language.re
 
 ${format(snapshot.calendar.total)} contributions across ${summary.active} active days between ${dateLabel(snapshot.calendar.days[0].date)} and ${dateLabel(snapshot.calendar.days.at(-1).date)}. Longest streak within this window: ${summary.longest} days. Best day: ${summary.peak} contributions.
 
-${snapshot.repositories.filter(repo => !repo.fork && repo.name.toLowerCase() !== snapshot.user.login.toLowerCase()).sort((a, b) => b.pushed_at.localeCompare(a.pushed_at)).slice(0, 3).map(repo => `- [${escapeMD(repo.name)}](${repo.html_url}) · pushed ${dateLabel(repo.pushed_at)}`).join('\n')}
+${snapshot.repositories.filter(repo => !repo.fork && repo.name.toLowerCase() !== snapshot.user.login.toLowerCase() && !repo.name.toLowerCase().includes('old_readme') && !repo.name.toLowerCase().includes('old-readme')).sort((a, b) => b.pushed_at.localeCompare(a.pushed_at)).slice(0, 3).map(repo => `- [${escapeMD(repo.name)}](${repo.html_url}) · pushed ${dateLabel(repo.pushed_at)}`).join('\n')}
 
 Daily counts follow GitHub's contribution calendar visibility and counting rules. Private repository names and content are never requested or published.
 
@@ -422,15 +651,18 @@ export function resolveRepositoriesAndProjects(snapshot, config) {
       topics: ['artificial-intelligence', 'deep-learning', 'machine-learning', 'nextjs', 'react', 'typescript'],
       stargazers_count: 0,
       forks_count: 0,
-      pushed_at: '2026-11-04T12:00:00Z',
+      pushed_at: '2026-11-05T18:00:00Z',
       archived: false,
       fork: false,
       private: false
     }
   ];
-  const allRepos = [...snapshot.repositories];
+  let allRepos = snapshot.repositories.filter(r => !r.name.toLowerCase().includes('old_readme') && !r.name.toLowerCase().includes('old-readme'));
   for (const repo of customRepos) {
-    if (!allRepos.some(r => r.name.toLowerCase() === repo.name.toLowerCase())) {
+    const existingIndex = allRepos.findIndex(r => r.name.toLowerCase() === repo.name.toLowerCase());
+    if (existingIndex >= 0) {
+      allRepos[existingIndex] = { ...allRepos[existingIndex], ...repo };
+    } else {
       allRepos.push(repo);
     }
   }
@@ -446,11 +678,12 @@ export async function renderProfile(snapshot, config, root) {
   const snapshotWithRepos = { ...snapshot, repositories: allRepos };
   const files = new Map([
     ['hero.svg', hero(snapshotWithRepos, config)], ['hero-mobile.svg', hero(snapshotWithRepos, config, true)],
-    ['metrics.svg', metrics(snapshotWithRepos, config)], ['languages.svg', languagesPanel(snapshotWithRepos, config)],
-    ['metrics-mobile.svg', metrics(snapshotWithRepos, config, true)], ['languages-mobile.svg', languagesPanel(snapshotWithRepos, config, true)],
+    ['metrics.svg', metrics(snapshotWithRepos, config)], ['metrics-mobile.svg', metrics(snapshotWithRepos, config, true)],
+    ['languages.svg', languagesPanel(snapshotWithRepos, config)], ['languages-mobile.svg', languagesPanel(snapshotWithRepos, config, true)],
+    ['commits.svg', commitsPanel(snapshotWithRepos, config)], ['commits-mobile.svg', commitsPanel(snapshotWithRepos, config, true)],
     ['contributions.svg', contributionScene(snapshotWithRepos, config)], ['contributions-mobile.svg', contributionScene(snapshotWithRepos, config, true)],
-    ['activity.svg', activityPanel(snapshotWithRepos, config)], ['footer.svg', footer(snapshotWithRepos, config)],
-    ['activity-mobile.svg', activityPanel(snapshotWithRepos, config, true)], ['footer-mobile.svg', footer(snapshotWithRepos, config, true)],
+    ['activity.svg', activityPanel(snapshotWithRepos, config)], ['activity-mobile.svg', activityPanel(snapshotWithRepos, config, true)],
+    ['footer.svg', footer(snapshotWithRepos, config)], ['footer-mobile.svg', footer(snapshotWithRepos, config, true)],
     ...projects.map((repo, index) => [`project-${index + 1}.svg`, projectCard(repo, index, config)]),
     ...projects.map((repo, index) => [`project-${index + 1}-mobile.svg`, projectCard(repo, index, config, true)]),
   ]);

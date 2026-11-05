@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="164" viewBox="0 0 1200 164" role="img" aria-labelledby="title desc">
-<title id="title">GitHub at a glance</title><desc id="desc">16 Public repositories. 1,156 Contributions / past year. 8 GitHub followers. 4 Stars across public repos</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="212" viewBox="0 0 1200 212" role="img" aria-labelledby="title desc">
+<title id="title">Profile snapshot metrics</title><desc id="desc">16 public repositories, 1,156 contributions in the past year, 8 followers, 4 stars earned across repositories</desc>
 <style>
 text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:none}
 @keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
@@ -8,6 +8,18 @@ text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:
 .float{animation:drift 9s ease-in-out infinite}.flow{animation:sweep 14s linear infinite}.pulse{animation:breathe 6s ease-in-out infinite}
 @media(prefers-reduced-motion:reduce){.motion{display:none}.still{display:inline}.float,.flow,.pulse{animation:none}}
 </style>
-<rect width="1200" height="164" rx="4" fill="#111411"/>
-<text x="36" y="89" font-size="48" font-weight="600" letter-spacing="-2" fill="#f3f6ef">16</text><text x="36" y="126" font-size="16" fill="#a4afa1">Public repositories</text><path d="M300 32V132" stroke="#30382f"/><text x="336" y="89" font-size="48" font-weight="600" letter-spacing="-2" fill="#c5f277">1,156</text><text x="336" y="126" font-size="16" fill="#a4afa1">Contributions / past year</text><path d="M600 32V132" stroke="#30382f"/><text x="636" y="89" font-size="48" font-weight="600" letter-spacing="-2" fill="#f3f6ef">8</text><text x="636" y="126" font-size="16" fill="#a4afa1">GitHub followers</text><path d="M900 32V132" stroke="#30382f"/><text x="936" y="89" font-size="48" font-weight="600" letter-spacing="-2" fill="#f3f6ef">4</text><text x="936" y="126" font-size="16" fill="#a4afa1">Stars across public repos</text>
+<rect width="1200" height="212" rx="4" fill="#111411"/>
+
+<rect x="42" y="30" width="260" height="152" rx="6" fill="#161b16"/>
+<text x="66" y="102" font-size="44" font-weight="700" letter-spacing="-2" fill="#f3f6ef">16</text>
+<text x="66" y="140" font-size="16" fill="#a4afa1">public repositories</text>
+<rect x="327" y="30" width="260" height="152" rx="6" fill="#161b16"/>
+<text x="351" y="102" font-size="44" font-weight="700" letter-spacing="-2" fill="#f3f6ef">1,156</text>
+<text x="351" y="140" font-size="16" fill="#a4afa1">contributions in the</text><text x="351" y="162" font-size="16" fill="#a4afa1">past year</text>
+<rect x="612" y="30" width="260" height="152" rx="6" fill="#161b16"/>
+<text x="636" y="102" font-size="44" font-weight="700" letter-spacing="-2" fill="#f3f6ef">8</text>
+<text x="636" y="140" font-size="16" fill="#a4afa1">followers</text>
+<rect x="897" y="30" width="260" height="152" rx="6" fill="#161b16"/>
+<text x="921" y="102" font-size="44" font-weight="700" letter-spacing="-2" fill="#f3f6ef">4</text>
+<text x="921" y="140" font-size="16" fill="#a4afa1">stars earned across</text><text x="921" y="162" font-size="16" fill="#a4afa1">repositories</text>
 </svg>
