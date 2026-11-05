@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="560" height="450" viewBox="0 0 560 450" role="img" aria-labelledby="title desc">
-<title id="title">Rajat Bhardwaj GitHub profile hero</title><desc id="desc">Rajat Bhardwaj , Exploring AI, ML. Learning, experimenting, and turning ideas into reality.. Neural network engine with inputs Consistency, Dedication, Hardwork driving forward to Success.</desc>
+<title id="title">Rajat Bhardwaj GitHub profile hero</title><desc id="desc">Rajat Bhardwaj. Exploring AI, ML. Learning, experimenting, and turning ideas into reality.. Neural network engine with inputs Consistency, Dedication, Hardwork driving forward to Success.</desc>
 <style>
 text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:none}
 @keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
@@ -31,7 +31,7 @@ text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:
 <text x="103" y="274" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="600" fill="#f3f6ef">Consistency</text><text x="103" y="329" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="600" fill="#f3f6ef">Dedication</text><text x="103" y="384" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="600" fill="#f3f6ef">Hardwork</text>
 <text x="411" y="329" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" font-weight="700" fill="#c5f277">Success</text>
 </g>
-<text x="30" y="48" font-size="28" font-weight="600" fill="#f3f6ef"></text>
-<text x="30" y="104" font-size="20" fill="#a4afa1">Rajat Bhardwaj , Exploring</text><text x="30" y="132" font-size="20" fill="#a4afa1">AI, ML. Learning,</text><text x="30" y="160" font-size="20" fill="#a4afa1">experimenting, and turnin…</text>
-<text x="30" y="185" font-size="14" fill="#a4afa1">Himachal Pradesh (India) · Learning, in motion.</text>
+<text x="30" y="52" font-size="34" font-weight="700" letter-spacing="-1" fill="#ffffff">Rajat Bhardwaj</text>
+<text x="30" y="94" font-size="18" fill="#ffffff">Exploring AI, ML. Learning,</text><text x="30" y="122" font-size="18" fill="#ffffff">experimenting, and turning</text><text x="30" y="150" font-size="18" fill="#ffffff">ideas into reality.</text>
+<text x="30" y="185" font-size="13" fill="#a4afa1">Himachal Pradesh (India) · Learning, in motion.</text>
 </svg>

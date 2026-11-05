@@ -165,18 +165,22 @@ ${outputLabel}
 }
 
 function hero(snapshot, config, mobile = false) {
+  const name = snapshot.user.name || config.username;
+  const rawBio = snapshot.user.bio || 'Exploring AI, ML. Learning, experimenting, and turning ideas into reality.';
+  const bio = clean(rawBio).replace(/^Rajat\s+Bhardwaj\s*[,-–—]?\s*/i, '').trim();
   const sub = snapshot.user.location ? `${snapshot.user.location} · Learning, in motion.` : 'Learning, in motion.';
+
   const body = mobile ? `${neuralEngine(true)}
-${text(30, 48, config.greeting, `font-size="28" font-weight="600" fill="${C.text}"`)}
-${lines(30, 104, snapshot.user.bio || 'Public work, tracked honestly.', 26, 3, 20, C.muted, 28)}
-${text(30, 185, sub, `font-size="14" fill="${C.muted}"`)}` :
+${text(30, 52, name, 'font-size="34" font-weight="700" letter-spacing="-1" fill="#ffffff"')}
+${lines(30, 94, bio, 28, 3, 18, '#ffffff', 28)}
+${text(30, 185, sub, `font-size="13" fill="${C.muted}"`)}` :
     `${neuralEngine(false)}
-${text(42, 60, config.greeting, `font-size="34" font-weight="600" fill="${C.text}"`)}
-${lines(42, 130, snapshot.user.bio || 'Public work, tracked honestly.', 42, 3, 22, C.muted, 31)}
+${text(42, 70, name, 'font-size="44" font-weight="700" letter-spacing="-1" fill="#ffffff"')}
+${lines(42, 122, bio, 42, 3, 21, '#ffffff', 32)}
 ${rule(42, 235, 750, 235)}
 ${text(42, 268, snapshot.user.location || 'India', `font-size="16" fill="${C.muted}"`)}
 ${text(750, 268, 'Learning, in motion.', `text-anchor="end" font-size="16" fill="${C.muted}"`)}`;
-  return svg(`${snapshot.user.name} GitHub profile hero`, `${clean(snapshot.user.bio)}. Neural network engine with inputs Consistency, Dedication, Hardwork driving forward to Success.`, mobile ? 560 : 1200, mobile ? 450 : 300, body, config.accent);
+  return svg(`${name} GitHub profile hero`, `${name}. ${clean(bio)}. Neural network engine with inputs Consistency, Dedication, Hardwork driving forward to Success.`, mobile ? 560 : 1200, mobile ? 450 : 300, body, config.accent);
 }
 
 function metrics(snapshot, config, mobile = false) {
