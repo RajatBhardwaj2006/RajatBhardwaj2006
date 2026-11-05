@@ -559,11 +559,11 @@ function contributionScene(snapshot, config, mobile = false) {
 
   tiles.sort((a, b) => (a.col + a.row) - (b.col + b.row) || a.col - b.col);
 
-  const sx = 15.2, sy = 6.4;
-  const tx = -10.5, ty = 5.2;
-  const wx = 11.8, wy = 5.0;
-  const dx = -8.2, dy = 4.0;
-  const x0 = 175, y0 = 195;
+  const sx = 17.0, sy = 7.15;
+  const tx = -11.75, ty = 5.8;
+  const wx = 13.2, wy = 5.6;
+  const dx = -9.2, dy = 4.5;
+  const x0 = 155, y0 = 180;
 
   const formatRange = (d1, d2) => {
     if (!d1 || !d2) return '';
@@ -587,7 +587,7 @@ function contributionScene(snapshot, config, mobile = false) {
     const px = x0 + d.col * sx + d.row * tx;
     const py = y0 + d.col * sy + d.row * ty;
     const ratio = d.count / peak;
-    const h = d.count > 0 ? 5 + Math.pow(ratio, 0.65) * 125 : 2;
+    const h = d.count > 0 ? 5 + Math.pow(ratio, 0.65) * 135 : 2;
 
     const t0 = [n(px), n(py - h)];
     const t1 = [n(px + wx), n(py + wy - h)];
@@ -652,24 +652,24 @@ ${mono(30, 646, '3D isometric skyline, GitHub contribution history', C.muted, 13
   }
 
   // Desktop 1200 x 640
-  const body = `${text(830, 56, `1 year total (${totalDays} days)`, `font-size="14" fill="${C.muted}"`)}
-<text x="830" y="96" font-size="44" font-weight="700" fill="${C.accent}">${format(total)}<tspan dx="10" font-size="16" font-weight="400" fill="${C.text}">contributions</tspan></text>
-${mono(830, 120, formatRange(startDate, endDate), C.muted, 13)}
+  const body = `${text(1160, 48, `1 year total (${totalDays} days)`, `text-anchor="end" font-size="14" fill="${C.muted}"`)}
+<text x="1160" y="88" text-anchor="end" font-size="44" font-weight="700" fill="${C.accent}">${format(total)}<tspan dx="10" font-size="16" font-weight="400" fill="${C.text}">contributions</tspan></text>
+<text x="1160" y="112" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="${C.muted}">${escapeXML(formatRange(startDate, endDate))}</text>
 
-${text(940, 162, 'Busiest day', `font-size="14" fill="${C.muted}"`)}
-<text x="940" y="200" font-size="38" font-weight="700" fill="${C.accent}">${stats.peak}<tspan dx="10" font-size="16" font-weight="400" fill="${C.text}">contributions</tspan></text>
-${mono(940, 224, formatMonthDay(stats.peakDate), C.muted, 13)}
+${text(1160, 156, 'Busiest day', `text-anchor="end" font-size="14" fill="${C.muted}"`)}
+<text x="1160" y="194" text-anchor="end" font-size="38" font-weight="700" fill="${C.accent}">${stats.peak}<tspan dx="10" font-size="16" font-weight="400" fill="${C.text}">contributions</tspan></text>
+<text x="1160" y="218" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="${C.muted}">${escapeXML(formatMonthDay(stats.peakDate))}</text>
 
 ${blocks}
 ${labels}
 
-${text(45, 475, 'Longest streak', `font-size="14" fill="${C.muted}"`)}
-<text x="45" y="512" font-size="38" font-weight="700" fill="${C.accent}">${stats.longest}<tspan dx="10" font-size="16" font-weight="400" fill="${C.text}">days</tspan></text>
-${mono(45, 534, formatStreakRange(stats.longestStart, stats.longestEnd), C.muted, 13)}
+${text(38, 478, 'Longest streak', `font-size="14" fill="${C.muted}"`)}
+<text x="38" y="515" font-size="38" font-weight="700" fill="${C.accent}">${stats.longest}<tspan dx="10" font-size="16" font-weight="400" fill="${C.text}">days</tspan></text>
+${mono(38, 537, formatStreakRange(stats.longestStart, stats.longestEnd), C.muted, 13)}
 
-${text(45, 572, 'Current streak', `font-size="14" fill="${C.muted}"`)}
-<text x="45" y="605" font-size="32" font-weight="700" fill="${C.accent}">${stats.current}<tspan dx="10" font-size="15" font-weight="400" fill="${C.text}">days</tspan></text>
-${mono(45, 626, formatStreakRange(stats.currentStart, stats.currentEnd), C.muted, 13)}`;
+${text(38, 575, 'Current streak', `font-size="14" fill="${C.muted}"`)}
+<text x="38" y="608" font-size="32" font-weight="700" fill="${C.accent}">${stats.current}<tspan dx="10" font-size="15" font-weight="400" fill="${C.text}">days</tspan></text>
+${mono(38, 628, formatStreakRange(stats.currentStart, stats.currentEnd), C.muted, 13)}`;
 
   return svg('A 3D skyline of GitHub contributions', `${format(total)} contributions across ${summary.active} active days. Longest streak: ${stats.longest} days. Highest daily count: ${stats.peak}.`, 1200, 640, body, config.accent);
 }
