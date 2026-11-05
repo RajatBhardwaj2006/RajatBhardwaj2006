@@ -202,15 +202,148 @@ ${lines(66 + i * 285, 140, label, 20, 2, 16, C.muted, 22)}`).join('');
 }
 
 function projectArt(index, repo) {
-  const seeds = [
-    '<circle cx="488" cy="180" r="110" fill="none" stroke="hsl(85 65% 58% / .45)" stroke-width="2"/><ellipse cx="488" cy="180" rx="110" ry="46" fill="none" stroke="hsl(85 65% 58% / .35)" stroke-width="1.5" transform="rotate(-24 488 180)"/><circle cx="488" cy="180" r="5" fill="#c5f277"/>',
-    '<rect x="400" y="90" width="160" height="160" rx="12" fill="none" stroke="hsl(85 65% 58% / .45)" stroke-width="2"/><path d="M400 170H560M480 90V250" stroke="hsl(85 65% 58% / .3)"/><circle cx="480" cy="170" r="42" fill="none" stroke="#c5f277" stroke-width="2"/>',
-    '<path d="M420 230L480 100L540 230Z" fill="none" stroke="hsl(85 65% 58% / .45)" stroke-width="2"/><path d="M450 165H510" stroke="#c5f277" stroke-width="2"/><circle cx="480" cy="100" r="5" fill="#c5f277"/>',
-    '<path d="M410 180Q480 110 550 180T690 180" fill="none" stroke="hsl(85 65% 58% / .45)" stroke-width="2"/><path d="M410 180Q480 250 550 180" fill="none" stroke="#c5f277" stroke-width="2"/>',
-    '<polygon points="480,95 550,135 550,215 480,255 410,215 410,135" fill="none" stroke="hsl(85 65% 58% / .45)" stroke-width="2"/><circle cx="480" cy="175" r="28" fill="none" stroke="#c5f277" stroke-width="1.8"/>',
-    '<circle cx="480" cy="175" r="70" fill="none" stroke="hsl(85 65% 58% / .45)" stroke-width="1.8"/><path d="M440 175H520M480 135V215" stroke="#c5f277" stroke-width="2"/>'
+  const seed = [...repo.name].reduce((sum, char) => sum + char.charCodeAt(0), 0);
+
+  if (index === 0) {
+    const ellipses = Array.from({ length: 11 }, (_, i) => {
+      const rx = 24 + i * 9.5;
+      const ry = 105 - i * 6;
+      const rot = i * 16 - 50;
+      const opacity = (.3 + (i / 11) * .55).toFixed(2);
+      return `<ellipse cx="480" cy="180" rx="${n(rx)}" ry="${n(ry)}" transform="rotate(${rot} 480 180)" stroke="${C.accent}" stroke-width="${i % 2 === 0 ? '1.1' : '0.7'}" fill="none" opacity="${opacity}"/>`;
+    }).join('');
+    const satellites = [
+      '<circle cx="480" cy="180" r="5" fill="#c5f277"/>',
+      '<circle cx="480" cy="180" r="16" fill="none" stroke="#c5f277" stroke-width="0.8" stroke-dasharray="3 3"/>',
+      '<circle cx="430" cy="130" r="3" fill="#c5f277"/>',
+      '<circle cx="535" cy="225" r="3" fill="#c5f277"/>',
+      '<line x1="430" y1="130" x2="480" y2="180" stroke="#c5f277" stroke-width="0.7" opacity=".5"/>',
+      '<line x1="535" y1="225" x2="480" y2="180" stroke="#c5f277" stroke-width="0.7" opacity=".5"/>'
+    ].join('');
+    return `<g>${ellipses}${satellites}</g>`;
+  }
+
+  if (index === 1) {
+    const prisms = Array.from({ length: 8 }, (_, i) => {
+      const x = 380 + i * 16;
+      const y1 = 115 + i * 5;
+      const y2 = 80 - i * 3.5;
+      const y3 = 215 - i * 5;
+      const y4 = 250 - i * 3.5;
+      const opacity = (.35 + (i / 8) * .5).toFixed(2);
+      return `<path d="M${x} ${n(y1)}L${x + 48} ${n(y2)}L${x + 48} ${n(y3)}L${x} ${n(y4)}Z" stroke="${C.accent}" stroke-width="${i % 2 === 0 ? '1.2' : '0.8'}" fill="hsl(85 60% 40% / .06)" opacity="${opacity}"/>`;
+    }).join('');
+    const latticeNodes = [
+      '<circle cx="428" cy="77" r="3.5" fill="#c5f277"/>',
+      '<circle cx="380" cy="115" r="3.5" fill="#c5f277"/>',
+      '<circle cx="492" cy="190" r="3.5" fill="#c5f277"/>',
+      '<circle cx="444" cy="228" r="3.5" fill="#c5f277"/>',
+      '<line x1="428" y1="77" x2="492" y2="190" stroke="#c5f277" stroke-width="0.8" stroke-dasharray="4 4" opacity=".6"/>'
+    ].join('');
+    return `<g>${prisms}${latticeNodes}</g>`;
+  }
+
+  if (index === 2) {
+    const rings = [32, 64, 96, 120].map((r, i) =>
+      `<circle cx="480" cy="180" r="${r}" fill="none" stroke="${C.accent}" stroke-width="${i === 1 ? '1.4' : '0.8'}" stroke-dasharray="${i % 2 ? 'none' : '4 4'}" opacity="${.3 + i * .2}"/>`
+    ).join('');
+    const crosshairs = `
+      <line x1="340" y1="180" x2="620" y2="180" stroke="${C.accent}" stroke-width="0.7" opacity=".4"/>
+      <line x1="480" y1="50" x2="480" y2="310" stroke="${C.accent}" stroke-width="0.7" opacity=".4"/>
+      <line x1="400" y1="175" x2="400" y2="185" stroke="${C.accent}" stroke-width="1.2"/>
+      <line x1="560" y1="175" x2="560" y2="185" stroke="${C.accent}" stroke-width="1.2"/>
+      <line x1="475" y1="110" x2="485" y2="110" stroke="${C.accent}" stroke-width="1.2"/>
+      <line x1="475" y1="250" x2="485" y2="250" stroke="${C.accent}" stroke-width="1.2"/>
+    `;
+    const brackets = `
+      <path d="M410 120H390V140M550 120H570V140M390 220V240H410M570 220V240H550" fill="none" stroke="${C.accent}" stroke-width="1.8"/>
+      <circle cx="510" cy="150" r="7" fill="none" stroke="#c5f277" stroke-width="1.5"/>
+      <circle cx="510" cy="150" r="2.5" fill="#c5f277"/>
+      <line x1="510" y1="140" x2="510" y2="160" stroke="#c5f277" stroke-width="0.9"/>
+      <line x1="500" y1="150" x2="520" y2="150" stroke="#c5f277" stroke-width="0.9"/>
+    `;
+    const radarBeam = `<path d="M480 180L575 110A120 120 0 0 0 520 72Z" fill="hsl(85 75% 60% / .16)" stroke="${C.accent}" stroke-width="0.9"/>`;
+    return `<g>${rings}${crosshairs}${radarBeam}${brackets}</g>`;
+  }
+
+  if (index === 3) {
+    const waveLines = Array.from({ length: 12 }, (_, row) => {
+      const pts = Array.from({ length: 30 }, (_, i) => {
+        const x = 370 + i * 7.5;
+        const wave = Math.sin(i * .42 + row * .38 + seed) * 16 + Math.cos(i * .28 + row * .15) * 8;
+        const y = 80 + row * 15 + wave;
+        return `${n(x)},${n(y)}`;
+      }).join(' ');
+      const opacity = (.25 + (row / 12) * .6).toFixed(2);
+      return `<polyline points="${pts}" stroke="${C.accent}" stroke-width="${row % 3 === 0 ? '1.2' : '0.8'}" fill="none" opacity="${opacity}"/>`;
+    }).join('');
+    const anomalyMarkers = `
+      <circle cx="460" cy="130" r="4" fill="#c5f277"/>
+      <circle cx="460" cy="130" r="9" fill="none" stroke="#c5f277" stroke-width="1" stroke-dasharray="2 2"/>
+      <circle cx="525" cy="195" r="4" fill="#c5f277"/>
+      <circle cx="525" cy="195" r="9" fill="none" stroke="#c5f277" stroke-width="1" stroke-dasharray="2 2"/>
+      <line x1="460" y1="130" x2="525" y2="195" stroke="#c5f277" stroke-width="0.8" stroke-dasharray="3 3" opacity=".6"/>
+    `;
+    return `<g>${waveLines}${anomalyMarkers}</g>`;
+  }
+
+  if (index === 4) {
+    const polyContours = Array.from({ length: 8 }, (_, i) => {
+      const scale = 22 + i * 12;
+      const rot = i * 8 - 25;
+      const pts = Array.from({ length: 6 }, (_, p) => {
+        const ang = (p / 6) * Math.PI * 2;
+        const x = 480 + Math.cos(ang) * scale;
+        const y = 180 + Math.sin(ang) * (scale * 1.08);
+        return `${n(x)},${n(y)}`;
+      }).join(' ');
+      const opacity = (.3 + (i / 8) * .55).toFixed(2);
+      return `<polygon points="${pts}" transform="rotate(${rot} 480 180)" stroke="${C.accent}" stroke-width="${i % 2 === 0 ? '1.2' : '0.7'}" fill="none" opacity="${opacity}"/>`;
+    }).join('');
+    const biometricPoints = [
+      [455, 150], [505, 150],
+      [480, 180],
+      [465, 210], [495, 210],
+      [480, 235]
+    ];
+    const nodes = biometricPoints.map(([x, y]) => `<circle cx="${x}" cy="${y}" r="3" fill="#c5f277"/>`).join('');
+    const meshLines = `
+      <polygon points="455,150 505,150 480,180" stroke="${C.accent}" stroke-width="0.8" fill="hsl(85 60% 50% / .08)"/>
+      <polygon points="455,150 480,180 465,210" stroke="${C.accent}" stroke-width="0.8" fill="none" opacity=".6"/>
+      <polygon points="505,150 480,180 495,210" stroke="${C.accent}" stroke-width="0.8" fill="none" opacity=".6"/>
+      <polygon points="465,210 495,210 480,235" stroke="${C.accent}" stroke-width="0.8" fill="hsl(85 60% 50% / .08)"/>
+    `;
+    return `<g>${polyContours}${meshLines}${nodes}</g>`;
+  }
+
+  const layerX = [400, 450, 500, 555];
+  const layerY = [
+    [130, 180, 230],
+    [105, 142, 180, 218, 255],
+    [105, 142, 180, 218, 255],
+    [155, 205]
   ];
-  return seeds[index % seeds.length];
+  const netLines = [];
+  for (let l = 0; l < layerX.length - 1; l++) {
+    for (const y1 of layerY[l]) {
+      for (const y2 of layerY[l + 1]) {
+        const opacity = ((seed + y1 + y2) % 5 > 1 ? 0.35 : 0.15).toFixed(2);
+        netLines.push(`<line x1="${layerX[l]}" y1="${y1}" x2="${layerX[l + 1]}" y2="${y2}" stroke="${C.accent}" stroke-width="0.7" opacity="${opacity}"/>`);
+      }
+    }
+  }
+  const netNodes = [];
+  for (let l = 0; l < layerX.length; l++) {
+    for (const y of layerY[l]) {
+      netNodes.push(`<circle cx="${layerX[l]}" cy="${y}" r="4" fill="#111411" stroke="${C.accent}" stroke-width="1.3"/>
+<circle cx="${layerX[l]}" cy="${y}" r="1.8" fill="${C.accent}"/>`);
+    }
+  }
+  const outerRings = `
+    <circle cx="478" cy="180" r="105" fill="none" stroke="${C.accent}" stroke-width="0.7" stroke-dasharray="4 6" opacity=".35"/>
+    <circle cx="478" cy="180" r="125" fill="none" stroke="${C.accent}" stroke-width="0.9" opacity=".2"/>
+  `;
+  return `<g>${outerRings}${netLines.join('')}${netNodes.join('')}</g>`;
 }
 
 function projectCard(repo, index, config, mobile = false) {
