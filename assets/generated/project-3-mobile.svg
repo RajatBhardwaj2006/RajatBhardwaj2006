@@ -9,19 +9,14 @@ text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:
 @media(prefers-reduced-motion:reduce){.motion{display:none}.still{display:inline}.float,.flow,.pulse{animation:none}}
 </style>
 <rect width="340" height="340" rx="4" fill="#111411"/>
-<g transform="translate(20 3) scale(.65)"><g class="float" style="animation-duration:12s"><g><circle cx="480" cy="180" r="32" fill="none" stroke="#c5f277" stroke-width="0.8" stroke-dasharray="4 4" opacity="0.3"/><circle cx="480" cy="180" r="64" fill="none" stroke="#c5f277" stroke-width="1.4" stroke-dasharray="none" opacity="0.5"/><circle cx="480" cy="180" r="96" fill="none" stroke="#c5f277" stroke-width="0.8" stroke-dasharray="4 4" opacity="0.7"/><circle cx="480" cy="180" r="120" fill="none" stroke="#c5f277" stroke-width="0.8" stroke-dasharray="none" opacity="0.9000000000000001"/>
-      <line x1="340" y1="180" x2="620" y2="180" stroke="#c5f277" stroke-width="0.7" opacity=".4"/>
-      <line x1="480" y1="50" x2="480" y2="310" stroke="#c5f277" stroke-width="0.7" opacity=".4"/>
-      <line x1="400" y1="175" x2="400" y2="185" stroke="#c5f277" stroke-width="1.2"/>
-      <line x1="560" y1="175" x2="560" y2="185" stroke="#c5f277" stroke-width="1.2"/>
-      <line x1="475" y1="110" x2="485" y2="110" stroke="#c5f277" stroke-width="1.2"/>
-      <line x1="475" y1="250" x2="485" y2="250" stroke="#c5f277" stroke-width="1.2"/>
-    <path d="M480 180L575 110A120 120 0 0 0 520 72Z" fill="hsl(85 75% 60% / .16)" stroke="#c5f277" stroke-width="0.9"/>
-      <path d="M410 120H390V140M550 120H570V140M390 220V240H410M570 220V240H550" fill="none" stroke="#c5f277" stroke-width="1.8"/>
-      <circle cx="510" cy="150" r="7" fill="none" stroke="#c5f277" stroke-width="1.5"/>
-      <circle cx="510" cy="150" r="2.5" fill="#c5f277"/>
-      <line x1="510" y1="140" x2="510" y2="160" stroke="#c5f277" stroke-width="0.9"/>
-      <line x1="500" y1="150" x2="520" y2="150" stroke="#c5f277" stroke-width="0.9"/>
+<g transform="translate(20 3) scale(.65)"><g class="float" style="animation-duration:12s"><g>
+      <polygon points="480,105 546,235 414,235" fill="hsl(85 65% 58% / .04)" stroke="#c5f277" stroke-width="1.8"/>
+      <line x1="442" y1="180" x2="518" y2="180" stroke="hsl(85 65% 58% / .7)" stroke-width="1.4"/>
+      <circle cx="480" cy="105" r="5" fill="#c5f277"/>
+      <circle cx="480" cy="105" r="11" fill="none" stroke="#c5f277" stroke-width="0.9" stroke-dasharray="2 2"/>
+      <circle cx="480" cy="195" r="7" fill="none" stroke="#c5f277" stroke-width="1.4"/>
+      <circle cx="480" cy="195" r="3" fill="#c5f277"/>
+      <path d="M398 120H388V130M562 120H572V130M388 220V230H398M572 220V230H562" stroke="#c5f277" stroke-width="1.5" fill="none"/>
     </g></g></g>
 <text x="20" y="36" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#c5f277">Jupyter Notebook</text>
 <text x="20" y="158" font-size="27" fill="#f3f6ef">VisionInspect</text><text x="20" y="192" font-size="27" fill="#f3f6ef">Industrial Defect</text><text x="20" y="226" font-size="27" fill="#f3f6ef">Detection</text>
