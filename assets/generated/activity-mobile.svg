@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="560" height="430" viewBox="0 0 560 430" role="img" aria-labelledby="title desc">
-<title id="title">Recently pushed repositories</title><desc id="desc">NeuralView: 04 Nov 2026. Java: 31 Oct 2026. Smart-Medication-Management-Health-Assistant: 31 Oct 2026</desc>
+<title id="title">Recently pushed repositories</title><desc id="desc">OLD_readme: 05 Nov 2026. Java: 31 Oct 2026. Smart-Medication-Management-Health-Assistant: 31 Oct 2026</desc>
 <style>
 text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:none}
 @keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
@@ -10,5 +10,5 @@ text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:
 </style>
 <rect width="560" height="430" rx="4" fill="#111411"/>
 <text x="30" y="52" font-size="29" font-weight="600" fill="#f3f6ef">Still in the making.</text>
-<text x="30" y="112" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="15" fill="#c5f277">04 Nov 2026</text><text x="30" y="143" font-size="21" fill="#f3f6ef">NeuralView</text><text x="30" y="218" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="15" fill="#c5f277">31 Oct 2026</text><text x="30" y="249" font-size="21" fill="#f3f6ef">Java</text><text x="30" y="324" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="15" fill="#c5f277">31 Oct 2026</text><text x="30" y="355" font-size="21" fill="#f3f6ef">Smart Medication Management Health</text><text x="30" y="382" font-size="21" fill="#f3f6ef">Assistant</text>
+<text x="30" y="112" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="15" fill="#c5f277">05 Nov 2026</text><text x="30" y="143" font-size="21" fill="#f3f6ef">OLD readme</text><text x="30" y="218" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="15" fill="#c5f277">31 Oct 2026</text><text x="30" y="249" font-size="21" fill="#f3f6ef">Java</text><text x="30" y="324" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="15" fill="#c5f277">31 Oct 2026</text><text x="30" y="355" font-size="21" fill="#f3f6ef">Smart Medication Management Health</text><text x="30" y="382" font-size="21" fill="#f3f6ef">Assistant</text>
 </svg>

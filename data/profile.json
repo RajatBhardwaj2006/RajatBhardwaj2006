@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "fetchedAt": "2026-11-03T09:26:26.045Z",
+  "fetchedAt": "2026-11-05T12:20:08.078Z",
   "sources": {
     "profile": "https://api.github.com/users/RajatBhardwaj2006",
     "repositories": "https://api.github.com/users/RajatBhardwaj2006/repos",
     "languages": "GitHub REST primary repository language, one repository per observation",
-    "calendar": "GitHub public contribution calendar",
+    "calendar": "GitHub GraphQL contribution calendar",
     "notices": []
   },
   "user": {
@@ -225,11 +225,25 @@
       "private": false
     },
     {
+      "name": "OLD_readme",
+      "full_name": "RajatBhardwaj2006/OLD_readme",
+      "html_url": "https://github.com/RajatBhardwaj2006/OLD_readme",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "pushed_at": "2026-11-05T12:16:02Z",
+      "archived": false,
+      "fork": false,
+      "private": false
+    },
+    {
       "name": "Quick-Attendance",
       "full_name": "RajatBhardwaj2006/Quick-Attendance",
       "html_url": "https://github.com/RajatBhardwaj2006/Quick-Attendance",
       "description": "QuickAttendance is a simple and efficient attendance management application designed to make tracking attendance faster and easier. With a clean interface and intuitive features, it helps users manage attendance records and stay organized without unnecessary complexity.",
-      "language": "Python",
+      "language": null,
       "topics": [
         "face-recognition",
         "machine-learning",
@@ -250,11 +264,11 @@
       "full_name": "RajatBhardwaj2006/RajatBhardwaj2006",
       "html_url": "https://github.com/RajatBhardwaj2006/RajatBhardwaj2006",
       "description": null,
-      "language": null,
+      "language": "JavaScript",
       "topics": [],
       "stargazers_count": 0,
       "forks_count": 0,
-      "pushed_at": "2026-11-02T18:38:20Z",
+      "pushed_at": "2026-11-05T12:19:53Z",
       "archived": false,
       "fork": false,
       "private": false
@@ -308,39 +322,16 @@
       "archived": false,
       "fork": false,
       "private": false
-    },
-    {
-      "name": "NeuralView",
-      "full_name": "RajatBhardwaj2006/NeuralView",
-      "html_url": "https://github.com/RajatBhardwaj2006/NeuralView",
-      "description": "Interactive AI, ML and Deep Learning education platform featuring live interactive labs, dynamic mathematical visualizations, and real-time parameter tuning.",
-      "language": "TypeScript",
-      "topics": [
-        "artificial-intelligence",
-        "deep-learning",
-        "machine-learning",
-        "nextjs",
-        "react",
-        "typescript"
-      ],
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "pushed_at": "2026-11-04T12:00:00Z",
-      "archived": false,
-      "fork": false,
-      "private": false
     }
   ],
   "pinned": [
     "RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning",
-    "RajatBhardwaj2006/Smart-Medication-Management-Health-Assistant",
     "RajatBhardwaj2006/VisionInspect-Industrial-Defect-Detection-",
     "RajatBhardwaj2006/Fraudulent-Online-Transaction-Detection-System",
-    "RajatBhardwaj2006/Quick-Attendance",
-    "RajatBhardwaj2006/NeuralView"
+    "RajatBhardwaj2006/Smart-Medication-Management-Health-Assistant"
   ],
   "calendar": {
-    "total": 1147,
+    "total": 1154,
     "days": [
       {
         "date": "2025-11-02",
@@ -1808,9 +1799,17 @@
       },
       {
         "date": "2026-11-03",
+        "count": 6
+      },
+      {
+        "date": "2026-11-04",
+        "count": 1
+      },
+      {
+        "date": "2026-11-05",
         "count": 1
       }
     ],
-    "source": "GitHub public contribution calendar"
+    "source": "GitHub GraphQL contribution calendar"
   }
 }
