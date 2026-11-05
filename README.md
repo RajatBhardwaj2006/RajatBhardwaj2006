@@ -136,7 +136,7 @@ Each owned public repository counts once, using its primary language reported by
 <details>
 <summary>Contribution data and recent repositories</summary>
 
-1,161 contributions across 233 active days between 02 Nov 2025 and 05 Nov 2026. Longest streak within this window: 201 days. Best day: 35 contributions.
+1,161 contributions across 233 active days in the 365-day calendar window (06 Nov 2025 to 05 Nov 2026). Longest streak within this window: 201 days. Best day: 35 contributions.
 
 - [NeuralView](https://github.com/RajatBhardwaj2006/NeuralView) · pushed 05 Nov 2026
 - [Java](https://github.com/RajatBhardwaj2006/Java) · pushed 31 Oct 2026

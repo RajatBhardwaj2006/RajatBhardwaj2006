@@ -9,9 +9,9 @@ text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:
 @media(prefers-reduced-motion:reduce){.motion{display:none}.still{display:inline}.float,.flow,.pulse{animation:none}}
 </style>
 <rect width="1200" height="640" rx="4" fill="#111411"/>
-<text x="830" y="56" font-size="14" fill="#a4afa1">1 year total</text>
+<text x="830" y="56" font-size="14" fill="#a4afa1">1 year total (365 days)</text>
 <text x="830" y="96" font-size="44" font-weight="700" fill="#c5f277">1,161<tspan dx="10" font-size="16" font-weight="400" fill="#f3f6ef">contributions</tspan></text>
-<text x="830" y="120" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#a4afa1">Nov 2, 2025 -&gt; Nov 5, 2026</text>
+<text x="830" y="120" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#a4afa1">Nov 6, 2025 -&gt; Nov 5, 2026</text>
 
 <text x="940" y="162" font-size="14" fill="#a4afa1">Busiest day</text>
 <text x="940" y="200" font-size="38" font-weight="700" fill="#c5f277">35<tspan dx="10" font-size="16" font-weight="400" fill="#f3f6ef">contributions</tspan></text>

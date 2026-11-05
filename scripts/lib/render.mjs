@@ -359,12 +359,13 @@ export function commitsPanel(snapshot, config, mobile = false) {
   const summary = calendarSummary(calendar);
   const total = calendar.total;
   const activeDays = summary.active;
-  const consistency = ((activeDays / 365) * 100).toFixed(1);
+  const totalDays = Math.min(365, calendar.days.length);
+  const consistency = ((activeDays / totalDays) * 100).toFixed(1);
 
   if (mobile) {
     const cx = 280, cy = 250, radius = 100, stroke = 24;
     const circ = n(2 * Math.PI * radius);
-    const progress = n(circ * Math.min(1, activeDays / 365));
+    const progress = n(circ * Math.min(1, activeDays / totalDays));
     const body = `${text(30, 50, 'Commit history & activity.', `font-size="28" font-weight="600" fill="${C.text}"`)}
 <circle cx="${cx}" cy="${cy}" r="${radius}" fill="none" stroke="#232a21" stroke-width="${stroke}"/>
 <circle cx="${cx}" cy="${cy}" r="${radius}" fill="none" stroke="${C.accent}" stroke-width="${stroke}" stroke-dasharray="${progress} ${circ}" stroke-linecap="round" transform="rotate(-90 ${cx} ${cy})"/>
@@ -378,7 +379,7 @@ ${text(cx, cy - 8, activeDays, `text-anchor="middle" font-size="56" font-weight=
 
 <rect x="30" y="495" width="500" height="66" rx="6" fill="${C.panel}"/>
 <text x="50" y="522" font-size="14" fill="${C.muted}">Active days committed</text>
-<text x="50" y="548" font-size="22" font-weight="700" fill="${C.text}">${activeDays} <tspan font-size="15" font-weight="400" fill="${C.muted}">/ 365 days</tspan></text>
+<text x="50" y="548" font-size="22" font-weight="700" fill="${C.text}">${activeDays} <tspan font-size="15" font-weight="400" fill="${C.muted}">/ ${totalDays} days</tspan></text>
 
 <rect x="30" y="575" width="500" height="66" rx="6" fill="${C.panel}"/>
 <text x="50" y="602" font-size="14" fill="${C.muted}">Longest streak</text>
@@ -388,7 +389,7 @@ ${text(cx, cy - 8, activeDays, `text-anchor="middle" font-size="56" font-weight=
 <text x="50" y="682" font-size="14" fill="${C.muted}">Busiest day</text>
 <text x="50" y="708" font-size="22" font-weight="700" fill="${C.accent}">${summary.peak} <tspan font-size="15" font-weight="400" fill="${C.muted}">contributions</tspan></text>
 
-${text(30, 755, '365-day tracking, GitHub contribution calendar', `font-size="15" fill="${C.muted}"`)}`;
+${text(30, 755, `${totalDays}-day tracking, GitHub contribution calendar`, `font-size="15" fill="${C.muted}"`)}`;
 
     return svg('Total commits and active days committed', `${format(total)} contributions across ${activeDays} active days. Longest streak: ${summary.longest} days. Consistency: ${consistency}%.`, 560, 780, body, config.accent);
   }
@@ -396,7 +397,7 @@ ${text(30, 755, '365-day tracking, GitHub contribution calendar', `font-size="15
   // Desktop: 580 x 462
   const cx = 150, cy = 230, radius = 86, stroke = 22;
   const circ = n(2 * Math.PI * radius);
-  const progress = n(circ * Math.min(1, activeDays / 365));
+  const progress = n(circ * Math.min(1, activeDays / totalDays));
   const body = `${text(36, 54, 'Commit history & activity.', `font-size="26" font-weight="600" fill="${C.text}"`)}
 <circle cx="${cx}" cy="${cy}" r="${radius}" fill="none" stroke="#232a21" stroke-width="${stroke}"/>
 <circle cx="${cx}" cy="${cy}" r="${radius}" fill="none" stroke="${C.accent}" stroke-width="${stroke}" stroke-dasharray="${progress} ${circ}" stroke-linecap="round" transform="rotate(-90 ${cx} ${cy})"/>
@@ -410,7 +411,7 @@ ${text(cx, cy - 6, activeDays, `text-anchor="middle" font-size="46" font-weight=
 
 <rect x="300" y="168" width="245" height="64" rx="6" fill="${C.panel}"/>
 <text x="320" y="193" font-size="13" fill="${C.muted}">Active days committed</text>
-<text x="320" y="219" font-size="22" font-weight="700" fill="${C.text}">${activeDays} <tspan font-size="15" font-weight="400" fill="${C.muted}">/ 365 days</tspan></text>
+<text x="320" y="219" font-size="22" font-weight="700" fill="${C.text}">${activeDays} <tspan font-size="15" font-weight="400" fill="${C.muted}">/ ${totalDays} days</tspan></text>
 
 <rect x="300" y="244" width="245" height="64" rx="6" fill="${C.panel}"/>
 <text x="320" y="269" font-size="13" fill="${C.muted}">Longest streak</text>
@@ -420,7 +421,7 @@ ${text(cx, cy - 6, activeDays, `text-anchor="middle" font-size="46" font-weight=
 <text x="320" y="345" font-size="13" fill="${C.muted}">Busiest day</text>
 <text x="320" y="371" font-size="22" font-weight="700" fill="${C.accent}">${summary.peak} <tspan font-size="15" font-weight="400" fill="${C.muted}">contributions</tspan></text>
 
-${text(36, 422, '365-day tracking, GitHub contribution calendar', `font-size="14" fill="${C.muted}"`)}`;
+${text(36, 422, `${totalDays}-day tracking, GitHub contribution calendar`, `font-size="14" fill="${C.muted}"`)}`;
 
   return svg('Total commits and active days committed', `${format(total)} contributions across ${activeDays} active days. Longest streak: ${summary.longest} days. Consistency: ${consistency}%.`, 580, 462, body, config.accent);
 }
@@ -469,6 +470,10 @@ function contributionScene(snapshot, config, mobile = false) {
   const summary = calendarSummary(calendar);
   const dates = calendar.days;
   const total = calendar.total;
+  const totalDays = Math.min(365, dates.length);
+  const windowDays = dates.slice(-totalDays);
+  const startDate = windowDays[0].date;
+  const endDate = windowDays.at(-1).date;
   const stats = extendedCalendarStats(dates);
   const peak = summary.peak || 1;
 
@@ -561,9 +566,9 @@ function contributionScene(snapshot, config, mobile = false) {
   }).join('');
 
   if (mobile) {
-    const body = `${text(30, 48, '1 year total', `font-size="13" fill="${C.muted}"`)}
+    const body = `${text(30, 48, `1 year total (${totalDays} days)`, `font-size="13" fill="${C.muted}"`)}
 <text x="30" y="85" font-size="34" font-weight="700" fill="${C.accent}">${format(total)}<tspan dx="8" font-size="15" font-weight="400" fill="${C.text}">contributions</tspan></text>
-${mono(30, 108, formatRange(dates[0].date, dates.at(-1).date), C.muted, 12)}
+${mono(30, 108, formatRange(startDate, endDate), C.muted, 12)}
 
 ${text(340, 48, 'Busiest day', `font-size="13" fill="${C.muted}"`)}
 <text x="340" y="85" font-size="30" font-weight="700" fill="${C.accent}">${stats.peak}<tspan dx="8" font-size="14" font-weight="400" fill="${C.text}">contributions</tspan></text>
@@ -587,9 +592,9 @@ ${mono(30, 646, '3D isometric skyline, GitHub contribution history', C.muted, 13
   }
 
   // Desktop 1200 x 640
-  const body = `${text(830, 56, '1 year total', `font-size="14" fill="${C.muted}"`)}
+  const body = `${text(830, 56, `1 year total (${totalDays} days)`, `font-size="14" fill="${C.muted}"`)}
 <text x="830" y="96" font-size="44" font-weight="700" fill="${C.accent}">${format(total)}<tspan dx="10" font-size="16" font-weight="400" fill="${C.text}">contributions</tspan></text>
-${mono(830, 120, formatRange(dates[0].date, dates.at(-1).date), C.muted, 13)}
+${mono(830, 120, formatRange(startDate, endDate), C.muted, 13)}
 
 ${text(940, 162, 'Busiest day', `font-size="14" fill="${C.muted}"`)}
 <text x="940" y="200" font-size="38" font-weight="700" fill="${C.accent}">${stats.peak}<tspan dx="10" font-size="16" font-weight="400" fill="${C.text}">contributions</tspan></text>
@@ -713,6 +718,10 @@ ${badge('BEAUTIFUL SOUP', 'beautifulsoup', 'https://github.com/RajatBhardwaj2006
 
 export function readme(snapshot, config, projects) {
   const summary = calendarSummary(snapshot.calendar);
+  const totalDays = Math.min(365, snapshot.calendar.days.length);
+  const windowDays = snapshot.calendar.days.slice(-totalDays);
+  const startDate = windowDays[0].date;
+  const endDate = windowDays.at(-1).date;
   const languages = aggregateLanguages(snapshot.repositories);
   const socials = safeSocial(snapshot).map(link => formatSocialBadge(link));
   const github = snapshot.user.html_url;
@@ -781,7 +790,7 @@ ${languages.map(language => `| ${escapeMD(language.name)} | ${format(language.re
 <details>
 <summary>Contribution data and recent repositories</summary>
 
-${format(snapshot.calendar.total)} contributions across ${summary.active} active days between ${dateLabel(snapshot.calendar.days[0].date)} and ${dateLabel(snapshot.calendar.days.at(-1).date)}. Longest streak within this window: ${summary.longest} days. Best day: ${summary.peak} contributions.
+${format(snapshot.calendar.total)} contributions across ${summary.active} active days in the ${totalDays}-day calendar window (${dateLabel(startDate)} to ${dateLabel(endDate)}). Longest streak within this window: ${summary.longest} days. Best day: ${summary.peak} contributions.
 
 ${snapshot.repositories.filter(repo => !repo.fork && repo.name.toLowerCase() !== snapshot.user.login.toLowerCase() && !repo.name.toLowerCase().includes('old_readme') && !repo.name.toLowerCase().includes('old-readme')).sort((a, b) => b.pushed_at.localeCompare(a.pushed_at)).slice(0, 3).map(repo => `- [${escapeMD(repo.name)}](${repo.html_url}) · pushed ${dateLabel(repo.pushed_at)}`).join('\n')}
 
