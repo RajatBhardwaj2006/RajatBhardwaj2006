@@ -60,23 +60,29 @@ function neuralEngine(mobile = false) {
     const layerTitles = ['IN', 'H1', 'H2', 'OUT'];
 
     const lines = [];
+    const pulses = [];
     for (let l = 0; l < layers.length - 1; l++) {
       const fromX = xCoords[l];
       const toX = xCoords[l + 1];
-      for (const fromY of layers[l]) {
-        for (const toY of layers[l + 1]) {
-          lines.push(`<line x1="${fromX}" y1="${fromY}" x2="${toX}" y2="${toY}" stroke="hsl(85 45% 24% / .5)" stroke-width="1"/>`);
+      const isToOutput = l === layers.length - 2;
+      for (let i = 0; i < layers[l].length; i++) {
+        const fromY = layers[l][i];
+        for (let j = 0; j < layers[l + 1].length; j++) {
+          const toY = layers[l + 1][j];
+          lines.push(`<line x1="${fromX}" y1="${fromY}" x2="${toX}" y2="${toY}" stroke="hsl(85 45% 20% / .4)" stroke-width="1"/>`);
+
+          const seed = (l * 47 + i * 19 + j * 31) % 100;
+          const delay = ((seed * 13) % 120) / 10;
+          const duration = [9, 11, 13, 15, 17][seed % 5];
+          const dashPatterns = ['5 25', '4 16', '6 24'];
+          const dash = isToOutput ? '7 23' : dashPatterns[seed % dashPatterns.length];
+          const strokeWidth = isToOutput ? 1.7 : Number((1.1 + (seed % 3) * 0.15).toFixed(2));
+          const opacity = isToOutput ? 0.95 : Number((0.45 + (seed % 5) * 0.1).toFixed(2));
+
+          pulses.push(`<line class="flow" x1="${fromX}" y1="${fromY}" x2="${toX}" y2="${toY}" fill="none" stroke="${C.accent}" stroke-width="${strokeWidth}" stroke-dasharray="${dash}" style="animation-delay:-${delay.toFixed(1)}s;animation-duration:${duration}s;opacity:${opacity}"/>`);
         }
       }
     }
-
-    const activePaths = [
-      `M${xCoords[0]} ${layers[0][0]}L${xCoords[1]} ${layers[1][1]}L${xCoords[2]} ${layers[2][2]}L${xCoords[3]} ${layers[3][0]}`,
-      `M${xCoords[0]} ${layers[0][1]}L${xCoords[1]} ${layers[1][2]}L${xCoords[2]} ${layers[2][1]}L${xCoords[3]} ${layers[3][0]}`,
-      `M${xCoords[0]} ${layers[0][2]}L${xCoords[1]} ${layers[1][3]}L${xCoords[2]} ${layers[2][3]}L${xCoords[3]} ${layers[3][0]}`,
-    ];
-
-    const pulses = activePaths.map(d => `<path class="flow" d="${d}" fill="none" stroke="${C.accent}" stroke-width="1.6" stroke-dasharray="5 20"/>`).join('');
 
     const nodes = [];
     for (let l = 0; l < layers.length; l++) {
@@ -98,7 +104,7 @@ function neuralEngine(mobile = false) {
     return `<g>
 ${titles}
 ${lines.join('')}
-<g class="motion">${pulses}</g>
+<g class="motion">${pulses.join('')}</g>
 ${nodes.join('')}
 ${inputLabels}
 ${outputLabel}
@@ -116,25 +122,29 @@ ${outputLabel}
   const layerTitles = ['INPUT', 'HIDDEN 1', 'HIDDEN 2', 'OUTPUT'];
 
   const lines = [];
+  const pulses = [];
   for (let l = 0; l < layers.length - 1; l++) {
     const fromX = xCoords[l];
     const toX = xCoords[l + 1];
-    for (const fromY of layers[l]) {
-      for (const toY of layers[l + 1]) {
-        lines.push(`<line x1="${fromX}" y1="${fromY}" x2="${toX}" y2="${toY}" stroke="hsl(85 45% 22% / .5)" stroke-width="1.1"/>`);
+    const isToOutput = l === layers.length - 2;
+    for (let i = 0; i < layers[l].length; i++) {
+      const fromY = layers[l][i];
+      for (let j = 0; j < layers[l + 1].length; j++) {
+        const toY = layers[l + 1][j];
+        lines.push(`<line x1="${fromX}" y1="${fromY}" x2="${toX}" y2="${toY}" stroke="hsl(85 45% 20% / .4)" stroke-width="1.1"/>`);
+
+        const seed = (l * 47 + i * 19 + j * 31) % 100;
+        const delay = ((seed * 13) % 120) / 10;
+        const duration = [9, 11, 13, 15, 17][seed % 5];
+        const dashPatterns = ['6 24', '5 15', '6 30', '4 26'];
+        const dash = isToOutput ? '8 22' : dashPatterns[seed % dashPatterns.length];
+        const strokeWidth = isToOutput ? 1.9 : Number((1.2 + (seed % 4) * 0.15).toFixed(2));
+        const opacity = isToOutput ? 0.95 : Number((0.45 + (seed % 5) * 0.1).toFixed(2));
+
+        pulses.push(`<line class="flow" x1="${fromX}" y1="${fromY}" x2="${toX}" y2="${toY}" fill="none" stroke="${C.accent}" stroke-width="${strokeWidth}" stroke-dasharray="${dash}" style="animation-delay:-${delay.toFixed(1)}s;animation-duration:${duration}s;opacity:${opacity}"/>`);
       }
     }
   }
-
-  const activePaths = [
-    `M${xCoords[0]} ${layers[0][0]}L${xCoords[1]} ${layers[1][1]}L${xCoords[2]} ${layers[2][2]}L${xCoords[3]} ${layers[3][0]}`,
-    `M${xCoords[0]} ${layers[0][1]}L${xCoords[1]} ${layers[1][2]}L${xCoords[2]} ${layers[2][1]}L${xCoords[3]} ${layers[3][0]}`,
-    `M${xCoords[0]} ${layers[0][2]}L${xCoords[1]} ${layers[1][3]}L${xCoords[2]} ${layers[2][3]}L${xCoords[3]} ${layers[3][0]}`,
-    `M${xCoords[0]} ${layers[0][0]}L${xCoords[1]} ${layers[1][0]}L${xCoords[2]} ${layers[2][0]}L${xCoords[3]} ${layers[3][0]}`,
-    `M${xCoords[0]} ${layers[0][2]}L${xCoords[1]} ${layers[1][4]}L${xCoords[2]} ${layers[2][4]}L${xCoords[3]} ${layers[3][0]}`
-  ];
-
-  const pulses = activePaths.map(d => `<path class="flow" d="${d}" fill="none" stroke="${C.accent}" stroke-width="1.8" stroke-dasharray="6 24"/>`).join('');
 
   const nodes = [];
   for (let l = 0; l < layers.length; l++) {
@@ -157,7 +167,7 @@ ${outputLabel}
   return `<g>
 ${titles}
 ${lines.join('')}
-<g class="motion">${pulses}</g>
+<g class="motion">${pulses.join('')}</g>
 ${nodes.join('')}
 ${inputLabels}
 ${outputLabel}
