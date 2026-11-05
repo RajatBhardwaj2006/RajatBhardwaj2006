@@ -1,5 +1,13 @@
 {
   "username": "RajatBhardwaj2006",
   "featuredCount": 6,
-  "accent": "#c5f277"
+  "accent": "#c5f277",
+  "featuredProjects": [
+    "Artificial-Intelligence-and-Machine-Learning",
+    "Smart-Medication-Management-Health-Assistant",
+    "VisionInspect-Industrial-Defect-Detection-",
+    "Fraudulent-Online-Transaction-Detection-System",
+    "Quick-Attendance",
+    "NeuralView"
+  ]
 }

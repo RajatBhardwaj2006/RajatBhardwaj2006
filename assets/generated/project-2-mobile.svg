@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="340" height="340" viewBox="0 0 340 340" role="img" aria-labelledby="title desc">
-<title id="title">VisionInspect-Industrial-Defect-Detection-</title><desc id="desc">Build an unsupervised visual anomaly-detection pipeline using a Convolutional Autoencoder and/or PatchCore-style feature-based anomaly detection. The system should learn primarily from defect-free images and generate an anomaly score, normal/abnormal decision, and visual anomaly heatmap for test images.. Jupyter Notebook. 1 stars. Last pushed 22 Oct 2026.</desc>
+<title id="title">Smart-Medication-Management-Health-Assistant</title><desc id="desc">The system helps users search medicines, view medicine details, receive AI-based health suggestions, request unavailable medicines, and allows administrators to manage inventory, sales, and customer requests efficiently.. Java. 0 stars. Last pushed 31 Oct 2026.</desc>
 <style>
 text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:none}
 @keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
@@ -10,8 +10,8 @@ text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:
 </style>
 <rect width="340" height="340" rx="4" fill="#111411"/>
 <g transform="translate(20 3) scale(.65)"><g class="float" style="animation-duration:10s"><g transform="translate(315 18)" stroke="#c5f277" stroke-width=".8" fill="none" opacity=".65"><path d="M0 24L45 0L45 92L0 116Z"/><path d="M17 24L62 0L62 92L17 116Z"/><path d="M34 24L79 0L79 92L34 116Z"/><path d="M51 24L96 0L96 92L51 116Z"/><path d="M68 24L113 0L113 92L68 116Z"/><path d="M85 24L130 0L130 92L85 116Z"/><path d="M102 24L147 0L147 92L102 116Z"/></g></g></g>
-<text x="20" y="36" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#c5f277">Jupyter Notebook</text>
-<text x="20" y="158" font-size="27" fill="#f3f6ef">VisionInspect</text><text x="20" y="192" font-size="27" fill="#f3f6ef">Industrial Defect</text><text x="20" y="226" font-size="27" fill="#f3f6ef">Detection</text>
-<path d="M20 278H320" stroke="#30382f"/><text x="20" y="312" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="15" fill="#a4afa1">1 stars</text>
+<text x="20" y="36" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#c5f277">Java</text>
+<text x="20" y="158" font-size="27" fill="#f3f6ef">Smart Medication</text><text x="20" y="192" font-size="27" fill="#f3f6ef">Management Health</text><text x="20" y="226" font-size="27" fill="#f3f6ef">Assistant</text>
+<path d="M20 278H320" stroke="#30382f"/><text x="20" y="312" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="15" fill="#a4afa1">0 stars</text>
 <text x="320" y="312" text-anchor="end" font-size="16" fill="#c5f277">Explore ↗</text>
 </svg>

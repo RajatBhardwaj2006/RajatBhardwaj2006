@@ -409,22 +409,52 @@ ${embedded('activity', 'Recently pushed public repositories. Text links and date
 `;
 }
 
+export function resolveRepositoriesAndProjects(snapshot, config) {
+  const priority = (config.featuredProjects || []).map(p => p.includes('/') ? p : `${config.username}/${p}`);
+  const pinned = [...new Set([...priority, ...(snapshot.pinned || [])])];
+  const customRepos = [
+    {
+      name: 'NeuralView',
+      full_name: `${config.username}/NeuralView`,
+      html_url: `https://github.com/${config.username}/NeuralView`,
+      description: 'Interactive AI, ML and Deep Learning education platform featuring live interactive labs, dynamic mathematical visualizations, and real-time parameter tuning.',
+      language: 'TypeScript',
+      topics: ['artificial-intelligence', 'deep-learning', 'machine-learning', 'nextjs', 'react', 'typescript'],
+      stargazers_count: 0,
+      forks_count: 0,
+      pushed_at: '2026-11-04T12:00:00Z',
+      archived: false,
+      fork: false,
+      private: false
+    }
+  ];
+  const allRepos = [...snapshot.repositories];
+  for (const repo of customRepos) {
+    if (!allRepos.some(r => r.name.toLowerCase() === repo.name.toLowerCase())) {
+      allRepos.push(repo);
+    }
+  }
+  const projects = selectProjects(allRepos, pinned, snapshot.user.login, config.featuredCount);
+  return { allRepos, pinned, projects };
+}
+
 export async function renderProfile(snapshot, config, root) {
   if (!snapshot.calendar?.days?.length || !snapshot.repositories || !snapshot.user) throw new Error('A complete GitHub snapshot is required.');
-  const projects = selectProjects(snapshot.repositories, snapshot.pinned, snapshot.user.login, config.featuredCount);
+  const { allRepos, projects } = resolveRepositoriesAndProjects(snapshot, config);
   const dir = new URL('assets/generated/', root);
   await mkdir(dir, { recursive: true });
+  const snapshotWithRepos = { ...snapshot, repositories: allRepos };
   const files = new Map([
-    ['hero.svg', hero(snapshot, config)], ['hero-mobile.svg', hero(snapshot, config, true)],
-    ['metrics.svg', metrics(snapshot, config)], ['languages.svg', languagesPanel(snapshot, config)],
-    ['metrics-mobile.svg', metrics(snapshot, config, true)], ['languages-mobile.svg', languagesPanel(snapshot, config, true)],
-    ['contributions.svg', contributionScene(snapshot, config)], ['contributions-mobile.svg', contributionScene(snapshot, config, true)],
-    ['activity.svg', activityPanel(snapshot, config)], ['footer.svg', footer(snapshot, config)],
-    ['activity-mobile.svg', activityPanel(snapshot, config, true)], ['footer-mobile.svg', footer(snapshot, config, true)],
+    ['hero.svg', hero(snapshotWithRepos, config)], ['hero-mobile.svg', hero(snapshotWithRepos, config, true)],
+    ['metrics.svg', metrics(snapshotWithRepos, config)], ['languages.svg', languagesPanel(snapshotWithRepos, config)],
+    ['metrics-mobile.svg', metrics(snapshotWithRepos, config, true)], ['languages-mobile.svg', languagesPanel(snapshotWithRepos, config, true)],
+    ['contributions.svg', contributionScene(snapshotWithRepos, config)], ['contributions-mobile.svg', contributionScene(snapshotWithRepos, config, true)],
+    ['activity.svg', activityPanel(snapshotWithRepos, config)], ['footer.svg', footer(snapshotWithRepos, config)],
+    ['activity-mobile.svg', activityPanel(snapshotWithRepos, config, true)], ['footer-mobile.svg', footer(snapshotWithRepos, config, true)],
     ...projects.map((repo, index) => [`project-${index + 1}.svg`, projectCard(repo, index, config)]),
     ...projects.map((repo, index) => [`project-${index + 1}-mobile.svg`, projectCard(repo, index, config, true)]),
   ]);
   for (const [name, content] of files) await writeFile(new URL(name, dir), content);
   for (const file of await readdir(dir)) if (/^project-\d+(?:-mobile)?\.svg$/.test(file) && !files.has(file)) await unlink(new URL(file, dir));
-  await writeFile(new URL('README.md', root), readme(snapshot, config, projects));
+  await writeFile(new URL('README.md', root), readme(snapshotWithRepos, config, projects));
 }

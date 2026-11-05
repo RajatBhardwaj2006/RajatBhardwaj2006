@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFile, readdir } from 'node:fs/promises';
-import { readme } from './lib/render.mjs';
-import { selectProjects, aggregateLanguages } from './lib/github.mjs';
+import { readme, resolveRepositoriesAndProjects } from './lib/render.mjs';
+import { aggregateLanguages } from './lib/github.mjs';
 
 const root = new URL('../', import.meta.url);
 const data = JSON.parse(await readFile(new URL('data/profile.json', root), 'utf8'));
@@ -23,9 +23,10 @@ for (const repo of data.repositories) {
   assert.equal(repo.html_url, `https://github.com/${repo.full_name}`);
   assert(repo.language === null || typeof repo.language === 'string');
 }
-const projects = selectProjects(data.repositories, data.pinned, data.user.login, config.featuredCount);
-const markdown = await readFile(new URL('README.md', root), 'utf8');
-assert.equal(markdown, readme(data, config, projects), 'README must match the current snapshot and generator.');
+const { allRepos, projects } = resolveRepositoriesAndProjects(data, config);
+const snapshotWithRepos = { ...data, repositories: allRepos };
+const markdown = (await readFile(new URL('README.md', root), 'utf8')).replace(/\r\n/g, '\n');
+assert.equal(markdown, readme(snapshotWithRepos, config, projects).replace(/\r\n/g, '\n'), 'README must match the current snapshot and generator.');
 const names = await readdir(new URL('assets/generated/', root));
 for (const name of names) {
   assert(name.endsWith('.svg'));
@@ -37,5 +38,5 @@ for (const name of names) {
   assert(!source.includes('—'), `${name} contains an unexpected em dash.`);
 }
 for (const match of markdown.matchAll(/(?:src|srcset)="(assets\/generated\/[^"]+)"/g)) await readFile(new URL(match[1], root));
-assert(aggregateLanguages(data.repositories).every(language => language.percent >= 0 && language.percent <= 100));
-console.log(`Verified ${names.length} standalone SVGs, ${projects.length} project links, ${data.repositories.length} repositories, and ${data.calendar.days.length} exact contribution days.`);
+assert(aggregateLanguages(snapshotWithRepos.repositories).every(language => language.percent >= 0 && language.percent <= 100));
+console.log(`Verified ${names.length} standalone SVGs, ${projects.length} project links, ${snapshotWithRepos.repositories.length} repositories, and ${data.calendar.days.length} exact contribution days.`);

@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="284" viewBox="0 0 1200 284" role="img" aria-labelledby="title desc">
-<title id="title">Recently pushed repositories</title><desc id="desc">OLD_readme: 05 Nov 2026. Java: 31 Oct 2026. Smart-Medication-Management-Health-Assistant: 31 Oct 2026</desc>
+<title id="title">Recently pushed repositories</title><desc id="desc">OLD_readme: 05 Nov 2026. NeuralView: 04 Nov 2026. Java: 31 Oct 2026</desc>
 <style>
 text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:none}
 @keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
@@ -10,5 +10,5 @@ text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:
 </style>
 <rect width="1200" height="284" rx="4" fill="#111411"/>
 <text x="42" y="58" font-size="29" font-weight="600" fill="#f3f6ef">Still in the making.</text>
-<text x="42" y="121" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" fill="#c5f277">05 Nov 2026</text><text x="238" y="121" font-size="20" fill="#f3f6ef">OLD readme</text><path d="M238 141H1158" stroke="#30382f"/><text x="42" y="180" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" fill="#c5f277">31 Oct 2026</text><text x="238" y="180" font-size="20" fill="#f3f6ef">Java</text><path d="M238 200H1158" stroke="#30382f"/><text x="42" y="239" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" fill="#c5f277">31 Oct 2026</text><text x="238" y="239" font-size="20" fill="#f3f6ef">Smart Medication Management Health Assistant</text>
+<text x="42" y="121" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" fill="#c5f277">05 Nov 2026</text><text x="238" y="121" font-size="20" fill="#f3f6ef">OLD readme</text><path d="M238 141H1158" stroke="#30382f"/><text x="42" y="180" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" fill="#c5f277">04 Nov 2026</text><text x="238" y="180" font-size="20" fill="#f3f6ef">NeuralView</text><path d="M238 200H1158" stroke="#30382f"/><text x="42" y="239" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" fill="#c5f277">31 Oct 2026</text><text x="238" y="239" font-size="20" fill="#f3f6ef">Java</text>
 </svg>

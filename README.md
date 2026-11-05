@@ -17,28 +17,28 @@ Featured from my GitHub pins.
 
 <p>
   <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-1-mobile.svg"><img src="assets/generated/project-1.svg" width="49%" alt="Artificial-Intelligence-and-Machine-Learning: Artificial Intelligence and Machine Learning focuses on building systems that learn from data to make predictions and decisions. This course covers statistics, data preprocessing, supervised &amp; unsupervised learning, neural networks &amp; modern AI techniques like deep learning and NLP, with practical implementation using Python &amp; AI development tools"></picture></a>
-  <a href="https://github.com/RajatBhardwaj2006/VisionInspect-Industrial-Defect-Detection-"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-2-mobile.svg"><img src="assets/generated/project-2.svg" width="49%" alt="VisionInspect-Industrial-Defect-Detection-: Build an unsupervised visual anomaly-detection pipeline using a Convolutional Autoencoder and/or PatchCore-style feature-based anomaly detection. The system should learn primarily from defect-free images and generate an anomaly score, normal/abnormal decision, and visual anomaly heatmap for test images."></picture></a>
+  <a href="https://github.com/RajatBhardwaj2006/Smart-Medication-Management-Health-Assistant"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-2-mobile.svg"><img src="assets/generated/project-2.svg" width="49%" alt="Smart-Medication-Management-Health-Assistant: The system helps users search medicines, view medicine details, receive AI-based health suggestions, request unavailable medicines, and allows administrators to manage inventory, sales, and customer requests efficiently."></picture></a>
 </p>
 
 <p>
-  <a href="https://github.com/RajatBhardwaj2006/Fraudulent-Online-Transaction-Detection-System"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-3-mobile.svg"><img src="assets/generated/project-3.svg" width="49%" alt="Fraudulent-Online-Transaction-Detection-System: This Fraud Detection System uses Random Forest to classify transactions as genuine or fraudulent based on amount, frequency, and location. Built with Python and Flask, it provides a web interface for instant predictions."></picture></a>
-  <a href="https://github.com/RajatBhardwaj2006/Smart-Medication-Management-Health-Assistant"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-4-mobile.svg"><img src="assets/generated/project-4.svg" width="49%" alt="Smart-Medication-Management-Health-Assistant: The system helps users search medicines, view medicine details, receive AI-based health suggestions, request unavailable medicines, and allows administrators to manage inventory, sales, and customer requests efficiently."></picture></a>
+  <a href="https://github.com/RajatBhardwaj2006/VisionInspect-Industrial-Defect-Detection-"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-3-mobile.svg"><img src="assets/generated/project-3.svg" width="49%" alt="VisionInspect-Industrial-Defect-Detection-: Build an unsupervised visual anomaly-detection pipeline using a Convolutional Autoencoder and/or PatchCore-style feature-based anomaly detection. The system should learn primarily from defect-free images and generate an anomaly score, normal/abnormal decision, and visual anomaly heatmap for test images."></picture></a>
+  <a href="https://github.com/RajatBhardwaj2006/Fraudulent-Online-Transaction-Detection-System"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-4-mobile.svg"><img src="assets/generated/project-4.svg" width="49%" alt="Fraudulent-Online-Transaction-Detection-System: This Fraud Detection System uses Random Forest to classify transactions as genuine or fraudulent based on amount, frequency, and location. Built with Python and Flask, it provides a web interface for instant predictions."></picture></a>
 </p>
 
 <p>
-  <a href="https://github.com/RajatBhardwaj2006/OLD_readme"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-5-mobile.svg"><img src="assets/generated/project-5.svg" width="49%" alt="OLD_readme: Explore the repository on GitHub."></picture></a>
-  <a href="https://github.com/RajatBhardwaj2006/Java"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-6-mobile.svg"><img src="assets/generated/project-6.svg" width="49%" alt="Java: Explore the repository on GitHub."></picture></a>
+  <a href="https://github.com/RajatBhardwaj2006/Quick-Attendance"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-5-mobile.svg"><img src="assets/generated/project-5.svg" width="49%" alt="Quick-Attendance: QuickAttendance is a simple and efficient attendance management application designed to make tracking attendance faster and easier. With a clean interface and intuitive features, it helps users manage attendance records and stay organized without unnecessary complexity."></picture></a>
+  <a href="https://github.com/RajatBhardwaj2006/NeuralView"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-6-mobile.svg"><img src="assets/generated/project-6.svg" width="49%" alt="NeuralView: Interactive AI, ML and Deep Learning education platform featuring live interactive labs, dynamic mathematical visualizations, and real-time parameter tuning."></picture></a>
 </p>
 
 <details>
 <summary>Project links and descriptions</summary>
 
 - [Artificial-Intelligence-and-Machine-Learning](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning): Artificial Intelligence and Machine Learning focuses on building systems that learn from data to make predictions and decisions. This course covers statistics, data preprocessing, supervised & unsupervised learning, neural networks & modern AI techniques like deep learning and NLP, with practical implementation using Python & AI development tools
+- [Smart-Medication-Management-Health-Assistant](https://github.com/RajatBhardwaj2006/Smart-Medication-Management-Health-Assistant): The system helps users search medicines, view medicine details, receive AI-based health suggestions, request unavailable medicines, and allows administrators to manage inventory, sales, and customer requests efficiently.
 - [VisionInspect-Industrial-Defect-Detection-](https://github.com/RajatBhardwaj2006/VisionInspect-Industrial-Defect-Detection-): Build an unsupervised visual anomaly-detection pipeline using a Convolutional Autoencoder and/or PatchCore-style feature-based anomaly detection. The system should learn primarily from defect-free images and generate an anomaly score, normal/abnormal decision, and visual anomaly heatmap for test images.
 - [Fraudulent-Online-Transaction-Detection-System](https://github.com/RajatBhardwaj2006/Fraudulent-Online-Transaction-Detection-System): This Fraud Detection System uses Random Forest to classify transactions as genuine or fraudulent based on amount, frequency, and location. Built with Python and Flask, it provides a web interface for instant predictions.
-- [Smart-Medication-Management-Health-Assistant](https://github.com/RajatBhardwaj2006/Smart-Medication-Management-Health-Assistant): The system helps users search medicines, view medicine details, receive AI-based health suggestions, request unavailable medicines, and allows administrators to manage inventory, sales, and customer requests efficiently.
-- [OLD\_readme](https://github.com/RajatBhardwaj2006/OLD_readme)
-- [Java](https://github.com/RajatBhardwaj2006/Java)
+- [Quick-Attendance](https://github.com/RajatBhardwaj2006/Quick-Attendance): QuickAttendance is a simple and efficient attendance management application designed to make tracking attendance faster and easier. With a clean interface and intuitive features, it helps users manage attendance records and stay organized without unnecessary complexity.
+- [NeuralView](https://github.com/RajatBhardwaj2006/NeuralView): Interactive AI, ML and Deep Learning education platform featuring live interactive labs, dynamic mathematical visualizations, and real-time parameter tuning.
 
 </details>
 
@@ -94,7 +94,7 @@ Featured from my GitHub pins.
 
 ## The code behind the work
 
-<picture><source media="(max-width: 600px)" srcset="assets/generated/languages-mobile.svg"><img src="assets/generated/languages.svg" width="1200" alt="Primary language by public repository count, excluding forks: C++ 21.4%, Jupyter Notebook 21.4%, Java 14.3%, JavaScript 14.3%, C 7.1%. These describe repositories, not proficiency."></picture>
+<picture><source media="(max-width: 600px)" srcset="assets/generated/languages-mobile.svg"><img src="assets/generated/languages.svg" width="1200" alt="Primary language by public repository count, excluding forks: C++ 18.8%, Jupyter Notebook 18.8%, Java 12.5%, JavaScript 12.5%, Python 12.5%. These describe repositories, not proficiency."></picture>
 
 <details>
 <summary>Language data</summary>
@@ -103,14 +103,15 @@ Each owned public repository counts once, using its primary language reported by
 
 | Language | Repositories | Share |
 | :--- | ---: | ---: |
-| C++ | 3 | 21.4% |
-| Jupyter Notebook | 3 | 21.4% |
-| Java | 2 | 14.3% |
-| JavaScript | 2 | 14.3% |
-| C | 1 | 7.1% |
-| Go | 1 | 7.1% |
-| HTML | 1 | 7.1% |
-| Python | 1 | 7.1% |
+| C++ | 3 | 18.8% |
+| Jupyter Notebook | 3 | 18.8% |
+| Java | 2 | 12.5% |
+| JavaScript | 2 | 12.5% |
+| Python | 2 | 12.5% |
+| C | 1 | 6.3% |
+| Go | 1 | 6.3% |
+| HTML | 1 | 6.3% |
+| TypeScript | 1 | 6.3% |
 
 </details>
 
@@ -129,8 +130,8 @@ Each owned public repository counts once, using its primary language reported by
 1,154 contributions across 233 active days between 02 Nov 2025 and 05 Nov 2026. Longest streak within this window: 201 days. Best day: 35 contributions.
 
 - [OLD\_readme](https://github.com/RajatBhardwaj2006/OLD_readme) · pushed 05 Nov 2026
+- [NeuralView](https://github.com/RajatBhardwaj2006/NeuralView) · pushed 04 Nov 2026
 - [Java](https://github.com/RajatBhardwaj2006/Java) · pushed 31 Oct 2026
-- [Smart-Medication-Management-Health-Assistant](https://github.com/RajatBhardwaj2006/Smart-Medication-Management-Health-Assistant) · pushed 31 Oct 2026
 
 Daily counts follow GitHub's contribution calendar visibility and counting rules. Private repository names and content are never requested or published.
 
