@@ -616,14 +616,38 @@ ${mono(45, 626, formatStreakRange(stats.currentStart, stats.currentEnd), C.muted
 
 function activityPanel(snapshot, config, mobile = false) {
   const recent = snapshot.repositories
-    .filter(repo => !repo.fork && repo.name.toLowerCase() !== snapshot.user.login.toLowerCase() && !repo.name.toLowerCase().includes('old_readme') && !repo.name.toLowerCase().includes('old-readme'))
+    .filter(repo => !repo.fork && !repo.private && !repo.featuredOnly && repo.name.toLowerCase() !== snapshot.user.login.toLowerCase() && !repo.name.toLowerCase().includes('old_readme') && !repo.name.toLowerCase().includes('old-readme'))
     .sort((a, b) => b.pushed_at.localeCompare(a.pushed_at))
     .slice(0, 3);
-  const body = mobile ? `${text(30, 52, 'Still in the making.', `font-size="29" font-weight="600" fill="${C.text}"`)}
-${recent.map((repo, i) => `${mono(30, 112 + i * 106, dateLabel(repo.pushed_at), C.accent, 15)}${lines(30, 143 + i * 106, repo.name.replaceAll(/[-_]+/g, ' ').trim(), 40, 2, 21, C.text, 27)}`).join('')}` :
-    `${text(42, 58, 'Still in the making.', `font-size="29" font-weight="600" fill="${C.text}"`)}
-${recent.map((repo, i) => `${mono(42, 121 + i * 59, dateLabel(repo.pushed_at), C.accent, 14)}${text(238, 121 + i * 59, wrap(repo.name.replaceAll(/[-_]+/g, ' ').trim(), 62, 1)[0], `font-size="20" fill="${C.text}"`)}${i < recent.length - 1 ? rule(238, 141 + i * 59, 1158, 141) : ''}`).join('')}`;
-  return svg('Recently pushed repositories', recent.map(repo => `${repo.name}: ${dateLabel(repo.pushed_at)}`).join('. '), mobile ? 560 : 1200, mobile ? 430 : 284, body, config.accent);
+  if (mobile) {
+    const body = `${text(30, 48, 'Still in the making.', `font-size="28" font-weight="600" fill="${C.text}"`)}
+<text x="30" y="74" font-size="13" fill="${C.muted}">Latest public updates and commit activity.</text>
+${recent.map((repo, i) => {
+  const y = 118 + i * 96;
+  const name = wrap(repo.name.replaceAll(/[-_]+/g, ' ').trim(), 36, 1)[0];
+  const msg = wrap(repo.last_commit_message || repo.description || 'Repository update', 46, 1)[0];
+  return `${mono(30, y, dateLabel(repo.pushed_at), C.accent, 13)}
+${text(30, y + 24, name, `font-size="18" font-weight="600" fill="${C.text}"`)}
+<text x="30" y="${y + 46}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="${C.muted}"><tspan fill="${C.accent}">commit: </tspan>&quot;${escapeXML(msg)}&quot;</text>
+${i < recent.length - 1 ? `<path d="M30 ${y + 66}H530" stroke="#232a21" stroke-width="1"/>` : ''}`;
+}).join('')}`;
+    return svg('Recently pushed public repositories', recent.map(repo => `${repo.name}: ${dateLabel(repo.pushed_at)} - ${repo.last_commit_message || 'update'}`).join('. '), 560, 420, body, config.accent);
+  }
+
+  // Desktop 1200 x 330
+  const body = `${text(42, 54, 'Still in the making.', `font-size="29" font-weight="600" fill="${C.text}"`)}
+<text x="42" y="80" font-size="14" fill="${C.muted}">Latest commits pushed across public repositories.</text>
+${recent.map((repo, i) => {
+  const y = 126 + i * 68;
+  const name = wrap(repo.name.replaceAll(/[-_]+/g, ' ').trim(), 64, 1)[0];
+  const msg = wrap(repo.last_commit_message || repo.description || 'Repository update', 85, 1)[0];
+  return `${mono(42, y, dateLabel(repo.pushed_at), C.accent, 14)}
+${text(190, y, name, `font-size="19" font-weight="600" fill="${C.text}"`)}
+<text x="190" y="${y + 23}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="${C.muted}"><tspan fill="${C.accent}">commit: </tspan>&quot;${escapeXML(msg)}&quot;</text>
+${i < recent.length - 1 ? `<path d="M190 ${y + 38}H1158" stroke="#232a21" stroke-width="1"/>` : ''}`;
+}).join('')}`;
+
+  return svg('Recently pushed public repositories', recent.map(repo => `${repo.name}: ${dateLabel(repo.pushed_at)} - ${repo.last_commit_message || 'update'}`).join('. '), 1200, 330, body, config.accent);
 }
 
 function footer(snapshot, config, mobile = false) {
@@ -792,7 +816,10 @@ ${languages.map(language => `| ${escapeMD(language.name)} | ${format(language.re
 
 ${format(snapshot.calendar.total)} contributions across ${summary.active} active days in the ${totalDays}-day calendar window (${dateLabel(startDate)} to ${dateLabel(endDate)}). Longest streak within this window: ${summary.longest} days. Best day: ${summary.peak} contributions.
 
-${snapshot.repositories.filter(repo => !repo.fork && repo.name.toLowerCase() !== snapshot.user.login.toLowerCase() && !repo.name.toLowerCase().includes('old_readme') && !repo.name.toLowerCase().includes('old-readme')).sort((a, b) => b.pushed_at.localeCompare(a.pushed_at)).slice(0, 3).map(repo => `- [${escapeMD(repo.name)}](${repo.html_url}) · pushed ${dateLabel(repo.pushed_at)}`).join('\n')}
+${snapshot.repositories.filter(repo => !repo.fork && !repo.private && !repo.featuredOnly && repo.name.toLowerCase() !== snapshot.user.login.toLowerCase() && !repo.name.toLowerCase().includes('old_readme') && !repo.name.toLowerCase().includes('old-readme')).sort((a, b) => b.pushed_at.localeCompare(a.pushed_at)).slice(0, 3).map(repo => {
+  const commit = repo.last_commit_message ? ` - *"${escapeMD(repo.last_commit_message)}"*` : '';
+  return `- [${escapeMD(repo.name)}](${repo.html_url}) · pushed ${dateLabel(repo.pushed_at)}${commit}`;
+}).join('\n')}
 
 Daily counts follow GitHub's contribution calendar visibility and counting rules. Private repository names and content are never requested or published.
 
@@ -822,7 +849,8 @@ export function resolveRepositoriesAndProjects(snapshot, config) {
       pushed_at: '2026-11-05T18:00:00Z',
       archived: false,
       fork: false,
-      private: false
+      private: false,
+      featuredOnly: true
     }
   ];
   let allRepos = snapshot.repositories.filter(r => !r.name.toLowerCase().includes('old_readme') && !r.name.toLowerCase().includes('old-readme'));

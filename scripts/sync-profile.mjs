@@ -1,5 +1,5 @@
 import { readFile, writeFile, mkdir, rename } from 'node:fs/promises';
-import { collectProfile } from './lib/github.mjs';
+import { collectProfile, fetchLatestCommitMessage } from './lib/github.mjs';
 import { renderProfile } from './lib/render.mjs';
 
 const config = JSON.parse(await readFile(new URL('../profile.config.json', import.meta.url), 'utf8'));
@@ -11,7 +11,7 @@ try {
   if (qa && !qa.language) qa.language = 'Python';
   const existingNv = snapshot.repositories.find(r => r.name.toLowerCase() === 'neuralview');
   if (existingNv) {
-    existingNv.pushed_at = '2026-11-05T18:00:00Z';
+    existingNv.featuredOnly = true;
   } else {
     snapshot.repositories.push({
       name: 'NeuralView',
@@ -25,9 +25,26 @@ try {
       pushed_at: '2026-11-05T18:00:00Z',
       archived: false,
       fork: false,
-      private: false
+      private: false,
+      featuredOnly: true
     });
   }
+
+  // Fetch latest commit messages for top public repositories
+  const publicRepos = snapshot.repositories
+    .filter(r => !r.private && !r.fork && !r.featuredOnly && r.name.toLowerCase() !== config.username.toLowerCase())
+    .sort((a, b) => b.pushed_at.localeCompare(a.pushed_at))
+    .slice(0, 5);
+
+  for (const repo of publicRepos) {
+    try {
+      const msg = await fetchLatestCommitMessage(config.username, repo.name, {
+        token: process.env.GITHUB_TOKEN || process.env.GH_TOKEN
+      });
+      if (msg) repo.last_commit_message = msg;
+    } catch {}
+  }
+
   await mkdir(new URL('data/', root), { recursive: true });
   const temp = new URL('data/profile.json.tmp', root);
   await writeFile(temp, `${JSON.stringify(snapshot, null, 2)}\n`);

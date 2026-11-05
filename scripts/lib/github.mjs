@@ -102,6 +102,23 @@ export function aggregateLanguages(repositories) {
     .map(([name, repositories]) => ({ name, repositories, percent: total ? repositories / total * 100 : 0 }));
 }
 
+export async function fetchLatestCommitMessage(owner, repoName, { token, fetcher = fetch } = {}) {
+  if (token) {
+    try {
+      const response = await request(`${API}/repos/${owner}/${repoName}/commits?per_page=1`, { token, fetcher });
+      if (Array.isArray(response.data) && response.data[0]?.commit?.message) {
+        return response.data[0].commit.message.split('\n')[0].trim();
+      }
+    } catch {}
+  }
+  try {
+    const feed = await request(`https://github.com/${owner}/${repoName}/commits.atom`, { fetcher, json: false });
+    const match = typeof feed.data === 'string' && feed.data.match(/<entry>[\s\S]*?<title>([\s\S]*?)<\/title>/);
+    if (match) return decodeHTML(match[1].trim());
+  } catch {}
+  return '';
+}
+
 export async function collectProfile(config, { token, fetcher = fetch, now = new Date() } = {}) {
   if (!/^[a-z\d](?:[a-z\d-]{0,37}[a-z\d])?$/i.test(config.username)) throw new Error('Invalid GitHub username.');
   const username = config.username;
