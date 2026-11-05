@@ -17,7 +17,7 @@
     "blog": "",
     "followers": 8,
     "following": 6,
-    "public_repos": 15,
+    "public_repos": 16,
     "created_at": "2025-11-27T15:06:35Z"
   },
   "social": [
@@ -229,7 +229,7 @@
       "full_name": "RajatBhardwaj2006/Quick-Attendance",
       "html_url": "https://github.com/RajatBhardwaj2006/Quick-Attendance",
       "description": "QuickAttendance is a simple and efficient attendance management application designed to make tracking attendance faster and easier. With a clean interface and intuitive features, it helps users manage attendance records and stay organized without unnecessary complexity.",
-      "language": null,
+      "language": "Python",
       "topics": [
         "face-recognition",
         "machine-learning",
@@ -308,13 +308,36 @@
       "archived": false,
       "fork": false,
       "private": false
+    },
+    {
+      "name": "NeuralView",
+      "full_name": "RajatBhardwaj2006/NeuralView",
+      "html_url": "https://github.com/RajatBhardwaj2006/NeuralView",
+      "description": "Interactive AI, ML and Deep Learning education platform featuring live interactive labs, dynamic mathematical visualizations, and real-time parameter tuning.",
+      "language": "TypeScript",
+      "topics": [
+        "artificial-intelligence",
+        "deep-learning",
+        "machine-learning",
+        "nextjs",
+        "react",
+        "typescript"
+      ],
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "pushed_at": "2026-11-04T12:00:00Z",
+      "archived": false,
+      "fork": false,
+      "private": false
     }
   ],
   "pinned": [
     "RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning",
+    "RajatBhardwaj2006/Smart-Medication-Management-Health-Assistant",
     "RajatBhardwaj2006/VisionInspect-Industrial-Defect-Detection-",
     "RajatBhardwaj2006/Fraudulent-Online-Transaction-Detection-System",
-    "RajatBhardwaj2006/Smart-Medication-Management-Health-Assistant"
+    "RajatBhardwaj2006/Quick-Attendance",
+    "RajatBhardwaj2006/NeuralView"
   ],
   "calendar": {
     "total": 1147,

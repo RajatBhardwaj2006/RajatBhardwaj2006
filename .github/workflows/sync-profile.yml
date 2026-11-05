@@ -1,0 +1,53 @@
+name: Sync GitHub profile
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 */6 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - 'profile.config.json'
+      - 'package.json'
+      - '.github/workflows/sync-profile.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.repository == 'RajatBhardwaj2006/RajatBhardwaj2006'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+      - name: Test the data pipeline
+        run: npm test
+      - name: Fetch GitHub data and render the profile
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: npm run sync
+      - name: Verify the complete generated profile
+        run: npm run check
+      - name: Publish changes
+        run: |
+          git add README.md assets/generated data/profile.json
+          if git diff --cached --quiet; then
+            echo "Profile already up to date."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore: sync public GitHub profile'
+          git push origin HEAD:main

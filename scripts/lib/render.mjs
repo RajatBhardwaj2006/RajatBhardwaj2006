@@ -266,10 +266,76 @@ export function safeSocial(snapshot) {
   return [...unique.values()];
 }
 
+export function formatSocialBadge(link) {
+  const configs = {
+    Instagram: { color: 'E4405F', logo: 'instagram' },
+    LinkedIn: { color: '0A66C2', logo: 'linkedin' },
+    LeetCode: { color: 'FFA116', logo: 'leetcode' },
+    X: { color: '000000', logo: 'x' },
+    YouTube: { color: 'FF0000', logo: 'youtube' },
+    Website: { color: '161b16', logo: 'safari', logoColor: 'c5f277' },
+  };
+  const cfg = configs[link.label] || { color: '161b16', logo: 'link' };
+  const badgeUrl = `https://img.shields.io/badge/${encodeURIComponent(link.label)}-${cfg.color}?style=for-the-badge&logo=${cfg.logo}&logoColor=${cfg.logoColor || 'white'}`;
+  return `[![${escapeMD(link.label)}](${badgeUrl})](${link.url})`;
+}
+
+export function repositoriesSection() {
+  return `## 📁 Repositories
+
+> Click any badge below to explore the code 👇
+
+\`Artificial Intelligence & Machine Learning\`
+
+[![AI & ML REPO](https://img.shields.io/badge/AI_%26_ML_REPO-7952DE?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning)
+[![DEEP LEARNING](https://img.shields.io/badge/DEEP_LEARNING-F16B24?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RajatBhardwaj2006/Deep-Learning)
+[![REINFORCEMENT LEARNING](https://img.shields.io/badge/REINFORCEMENT_LEARNING-00B48A?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning)
+
+\`DSA & Problem Solving\`
+
+[![DSA IN C++](https://img.shields.io/badge/DSA_IN_C++-007ACC?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/RajatBhardwaj2006/Data-Structures)
+[![LEETCODE](https://img.shields.io/badge/LEETCODE-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/cherry_2006)
+
+\`Languages\`
+
+[![PYTHON](https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/RajatBhardwaj2006)
+[![JAVA](https://img.shields.io/badge/JAVA-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://github.com/RajatBhardwaj2006/Java)
+[![SQL](https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=postgresql&logoColor=white)](https://github.com/RajatBhardwaj2006)
+[![C++](https://img.shields.io/badge/C++-00599E?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/RajatBhardwaj2006/CPP)
+
+\`AI Engineering & Development\`
+
+[![FLASK](https://img.shields.io/badge/FLASK-000000?style=for-the-badge&logo=flask&logoColor=white)](https://github.com/RajatBhardwaj2006/Fraudulent-Online-Transaction-Detection-System)
+[![OPENAI](https://img.shields.io/badge/OPENAI-412991?style=for-the-badge&logo=openai&logoColor=white)](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning)
+[![AI AGENTS](https://img.shields.io/badge/AI_AGENTS-E91E63?style=for-the-badge&logo=probot&logoColor=white)](https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning)
+
+\`Frontend\`
+
+[![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://github.com/RajatBhardwaj2006)
+[![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://github.com/RajatBhardwaj2006)
+
+\`Development Tools\`
+
+[![GIT](https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white)](https://github.com/RajatBhardwaj2006)
+[![GITHUB](https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RajatBhardwaj2006)
+[![JUPYTERLAB](https://img.shields.io/badge/JUPYTERLAB-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://github.com/RajatBhardwaj2006)
+
+\`Libraries\`
+
+[![NUMPY](https://img.shields.io/badge/NUMPY-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://github.com/RajatBhardwaj2006)
+[![PANDAS](https://img.shields.io/badge/PANDAS-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://github.com/RajatBhardwaj2006)
+[![SEABORN](https://img.shields.io/badge/SEABORN-4C72B0?style=for-the-badge&logo=seaborn&logoColor=white)](https://github.com/RajatBhardwaj2006)
+[![MATPLOTLIB](https://img.shields.io/badge/MATPLOTLIB-C0392B?style=for-the-badge&logo=matplotlib&logoColor=white)](https://github.com/RajatBhardwaj2006)
+[![SCIPY](https://img.shields.io/badge/SCIPY-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white)](https://github.com/RajatBhardwaj2006)
+[![SCIKIT-LEARN](https://img.shields.io/badge/SCIKIT--LEARN-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://github.com/RajatBhardwaj2006)
+[![PYTORCH](https://img.shields.io/badge/PYTORCH-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://github.com/RajatBhardwaj2006/VisionInspect-Industrial-Defect-Detection-)
+[![BEAUTIFUL SOUP](https://img.shields.io/badge/BEAUTIFUL_SOUP-0B7D3B?style=for-the-badge&logo=beautifulsoup&logoColor=white)](https://github.com/RajatBhardwaj2006)`;
+}
+
 export function readme(snapshot, config, projects) {
   const summary = calendarSummary(snapshot.calendar);
   const languages = aggregateLanguages(snapshot.repositories);
-  const socials = safeSocial(snapshot).map(link => `[${escapeMD(link.label)}](${link.url})`);
+  const socials = safeSocial(snapshot).map(link => formatSocialBadge(link));
   const github = snapshot.user.html_url;
   const embedded = (name, alt, width = '1200') => `<picture><source media="(max-width: 600px)" srcset="assets/generated/${name}-mobile.svg"><img src="assets/generated/${name}.svg" width="${width}" alt="${escapeXML(alt)}"></picture>`;
   return `<!-- Generated by scripts/lib/render.mjs from data/profile.json. See docs/MAINTAINING.md. -->
@@ -281,11 +347,11 @@ export function readme(snapshot, config, projects) {
   </picture>
 </a>
 
-${socials.join(' &nbsp; / &nbsp; ')}${socials.length ? ' &nbsp; / &nbsp; ' : ''}[All repositories ↗](${github}?tab=repositories)
+${socials.join(' &nbsp; ')}${socials.length ? ' &nbsp; ' : ''}[![All Repositories](https://img.shields.io/badge/All%20Repositories-161b16?style=for-the-badge&logo=github&logoColor=c5f277)](${github}?tab=repositories)
 
 ${embedded('metrics', `${snapshot.user.public_repos} public repositories, ${format(snapshot.calendar.total)} contributions in the past year, ${snapshot.user.followers} followers, ${snapshot.repositories.reduce((sum, repo) => sum + repo.stargazers_count, 0)} stars across public repositories.`)}
 
-## A few things I've been building
+## 🚀 Featured Projects
 
 ${snapshot.pinned.length ? 'Featured from my GitHub pins.' : 'A selection of my public work.'}
 
@@ -297,6 +363,8 @@ ${Array.from({ length: Math.ceil(projects.length / 2) }, (_, row) => `<p>\n${pro
 ${projects.map(repo => `- [${escapeMD(repo.name)}](${repo.html_url})${repo.description ? `: ${escapeMD(repo.description)}` : ''}`).join('\n')}
 
 </details>
+
+${repositoriesSection()}
 
 ## The code behind the work
 

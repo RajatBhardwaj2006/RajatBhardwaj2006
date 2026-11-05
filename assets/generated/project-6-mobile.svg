@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="340" viewBox="0 0 340 340" role="img" aria-labelledby="title desc">
+<title id="title">NeuralView</title><desc id="desc">Interactive AI, ML and Deep Learning education platform featuring live interactive labs, dynamic mathematical visualizations, and real-time parameter tuning.. TypeScript. 0 stars. Last pushed 04 Nov 2026.</desc>
+<style>
+text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:none}
+@keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes sweep{from{stroke-dashoffset:0}to{stroke-dashoffset:-180}}
+@keyframes breathe{0%,100%{opacity:.45}50%{opacity:1}}
+.float{animation:drift 9s ease-in-out infinite}.flow{animation:sweep 14s linear infinite}.pulse{animation:breathe 6s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){.motion{display:none}.still{display:inline}.float,.flow,.pulse{animation:none}}
+</style>
+<rect width="340" height="340" rx="4" fill="#111411"/>
+<g transform="translate(20 3) scale(.65)"><g class="float" style="animation-duration:18s"><g transform="translate(315 18)" stroke="#c5f277" stroke-width=".8" fill="none" opacity=".65"><path d="M0 24L45 0L45 92L0 116Z"/><path d="M17 24L62 0L62 92L17 116Z"/><path d="M34 24L79 0L79 92L34 116Z"/><path d="M51 24L96 0L96 92L51 116Z"/><path d="M68 24L113 0L113 92L68 116Z"/><path d="M85 24L130 0L130 92L85 116Z"/><path d="M102 24L147 0L147 92L102 116Z"/></g></g></g>
+<text x="20" y="36" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#c5f277">TypeScript</text>
+<text x="20" y="158" font-size="27" fill="#f3f6ef">NeuralView</text>
+<path d="M20 278H320" stroke="#30382f"/><text x="20" y="312" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="15" fill="#a4afa1">0 stars</text>
+<text x="320" y="312" text-anchor="end" font-size="16" fill="#c5f277">Explore ↗</text>
+</svg>

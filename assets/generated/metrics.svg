@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="164" viewBox="0 0 1200 164" role="img" aria-labelledby="title desc">
-<title id="title">GitHub at a glance</title><desc id="desc">15 Public repositories. 1,147 Contributions / past year. 8 GitHub followers. 4 Stars across public repos</desc>
+<title id="title">GitHub at a glance</title><desc id="desc">16 Public repositories. 1,147 Contributions / past year. 8 GitHub followers. 4 Stars across public repos</desc>
 <style>
 text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:none}
 @keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
@@ -9,5 +9,5 @@ text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:
 @media(prefers-reduced-motion:reduce){.motion{display:none}.still{display:inline}.float,.flow,.pulse{animation:none}}
 </style>
 <rect width="1200" height="164" rx="4" fill="#111411"/>
-<text x="36" y="89" font-size="48" font-weight="600" letter-spacing="-2" fill="#f3f6ef">15</text><text x="36" y="126" font-size="16" fill="#a4afa1">Public repositories</text><path d="M300 32V132" stroke="#30382f"/><text x="336" y="89" font-size="48" font-weight="600" letter-spacing="-2" fill="#c5f277">1,147</text><text x="336" y="126" font-size="16" fill="#a4afa1">Contributions / past year</text><path d="M600 32V132" stroke="#30382f"/><text x="636" y="89" font-size="48" font-weight="600" letter-spacing="-2" fill="#f3f6ef">8</text><text x="636" y="126" font-size="16" fill="#a4afa1">GitHub followers</text><path d="M900 32V132" stroke="#30382f"/><text x="936" y="89" font-size="48" font-weight="600" letter-spacing="-2" fill="#f3f6ef">4</text><text x="936" y="126" font-size="16" fill="#a4afa1">Stars across public repos</text>
+<text x="36" y="89" font-size="48" font-weight="600" letter-spacing="-2" fill="#f3f6ef">16</text><text x="36" y="126" font-size="16" fill="#a4afa1">Public repositories</text><path d="M300 32V132" stroke="#30382f"/><text x="336" y="89" font-size="48" font-weight="600" letter-spacing="-2" fill="#c5f277">1,147</text><text x="336" y="126" font-size="16" fill="#a4afa1">Contributions / past year</text><path d="M600 32V132" stroke="#30382f"/><text x="636" y="89" font-size="48" font-weight="600" letter-spacing="-2" fill="#f3f6ef">8</text><text x="636" y="126" font-size="16" fill="#a4afa1">GitHub followers</text><path d="M900 32V132" stroke="#30382f"/><text x="936" y="89" font-size="48" font-weight="600" letter-spacing="-2" fill="#f3f6ef">4</text><text x="936" y="126" font-size="16" fill="#a4afa1">Stars across public repos</text>
 </svg>

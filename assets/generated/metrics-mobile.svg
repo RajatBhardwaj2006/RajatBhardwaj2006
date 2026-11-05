@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="560" height="280" viewBox="0 0 560 280" role="img" aria-labelledby="title desc">
-<title id="title">GitHub at a glance</title><desc id="desc">15 Public repositories. 1,147 Contributions / past year. 8 GitHub followers. 4 Stars across public repos</desc>
+<title id="title">GitHub at a glance</title><desc id="desc">16 Public repositories. 1,147 Contributions / past year. 8 GitHub followers. 4 Stars across public repos</desc>
 <style>
 text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:none}
 @keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
@@ -9,5 +9,5 @@ text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:
 @media(prefers-reduced-motion:reduce){.motion{display:none}.still{display:inline}.float,.flow,.pulse{animation:none}}
 </style>
 <rect width="560" height="280" rx="4" fill="#111411"/>
-<text x="28" y="68" font-size="48" font-weight="600" letter-spacing="-2" fill="#f3f6ef">15</text><text x="28" y="100" font-size="15" fill="#a4afa1">Public repositories</text><text x="308" y="68" font-size="48" font-weight="600" letter-spacing="-2" fill="#c5f277">1,147</text><text x="308" y="100" font-size="15" fill="#a4afa1">Contributions / past year</text><text x="28" y="206" font-size="48" font-weight="600" letter-spacing="-2" fill="#f3f6ef">8</text><text x="28" y="238" font-size="15" fill="#a4afa1">GitHub followers</text><text x="308" y="206" font-size="48" font-weight="600" letter-spacing="-2" fill="#f3f6ef">4</text><text x="308" y="238" font-size="15" fill="#a4afa1">Stars across public repos</text>
+<text x="28" y="68" font-size="48" font-weight="600" letter-spacing="-2" fill="#f3f6ef">16</text><text x="28" y="100" font-size="15" fill="#a4afa1">Public repositories</text><text x="308" y="68" font-size="48" font-weight="600" letter-spacing="-2" fill="#c5f277">1,147</text><text x="308" y="100" font-size="15" fill="#a4afa1">Contributions / past year</text><text x="28" y="206" font-size="48" font-weight="600" letter-spacing="-2" fill="#f3f6ef">8</text><text x="28" y="238" font-size="15" fill="#a4afa1">GitHub followers</text><text x="308" y="206" font-size="48" font-weight="600" letter-spacing="-2" fill="#f3f6ef">4</text><text x="308" y="238" font-size="15" fill="#a4afa1">Stars across public repos</text>
 </svg>
