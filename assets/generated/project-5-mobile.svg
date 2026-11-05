@@ -5,15 +5,33 @@ text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:
 @keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 @keyframes sweep{from{stroke-dashoffset:0}to{stroke-dashoffset:-180}}
 @keyframes breathe{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes spin-rev{from{transform:rotate(360deg)}to{transform:rotate(0deg)}}
+@keyframes tumble{0%{transform:rotate(0deg) scale(1,1)}25%{transform:rotate(90deg) scale(0.32,1)}50%{transform:rotate(180deg) scale(-1,0.5)}75%{transform:rotate(270deg) scale(0.32,-1)}100%{transform:rotate(360deg) scale(1,1)}}
+@keyframes scan-vert{0%,100%{transform:translateY(-42px);opacity:.35}50%{transform:translateY(42px);opacity:1}}
+@keyframes radar{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 .float{animation:drift 9s ease-in-out infinite}.flow{animation:sweep 14s linear infinite}.pulse{animation:breathe 6s ease-in-out infinite}
-@media(prefers-reduced-motion:reduce){.motion{display:none}.still{display:inline}.float,.flow,.pulse{animation:none}}
+.spin{transform-origin:480px 175px;animation:spin 18s linear infinite}
+.spin-rev{transform-origin:480px 175px;animation:spin-rev 14s linear infinite}
+.tumble{transform-origin:480px 175px;animation:tumble 8s ease-in-out infinite}
+.scan{transform-origin:480px 175px;animation:scan-vert 3.2s ease-in-out infinite}
+.radar{transform-origin:480px 175px;animation:radar 4s linear infinite}
+@media(prefers-reduced-motion:reduce){.motion{display:none}.still{display:inline}.float,.flow,.pulse,.spin,.spin-rev,.tumble,.scan,.radar{animation:none}}
 </style>
 <rect width="340" height="340" rx="4" fill="#111411"/>
 <g transform="translate(20 3) scale(.65)"><g class="float" style="animation-duration:16s"><g>
       <polygon points="480,110 536,142.5 536,207.5 480,240 424,207.5 424,142.5" fill="hsl(85 65% 58% / .04)" stroke="hsl(85 65% 58% / .7)" stroke-width="1.8"/>
-      <circle cx="480" cy="175" r="38" fill="none" stroke="#c5f277" stroke-width="1.8"/>
-      <circle cx="480" cy="175" r="20" fill="none" stroke="hsl(85 65% 58% / .5)" stroke-width="1.2" stroke-dasharray="3 3"/>
-      <circle cx="480" cy="175" r="5" fill="#c5f277"/>
+      <g class="spin">
+        <circle cx="480" cy="175" r="52" fill="none" stroke="#c5f277" stroke-width="1.1" stroke-dasharray="5 7"/>
+      </g>
+      <path d="M455 152H447V160M505 152H513V160M447 188V196H455M513 188V196H505" stroke="#c5f277" stroke-width="1.8" fill="none"/>
+      <circle cx="467" cy="168" r="2.5" fill="#c5f277"/>
+      <circle cx="493" cy="168" r="2.5" fill="#c5f277"/>
+      <circle cx="480" cy="177" r="1.8" fill="#c5f277"/>
+      <path d="M473 186 Q480 190 487 186" stroke="#c5f277" stroke-width="1.5" fill="none"/>
+      <g class="scan">
+        <line x1="438" y1="175" x2="522" y2="175" stroke="#c5f277" stroke-width="1.8"/>
+      </g>
       <circle cx="480" cy="110" r="2.5" fill="#c5f277"/>
       <circle cx="536" cy="142.5" r="2.5" fill="#c5f277"/>
       <circle cx="536" cy="207.5" r="2.5" fill="#c5f277"/>

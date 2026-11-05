@@ -5,18 +5,35 @@ text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:
 @keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 @keyframes sweep{from{stroke-dashoffset:0}to{stroke-dashoffset:-180}}
 @keyframes breathe{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes spin-rev{from{transform:rotate(360deg)}to{transform:rotate(0deg)}}
+@keyframes tumble{0%{transform:rotate(0deg) scale(1,1)}25%{transform:rotate(90deg) scale(0.32,1)}50%{transform:rotate(180deg) scale(-1,0.5)}75%{transform:rotate(270deg) scale(0.32,-1)}100%{transform:rotate(360deg) scale(1,1)}}
+@keyframes scan-vert{0%,100%{transform:translateY(-42px);opacity:.35}50%{transform:translateY(42px);opacity:1}}
+@keyframes radar{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 .float{animation:drift 9s ease-in-out infinite}.flow{animation:sweep 14s linear infinite}.pulse{animation:breathe 6s ease-in-out infinite}
-@media(prefers-reduced-motion:reduce){.motion{display:none}.still{display:inline}.float,.flow,.pulse{animation:none}}
+.spin{transform-origin:480px 175px;animation:spin 18s linear infinite}
+.spin-rev{transform-origin:480px 175px;animation:spin-rev 14s linear infinite}
+.tumble{transform-origin:480px 175px;animation:tumble 8s ease-in-out infinite}
+.scan{transform-origin:480px 175px;animation:scan-vert 3.2s ease-in-out infinite}
+.radar{transform-origin:480px 175px;animation:radar 4s linear infinite}
+@media(prefers-reduced-motion:reduce){.motion{display:none}.still{display:inline}.float,.flow,.pulse,.spin,.spin-rev,.tumble,.scan,.radar{animation:none}}
 </style>
 <rect width="580" height="370" rx="4" fill="#111411"/>
 <g class="float" style="animation-duration:8s"><g>
-      <circle cx="480" cy="175" r="65" fill="hsl(85 65% 58% / .04)" stroke="#c5f277" stroke-width="1.8"/>
-      <ellipse cx="480" cy="175" rx="65" ry="24" transform="rotate(-22 480 175)" fill="none" stroke="hsl(85 65% 58% / .7)" stroke-width="1.4"/>
-      <ellipse cx="480" cy="175" rx="24" ry="65" transform="rotate(-22 480 175)" fill="none" stroke="hsl(85 65% 58% / .4)" stroke-width="1" stroke-dasharray="4 4"/>
-      <line x1="432" y1="156" x2="528" y2="194" stroke="#c5f277" stroke-width="0.8" stroke-dasharray="3 3" opacity=".6"/>
-      <circle cx="480" cy="175" r="5" fill="#c5f277"/>
-      <circle cx="432" cy="156" r="3.5" fill="#c5f277"/>
-      <circle cx="528" cy="194" r="3.5" fill="#c5f277"/>
+      <circle cx="480" cy="175" r="65" fill="hsl(85 65% 58% / .04)" stroke="hsl(85 65% 58% / .2)" stroke-width="1" stroke-dasharray="3 5"/>
+      <g class="spin-rev">
+        <ellipse cx="480" cy="175" rx="64" ry="26" transform="rotate(-25 480 175)" fill="none" stroke="#c5f277" stroke-width="1.6"/>
+        <circle cx="422" cy="150" r="3.5" fill="#c5f277"/>
+        <circle cx="538" cy="200" r="2.8" fill="#c5f277"/>
+      </g>
+      <g class="spin">
+        <ellipse cx="480" cy="175" rx="26" ry="64" transform="rotate(35 480 175)" fill="none" stroke="hsl(85 65% 58% / .7)" stroke-width="1.3" stroke-dasharray="6 4"/>
+        <circle cx="468" cy="115" r="3" fill="#c5f277"/>
+        <circle cx="492" cy="235" r="3" fill="#c5f277"/>
+      </g>
+      <circle cx="480" cy="175" r="14" fill="none" stroke="#c5f277" stroke-width="1.2" stroke-dasharray="2 3"/>
+      <circle class="pulse" cx="480" cy="175" r="8" fill="#111411" stroke="#c5f277" stroke-width="2"/>
+      <circle class="pulse" cx="480" cy="175" r="4" fill="#c5f277"/>
     </g></g><text x="28" y="40" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" fill="#c5f277">Jupyter Notebook</text>
 <text x="28" y="161" font-size="28" fill="#f3f6ef">Artificial Intelligence and</text><text x="28" y="195" font-size="28" fill="#f3f6ef">Machine Learning</text>
 <text x="28" y="244" font-size="16" fill="#a4afa1">Artificial Intelligence and Machine Learning focuses on</text><text x="28" y="268" font-size="16" fill="#a4afa1">building systems that learn from data to make predictions…</text>

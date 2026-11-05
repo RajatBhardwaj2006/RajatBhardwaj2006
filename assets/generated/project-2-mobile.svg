@@ -5,19 +5,34 @@ text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:
 @keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 @keyframes sweep{from{stroke-dashoffset:0}to{stroke-dashoffset:-180}}
 @keyframes breathe{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes spin-rev{from{transform:rotate(360deg)}to{transform:rotate(0deg)}}
+@keyframes tumble{0%{transform:rotate(0deg) scale(1,1)}25%{transform:rotate(90deg) scale(0.32,1)}50%{transform:rotate(180deg) scale(-1,0.5)}75%{transform:rotate(270deg) scale(0.32,-1)}100%{transform:rotate(360deg) scale(1,1)}}
+@keyframes scan-vert{0%,100%{transform:translateY(-42px);opacity:.35}50%{transform:translateY(42px);opacity:1}}
+@keyframes radar{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 .float{animation:drift 9s ease-in-out infinite}.flow{animation:sweep 14s linear infinite}.pulse{animation:breathe 6s ease-in-out infinite}
-@media(prefers-reduced-motion:reduce){.motion{display:none}.still{display:inline}.float,.flow,.pulse{animation:none}}
+.spin{transform-origin:480px 175px;animation:spin 18s linear infinite}
+.spin-rev{transform-origin:480px 175px;animation:spin-rev 14s linear infinite}
+.tumble{transform-origin:480px 175px;animation:tumble 8s ease-in-out infinite}
+.scan{transform-origin:480px 175px;animation:scan-vert 3.2s ease-in-out infinite}
+.radar{transform-origin:480px 175px;animation:radar 4s linear infinite}
+@media(prefers-reduced-motion:reduce){.motion{display:none}.still{display:inline}.float,.flow,.pulse,.spin,.spin-rev,.tumble,.scan,.radar{animation:none}}
 </style>
 <rect width="340" height="340" rx="4" fill="#111411"/>
 <g transform="translate(20 3) scale(.65)"><g class="float" style="animation-duration:10s"><g>
-      <rect x="415" y="110" width="130" height="130" rx="22" fill="hsl(85 65% 58% / .04)" stroke="hsl(85 65% 58% / .5)" stroke-width="1.8"/>
-      <circle cx="480" cy="175" r="44" fill="none" stroke="#c5f277" stroke-width="1.8"/>
-      <line x1="480" y1="145" x2="480" y2="205" stroke="#c5f277" stroke-width="2.2" stroke-linecap="round"/>
-      <line x1="450" y1="175" x2="510" y2="175" stroke="#c5f277" stroke-width="2.2" stroke-linecap="round"/>
-      <circle cx="435" cy="130" r="2.5" fill="#c5f277"/>
-      <circle cx="525" cy="130" r="2.5" fill="#c5f277"/>
-      <circle cx="435" cy="220" r="2.5" fill="#c5f277"/>
-      <circle cx="525" cy="220" r="2.5" fill="#c5f277"/>
+      <circle cx="480" cy="175" r="64" fill="hsl(85 65% 58% / .04)" stroke="hsl(85 65% 58% / .2)" stroke-width="1" stroke-dasharray="3 5"/>
+      <g class="pulse">
+        <path d="M424 125H432M428 121V129M528 225H536M532 221V229M530 125H538M534 121V129M424 225H432M428 221V229" stroke="#c5f277" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+      <g class="tumble">
+        <rect x="436" y="153" width="88" height="44" rx="22" fill="hsl(85 65% 58% / .09)" stroke="#c5f277" stroke-width="2.2"/>
+        <line x1="480" y1="153" x2="480" y2="197" stroke="#c5f277" stroke-width="1.8"/>
+        <line x1="458" y1="168" x2="458" y2="182" stroke="#c5f277" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="451" y1="175" x2="465" y2="175" stroke="#c5f277" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="496" cy="170" r="2.8" fill="#c5f277"/>
+        <circle cx="504" cy="177" r="2.4" fill="#c5f277"/>
+        <circle cx="494" cy="182" r="2.2" fill="#c5f277"/>
+      </g>
     </g></g></g>
 <text x="20" y="36" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#c5f277">Java</text>
 <text x="20" y="158" font-size="27" fill="#f3f6ef">Smart Medication</text><text x="20" y="192" font-size="27" fill="#f3f6ef">Management Health</text><text x="20" y="226" font-size="27" fill="#f3f6ef">Assistant</text>

@@ -39,8 +39,18 @@ text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:
 @keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 @keyframes sweep{from{stroke-dashoffset:0}to{stroke-dashoffset:-180}}
 @keyframes breathe{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes spin-rev{from{transform:rotate(360deg)}to{transform:rotate(0deg)}}
+@keyframes tumble{0%{transform:rotate(0deg) scale(1,1)}25%{transform:rotate(90deg) scale(0.32,1)}50%{transform:rotate(180deg) scale(-1,0.5)}75%{transform:rotate(270deg) scale(0.32,-1)}100%{transform:rotate(360deg) scale(1,1)}}
+@keyframes scan-vert{0%,100%{transform:translateY(-42px);opacity:.35}50%{transform:translateY(42px);opacity:1}}
+@keyframes radar{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 .float{animation:drift 9s ease-in-out infinite}.flow{animation:sweep 14s linear infinite}.pulse{animation:breathe 6s ease-in-out infinite}
-@media(prefers-reduced-motion:reduce){.motion{display:none}.still{display:inline}.float,.flow,.pulse{animation:none}}
+.spin{transform-origin:480px 175px;animation:spin 18s linear infinite}
+.spin-rev{transform-origin:480px 175px;animation:spin-rev 14s linear infinite}
+.tumble{transform-origin:480px 175px;animation:tumble 8s ease-in-out infinite}
+.scan{transform-origin:480px 175px;animation:scan-vert 3.2s ease-in-out infinite}
+.radar{transform-origin:480px 175px;animation:radar 4s linear infinite}
+@media(prefers-reduced-motion:reduce){.motion{display:none}.still{display:inline}.float,.flow,.pulse,.spin,.spin-rev,.tumble,.scan,.radar{animation:none}}
 </style>
 <rect width="${width}" height="${height}" rx="4" fill="${C.bg}"/>
 ${content}
@@ -214,57 +224,89 @@ ${lines(66 + i * 285, 140, label, 20, 2, 16, C.muted, 22)}`).join('');
 function projectArt(index, repo) {
   if (index === 0) {
     return `<g>
-      <circle cx="480" cy="175" r="65" fill="hsl(85 65% 58% / .04)" stroke="${C.accent}" stroke-width="1.8"/>
-      <ellipse cx="480" cy="175" rx="65" ry="24" transform="rotate(-22 480 175)" fill="none" stroke="hsl(85 65% 58% / .7)" stroke-width="1.4"/>
-      <ellipse cx="480" cy="175" rx="24" ry="65" transform="rotate(-22 480 175)" fill="none" stroke="hsl(85 65% 58% / .4)" stroke-width="1" stroke-dasharray="4 4"/>
-      <line x1="432" y1="156" x2="528" y2="194" stroke="${C.accent}" stroke-width="0.8" stroke-dasharray="3 3" opacity=".6"/>
-      <circle cx="480" cy="175" r="5" fill="#c5f277"/>
-      <circle cx="432" cy="156" r="3.5" fill="#c5f277"/>
-      <circle cx="528" cy="194" r="3.5" fill="#c5f277"/>
+      <circle cx="480" cy="175" r="65" fill="hsl(85 65% 58% / .04)" stroke="hsl(85 65% 58% / .2)" stroke-width="1" stroke-dasharray="3 5"/>
+      <g class="spin-rev">
+        <ellipse cx="480" cy="175" rx="64" ry="26" transform="rotate(-25 480 175)" fill="none" stroke="${C.accent}" stroke-width="1.6"/>
+        <circle cx="422" cy="150" r="3.5" fill="#c5f277"/>
+        <circle cx="538" cy="200" r="2.8" fill="#c5f277"/>
+      </g>
+      <g class="spin">
+        <ellipse cx="480" cy="175" rx="26" ry="64" transform="rotate(35 480 175)" fill="none" stroke="hsl(85 65% 58% / .7)" stroke-width="1.3" stroke-dasharray="6 4"/>
+        <circle cx="468" cy="115" r="3" fill="#c5f277"/>
+        <circle cx="492" cy="235" r="3" fill="#c5f277"/>
+      </g>
+      <circle cx="480" cy="175" r="14" fill="none" stroke="${C.accent}" stroke-width="1.2" stroke-dasharray="2 3"/>
+      <circle class="pulse" cx="480" cy="175" r="8" fill="#111411" stroke="${C.accent}" stroke-width="2"/>
+      <circle class="pulse" cx="480" cy="175" r="4" fill="#c5f277"/>
     </g>`;
   }
 
   if (index === 1) {
     return `<g>
-      <rect x="415" y="110" width="130" height="130" rx="22" fill="hsl(85 65% 58% / .04)" stroke="hsl(85 65% 58% / .5)" stroke-width="1.8"/>
-      <circle cx="480" cy="175" r="44" fill="none" stroke="${C.accent}" stroke-width="1.8"/>
-      <line x1="480" y1="145" x2="480" y2="205" stroke="${C.accent}" stroke-width="2.2" stroke-linecap="round"/>
-      <line x1="450" y1="175" x2="510" y2="175" stroke="${C.accent}" stroke-width="2.2" stroke-linecap="round"/>
-      <circle cx="435" cy="130" r="2.5" fill="#c5f277"/>
-      <circle cx="525" cy="130" r="2.5" fill="#c5f277"/>
-      <circle cx="435" cy="220" r="2.5" fill="#c5f277"/>
-      <circle cx="525" cy="220" r="2.5" fill="#c5f277"/>
+      <circle cx="480" cy="175" r="64" fill="hsl(85 65% 58% / .04)" stroke="hsl(85 65% 58% / .2)" stroke-width="1" stroke-dasharray="3 5"/>
+      <g class="pulse">
+        <path d="M424 125H432M428 121V129M528 225H536M532 221V229M530 125H538M534 121V129M424 225H432M428 221V229" stroke="${C.accent}" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+      <g class="tumble">
+        <rect x="436" y="153" width="88" height="44" rx="22" fill="hsl(85 65% 58% / .09)" stroke="${C.accent}" stroke-width="2.2"/>
+        <line x1="480" y1="153" x2="480" y2="197" stroke="${C.accent}" stroke-width="1.8"/>
+        <line x1="458" y1="168" x2="458" y2="182" stroke="${C.accent}" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="451" y1="175" x2="465" y2="175" stroke="${C.accent}" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="496" cy="170" r="2.8" fill="#c5f277"/>
+        <circle cx="504" cy="177" r="2.4" fill="#c5f277"/>
+        <circle cx="494" cy="182" r="2.2" fill="#c5f277"/>
+      </g>
     </g>`;
   }
 
   if (index === 2) {
     return `<g>
-      <polygon points="480,105 546,235 414,235" fill="hsl(85 65% 58% / .04)" stroke="${C.accent}" stroke-width="1.8"/>
-      <line x1="442" y1="180" x2="518" y2="180" stroke="hsl(85 65% 58% / .7)" stroke-width="1.4"/>
-      <circle cx="480" cy="105" r="5" fill="#c5f277"/>
-      <circle cx="480" cy="105" r="11" fill="none" stroke="${C.accent}" stroke-width="0.9" stroke-dasharray="2 2"/>
-      <circle cx="480" cy="195" r="7" fill="none" stroke="${C.accent}" stroke-width="1.4"/>
-      <circle cx="480" cy="195" r="3" fill="#c5f277"/>
-      <path d="M398 120H388V130M562 120H572V130M388 220V230H398M572 220V230H562" stroke="${C.accent}" stroke-width="1.5" fill="none"/>
+      <path d="M398 120H388V130M562 120H572V130M388 220V230H398M572 220V230H562" stroke="${C.accent}" stroke-width="1.8" fill="none"/>
+      <rect x="415" y="125" width="130" height="100" rx="8" fill="hsl(85 65% 58% / .04)" stroke="${C.accent}" stroke-width="1.8"/>
+      <rect x="428" y="138" width="104" height="74" rx="4" fill="none" stroke="hsl(85 65% 58% / .35)" stroke-width="1" stroke-dasharray="4 3"/>
+      <rect x="488" y="152" width="30" height="26" rx="2" fill="hsl(85 65% 58% / .18)" stroke="${C.accent}" stroke-width="1.6"/>
+      <circle cx="503" cy="165" r="3.5" fill="#c5f277"/>
+      <text x="490" y="146" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="7" font-weight="700" fill="${C.accent}">DEFECT</text>
+      <g class="scan">
+        <line x1="400" y1="175" x2="560" y2="175" stroke="${C.accent}" stroke-width="2"/>
+        <line x1="410" y1="175" x2="550" y2="175" stroke="${C.accent}" stroke-width="5" opacity=".35"/>
+        <circle cx="480" cy="175" r="3" fill="#ffffff"/>
+      </g>
     </g>`;
   }
 
   if (index === 3) {
     return `<g>
-      <path d="M415 175 Q480 120 545 175 Q480 230 415 175Z" fill="hsl(85 65% 58% / .04)" stroke="${C.accent}" stroke-width="1.8"/>
-      <circle cx="480" cy="175" r="26" fill="none" stroke="hsl(85 65% 58% / .6)" stroke-width="1.4" stroke-dasharray="4 3"/>
-      <circle cx="480" cy="175" r="8" fill="#111411" stroke="${C.accent}" stroke-width="1.8"/>
-      <circle cx="480" cy="175" r="3.5" fill="#c5f277"/>
-      <line x1="395" y1="175" x2="565" y2="175" stroke="${C.accent}" stroke-width="1" stroke-dasharray="6 4" opacity=".6"/>
+      <path d="M410 175 Q480 116 550 175 Q480 234 410 175Z" fill="hsl(85 65% 58% / .04)" stroke="${C.accent}" stroke-width="1.8"/>
+      <circle cx="480" cy="175" r="42" fill="none" stroke="hsl(85 65% 58% / .3)" stroke-width="1" stroke-dasharray="3 4"/>
+      <circle cx="480" cy="175" r="24" fill="none" stroke="hsl(85 65% 58% / .5)" stroke-width="1.2"/>
+      <g class="radar">
+        <line x1="480" y1="175" x2="546" y2="175" stroke="${C.accent}" stroke-width="2"/>
+        <path d="M480 175 L544 156 A42 42 0 0 1 546 175 Z" fill="${C.accent}" opacity=".25"/>
+      </g>
+      <circle cx="480" cy="175" r="9" fill="#111411" stroke="${C.accent}" stroke-width="1.8"/>
+      <circle class="pulse" cx="480" cy="175" r="4" fill="#c5f277"/>
+      <line x1="395" y1="175" x2="420" y2="175" stroke="${C.accent}" stroke-width="1.2" opacity=".7"/>
+      <line x1="540" y1="175" x2="565" y2="175" stroke="${C.accent}" stroke-width="1.2" opacity=".7"/>
+      <line x1="480" y1="120" x2="480" y2="135" stroke="${C.accent}" stroke-width="1.2" opacity=".7"/>
+      <line x1="480" y1="215" x2="480" y2="230" stroke="${C.accent}" stroke-width="1.2" opacity=".7"/>
     </g>`;
   }
 
   if (index === 4) {
     return `<g>
       <polygon points="480,110 536,142.5 536,207.5 480,240 424,207.5 424,142.5" fill="hsl(85 65% 58% / .04)" stroke="hsl(85 65% 58% / .7)" stroke-width="1.8"/>
-      <circle cx="480" cy="175" r="38" fill="none" stroke="${C.accent}" stroke-width="1.8"/>
-      <circle cx="480" cy="175" r="20" fill="none" stroke="hsl(85 65% 58% / .5)" stroke-width="1.2" stroke-dasharray="3 3"/>
-      <circle cx="480" cy="175" r="5" fill="#c5f277"/>
+      <g class="spin">
+        <circle cx="480" cy="175" r="52" fill="none" stroke="${C.accent}" stroke-width="1.1" stroke-dasharray="5 7"/>
+      </g>
+      <path d="M455 152H447V160M505 152H513V160M447 188V196H455M513 188V196H505" stroke="${C.accent}" stroke-width="1.8" fill="none"/>
+      <circle cx="467" cy="168" r="2.5" fill="#c5f277"/>
+      <circle cx="493" cy="168" r="2.5" fill="#c5f277"/>
+      <circle cx="480" cy="177" r="1.8" fill="#c5f277"/>
+      <path d="M473 186 Q480 190 487 186" stroke="${C.accent}" stroke-width="1.5" fill="none"/>
+      <g class="scan">
+        <line x1="438" y1="175" x2="522" y2="175" stroke="${C.accent}" stroke-width="1.8"/>
+      </g>
       <circle cx="480" cy="110" r="2.5" fill="#c5f277"/>
       <circle cx="536" cy="142.5" r="2.5" fill="#c5f277"/>
       <circle cx="536" cy="207.5" r="2.5" fill="#c5f277"/>
@@ -277,22 +319,30 @@ function projectArt(index, repo) {
   const inY = [145, 175, 205];
   const hidY = [135, 175, 215];
   const lines = [];
-  for (const y1 of inY) {
-    for (const y2 of hidY) {
-      lines.push(`<line x1="435" y1="${y1}" x2="480" y2="${y2}" stroke="hsl(85 45% 25% / .6)" stroke-width="1.1"/>`);
+  const pulses = [];
+  for (let i = 0; i < inY.length; i++) {
+    for (let j = 0; j < hidY.length; j++) {
+      lines.push(`<line x1="435" y1="${inY[i]}" x2="480" y2="${hidY[j]}" stroke="hsl(85 45% 20% / .4)" stroke-width="1"/>`);
+      const delay = ((i * 7 + j * 13) % 40) / 10;
+      pulses.push(`<line class="flow" x1="435" y1="${inY[i]}" x2="480" y2="${hidY[j]}" fill="none" stroke="${C.accent}" stroke-width="1.4" stroke-dasharray="5 15" style="animation-delay:-${delay}s;animation-duration:11s;opacity:.8"/>`);
     }
   }
-  for (const y1 of hidY) {
-    lines.push(`<line x1="480" y1="${y1}" x2="525" y2="175" stroke="hsl(85 45% 25% / .6)" stroke-width="1.1"/>`);
+  for (let j = 0; j < hidY.length; j++) {
+    lines.push(`<line x1="480" y1="${hidY[j]}" x2="525" y2="175" stroke="hsl(85 45% 20% / .4)" stroke-width="1.1"/>`);
+    const delay = ((j * 17) % 30) / 10;
+    pulses.push(`<line class="flow" x1="480" y1="${hidY[j]}" x2="525" y2="175" fill="none" stroke="${C.accent}" stroke-width="1.8" stroke-dasharray="6 24" style="animation-delay:-${delay}s;animation-duration:10s;opacity:.95"/>`);
   }
   const nodes = [
-    ...inY.map(y => `<circle cx="435" cy="${y}" r="5.5" fill="#111411" stroke="${C.accent}" stroke-width="1.6"/><circle cx="435" cy="${y}" r="2.8" fill="#c5f277"/>`),
-    ...hidY.map(y => `<circle cx="480" cy="${y}" r="5" fill="#111411" stroke="hsl(85 62% 48%)" stroke-width="1.5"/><circle cx="480" cy="${y}" r="2.5" fill="#c5f277"/>`),
-    `<circle cx="525" cy="175" r="7.5" fill="#111411" stroke="${C.accent}" stroke-width="2"/><circle cx="525" cy="175" r="3.8" fill="#c5f277"/>`
+    ...inY.map(y => `<circle cx="435" cy="${y}" r="5.5" fill="#111411" stroke="${C.accent}" stroke-width="1.6"/><circle class="pulse" cx="435" cy="${y}" r="2.8" fill="#c5f277"/>`),
+    ...hidY.map(y => `<circle cx="480" cy="${y}" r="5" fill="#111411" stroke="hsl(85 62% 48%)" stroke-width="1.5"/><circle class="pulse" cx="480" cy="${y}" r="2.5" fill="#c5f277"/>`),
+    `<circle cx="525" cy="175" r="7.5" fill="#111411" stroke="${C.accent}" stroke-width="2"/><circle class="pulse" cx="525" cy="175" r="3.8" fill="#c5f277"/>`
   ];
   return `<g>
-    <circle cx="480" cy="175" r="65" fill="hsl(85 65% 58% / .04)" stroke="hsl(85 65% 58% / .3)" stroke-width="1" stroke-dasharray="4 4"/>
+    <g class="spin">
+      <circle cx="480" cy="175" r="65" fill="hsl(85 65% 58% / .04)" stroke="hsl(85 65% 58% / .25)" stroke-width="1" stroke-dasharray="4 6"/>
+    </g>
     ${lines.join('')}
+    <g class="motion">${pulses.join('')}</g>
     ${nodes.join('')}
   </g>`;
 }
