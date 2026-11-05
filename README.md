@@ -9,7 +9,7 @@
 
 [![Instagram](https://img.shields.io/badge/Instagram-c5f277?style=for-the-badge&logo=instagram&logoColor=c5f277&labelColor=111411)](https://www.instagram.com/che.r.r.y.y.y?igsh=MTVrN3o1aXB6N3dxeA==) &nbsp; [![LinkedIn](https://img.shields.io/badge/LinkedIn-c5f277?style=for-the-badge&logo=linkedin&logoColor=c5f277&labelColor=111411)](https://www.linkedin.com/in/rajatbhardwaj2006) &nbsp; [![LeetCode](https://img.shields.io/badge/LeetCode-c5f277?style=for-the-badge&logo=leetcode&logoColor=c5f277&labelColor=111411)](https://leetcode.com/u/cherry_2006) &nbsp; [![All Repositories](https://img.shields.io/badge/All%20Repositories-c5f277?style=for-the-badge&logo=github&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006?tab=repositories)
 
-<picture><source media="(max-width: 600px)" srcset="assets/generated/metrics-mobile.svg"><img src="assets/generated/metrics.svg" width="1200" alt="16 public repositories, 1,159 contributions in the past year, 8 followers, 4 stars across public repositories."></picture>
+<picture><source media="(max-width: 600px)" srcset="assets/generated/metrics-mobile.svg"><img src="assets/generated/metrics.svg" width="1200" alt="16 public repositories, 1,161 contributions in the past year, 8 followers, 4 stars across public repositories."></picture>
 
 ## Featured Projects
 
@@ -101,7 +101,7 @@ Featured from my GitHub pins.
   </picture>
   <picture>
     <source media="(max-width: 600px)" srcset="assets/generated/commits-mobile.svg">
-    <img src="assets/generated/commits.svg" width="49%" alt="Total commits and active days committed: 1,159 contributions across 233 active days.">
+    <img src="assets/generated/commits.svg" width="49%" alt="Total commits and active days committed: 1,161 contributions across 233 active days.">
   </picture>
 </p>
 
@@ -129,14 +129,14 @@ Each owned public repository counts once, using its primary language reported by
 <a href="https://github.com/RajatBhardwaj2006?tab=overview">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/generated/contributions-mobile.svg">
-    <img src="assets/generated/contributions.svg" width="1200" alt="1,159 contributions, 233 active days, 201-day longest streak, and 35 contributions on the busiest day. A 3D skyline built from GitHub's exact daily counts.">
+    <img src="assets/generated/contributions.svg" width="1200" alt="1,161 contributions, 233 active days, 201-day longest streak, and 35 contributions on the busiest day. A 3D skyline built from GitHub's exact daily counts.">
   </picture>
 </a>
 
 <details>
 <summary>Contribution data and recent repositories</summary>
 
-1,159 contributions across 233 active days between 02 Nov 2025 and 05 Nov 2026. Longest streak within this window: 201 days. Best day: 35 contributions.
+1,161 contributions across 233 active days between 02 Nov 2025 and 05 Nov 2026. Longest streak within this window: 201 days. Best day: 35 contributions.
 
 - [NeuralView](https://github.com/RajatBhardwaj2006/NeuralView) · pushed 05 Nov 2026
 - [Java](https://github.com/RajatBhardwaj2006/Java) · pushed 31 Oct 2026
@@ -150,4 +150,4 @@ Daily counts follow GitHub's contribution calendar visibility and counting rules
 
 <a href="https://github.com/RajatBhardwaj2006?tab=repositories"><picture><source media="(max-width: 600px)" srcset="assets/generated/footer-mobile.svg"><img src="assets/generated/footer.svg" width="1200" alt="Explore Rajat Bhardwaj&apos;s repositories on GitHub."></picture></a>
 
-<sub>GitHub snapshot · 2026-11-05 13:09:31 UTC · refreshed every 6 hours by [GitHub Actions](https://github.com/RajatBhardwaj2006/RajatBhardwaj2006/actions/workflows/sync-profile.yml). [Data & maintenance](docs/MAINTAINING.md)</sub>
+<sub>GitHub snapshot · 2026-11-05 13:13:13 UTC · refreshed every 6 hours by [GitHub Actions](https://github.com/RajatBhardwaj2006/RajatBhardwaj2006/actions/workflows/sync-profile.yml). [Data & maintenance](docs/MAINTAINING.md)</sub>
