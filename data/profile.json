@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "fetchedAt": "2026-11-05T12:20:08.078Z",
+  "fetchedAt": "2026-11-05T12:25:13.408Z",
   "sources": {
     "profile": "https://api.github.com/users/RajatBhardwaj2006",
     "repositories": "https://api.github.com/users/RajatBhardwaj2006/repos",
@@ -268,7 +268,7 @@
       "topics": [],
       "stargazers_count": 0,
       "forks_count": 0,
-      "pushed_at": "2026-11-05T12:19:53Z",
+      "pushed_at": "2026-11-05T12:25:04Z",
       "archived": false,
       "fork": false,
       "private": false
@@ -347,14 +347,12 @@
   ],
   "pinned": [
     "RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning",
-    "RajatBhardwaj2006/Smart-Medication-Management-Health-Assistant",
     "RajatBhardwaj2006/VisionInspect-Industrial-Defect-Detection-",
     "RajatBhardwaj2006/Fraudulent-Online-Transaction-Detection-System",
-    "RajatBhardwaj2006/Quick-Attendance",
-    "RajatBhardwaj2006/NeuralView"
+    "RajatBhardwaj2006/Smart-Medication-Management-Health-Assistant"
   ],
   "calendar": {
-    "total": 1154,
+    "total": 1156,
     "days": [
       {
         "date": "2025-11-02",
@@ -1830,7 +1828,7 @@
       },
       {
         "date": "2026-11-05",
-        "count": 1
+        "count": 3
       }
     ],
     "source": "GitHub GraphQL contribution calendar"
