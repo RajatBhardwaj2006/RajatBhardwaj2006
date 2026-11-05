@@ -9,7 +9,7 @@
 
 [![Instagram](https://img.shields.io/badge/Instagram-c5f277?style=for-the-badge&logo=instagram&logoColor=c5f277&labelColor=111411)](https://www.instagram.com/che.r.r.y.y.y?igsh=MTVrN3o1aXB6N3dxeA==) &nbsp; [![LinkedIn](https://img.shields.io/badge/LinkedIn-c5f277?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2M1ZjI3NyIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8%2BPC9zdmc%2B&logoColor=c5f277&labelColor=111411)](https://www.linkedin.com/in/rajatbhardwaj2006) &nbsp; [![LeetCode](https://img.shields.io/badge/LeetCode-c5f277?style=for-the-badge&logo=leetcode&logoColor=c5f277&labelColor=111411)](https://leetcode.com/u/cherry_2006) &nbsp; [![All Repositories](https://img.shields.io/badge/All%20Repositories-c5f277?style=for-the-badge&logo=github&logoColor=c5f277&labelColor=111411)](https://github.com/RajatBhardwaj2006?tab=repositories)
 
-<picture><source media="(max-width: 600px)" srcset="assets/generated/metrics-mobile.svg"><img src="assets/generated/metrics.svg" width="1200" alt="16 public repositories, 1,167 contributions in the past year, 9 followers, 4 stars across public repositories."></picture>
+<picture><source media="(max-width: 600px)" srcset="assets/generated/metrics-mobile.svg"><img src="assets/generated/metrics.svg" width="1200" alt="16 public repositories, 1,168 contributions in the past year, 9 followers, 4 stars across public repositories."></picture>
 
 ## Featured Projects
 
@@ -265,7 +265,7 @@ Featured from my GitHub pins.
   </picture>
   <picture>
     <source media="(max-width: 600px)" srcset="assets/generated/commits-mobile.svg">
-    <img src="assets/generated/commits.svg" width="49%" alt="Total commits and active days committed: 1,167 contributions across 233 active days.">
+    <img src="assets/generated/commits.svg" width="49%" alt="Total commits and active days committed: 1,168 contributions across 233 active days.">
   </picture>
 </p>
 
@@ -293,14 +293,14 @@ Each owned public repository counts once, using its primary language reported by
 <a href="https://github.com/RajatBhardwaj2006?tab=overview">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/generated/contributions-mobile.svg">
-    <img src="assets/generated/contributions.svg" width="1200" alt="1,167 contributions, 233 active days, 201-day longest streak, and 35 contributions on the busiest day. A 3D skyline built from GitHub's exact daily counts.">
+    <img src="assets/generated/contributions.svg" width="1200" alt="1,168 contributions, 233 active days, 201-day longest streak, and 35 contributions on the busiest day. A 3D skyline built from GitHub's exact daily counts.">
   </picture>
 </a>
 
 <details>
 <summary>Contribution data and recent repositories</summary>
 
-1,167 contributions across 233 active days in the 365-day calendar window (06 Nov 2025 to 05 Nov 2026). Longest streak within this window: 201 days. Best day: 35 contributions.
+1,168 contributions across 233 active days in the 365-day calendar window (06 Nov 2025 to 05 Nov 2026). Longest streak within this window: 201 days. Best day: 35 contributions.
 
 - [Java](https://github.com/RajatBhardwaj2006/Java) · pushed 31 Oct 2026 - *"Implement ArrayList to search for a medicine"*
 - [Smart-Medication-Management-Health-Assistant](https://github.com/RajatBhardwaj2006/Smart-Medication-Management-Health-Assistant) · pushed 31 Oct 2026 - *"Update README with project details and features"*
@@ -314,4 +314,4 @@ Daily counts follow GitHub's contribution calendar visibility and counting rules
 
 <a href="https://github.com/RajatBhardwaj2006?tab=repositories"><picture><source media="(max-width: 600px)" srcset="assets/generated/footer-mobile.svg"><img src="assets/generated/footer.svg" width="1200" alt="Explore Rajat Bhardwaj&apos;s repositories on GitHub."></picture></a>
 
-<sub>GitHub snapshot · 2026-11-05 14:05:15 UTC · refreshed every 6 hours by [GitHub Actions](https://github.com/RajatBhardwaj2006/RajatBhardwaj2006/actions/workflows/sync-profile.yml). [Data & maintenance](docs/MAINTAINING.md)</sub>
+<sub>GitHub snapshot · 2026-11-05 14:11:07 UTC · refreshed every 6 hours by [GitHub Actions](https://github.com/RajatBhardwaj2006/RajatBhardwaj2006/actions/workflows/sync-profile.yml). [Data & maintenance](docs/MAINTAINING.md)</sub>
