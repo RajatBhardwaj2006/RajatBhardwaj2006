@@ -47,55 +47,136 @@ ${content}
 </svg>\n`.replaceAll(C.accent, accent || C.accent);
 }
 
-function project3D([x, y, z], phase = 0) {
-  const a = -.48 + phase, b = .72;
-  const xx = x * Math.cos(a) + z * Math.sin(a);
-  const zz = -x * Math.sin(a) + z * Math.cos(a);
-  const yy = y * Math.cos(b) - zz * Math.sin(b);
-  const depth = y * Math.sin(b) + zz * Math.cos(b);
-  const perspective = 4.8 / (4.8 - depth);
-  return [n(xx * 123 * perspective + 920), n(yy * 123 * perspective + 245), depth];
-}
+function neuralEngine(mobile = false) {
+  if (mobile) {
+    const xCoords = [115, 205, 295, 395];
+    const layers = [
+      [270, 325, 380],
+      [235, 280, 325, 370, 415],
+      [235, 280, 325, 370, 415],
+      [325]
+    ];
+    const inputNames = ['Consistency', 'Dedication', 'Hardwork'];
+    const layerTitles = ['IN', 'H1', 'H2', 'OUT'];
 
-function torus(u, v) {
-  const r = 1.17 + .14 * Math.cos(u * 3);
-  const t = .43;
-  return [(r + t * Math.cos(v)) * Math.cos(u), (r + t * Math.cos(v)) * Math.sin(u), t * Math.sin(v) + .2 * Math.sin(u * 3)];
-}
-const pathFor = points => points.map((p, index) => `${index ? 'L' : 'M'}${p[0]},${p[1]}`).join('') + 'Z';
+    const lines = [];
+    for (let l = 0; l < layers.length - 1; l++) {
+      const fromX = xCoords[l];
+      const toX = xCoords[l + 1];
+      for (const fromY of layers[l]) {
+        for (const toY of layers[l + 1]) {
+          lines.push(`<line x1="${fromX}" y1="${fromY}" x2="${toX}" y2="${toY}" stroke="hsl(85 45% 24% / .5)" stroke-width="1"/>`);
+        }
+      }
+    }
 
-function manifold(animated = true) {
-  const slices = 48, sides = 10;
-  const faces = [];
-  for (let i = 0; i < slices; i++) {
-    const u1 = (i / slices) * Math.PI * 2, u2 = ((i + 1) / slices) * Math.PI * 2;
-    for (let j = 0; j < sides; j++) {
-      const v1 = (j / sides) * Math.PI * 2, v2 = ((j + 1) / sides) * Math.PI * 2;
-      const pts = [torus(u1, v1), torus(u2, v1), torus(u2, v2), torus(u1, v2)].map(p => project3D(p, animated ? 0 : .1));
-      faces.push({ z: (pts[0][2] + pts[1][2] + pts[2][2] + pts[3][2]) / 4, path: pathFor(pts) });
+    const activePaths = [
+      `M${xCoords[0]} ${layers[0][0]}L${xCoords[1]} ${layers[1][1]}L${xCoords[2]} ${layers[2][2]}L${xCoords[3]} ${layers[3][0]}`,
+      `M${xCoords[0]} ${layers[0][1]}L${xCoords[1]} ${layers[1][2]}L${xCoords[2]} ${layers[2][1]}L${xCoords[3]} ${layers[3][0]}`,
+      `M${xCoords[0]} ${layers[0][2]}L${xCoords[1]} ${layers[1][3]}L${xCoords[2]} ${layers[2][3]}L${xCoords[3]} ${layers[3][0]}`,
+    ];
+
+    const pulses = activePaths.map(d => `<path class="flow" d="${d}" fill="none" stroke="${C.accent}" stroke-width="1.6" stroke-dasharray="5 20"/>`).join('');
+
+    const nodes = [];
+    for (let l = 0; l < layers.length; l++) {
+      const x = xCoords[l];
+      const isInput = l === 0;
+      const isOutput = l === layers.length - 1;
+      for (let i = 0; i < layers[l].length; i++) {
+        const y = layers[l][i];
+        const r = isOutput ? 10 : (isInput ? 7.5 : 5.5);
+        nodes.push(`<circle cx="${x}" cy="${y}" r="${r}" fill="#111411" stroke="${isOutput || isInput ? C.accent : 'hsl(85 60% 45%)'}" stroke-width="1.8"/>
+<circle cx="${x}" cy="${y}" r="${isOutput ? 5 : (isInput ? 3.5 : 2.5)}" fill="${C.accent}"/>`);
+      }
+    }
+
+    const titles = layerTitles.map((title, l) => `<text x="${xCoords[l]}" y="215" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" letter-spacing="1" fill="${C.muted}">${title}</text>`).join('');
+    const inputLabels = inputNames.map((name, i) => `<text x="${xCoords[0] - 12}" y="${layers[0][i] + 4}" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="600" fill="${C.text}">${name}</text>`).join('');
+    const outputLabel = `<text x="${xCoords[3] + 16}" y="${layers[3][0] + 4}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" font-weight="700" fill="${C.accent}">Success</text>`;
+
+    return `<g>
+${titles}
+${lines.join('')}
+<g class="motion">${pulses}</g>
+${nodes.join('')}
+${inputLabels}
+${outputLabel}
+</g>`;
+  }
+
+  const xCoords = [885, 960, 1035, 1110];
+  const layers = [
+    [85, 150, 215],
+    [50, 100, 150, 200, 250],
+    [50, 100, 150, 200, 250],
+    [150]
+  ];
+  const inputNames = ['Consistency', 'Dedication', 'Hardwork'];
+  const layerTitles = ['INPUT', 'HIDDEN 1', 'HIDDEN 2', 'OUTPUT'];
+
+  const lines = [];
+  for (let l = 0; l < layers.length - 1; l++) {
+    const fromX = xCoords[l];
+    const toX = xCoords[l + 1];
+    for (const fromY of layers[l]) {
+      for (const toY of layers[l + 1]) {
+        lines.push(`<line x1="${fromX}" y1="${fromY}" x2="${toX}" y2="${toY}" stroke="hsl(85 45% 22% / .5)" stroke-width="1.1"/>`);
+      }
     }
   }
-  faces.sort((a, b) => a.z - b.z);
-  return faces.map(face => {
-    const shade = Math.round(52 + (face.z + 1.6) * 17);
-    const stroke = Math.round(36 + (face.z + 1.6) * 12);
-    return `<path d="${face.path}" fill="hsl(85 62% ${shade}% / .72)" stroke="hsl(85 55% ${stroke}% / .55)" stroke-width=".6"/>`;
-  }).join('');
+
+  const activePaths = [
+    `M${xCoords[0]} ${layers[0][0]}L${xCoords[1]} ${layers[1][1]}L${xCoords[2]} ${layers[2][2]}L${xCoords[3]} ${layers[3][0]}`,
+    `M${xCoords[0]} ${layers[0][1]}L${xCoords[1]} ${layers[1][2]}L${xCoords[2]} ${layers[2][1]}L${xCoords[3]} ${layers[3][0]}`,
+    `M${xCoords[0]} ${layers[0][2]}L${xCoords[1]} ${layers[1][3]}L${xCoords[2]} ${layers[2][3]}L${xCoords[3]} ${layers[3][0]}`,
+    `M${xCoords[0]} ${layers[0][0]}L${xCoords[1]} ${layers[1][0]}L${xCoords[2]} ${layers[2][0]}L${xCoords[3]} ${layers[3][0]}`,
+    `M${xCoords[0]} ${layers[0][2]}L${xCoords[1]} ${layers[1][4]}L${xCoords[2]} ${layers[2][4]}L${xCoords[3]} ${layers[3][0]}`
+  ];
+
+  const pulses = activePaths.map(d => `<path class="flow" d="${d}" fill="none" stroke="${C.accent}" stroke-width="1.8" stroke-dasharray="6 24"/>`).join('');
+
+  const nodes = [];
+  for (let l = 0; l < layers.length; l++) {
+    const x = xCoords[l];
+    const isInput = l === 0;
+    const isOutput = l === layers.length - 1;
+    for (let i = 0; i < layers[l].length; i++) {
+      const y = layers[l][i];
+      const r = isOutput ? 11 : (isInput ? 8 : 6);
+      nodes.push(`<circle cx="${x}" cy="${y}" r="${r}" fill="#111411" stroke="${isOutput || isInput ? C.accent : 'hsl(85 62% 48%)'}" stroke-width="${isOutput ? 2.4 : 1.8}"/>
+<circle cx="${x}" cy="${y}" r="${isOutput ? 5 : (isInput ? 4 : 2.8)}" fill="${C.accent}"/>`);
+    }
+  }
+
+  const titles = layerTitles.map((title, l) => `<text x="${xCoords[l]}" y="28" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" letter-spacing="1" fill="${C.muted}">${title}</text>`).join('');
+  const inputLabels = inputNames.map((name, i) => `<text x="${xCoords[0] - 14}" y="${layers[0][i] + 4}" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" font-weight="600" fill="${C.text}">${name}</text>`).join('');
+  const outputLabel = `<text x="${xCoords[3] + 16}" y="${layers[3][0] + 4}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" font-weight="700" fill="${C.accent}">Success</text>
+<text x="${xCoords[3] + 16}" y="${layers[3][0] + 18}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" fill="${C.muted}">Output</text>`;
+
+  return `<g>
+${titles}
+${lines.join('')}
+<g class="motion">${pulses}</g>
+${nodes.join('')}
+${inputLabels}
+${outputLabel}
+</g>`;
 }
 
 function hero(snapshot, config, mobile = false) {
   const sub = snapshot.user.location ? `${snapshot.user.location} · Learning, in motion.` : 'Learning, in motion.';
-  const body = mobile ? `<g transform="translate(-560 30) scale(.8)">${manifold(false)}</g>
+  const body = mobile ? `${neuralEngine(true)}
 ${text(30, 48, config.greeting, `font-size="28" font-weight="600" fill="${C.text}"`)}
-${lines(30, 110, snapshot.user.bio || 'Public work, tracked honestly.', 24, 3, 21, C.muted, 29)}
-${text(30, 230, sub, `font-size="14" fill="${C.muted}"`)}` :
-    `<g class="motion">${manifold(true)}</g><g class="still">${manifold(false)}</g>
+${lines(30, 104, snapshot.user.bio || 'Public work, tracked honestly.', 26, 3, 20, C.muted, 28)}
+${text(30, 185, sub, `font-size="14" fill="${C.muted}"`)}` :
+    `${neuralEngine(false)}
 ${text(42, 60, config.greeting, `font-size="34" font-weight="600" fill="${C.text}"`)}
-${lines(42, 130, snapshot.user.bio || 'Public work, tracked honestly.', 46, 3, 22, C.muted, 31)}
-${rule(42, 235, 780, 235)}
+${lines(42, 130, snapshot.user.bio || 'Public work, tracked honestly.', 42, 3, 22, C.muted, 31)}
+${rule(42, 235, 750, 235)}
 ${text(42, 268, snapshot.user.location || 'India', `font-size="16" fill="${C.muted}"`)}
-${text(780, 268, 'Learning, in motion.', `text-anchor="end" font-size="16" fill="${C.muted}"`)}`;
-  return svg(`${snapshot.user.name} GitHub profile hero`, `${clean(snapshot.user.bio)}. ${sub}`, mobile ? 560 : 1200, mobile ? 260 : 300, body, config.accent);
+${text(750, 268, 'Learning, in motion.', `text-anchor="end" font-size="16" fill="${C.muted}"`)}`;
+  return svg(`${snapshot.user.name} GitHub profile hero`, `${clean(snapshot.user.bio)}. Neural network engine with inputs Consistency, Dedication, Hardwork driving forward to Success.`, mobile ? 560 : 1200, mobile ? 450 : 300, body, config.accent);
 }
 
 function metrics(snapshot, config, mobile = false) {
@@ -563,7 +644,7 @@ export function readme(snapshot, config, projects) {
 <a href="${escapeXML(github)}">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/generated/hero-mobile.svg">
-    <img src="assets/generated/hero.svg" width="1200" alt="${escapeXML(snapshot.user.name)}. ${escapeXML(clean(snapshot.user.bio))}. Animated sculptural 3D manifold.">
+    <img src="assets/generated/hero.svg" width="1200" alt="${escapeXML(snapshot.user.name)}. ${escapeXML(clean(snapshot.user.bio))}. Neural network engine mapping consistency, dedication, and hardwork to success.">
   </picture>
 </a>
 

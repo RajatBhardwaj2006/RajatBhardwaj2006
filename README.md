@@ -3,7 +3,7 @@
 <a href="https://github.com/RajatBhardwaj2006">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/generated/hero-mobile.svg">
-    <img src="assets/generated/hero.svg" width="1200" alt="Rajat Bhardwaj. Rajat Bhardwaj , Exploring AI, ML. Learning, experimenting, and turning ideas into reality.. Animated sculptural 3D manifold.">
+    <img src="assets/generated/hero.svg" width="1200" alt="Rajat Bhardwaj. Rajat Bhardwaj , Exploring AI, ML. Learning, experimenting, and turning ideas into reality.. Neural network engine mapping consistency, dedication, and hardwork to success.">
   </picture>
 </a>
 
