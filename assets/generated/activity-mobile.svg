@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="560" height="420" viewBox="0 0 560 420" role="img" aria-labelledby="title desc">
-<title id="title">Recently pushed public repositories</title><desc id="desc">Java: 31 Oct 2026 - Implement ArrayList to search for a medicine. Smart-Medication-Management-Health-Assistant: 31 Oct 2026 - Update README with project details and features. Linux: 28 Oct 2026 - STL</desc>
+<title id="title">Recently pushed public repositories</title><desc id="desc">Artificial-Intelligence-and-Machine-Learning: 07 Nov 2026 - docs: Redefine main repository README with comprehensive curriculum matrix and capstones. Java: 31 Oct 2026 - Implement ArrayList to search for a medicine. Smart-Medication-Management-Health-Assistant: 31 Oct 2026 - Update README with project details and features</desc>
 <style>
 text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:none}
 @keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
@@ -21,14 +21,14 @@ text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:
 <rect width="560" height="420" rx="4" fill="#111411"/>
 <text x="30" y="48" font-size="28" font-weight="600" fill="#f3f6ef">Still in the making.</text>
 <text x="30" y="74" font-size="13" fill="#a4afa1">Latest public updates and commit activity.</text>
-<text x="30" y="118" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#c5f277">31 Oct 2026</text>
-<text x="30" y="142" font-size="18" font-weight="600" fill="#f3f6ef">Java</text>
-<text x="30" y="164" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#a4afa1"><tspan fill="#c5f277">commit: </tspan>&quot;Implement ArrayList to search for a medicine&quot;</text>
+<text x="30" y="118" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#c5f277">07 Nov 2026</text>
+<text x="30" y="142" font-size="18" font-weight="600" fill="#f3f6ef">Artificial Intelligence and Machine…</text>
+<text x="30" y="164" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#a4afa1"><tspan fill="#c5f277">commit: </tspan>&quot;docs: Redefine main repository README with…&quot;</text>
 <path d="M30 184H530" stroke="#232a21" stroke-width="1"/><text x="30" y="214" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#c5f277">31 Oct 2026</text>
-<text x="30" y="238" font-size="18" font-weight="600" fill="#f3f6ef">Smart Medication Management Health…</text>
-<text x="30" y="260" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#a4afa1"><tspan fill="#c5f277">commit: </tspan>&quot;Update README with project details and…&quot;</text>
-<path d="M30 280H530" stroke="#232a21" stroke-width="1"/><text x="30" y="310" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#c5f277">28 Oct 2026</text>
-<text x="30" y="334" font-size="18" font-weight="600" fill="#f3f6ef">Linux</text>
-<text x="30" y="356" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#a4afa1"><tspan fill="#c5f277">commit: </tspan>&quot;STL&quot;</text>
+<text x="30" y="238" font-size="18" font-weight="600" fill="#f3f6ef">Java</text>
+<text x="30" y="260" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#a4afa1"><tspan fill="#c5f277">commit: </tspan>&quot;Implement ArrayList to search for a medicine&quot;</text>
+<path d="M30 280H530" stroke="#232a21" stroke-width="1"/><text x="30" y="310" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#c5f277">31 Oct 2026</text>
+<text x="30" y="334" font-size="18" font-weight="600" fill="#f3f6ef">Smart Medication Management Health…</text>
+<text x="30" y="356" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#a4afa1"><tspan fill="#c5f277">commit: </tspan>&quot;Update README with project details and…&quot;</text>
 
 </svg>
