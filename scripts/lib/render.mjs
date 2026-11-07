@@ -744,7 +744,7 @@ export function formatSocialBadge(link) {
   const logo = logos[link.label] || 'link';
   const logoParam = logo.startsWith('data:') ? encodeURIComponent(logo) : logo;
   const badgeUrl = `https://img.shields.io/badge/${encodeURIComponent(link.label)}-c5f277?style=for-the-badge&logo=${logoParam}&logoColor=c5f277&labelColor=111411`;
-  return `[![${escapeMD(link.label)}](${badgeUrl})](${link.url})`;
+  return `<a href="${escapeXML(link.url)}"><img src="${badgeUrl}" alt="${escapeXML(link.label)}" /></a>`;
 }
 
 export function repositoriesSection() {
@@ -829,7 +829,9 @@ export function readme(snapshot, config, projects) {
   </picture>
 </a>
 
-${socials.join(' &nbsp; ')}${socials.length ? ' &nbsp; ' : ''}[![All Repositories](https://img.shields.io/badge/All%20Repositories-c5f277?style=for-the-badge&logo=github&logoColor=c5f277&labelColor=111411)](${github}?tab=repositories)
+<p align="center">
+  ${socials.join(' &nbsp; ')}${socials.length ? ' &nbsp; ' : ''}<a href="${escapeXML(github)}?tab=repositories"><img src="https://img.shields.io/badge/All%20Repositories-c5f277?style=for-the-badge&logo=github&logoColor=c5f277&labelColor=111411" alt="All Repositories" /></a>
+</p>
 
 ${embedded('metrics', `${snapshot.user.public_repos} public repositories, ${format(snapshot.calendar.total)} contributions in the past year, ${snapshot.user.followers} followers, ${snapshot.repositories.reduce((sum, repo) => sum + repo.stargazers_count, 0)} stars across public repositories.`)}
 
