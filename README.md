@@ -65,7 +65,7 @@ Featured from my GitHub pins.
       <sub>Deep neural networks, CNN architectures and computer vision pipelines.</sub>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning">
+      <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Reinforcement_Learning">
         <img src="https://img.shields.io/badge/REINFORCEMENT_LEARNING-c5f277?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2M1ZjI3NyIgZD0iTTIyLjI4MiA5LjgyMWE1Ljk4NSA1Ljk4NSAwIDAgMC0uNTE2LTQuOTEgNi4wNDYgNi4wNDYgMCAwIDAtNi41MS0yLjlBNi4wNjUgNi4wNjUgMCAwIDAgNC45ODEgNC4xOGE1Ljk4NSA1Ljk4NSAwIDAgMC0zLjk5OCAyLjkgNi4wNDYgNi4wNDYgMCAwIDAgLjc0MyA3LjA5NyA1Ljk4IDUuOTggMCAwIDAgLjUxIDQuOTExIDYuMDUxIDYuMDUxIDAgMCAwIDYuNTE1IDIuOUE1Ljk4NSA1Ljk4NSAwIDAgMCAxMy4yNiAyNGE2LjA1NiA2LjA1NiAwIDAgMCA1Ljc3Mi00LjIwNiA1Ljk5IDUuOTkgMCAwIDAgMy45OTctMi45IDYuMDU2IDYuMDU2IDAgMCAwLS43NDctNy4wNzN6TTEzLjI2IDIyLjQzYTQuNDc2IDQuNDc2IDAgMCAxLTIuODc2LTEuMDRsLjE0MS0uMDgxIDQuNzc5LTIuNzU4YS43OTUuNzk1IDAgMCAwIC4zOTItLjY4MXYtNi43MzdsMi4wMiAxLjE2OGEuMDcxLjA3MSAwIDAgMSAuMDM4LjA1MnY1LjU4M2E0LjUwNCA0LjUwNCAwIDAgMS00LjQ5NCA0LjQ5NHoiLz48L3N2Zz4%3D&logoColor=c5f277&labelColor=111411" alt="REINFORCEMENT LEARNING" />
       </a>
       <br/>
@@ -81,7 +81,7 @@ Featured from my GitHub pins.
       <sub>Data structures, algorithmic paradigms and high-performance solutions.</sub>
     </td>
     <td width="33%" valign="top">
-      <a href="https://leetcode.com/u/cherry_2006">
+      <a href="https://github.com/RajatBhardwaj2006/LeetCode">
         <img src="https://img.shields.io/badge/LEETCODE-c5f277?style=for-the-badge&logo=leetcode&logoColor=c5f277&labelColor=111411" alt="LEETCODE" />
       </a>
       <br/>
@@ -97,7 +97,7 @@ Featured from my GitHub pins.
   </tr>
   <tr>
     <td width="33%" valign="top">
-      <a href="https://github.com/RajatBhardwaj2006">
+      <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Python">
         <img src="https://img.shields.io/badge/PYTHON-c5f277?style=for-the-badge&logo=python&logoColor=c5f277&labelColor=111411" alt="PYTHON" />
       </a>
       <br/>
@@ -111,7 +111,7 @@ Featured from my GitHub pins.
       <sub>Object-oriented programming, enterprise software and backend architecture.</sub>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/RajatBhardwaj2006">
+      <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/SQL">
         <img src="https://img.shields.io/badge/SQL-c5f277?style=for-the-badge&logo=postgresql&logoColor=c5f277&labelColor=111411" alt="SQL" />
       </a>
       <br/>
@@ -127,14 +127,12 @@ Featured from my GitHub pins.
       <sub>Low-level systems programming, memory control and fast computation.</sub>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/RajatBhardwaj2006">
-        <img src="https://img.shields.io/badge/JAVASCRIPT-c5f277?style=for-the-badge&logo=javascript&logoColor=c5f277&labelColor=111411" alt="JAVASCRIPT" />
-      </a>
+      <img src="https://img.shields.io/badge/JAVASCRIPT-c5f277?style=for-the-badge&logo=javascript&logoColor=c5f277&labelColor=111411" alt="JAVASCRIPT" />
       <br/>
       <sub>Interactive web logic, asynchronous workflows and modern UI scripting.</sub>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/RajatBhardwaj2006/Fraudulent-Online-Transaction-Detection-System">
+      <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Flask">
         <img src="https://img.shields.io/badge/FLASK-c5f277?style=for-the-badge&logo=flask&logoColor=c5f277&labelColor=111411" alt="FLASK" />
       </a>
       <br/>
@@ -143,21 +141,21 @@ Featured from my GitHub pins.
   </tr>
   <tr>
     <td width="33%" valign="top">
-      <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning">
+      <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/OpenAI">
         <img src="https://img.shields.io/badge/OPENAI-c5f277?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2M1ZjI3NyIgZD0iTTIyLjI4MiA5LjgyMWE1Ljk4NSA1Ljk4NSAwIDAgMC0uNTE2LTQuOTEgNi4wNDYgNi4wNDYgMCAwIDAtNi41MS0yLjlBNi4wNjUgNi4wNjUgMCAwIDAgNC45ODEgNC4xOGE1Ljk4NSA1Ljk4NSAwIDAgMC0zLjk5OCAyLjkgNi4wNDYgNi4wNDYgMCAwIDAgLjc0MyA3LjA5NyA1Ljk4IDUuOTggMCAwIDAgLjUxIDQuOTExIDYuMDUxIDYuMDUxIDAgMCAwIDYuNTE1IDIuOUE1Ljk4NSA1Ljk4NSAwIDAgMCAxMy4yNiAyNGE2LjA1NiA2LjA1NiAwIDAgMCA1Ljc3Mi00LjIwNiA1Ljk5IDUuOTkgMCAwIDAgMy45OTctMi45IDYuMDU2IDYuMDU2IDAgMCAwLS43NDctNy4wNzN6TTEzLjI2IDIyLjQzYTQuNDc2IDQuNDc2IDAgMCAxLTIuODc2LTEuMDRsLjE0MS0uMDgxIDQuNzc5LTIuNzU4YS43OTUuNzk1IDAgMCAwIC4zOTItLjY4MXYtNi43MzdsMi4wMiAxLjE2OGEuMDcxLjA3MSAwIDAgMSAuMDM4LjA1MnY1LjU4M2E0LjUwNCA0LjUwNCAwIDAgMS00LjQ5NCA0LjQ5NHoiLz48L3N2Zz4%3D&logoColor=c5f277&labelColor=111411" alt="OPENAI" />
       </a>
       <br/>
       <sub>LLM integrations, prompt engineering and intelligent cognitive systems.</sub>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning">
+      <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/AIAgent">
         <img src="https://img.shields.io/badge/AI_AGENTS-c5f277?style=for-the-badge&logo=probot&logoColor=c5f277&labelColor=111411" alt="AI AGENTS" />
       </a>
       <br/>
       <sub>Autonomous multi-agent architectures, reasoning and task automation.</sub>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/RajatBhardwaj2006">
+      <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/HTML">
         <img src="https://img.shields.io/badge/HTML5-c5f277?style=for-the-badge&logo=html5&logoColor=c5f277&labelColor=111411" alt="HTML5" />
       </a>
       <br/>
@@ -166,21 +164,21 @@ Featured from my GitHub pins.
   </tr>
   <tr>
     <td width="33%" valign="top">
-      <a href="https://github.com/RajatBhardwaj2006">
+      <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/CSS">
         <img src="https://img.shields.io/badge/CSS3-c5f277?style=for-the-badge&logo=css&logoColor=c5f277&labelColor=111411" alt="CSS3" />
       </a>
       <br/>
       <sub>Modern responsive styling, Flexbox, CSS Grid layouts and animations.</sub>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/RajatBhardwaj2006">
+      <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Github">
         <img src="https://img.shields.io/badge/GIT-c5f277?style=for-the-badge&logo=git&logoColor=c5f277&labelColor=111411" alt="GIT" />
       </a>
       <br/>
       <sub>Distributed version control, branch management and collaboration workflows.</sub>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/RajatBhardwaj2006">
+      <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Github">
         <img src="https://img.shields.io/badge/GITHUB-c5f277?style=for-the-badge&logo=github&logoColor=c5f277&labelColor=111411" alt="GITHUB" />
       </a>
       <br/>
@@ -189,21 +187,19 @@ Featured from my GitHub pins.
   </tr>
   <tr>
     <td width="33%" valign="top">
-      <a href="https://github.com/RajatBhardwaj2006">
-        <img src="https://img.shields.io/badge/JUPYTERLAB-c5f277?style=for-the-badge&logo=jupyter&logoColor=c5f277&labelColor=111411" alt="JUPYTERLAB" />
-      </a>
+      <img src="https://img.shields.io/badge/JUPYTERLAB-c5f277?style=for-the-badge&logo=jupyter&logoColor=c5f277&labelColor=111411" alt="JUPYTERLAB" />
       <br/>
       <sub>Interactive computational notebooks, EDA and machine learning experiments.</sub>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/RajatBhardwaj2006">
+      <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Numpy">
         <img src="https://img.shields.io/badge/NUMPY-c5f277?style=for-the-badge&logo=numpy&logoColor=c5f277&labelColor=111411" alt="NUMPY" />
       </a>
       <br/>
       <sub>Vectorized computing, multi-dimensional array operations and linear algebra.</sub>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/RajatBhardwaj2006">
+      <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Pandas">
         <img src="https://img.shields.io/badge/PANDAS-c5f277?style=for-the-badge&logo=pandas&logoColor=c5f277&labelColor=111411" alt="PANDAS" />
       </a>
       <br/>
@@ -212,44 +208,40 @@ Featured from my GitHub pins.
   </tr>
   <tr>
     <td width="33%" valign="top">
-      <a href="https://github.com/RajatBhardwaj2006">
+      <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Seaborn">
         <img src="https://img.shields.io/badge/SEABORN-c5f277?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2M1ZjI3NyIgZD0iTTEyIDJDNi40OCAyIDIgNi40OCAyIDEyczQuNDggMTAgMTAgMTAgMTAtNC40OCAxMC0xMFMxNy41MiAyIDEyIDJ6bS0xIDE3LjkzYy0zLjk1LS40OS03LTMuODUtNy03LjkzIDAtLjYyLjA4LTEuMjEuMjEtMS43OUw5IDE1djFjMCAxLjEuOSAyIDIgMnYxLjkzem02LjktMi41NGMtLjI2LS44MS0xLTEuMzktMS45LTEuMzloLTF2LTNjMC0uNTUtLjQ1LTEtMS0xSDh2LTJoMmMuNTUgMCAxLS40NSAxLTFWN2gyYzEuMSAwIDItLjkgMi0ydi0uNDFjMi45MyAxLjE5IDUgNC4wNiA1IDcuNDEgMCAyLjA4LS44IDMuOTctMi4xIDUuMzl6Ii8%2BPC9zdmc%2B&logoColor=c5f277&labelColor=111411" alt="SEABORN" />
       </a>
       <br/>
       <sub>Statistical data visualization, distribution plots and correlation heatmaps.</sub>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/RajatBhardwaj2006">
+      <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Matplotlib">
         <img src="https://img.shields.io/badge/MATPLOTLIB-c5f277?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2M1ZjI3NyIgZD0iTTMgM3YxOGgxOHYtMkg1VjNIM3ptNCAxNGgydi00SDd2NHptNCAwaDJWN2gtMnYxMHptNCAwaDJ2LTdoLTJ2N3ptNCAwaDJ2LTloLTJ2OXoiLz48L3N2Zz4%3D&logoColor=c5f277&labelColor=111411" alt="MATPLOTLIB" />
       </a>
       <br/>
       <sub>Customizable plotting, figure layouts, graphs and visual analytics.</sub>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/RajatBhardwaj2006">
-        <img src="https://img.shields.io/badge/SCIPY-c5f277?style=for-the-badge&logo=scipy&logoColor=c5f277&labelColor=111411" alt="SCIPY" />
-      </a>
+      <img src="https://img.shields.io/badge/SCIPY-c5f277?style=for-the-badge&logo=scipy&logoColor=c5f277&labelColor=111411" alt="SCIPY" />
       <br/>
       <sub>Advanced scientific algorithms, optimization, integration and statistics.</sub>
     </td>
   </tr>
   <tr>
     <td width="33%" valign="top">
-      <a href="https://github.com/RajatBhardwaj2006">
-        <img src="https://img.shields.io/badge/SCIKIT-LEARN-c5f277?style=for-the-badge&logo=scikit-learn&logoColor=c5f277&labelColor=111411" alt="SCIKIT-LEARN" />
-      </a>
+      <img src="https://img.shields.io/badge/SCIKIT-LEARN-c5f277?style=for-the-badge&logo=scikit-learn&logoColor=c5f277&labelColor=111411" alt="SCIKIT-LEARN" />
       <br/>
       <sub>Predictive models, classification, regression, clustering and pipelines.</sub>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/RajatBhardwaj2006/VisionInspect-Industrial-Defect-Detection-">
+      <a href="https://github.com/RajatBhardwaj2006/Deep-Learning">
         <img src="https://img.shields.io/badge/PYTORCH-c5f277?style=for-the-badge&logo=pytorch&logoColor=c5f277&labelColor=111411" alt="PYTORCH" />
       </a>
       <br/>
       <sub>Deep learning frameworks, neural architectures and GPU-accelerated tensors.</sub>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/RajatBhardwaj2006">
+      <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning/tree/main/Data_Collection">
         <img src="https://img.shields.io/badge/BEAUTIFUL_SOUP-c5f277?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2M1ZjI3NyIgZD0iTTEyIDJhMTAgMTAgMCAxIDAgMTAgMTBBMTAgMTAgMCAwIDAgMTIgMnptMSAxNC41YTMuNSAzLjUgMCAwIDEtNyAwVjE1YTMuNSAzLjUgMCAwIDEgNyAwem02LTRhMy41IDMuNSAwIDAgMS03IDBWMTFhMy41IDMuNSAwIDAgMSA3IDB6Ii8%2BPC9zdmc%2B&logoColor=c5f277&labelColor=111411" alt="BEAUTIFUL SOUP" />
       </a>
       <br/>

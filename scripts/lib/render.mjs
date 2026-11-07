@@ -753,35 +753,36 @@ export function repositoriesSection() {
   const seabornSvg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#c5f277" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>';
   const beautifulsoupSvg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#c5f277" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.5a3.5 3.5 0 0 1-7 0V15a3.5 3.5 0 0 1 7 0zm6-4a3.5 3.5 0 0 1-7 0V11a3.5 3.5 0 0 1 7 0z"/></svg>';
   const dataUri = svg => `data:image/svg+xml;base64,${Buffer.from(svg).toString('base64')}`;
+  const aiml = 'https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning';
 
   const items = [
-    { name: 'AI & ML REPO', logo: 'github', url: 'https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning', desc: 'Core machine learning systems, statistical models and neural networks.' },
+    { name: 'AI & ML REPO', logo: 'github', url: aiml, desc: 'Core machine learning systems, statistical models and neural networks.' },
     { name: 'DEEP LEARNING', logo: 'pytorch', url: 'https://github.com/RajatBhardwaj2006/Deep-Learning', desc: 'Deep neural networks, CNN architectures and computer vision pipelines.' },
-    { name: 'REINFORCEMENT LEARNING', logo: dataUri(openaiSvg), url: 'https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning', desc: 'Q-learning, policy optimization and autonomous agent simulations.' },
+    { name: 'REINFORCEMENT LEARNING', logo: dataUri(openaiSvg), url: `${aiml}/tree/main/Reinforcement_Learning`, desc: 'Q-learning, policy optimization and autonomous agent simulations.' },
     { name: 'DSA IN C++', logo: 'c%2B%2B', url: 'https://github.com/RajatBhardwaj2006/Data-Structures', desc: 'Data structures, algorithmic paradigms and high-performance solutions.' },
-    { name: 'LEETCODE', logo: 'leetcode', url: 'https://leetcode.com/u/cherry_2006', desc: 'Competitive programming, algorithmic problem solving and DSA patterns.' },
+    { name: 'LEETCODE', logo: 'leetcode', url: 'https://github.com/RajatBhardwaj2006/LeetCode', desc: 'Competitive programming, algorithmic problem solving and DSA patterns.' },
     { name: 'ALGORITHMS', logo: 'c%2B%2B', url: 'https://github.com/RajatBhardwaj2006/Data-Structures', desc: 'Graph theory, dynamic programming, sorting and computational optimization.' },
-    { name: 'PYTHON', logo: 'python', url: 'https://github.com/RajatBhardwaj2006', desc: 'Core language for AI models, deep learning, automation and backend APIs.' },
+    { name: 'PYTHON', logo: 'python', url: `${aiml}/tree/main/Python`, desc: 'Core language for AI models, deep learning, automation and backend APIs.' },
     { name: 'JAVA', logo: 'openjdk', url: 'https://github.com/RajatBhardwaj2006/Java', desc: 'Object-oriented programming, enterprise software and backend architecture.' },
-    { name: 'SQL', logo: 'postgresql', url: 'https://github.com/RajatBhardwaj2006', desc: 'Relational database schema design, complex queries and optimization.' },
+    { name: 'SQL', logo: 'postgresql', url: `${aiml}/tree/main/SQL`, desc: 'Relational database schema design, complex queries and optimization.' },
     { name: 'C++', logo: 'c%2B%2B', url: 'https://github.com/RajatBhardwaj2006/CPP', desc: 'Low-level systems programming, memory control and fast computation.' },
-    { name: 'JAVASCRIPT', logo: 'javascript', url: 'https://github.com/RajatBhardwaj2006', desc: 'Interactive web logic, asynchronous workflows and modern UI scripting.' },
-    { name: 'FLASK', logo: 'flask', url: 'https://github.com/RajatBhardwaj2006/Fraudulent-Online-Transaction-Detection-System', desc: 'Lightweight RESTful API endpoints and machine learning inference services.' },
-    { name: 'OPENAI', logo: dataUri(openaiSvg), url: 'https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning', desc: 'LLM integrations, prompt engineering and intelligent cognitive systems.' },
-    { name: 'AI AGENTS', logo: 'probot', url: 'https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning', desc: 'Autonomous multi-agent architectures, reasoning and task automation.' },
-    { name: 'HTML5', logo: 'html5', url: 'https://github.com/RajatBhardwaj2006', desc: 'Semantic page structure, modern accessibility standards and web components.' },
-    { name: 'CSS3', logo: 'css', url: 'https://github.com/RajatBhardwaj2006', desc: 'Modern responsive styling, Flexbox, CSS Grid layouts and animations.' },
-    { name: 'GIT', logo: 'git', url: 'https://github.com/RajatBhardwaj2006', desc: 'Distributed version control, branch management and collaboration workflows.' },
-    { name: 'GITHUB', logo: 'github', url: 'https://github.com/RajatBhardwaj2006', desc: 'Repository hosting, GitHub Actions CI/CD automation and open-source code.' },
-    { name: 'JUPYTERLAB', logo: 'jupyter', url: 'https://github.com/RajatBhardwaj2006', desc: 'Interactive computational notebooks, EDA and machine learning experiments.' },
-    { name: 'NUMPY', logo: 'numpy', url: 'https://github.com/RajatBhardwaj2006', desc: 'Vectorized computing, multi-dimensional array operations and linear algebra.' },
-    { name: 'PANDAS', logo: 'pandas', url: 'https://github.com/RajatBhardwaj2006', desc: 'Data manipulation, tabular cleaning, aggregation and exploratory analysis.' },
-    { name: 'SEABORN', logo: dataUri(seabornSvg), url: 'https://github.com/RajatBhardwaj2006', desc: 'Statistical data visualization, distribution plots and correlation heatmaps.' },
-    { name: 'MATPLOTLIB', logo: dataUri(matplotlibSvg), url: 'https://github.com/RajatBhardwaj2006', desc: 'Customizable plotting, figure layouts, graphs and visual analytics.' },
-    { name: 'SCIPY', logo: 'scipy', url: 'https://github.com/RajatBhardwaj2006', desc: 'Advanced scientific algorithms, optimization, integration and statistics.' },
-    { name: 'SCIKIT-LEARN', logo: 'scikit-learn', url: 'https://github.com/RajatBhardwaj2006', desc: 'Predictive models, classification, regression, clustering and pipelines.' },
-    { name: 'PYTORCH', logo: 'pytorch', url: 'https://github.com/RajatBhardwaj2006/VisionInspect-Industrial-Defect-Detection-', desc: 'Deep learning frameworks, neural architectures and GPU-accelerated tensors.' },
-    { name: 'BEAUTIFUL SOUP', logo: dataUri(beautifulsoupSvg), url: 'https://github.com/RajatBhardwaj2006', desc: 'Web scraping, HTML/XML DOM parsing and structured data extraction.' }
+    { name: 'JAVASCRIPT', logo: 'javascript', url: null, desc: 'Interactive web logic, asynchronous workflows and modern UI scripting.' },
+    { name: 'FLASK', logo: 'flask', url: `${aiml}/tree/main/Flask`, desc: 'Lightweight RESTful API endpoints and machine learning inference services.' },
+    { name: 'OPENAI', logo: dataUri(openaiSvg), url: `${aiml}/tree/main/OpenAI`, desc: 'LLM integrations, prompt engineering and intelligent cognitive systems.' },
+    { name: 'AI AGENTS', logo: 'probot', url: `${aiml}/tree/main/AIAgent`, desc: 'Autonomous multi-agent architectures, reasoning and task automation.' },
+    { name: 'HTML5', logo: 'html5', url: `${aiml}/tree/main/HTML`, desc: 'Semantic page structure, modern accessibility standards and web components.' },
+    { name: 'CSS3', logo: 'css', url: `${aiml}/tree/main/CSS`, desc: 'Modern responsive styling, Flexbox, CSS Grid layouts and animations.' },
+    { name: 'GIT', logo: 'git', url: `${aiml}/tree/main/Github`, desc: 'Distributed version control, branch management and collaboration workflows.' },
+    { name: 'GITHUB', logo: 'github', url: `${aiml}/tree/main/Github`, desc: 'Repository hosting, GitHub Actions CI/CD automation and open-source code.' },
+    { name: 'JUPYTERLAB', logo: 'jupyter', url: null, desc: 'Interactive computational notebooks, EDA and machine learning experiments.' },
+    { name: 'NUMPY', logo: 'numpy', url: `${aiml}/tree/main/Numpy`, desc: 'Vectorized computing, multi-dimensional array operations and linear algebra.' },
+    { name: 'PANDAS', logo: 'pandas', url: `${aiml}/tree/main/Pandas`, desc: 'Data manipulation, tabular cleaning, aggregation and exploratory analysis.' },
+    { name: 'SEABORN', logo: dataUri(seabornSvg), url: `${aiml}/tree/main/Seaborn`, desc: 'Statistical data visualization, distribution plots and correlation heatmaps.' },
+    { name: 'MATPLOTLIB', logo: dataUri(matplotlibSvg), url: `${aiml}/tree/main/Matplotlib`, desc: 'Customizable plotting, figure layouts, graphs and visual analytics.' },
+    { name: 'SCIPY', logo: 'scipy', url: null, desc: 'Advanced scientific algorithms, optimization, integration and statistics.' },
+    { name: 'SCIKIT-LEARN', logo: 'scikit-learn', url: null, desc: 'Predictive models, classification, regression, clustering and pipelines.' },
+    { name: 'PYTORCH', logo: 'pytorch', url: 'https://github.com/RajatBhardwaj2006/Deep-Learning', desc: 'Deep learning frameworks, neural architectures and GPU-accelerated tensors.' },
+    { name: 'BEAUTIFUL SOUP', logo: dataUri(beautifulsoupSvg), url: `${aiml}/tree/main/Data_Collection`, desc: 'Web scraping, HTML/XML DOM parsing and structured data extraction.' }
   ];
 
   const rows = [];
@@ -790,10 +791,10 @@ export function repositoriesSection() {
     const cells = chunk.map(item => {
       const logoParam = item.logo.startsWith('data:') ? encodeURIComponent(item.logo) : item.logo;
       const badgeUrl = `https://img.shields.io/badge/${encodeURIComponent(item.name.replace(/\s+/g, '_'))}-c5f277?style=for-the-badge&logo=${logoParam}&logoColor=c5f277&labelColor=111411`;
+      const badgeImg = `<img src="${badgeUrl}" alt="${escapeXML(item.name)}" />`;
+      const badgeHtml = item.url ? `<a href="${item.url}">\n        ${badgeImg}\n      </a>` : badgeImg;
       return `    <td width="33%" valign="top">
-      <a href="${item.url}">
-        <img src="${badgeUrl}" alt="${escapeXML(item.name)}" />
-      </a>
+      ${badgeHtml}
       <br/>
       <sub>${escapeXML(item.desc)}</sub>
     </td>`;
