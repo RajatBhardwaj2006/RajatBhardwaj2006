@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "fetchedAt": "2026-11-07T13:39:56.153Z",
+  "fetchedAt": "2026-11-07T18:13:29.321Z",
   "sources": {
     "profile": "https://api.github.com/users/RajatBhardwaj2006",
     "repositories": "https://api.github.com/users/RajatBhardwaj2006/repos",
@@ -17,7 +17,7 @@
     "blog": "",
     "followers": 9,
     "following": 6,
-    "public_repos": 15,
+    "public_repos": 18,
     "created_at": "2025-11-27T15:06:35Z"
   },
   "social": [
@@ -35,6 +35,36 @@
     }
   ],
   "repositories": [
+    {
+      "name": "AI-GYM-Trainer",
+      "full_name": "RajatBhardwaj2006/AI-GYM-Trainer",
+      "html_url": "https://github.com/RajatBhardwaj2006/AI-GYM-Trainer",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "pushed_at": "2026-11-07T13:46:35Z",
+      "archived": false,
+      "fork": false,
+      "private": false,
+      "last_commit_message": "Initial commit"
+    },
+    {
+      "name": "AI-Resume-ATS",
+      "full_name": "RajatBhardwaj2006/AI-Resume-ATS",
+      "html_url": "https://github.com/RajatBhardwaj2006/AI-Resume-ATS",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "pushed_at": "2026-11-07T15:29:42Z",
+      "archived": false,
+      "fork": false,
+      "private": false,
+      "last_commit_message": "Fix header formatting in README.md"
+    },
     {
       "name": "Artificial-Intelligence-and-Machine-Learning",
       "full_name": "RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning",
@@ -224,8 +254,22 @@
       "pushed_at": "2026-10-28T14:13:40Z",
       "archived": false,
       "fork": false,
+      "private": false
+    },
+    {
+      "name": "Neural-Style-Transfer--NST-",
+      "full_name": "RajatBhardwaj2006/Neural-Style-Transfer--NST-",
+      "html_url": "https://github.com/RajatBhardwaj2006/Neural-Style-Transfer--NST-",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "pushed_at": "2026-11-07T15:29:17Z",
+      "archived": false,
+      "fork": false,
       "private": false,
-      "last_commit_message": "STL"
+      "last_commit_message": "Fix README title formatting"
     },
     {
       "name": "Quick-Attendance",
@@ -257,7 +301,7 @@
       "topics": [],
       "stargazers_count": 0,
       "forks_count": 0,
-      "pushed_at": "2026-11-07T13:39:45Z",
+      "pushed_at": "2026-11-07T13:40:00Z",
       "archived": false,
       "fork": false,
       "private": false
@@ -274,8 +318,7 @@
       "pushed_at": "2026-10-31T04:29:47Z",
       "archived": false,
       "fork": false,
-      "private": false,
-      "last_commit_message": "Update README with project details and features"
+      "private": false
     },
     {
       "name": "TO-DO-Application",
@@ -311,8 +354,7 @@
       "pushed_at": "2026-10-22T13:34:10Z",
       "archived": false,
       "fork": false,
-      "private": false,
-      "last_commit_message": "Fix formatting in README.md"
+      "private": false
     },
     {
       "name": "NeuralView",
@@ -344,7 +386,7 @@
     "RajatBhardwaj2006/Smart-Medication-Management-Health-Assistant"
   ],
   "calendar": {
-    "total": 1384,
+    "total": 1393,
     "days": [
       {
         "date": "2025-11-02",
@@ -1828,7 +1870,7 @@
       },
       {
         "date": "2026-11-07",
-        "count": 36
+        "count": 45
       }
     ],
     "source": "GitHub GraphQL contribution calendar"
