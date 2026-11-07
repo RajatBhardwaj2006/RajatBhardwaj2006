@@ -300,7 +300,7 @@ Each owned public repository counts once, using its primary language reported by
 <details>
 <summary>Contribution data and recent repositories</summary>
 
-1,169 contributions across 234 active days in the 365-day calendar window (07 Nov 2025 to 06 Nov 2026). Longest streak within this window: 202 days. Best day: 35 contributions.
+1,169 contributions across 234 active days in the 365-day calendar window (08 Nov 2025 to 07 Nov 2026). Longest streak within this window: 202 days. Best day: 35 contributions.
 
 - [Java](https://github.com/RajatBhardwaj2006/Java) · pushed 31 Oct 2026 - *"Implement ArrayList to search for a medicine"*
 - [Smart-Medication-Management-Health-Assistant](https://github.com/RajatBhardwaj2006/Smart-Medication-Management-Health-Assistant) · pushed 31 Oct 2026 - *"Update README with project details and features"*
@@ -314,4 +314,4 @@ Daily counts follow GitHub's contribution calendar visibility and counting rules
 
 <a href="https://github.com/RajatBhardwaj2006?tab=repositories"><picture><source media="(max-width: 600px)" srcset="assets/generated/footer-mobile.svg"><img src="assets/generated/footer.svg" width="1200" alt="Explore Rajat Bhardwaj&apos;s repositories on GitHub."></picture></a>
 
-<sub>GitHub snapshot · 2026-11-06 19:31:58 UTC · refreshed every 6 hours by [GitHub Actions](https://github.com/RajatBhardwaj2006/RajatBhardwaj2006/actions/workflows/sync-profile.yml). [Data & maintenance](docs/MAINTAINING.md)</sub>
+<sub>GitHub snapshot · 2026-11-07 06:12:17 UTC · refreshed every 6 hours by [GitHub Actions](https://github.com/RajatBhardwaj2006/RajatBhardwaj2006/actions/workflows/sync-profile.yml). [Data & maintenance](docs/MAINTAINING.md)</sub>
