@@ -2,8 +2,10 @@ name: Sync GitHub profile
 
 on:
   workflow_dispatch:
+  repository_dispatch:
+    types: [profile-sync, push, repo-update]
   schedule:
-    - cron: '23 */6 * * *'
+    - cron: '*/30 * * * *'
   push:
     branches: [main]
     paths:
