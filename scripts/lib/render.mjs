@@ -559,11 +559,11 @@ function contributionScene(snapshot, config, mobile = false) {
 
   tiles.sort((a, b) => (a.col + a.row) - (b.col + b.row) || a.col - b.col);
 
-  const sx = 17.0, sy = 7.15;
-  const tx = -11.75, ty = 5.8;
-  const wx = 13.2, wy = 5.6;
-  const dx = -9.2, dy = 4.5;
-  const x0 = 155, y0 = 180;
+  const sx = 18.7, sy = 7.865;
+  const tx = -12.925, ty = 6.38;
+  const wx = 14.52, wy = 6.16;
+  const dx = -10.12, dy = 4.95;
+  const x0 = 124, y0 = 154;
 
   const formatRange = (d1, d2) => {
     if (!d1 || !d2) return '';
@@ -587,7 +587,7 @@ function contributionScene(snapshot, config, mobile = false) {
     const px = x0 + d.col * sx + d.row * tx;
     const py = y0 + d.col * sy + d.row * ty;
     const ratio = d.count / peak;
-    const h = d.count > 0 ? 5 + Math.pow(ratio, 0.65) * 135 : 2;
+    const h = d.count > 0 ? 5 + Math.pow(ratio, 0.65) * 146 : 2;
 
     const t0 = [n(px), n(py - h)];
     const t1 = [n(px + wx), n(py + wy - h)];
@@ -634,7 +634,7 @@ ${text(340, 48, 'Busiest day', `font-size="13" fill="${C.muted}"`)}
 <text x="340" y="85" font-size="30" font-weight="700" fill="${C.accent}">${stats.peak}<tspan dx="8" font-size="14" font-weight="400" fill="${C.text}">contributions</tspan></text>
 ${mono(340, 108, formatMonthDay(stats.peakDate), C.muted, 12)}
 
-<g transform="translate(-10 20) scale(.46 .66)">${blocks}${labels}</g>
+<g transform="translate(5 30) scale(.45 .63)">${blocks}${labels}</g>
 
 <rect x="30" y="525" width="240" height="88" rx="6" fill="${C.panel}"/>
 ${text(45, 552, 'Longest streak', `font-size="13" fill="${C.muted}"`)}
