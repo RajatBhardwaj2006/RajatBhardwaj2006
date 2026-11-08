@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="title desc">
-<title id="title">Recently pushed public repositories</title><desc id="desc">AI-Resume-ATS: 07 Nov 2026 - Fix header formatting in README.md. Neural-Style-Transfer--NST-: 07 Nov 2026 - Fix README title formatting. AI-GYM-Trainer: 07 Nov 2026 - Initial commit</desc>
+<title id="title">Recently pushed public repositories</title><desc id="desc">Quick-Attendance: 08 Nov 2026 - Feat: Added ui folder into the project which contain layout for the project.. AI-Resume-ATS: 07 Nov 2026 - Fix header formatting in README.md. Neural-Style-Transfer--NST-: 07 Nov 2026 - Fix README title formatting</desc>
 <style>
 text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:none}
 @keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
@@ -21,14 +21,14 @@ text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:
 <rect width="1200" height="330" rx="4" fill="#111411"/>
 <text x="42" y="54" font-size="29" font-weight="600" fill="#f3f6ef">Still in the making.</text>
 <text x="42" y="80" font-size="14" fill="#a4afa1">Latest commits pushed across public repositories.</text>
-<text x="42" y="126" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" fill="#c5f277">07 Nov 2026</text>
-<text x="190" y="126" font-size="19" font-weight="600" fill="#f3f6ef">AI Resume ATS</text>
-<text x="190" y="149" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#a4afa1"><tspan fill="#c5f277">commit: </tspan>&quot;Fix header formatting in README.md&quot;</text>
+<text x="42" y="126" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" fill="#c5f277">08 Nov 2026</text>
+<text x="190" y="126" font-size="19" font-weight="600" fill="#f3f6ef">Quick Attendance</text>
+<text x="190" y="149" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#a4afa1"><tspan fill="#c5f277">commit: </tspan>&quot;Feat: Added ui folder into the project which contain layout for the project.&quot;</text>
 <path d="M190 164H1158" stroke="#232a21" stroke-width="1"/><text x="42" y="194" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" fill="#c5f277">07 Nov 2026</text>
-<text x="190" y="194" font-size="19" font-weight="600" fill="#f3f6ef">Neural Style Transfer NST</text>
-<text x="190" y="217" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#a4afa1"><tspan fill="#c5f277">commit: </tspan>&quot;Fix README title formatting&quot;</text>
+<text x="190" y="194" font-size="19" font-weight="600" fill="#f3f6ef">AI Resume ATS</text>
+<text x="190" y="217" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#a4afa1"><tspan fill="#c5f277">commit: </tspan>&quot;Fix header formatting in README.md&quot;</text>
 <path d="M190 232H1158" stroke="#232a21" stroke-width="1"/><text x="42" y="262" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" fill="#c5f277">07 Nov 2026</text>
-<text x="190" y="262" font-size="19" font-weight="600" fill="#f3f6ef">AI GYM Trainer</text>
-<text x="190" y="285" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#a4afa1"><tspan fill="#c5f277">commit: </tspan>&quot;Initial commit&quot;</text>
+<text x="190" y="262" font-size="19" font-weight="600" fill="#f3f6ef">Neural Style Transfer NST</text>
+<text x="190" y="285" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#a4afa1"><tspan fill="#c5f277">commit: </tspan>&quot;Fix README title formatting&quot;</text>
 
 </svg>
