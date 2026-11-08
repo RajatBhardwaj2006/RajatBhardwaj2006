@@ -1,6 +1,6 @@
 {
   "username": "RajatBhardwaj2006",
-  "featuredCount": 6,
+  "featuredCount": 9,
   "accent": "#c5f277",
   "featuredProjects": [
     "Artificial-Intelligence-and-Machine-Learning",
@@ -8,6 +8,9 @@
     "VisionInspect-Industrial-Defect-Detection-",
     "Fraudulent-Online-Transaction-Detection-System",
     "Quick-Attendance",
-    "NeuralView"
+    "NeuralView",
+    "AI-Resume-ATS",
+    "Neural-Style-Transfer--NST-",
+    "AI-GYM-Trainer"
   ]
 }

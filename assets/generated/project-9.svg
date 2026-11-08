@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="370" viewBox="0 0 1200 370" role="img" aria-labelledby="title desc">
+<title id="title">AI-GYM-Trainer</title><desc id="desc">Real-time computer vision fitness assistant that tracks workout repetitions, analyzes body pose landmarks, and provides instant posture feedback.. Python. 0 stars. Last pushed 07 Nov 2026.</desc>
+<style>
+text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:none}
+@keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes sweep{from{stroke-dashoffset:0}to{stroke-dashoffset:-180}}
+@keyframes breathe{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes spin-rev{from{transform:rotate(360deg)}to{transform:rotate(0deg)}}
+@keyframes tumble{0%{transform:rotate(0deg) scale(1,1)}25%{transform:rotate(90deg) scale(0.32,1)}50%{transform:rotate(180deg) scale(-1,0.5)}75%{transform:rotate(270deg) scale(0.32,-1)}100%{transform:rotate(360deg) scale(1,1)}}
+@keyframes scan-vert{0%,100%{transform:translateY(-42px);opacity:.35}50%{transform:translateY(42px);opacity:1}}
+@keyframes radar{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.float{animation:drift 9s ease-in-out infinite}.flow{animation:sweep 14s linear infinite}.pulse{animation:breathe 6s ease-in-out infinite}
+.spin{transform-origin:480px 175px;animation:spin 18s linear infinite}
+.spin-rev{transform-origin:480px 175px;animation:spin-rev 14s linear infinite}
+.tumble{transform-origin:480px 175px;animation:tumble 8s ease-in-out infinite}
+.scan{transform-origin:480px 175px;animation:scan-vert 3.2s ease-in-out infinite}
+.radar{transform-origin:480px 175px;animation:radar 4s linear infinite}
+@media(prefers-reduced-motion:reduce){.motion{display:none}.still{display:inline}.float,.flow,.pulse,.spin,.spin-rev,.tumble,.scan,.radar{animation:none}}
+</style>
+<rect width="1200" height="370" rx="4" fill="#111411"/>
+<g transform="translate(480 0)"><g class="float" style="animation-duration:24s"><g>
+      <circle cx="480" cy="175" r="66" fill="hsl(85 65% 58% / .03)" stroke="hsl(85 65% 58% / .2)" stroke-width="1" stroke-dasharray="4 6"/>
+      <path d="M418 175 A62 62 0 0 1 542 175" fill="none" stroke="#c5f277" stroke-width="1.4" stroke-dasharray="8 6"/>
+      <circle cx="480" cy="120" r="10" fill="hsl(85 65% 58% / .12)" stroke="#c5f277" stroke-width="1.8"/>
+      <line x1="480" y1="130" x2="480" y2="175" stroke="#c5f277" stroke-width="2.2"/>
+      <line x1="456" y1="140" x2="504" y2="140" stroke="#c5f277" stroke-width="2"/>
+      <line x1="456" y1="140" x2="442" y2="162" stroke="#c5f277" stroke-width="1.8"/>
+      <line x1="442" y1="162" x2="452" y2="182" stroke="#c5f277" stroke-width="1.8"/>
+      <line x1="504" y1="140" x2="518" y2="160" stroke="#c5f277" stroke-width="1.8"/>
+      <line x1="518" y1="160" x2="512" y2="182" stroke="#c5f277" stroke-width="1.8"/>
+      <line x1="466" y1="175" x2="494" y2="175" stroke="#c5f277" stroke-width="2"/>
+      <line x1="466" y1="175" x2="456" y2="204" stroke="#c5f277" stroke-width="1.8"/>
+      <line x1="456" y1="204" x2="450" y2="232" stroke="#c5f277" stroke-width="1.8"/>
+      <line x1="494" y1="175" x2="504" y2="204" stroke="#c5f277" stroke-width="1.8"/>
+      <line x1="504" y1="204" x2="510" y2="232" stroke="#c5f277" stroke-width="1.8"/>
+      <circle class="pulse" cx="456" cy="140" r="3.2" fill="#c5f277"/>
+      <circle class="pulse" cx="504" cy="140" r="3.2" fill="#c5f277"/>
+      <circle class="pulse" cx="442" cy="162" r="3.5" fill="#c5f277"/>
+      <circle class="pulse" cx="518" cy="160" r="3.5" fill="#c5f277"/>
+      <circle class="pulse" cx="452" cy="182" r="2.8" fill="#c5f277"/>
+      <circle class="pulse" cx="512" cy="182" r="2.8" fill="#c5f277"/>
+      <circle class="pulse" cx="466" cy="175" r="3" fill="#c5f277"/>
+      <circle class="pulse" cx="494" cy="175" r="3" fill="#c5f277"/>
+      <circle class="pulse" cx="456" cy="204" r="3.5" fill="#c5f277"/>
+      <circle class="pulse" cx="504" cy="204" r="3.5" fill="#c5f277"/>
+      <circle class="pulse" cx="450" cy="232" r="2.8" fill="#c5f277"/>
+      <circle class="pulse" cx="510" cy="232" r="2.8" fill="#c5f277"/>
+      <path d="M440 156 A8 8 0 0 1 448 168" fill="none" stroke="#c5f277" stroke-width="1.5" stroke-dasharray="2 2"/>
+      <text x="424" y="164" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="7" font-weight="700" fill="#c5f277">92°</text>
+      <rect x="444" y="240" width="72" height="15" rx="3" fill="hsl(85 65% 58% / .12)" stroke="#c5f277" stroke-width="1"/>
+      <circle class="pulse" cx="453" cy="247.5" r="2.5" fill="#c5f277"/>
+      <text x="461" y="251" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="7.5" font-weight="700" fill="#c5f277">POSE TRACKED</text>
+    </g></g></g>
+<text x="42" y="44" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" fill="#c5f277">Python</text>
+<text x="42" y="130" font-size="32" fill="#f3f6ef">AI GYM Trainer</text>
+<text x="42" y="215" font-size="17" fill="#a4afa1">Real-time computer vision fitness assistant that tracks workout</text><text x="42" y="240" font-size="17" fill="#a4afa1">repetitions, analyzes body pose landmarks, and provides instant posture</text><text x="42" y="265" font-size="17" fill="#a4afa1">feedback.</text>
+<text x="42" y="298" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#a4afa1">computer-vision / pose-estimation / fitness-tracker / opencv</text><path d="M42 324H1158" stroke="#30382f"/>
+<text x="42" y="351" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#a4afa1">0 stars   /   0 forks</text>
+<text x="1158" y="351" text-anchor="end" font-size="14" fill="#c5f277">Explore ↗</text>
+</svg>

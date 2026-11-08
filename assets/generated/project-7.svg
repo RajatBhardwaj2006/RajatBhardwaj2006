@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="370" viewBox="0 0 580 370" role="img" aria-labelledby="title desc">
+<title id="title">AI-Resume-ATS</title><desc id="desc">AI-powered Resume and ATS evaluator to score applicant resumes, match skills against job requirements, and optimize ATS keyword ranking.. Python. 0 stars. Last pushed 07 Nov 2026.</desc>
+<style>
+text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:none}
+@keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes sweep{from{stroke-dashoffset:0}to{stroke-dashoffset:-180}}
+@keyframes breathe{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes spin-rev{from{transform:rotate(360deg)}to{transform:rotate(0deg)}}
+@keyframes tumble{0%{transform:rotate(0deg) scale(1,1)}25%{transform:rotate(90deg) scale(0.32,1)}50%{transform:rotate(180deg) scale(-1,0.5)}75%{transform:rotate(270deg) scale(0.32,-1)}100%{transform:rotate(360deg) scale(1,1)}}
+@keyframes scan-vert{0%,100%{transform:translateY(-42px);opacity:.35}50%{transform:translateY(42px);opacity:1}}
+@keyframes radar{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.float{animation:drift 9s ease-in-out infinite}.flow{animation:sweep 14s linear infinite}.pulse{animation:breathe 6s ease-in-out infinite}
+.spin{transform-origin:480px 175px;animation:spin 18s linear infinite}
+.spin-rev{transform-origin:480px 175px;animation:spin-rev 14s linear infinite}
+.tumble{transform-origin:480px 175px;animation:tumble 8s ease-in-out infinite}
+.scan{transform-origin:480px 175px;animation:scan-vert 3.2s ease-in-out infinite}
+.radar{transform-origin:480px 175px;animation:radar 4s linear infinite}
+@media(prefers-reduced-motion:reduce){.motion{display:none}.still{display:inline}.float,.flow,.pulse,.spin,.spin-rev,.tumble,.scan,.radar{animation:none}}
+</style>
+<rect width="580" height="370" rx="4" fill="#111411"/>
+<g class="float" style="animation-duration:20s"><g>
+      <rect x="440" y="115" width="80" height="116" rx="6" fill="hsl(85 65% 58% / .05)" stroke="#c5f277" stroke-width="1.8"/>
+      <path d="M440 138 H520" stroke="hsl(85 65% 58% / .3)" stroke-width="1"/>
+      <rect x="450" y="125" width="28" height="5" rx="2" fill="#c5f277"/>
+      <rect x="492" y="123" width="22" height="9" rx="4" fill="hsl(85 65% 58% / .2)" stroke="#c5f277" stroke-width="1"/>
+      <text x="503" y="130" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="6.5" font-weight="700" fill="#c5f277">98%</text>
+      <line x1="450" y1="148" x2="510" y2="148" stroke="hsl(85 65% 58% / .45)" stroke-width="2" stroke-linecap="round"/>
+      <line x1="450" y1="158" x2="495" y2="158" stroke="hsl(85 65% 58% / .3)" stroke-width="2" stroke-linecap="round"/>
+      <line x1="450" y1="168" x2="505" y2="168" stroke="hsl(85 65% 58% / .3)" stroke-width="2" stroke-linecap="round"/>
+      <line x1="450" y1="178" x2="480" y2="178" stroke="hsl(85 65% 58% / .3)" stroke-width="2" stroke-linecap="round"/>
+      <rect x="450" y="188" width="18" height="6" rx="2" fill="hsl(85 65% 58% / .2)" stroke="#c5f277" stroke-width="0.8"/>
+      <rect x="472" y="188" width="18" height="6" rx="2" fill="hsl(85 65% 58% / .2)" stroke="#c5f277" stroke-width="0.8"/>
+      <rect x="494" y="188" width="16" height="6" rx="2" fill="hsl(85 65% 58% / .2)" stroke="#c5f277" stroke-width="0.8"/>
+      <line x1="450" y1="204" x2="510" y2="204" stroke="hsl(85 65% 58% / .3)" stroke-width="2" stroke-linecap="round"/>
+      <line x1="450" y1="214" x2="490" y2="214" stroke="hsl(85 65% 58% / .3)" stroke-width="2" stroke-linecap="round"/>
+      <path d="M428 115 H420 V123 M532 115 H540 V123 M420 223 V231 H428 M540 223 V231 H532" stroke="#c5f277" stroke-width="1.6" fill="none"/>
+      <text x="480" y="247" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="8" font-weight="700" letter-spacing="1.5" fill="#c5f277">ATS · MATCH 98%</text>
+      <g class="scan">
+        <line x1="422" y1="175" x2="538" y2="175" stroke="#c5f277" stroke-width="2"/>
+        <line x1="432" y1="175" x2="528" y2="175" stroke="#c5f277" stroke-width="6" opacity=".35"/>
+        <circle cx="480" cy="175" r="3" fill="#ffffff"/>
+      </g>
+    </g></g><text x="28" y="40" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" fill="#c5f277">Python</text>
+<text x="28" y="161" font-size="28" fill="#f3f6ef">AI Resume ATS</text>
+<text x="28" y="244" font-size="16" fill="#a4afa1">AI-powered Resume and ATS evaluator to score applicant</text><text x="28" y="268" font-size="16" fill="#a4afa1">resumes, match skills against job requirements, and…</text>
+<text x="28" y="304" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#a4afa1">artificial-intelligence / nlp / resume-parser</text><path d="M28 324H552" stroke="#30382f"/>
+<text x="28" y="351" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#a4afa1">0 stars   /   0 forks</text>
+<text x="552" y="351" text-anchor="end" font-size="14" fill="#c5f277">Explore ↗</text>
+</svg>

@@ -9,6 +9,34 @@ try {
   snapshot.repositories = snapshot.repositories.filter(r => !r.name.toLowerCase().includes('old_readme') && !r.name.toLowerCase().includes('old-readme'));
   const qa = snapshot.repositories.find(r => r.name === 'Quick-Attendance');
   if (qa && !qa.language) qa.language = 'Python';
+  const customOverrides = [
+    {
+      name: 'AI-Resume-ATS',
+      description: 'AI-powered Resume and ATS evaluator to score applicant resumes, match skills against job requirements, and optimize ATS keyword ranking.',
+      language: 'Python',
+      topics: ['artificial-intelligence', 'nlp', 'resume-parser', 'ats-evaluator']
+    },
+    {
+      name: 'Neural-Style-Transfer--NST-',
+      description: 'Deep learning pipeline implementing Neural Style Transfer with Convolutional Neural Networks to blend artistic styles with content images.',
+      language: 'Python',
+      topics: ['deep-learning', 'computer-vision', 'neural-style-transfer', 'pytorch']
+    },
+    {
+      name: 'AI-GYM-Trainer',
+      description: 'Real-time computer vision fitness assistant that tracks workout repetitions, analyzes body pose landmarks, and provides instant posture feedback.',
+      language: 'Python',
+      topics: ['computer-vision', 'pose-estimation', 'fitness-tracker', 'opencv']
+    }
+  ];
+  for (const override of customOverrides) {
+    const target = snapshot.repositories.find(r => r.name.toLowerCase() === override.name.toLowerCase());
+    if (target) {
+      if (!target.description && override.description) target.description = override.description;
+      if (!target.language && override.language) target.language = override.language;
+      if ((!target.topics || target.topics.length === 0) && override.topics) target.topics = override.topics;
+    }
+  }
   const existingNv = snapshot.repositories.find(r => r.name.toLowerCase() === 'neuralview');
   if (existingNv) {
     existingNv.featuredOnly = true;

@@ -32,6 +32,15 @@ Featured from my GitHub pins.
   <a href="https://github.com/RajatBhardwaj2006/NeuralView"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-6-mobile.svg?v=1794126716863"><img src="assets/generated/project-6.svg?v=1794126716863" width="49%" alt="NeuralView: Interactive AI, ML and Deep Learning education platform featuring live interactive labs, dynamic mathematical visualizations, and real-time parameter tuning."></picture></a>
 </p>
 
+<p>
+  <a href="https://github.com/RajatBhardwaj2006/AI-Resume-ATS"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-7-mobile.svg?v=1794126716863"><img src="assets/generated/project-7.svg?v=1794126716863" width="49%" alt="AI-Resume-ATS: AI-powered Resume and ATS evaluator to score applicant resumes, match skills against job requirements, and optimize ATS keyword ranking."></picture></a>
+  <a href="https://github.com/RajatBhardwaj2006/Neural-Style-Transfer--NST-"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-8-mobile.svg?v=1794126716863"><img src="assets/generated/project-8.svg?v=1794126716863" width="49%" alt="Neural-Style-Transfer--NST-: Deep learning pipeline implementing Neural Style Transfer with Convolutional Neural Networks to blend artistic styles with content images."></picture></a>
+</p>
+
+<p>
+  <a href="https://github.com/RajatBhardwaj2006/AI-GYM-Trainer"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-9-mobile.svg?v=1794126716863"><img src="assets/generated/project-9.svg?v=1794126716863" width="100%" alt="AI-GYM-Trainer: Real-time computer vision fitness assistant that tracks workout repetitions, analyzes body pose landmarks, and provides instant posture feedback."></picture></a>
+</p>
+
 <details>
 <summary>Project links and descriptions</summary>
 
@@ -41,6 +50,9 @@ Featured from my GitHub pins.
 - [Fraudulent-Online-Transaction-Detection-System](https://github.com/RajatBhardwaj2006/Fraudulent-Online-Transaction-Detection-System): This Fraud Detection System uses Random Forest to classify transactions as genuine or fraudulent based on amount, frequency, and location. Built with Python and Flask, it provides a web interface for instant predictions.
 - [Quick-Attendance](https://github.com/RajatBhardwaj2006/Quick-Attendance): QuickAttendance is a simple and efficient attendance management application designed to make tracking attendance faster and easier. With a clean interface and intuitive features, it helps users manage attendance records and stay organized without unnecessary complexity.
 - [NeuralView](https://github.com/RajatBhardwaj2006/NeuralView): Interactive AI, ML and Deep Learning education platform featuring live interactive labs, dynamic mathematical visualizations, and real-time parameter tuning.
+- [AI-Resume-ATS](https://github.com/RajatBhardwaj2006/AI-Resume-ATS): AI-powered Resume and ATS evaluator to score applicant resumes, match skills against job requirements, and optimize ATS keyword ranking.
+- [Neural-Style-Transfer--NST-](https://github.com/RajatBhardwaj2006/Neural-Style-Transfer--NST-): Deep learning pipeline implementing Neural Style Transfer with Convolutional Neural Networks to blend artistic styles with content images.
+- [AI-GYM-Trainer](https://github.com/RajatBhardwaj2006/AI-GYM-Trainer): Real-time computer vision fitness assistant that tracks workout repetitions, analyzes body pose landmarks, and provides instant posture feedback.
 
 </details>
 
@@ -255,7 +267,7 @@ Featured from my GitHub pins.
 <p>
   <picture>
     <source media="(max-width: 600px)" srcset="assets/generated/languages-mobile.svg?v=1794126716863">
-    <img src="assets/generated/languages.svg?v=1794126716863" width="49%" alt="Primary language by public repository count, excluding forks: C++ 18.8%, Jupyter Notebook 18.8%, Java 12.5%, JavaScript 12.5%, Python 12.5%. These describe repositories, not proficiency.">
+    <img src="assets/generated/languages.svg?v=1794126716863" width="49%" alt="Primary language by public repository count, excluding forks: Python 26.3%, C++ 15.8%, Jupyter Notebook 15.8%, Java 10.5%, JavaScript 10.5%. These describe repositories, not proficiency.">
   </picture>
   <picture>
     <source media="(max-width: 600px)" srcset="assets/generated/commits-mobile.svg?v=1794126716863">
@@ -270,15 +282,15 @@ Each owned public repository counts once, using its primary language reported by
 
 | Language | Repositories | Share |
 | :--- | ---: | ---: |
-| C++ | 3 | 18.8% |
-| Jupyter Notebook | 3 | 18.8% |
-| Java | 2 | 12.5% |
-| JavaScript | 2 | 12.5% |
-| Python | 2 | 12.5% |
-| C | 1 | 6.3% |
-| Go | 1 | 6.3% |
-| HTML | 1 | 6.3% |
-| TypeScript | 1 | 6.3% |
+| Python | 5 | 26.3% |
+| C++ | 3 | 15.8% |
+| Jupyter Notebook | 3 | 15.8% |
+| Java | 2 | 10.5% |
+| JavaScript | 2 | 10.5% |
+| C | 1 | 5.3% |
+| Go | 1 | 5.3% |
+| HTML | 1 | 5.3% |
+| TypeScript | 1 | 5.3% |
 
 </details>
 

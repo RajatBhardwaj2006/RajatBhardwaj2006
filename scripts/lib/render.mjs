@@ -316,54 +316,165 @@ function projectArt(index, repo) {
     </g>`;
   }
 
-  const inY = [145, 175, 205];
-  const hidY = [135, 175, 215];
-  const lines = [];
-  const pulses = [];
-  for (let i = 0; i < inY.length; i++) {
-    for (let j = 0; j < hidY.length; j++) {
-      lines.push(`<line x1="435" y1="${inY[i]}" x2="480" y2="${hidY[j]}" stroke="hsl(85 45% 20% / .4)" stroke-width="1"/>`);
-      const delay = ((i * 7 + j * 13) % 40) / 10;
-      pulses.push(`<line class="flow" x1="435" y1="${inY[i]}" x2="480" y2="${hidY[j]}" fill="none" stroke="${C.accent}" stroke-width="1.4" stroke-dasharray="5 15" style="animation-delay:-${delay}s;animation-duration:11s;opacity:.8"/>`);
+  if (index === 5) {
+    const inY = [145, 175, 205];
+    const hidY = [135, 175, 215];
+    const lines = [];
+    const pulses = [];
+    for (let i = 0; i < inY.length; i++) {
+      for (let j = 0; j < hidY.length; j++) {
+        lines.push(`<line x1="435" y1="${inY[i]}" x2="480" y2="${hidY[j]}" stroke="hsl(85 45% 20% / .4)" stroke-width="1"/>`);
+        const delay = ((i * 7 + j * 13) % 40) / 10;
+        pulses.push(`<line class="flow" x1="435" y1="${inY[i]}" x2="480" y2="${hidY[j]}" fill="none" stroke="${C.accent}" stroke-width="1.4" stroke-dasharray="5 15" style="animation-delay:-${delay}s;animation-duration:11s;opacity:.8"/>`);
+      }
     }
+    for (let j = 0; j < hidY.length; j++) {
+      lines.push(`<line x1="480" y1="${hidY[j]}" x2="525" y2="175" stroke="hsl(85 45% 20% / .4)" stroke-width="1.1"/>`);
+      const delay = ((j * 17) % 30) / 10;
+      pulses.push(`<line class="flow" x1="480" y1="${hidY[j]}" x2="525" y2="175" fill="none" stroke="${C.accent}" stroke-width="1.8" stroke-dasharray="6 24" style="animation-delay:-${delay}s;animation-duration:10s;opacity:.95"/>`);
+    }
+    const nodes = [
+      ...inY.map(y => `<circle cx="435" cy="${y}" r="5.5" fill="#111411" stroke="${C.accent}" stroke-width="1.6"/><circle class="pulse" cx="435" cy="${y}" r="2.8" fill="#c5f277"/>`),
+      ...hidY.map(y => `<circle cx="480" cy="${y}" r="5" fill="#111411" stroke="hsl(85 62% 48%)" stroke-width="1.5"/><circle class="pulse" cx="480" cy="${y}" r="2.5" fill="#c5f277"/>`),
+      `<circle cx="525" cy="175" r="7.5" fill="#111411" stroke="${C.accent}" stroke-width="2"/><circle class="pulse" cx="525" cy="175" r="3.8" fill="#c5f277"/>`
+    ];
+    return `<g>
+      <g class="spin">
+        <circle cx="480" cy="175" r="65" fill="hsl(85 65% 58% / .04)" stroke="hsl(85 65% 58% / .25)" stroke-width="1" stroke-dasharray="4 6"/>
+      </g>
+      ${lines.join('')}
+      <g class="motion">${pulses.join('')}</g>
+      ${nodes.join('')}
+    </g>`;
   }
-  for (let j = 0; j < hidY.length; j++) {
-    lines.push(`<line x1="480" y1="${hidY[j]}" x2="525" y2="175" stroke="hsl(85 45% 20% / .4)" stroke-width="1.1"/>`);
-    const delay = ((j * 17) % 30) / 10;
-    pulses.push(`<line class="flow" x1="480" y1="${hidY[j]}" x2="525" y2="175" fill="none" stroke="${C.accent}" stroke-width="1.8" stroke-dasharray="6 24" style="animation-delay:-${delay}s;animation-duration:10s;opacity:.95"/>`);
+
+  if (index === 6) {
+    return `<g>
+      <rect x="440" y="115" width="80" height="116" rx="6" fill="hsl(85 65% 58% / .05)" stroke="${C.accent}" stroke-width="1.8"/>
+      <path d="M440 138 H520" stroke="hsl(85 65% 58% / .3)" stroke-width="1"/>
+      <rect x="450" y="125" width="28" height="5" rx="2" fill="${C.accent}"/>
+      <rect x="492" y="123" width="22" height="9" rx="4" fill="hsl(85 65% 58% / .2)" stroke="${C.accent}" stroke-width="1"/>
+      <text x="503" y="130" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="6.5" font-weight="700" fill="${C.accent}">98%</text>
+      <line x1="450" y1="148" x2="510" y2="148" stroke="hsl(85 65% 58% / .45)" stroke-width="2" stroke-linecap="round"/>
+      <line x1="450" y1="158" x2="495" y2="158" stroke="hsl(85 65% 58% / .3)" stroke-width="2" stroke-linecap="round"/>
+      <line x1="450" y1="168" x2="505" y2="168" stroke="hsl(85 65% 58% / .3)" stroke-width="2" stroke-linecap="round"/>
+      <line x1="450" y1="178" x2="480" y2="178" stroke="hsl(85 65% 58% / .3)" stroke-width="2" stroke-linecap="round"/>
+      <rect x="450" y="188" width="18" height="6" rx="2" fill="hsl(85 65% 58% / .2)" stroke="${C.accent}" stroke-width="0.8"/>
+      <rect x="472" y="188" width="18" height="6" rx="2" fill="hsl(85 65% 58% / .2)" stroke="${C.accent}" stroke-width="0.8"/>
+      <rect x="494" y="188" width="16" height="6" rx="2" fill="hsl(85 65% 58% / .2)" stroke="${C.accent}" stroke-width="0.8"/>
+      <line x1="450" y1="204" x2="510" y2="204" stroke="hsl(85 65% 58% / .3)" stroke-width="2" stroke-linecap="round"/>
+      <line x1="450" y1="214" x2="490" y2="214" stroke="hsl(85 65% 58% / .3)" stroke-width="2" stroke-linecap="round"/>
+      <path d="M428 115 H420 V123 M532 115 H540 V123 M420 223 V231 H428 M540 223 V231 H532" stroke="${C.accent}" stroke-width="1.6" fill="none"/>
+      <text x="480" y="247" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="8" font-weight="700" letter-spacing="1.5" fill="${C.accent}">ATS · MATCH 98%</text>
+      <g class="scan">
+        <line x1="422" y1="175" x2="538" y2="175" stroke="${C.accent}" stroke-width="2"/>
+        <line x1="432" y1="175" x2="528" y2="175" stroke="${C.accent}" stroke-width="6" opacity=".35"/>
+        <circle cx="480" cy="175" r="3" fill="#ffffff"/>
+      </g>
+    </g>`;
   }
-  const nodes = [
-    ...inY.map(y => `<circle cx="435" cy="${y}" r="5.5" fill="#111411" stroke="${C.accent}" stroke-width="1.6"/><circle class="pulse" cx="435" cy="${y}" r="2.8" fill="#c5f277"/>`),
-    ...hidY.map(y => `<circle cx="480" cy="${y}" r="5" fill="#111411" stroke="hsl(85 62% 48%)" stroke-width="1.5"/><circle class="pulse" cx="480" cy="${y}" r="2.5" fill="#c5f277"/>`),
-    `<circle cx="525" cy="175" r="7.5" fill="#111411" stroke="${C.accent}" stroke-width="2"/><circle class="pulse" cx="525" cy="175" r="3.8" fill="#c5f277"/>`
-  ];
+
+  if (index === 7) {
+    return `<g>
+      <rect x="432" y="127" width="96" height="96" rx="12" transform="rotate(45 480 175)" fill="hsl(85 65% 58% / .04)" stroke="hsl(85 65% 58% / .35)" stroke-width="1.4" stroke-dasharray="4 4"/>
+      <g class="spin">
+        <circle cx="480" cy="175" r="58" fill="none" stroke="${C.accent}" stroke-width="1.4" stroke-dasharray="14 10 4 10"/>
+        <circle cx="430" cy="145" r="3.5" fill="#c5f277"/>
+        <circle cx="530" cy="205" r="3" fill="#c5f277"/>
+      </g>
+      <g class="spin-rev">
+        <ellipse cx="480" cy="175" rx="48" ry="24" transform="rotate(30 480 175)" fill="none" stroke="${C.accent}" stroke-width="1.6"/>
+        <ellipse cx="480" cy="175" rx="24" ry="48" transform="rotate(30 480 175)" fill="none" stroke="hsl(85 65% 58% / .6)" stroke-width="1.2" stroke-dasharray="5 5"/>
+        <circle cx="480" cy="127" r="3" fill="#c5f277"/>
+        <circle cx="480" cy="223" r="3" fill="#c5f277"/>
+      </g>
+      <circle cx="480" cy="175" r="16" fill="#111411" stroke="${C.accent}" stroke-width="2"/>
+      <circle class="pulse" cx="480" cy="175" r="8" fill="hsl(85 65% 58% / .25)" stroke="${C.accent}" stroke-width="1.4"/>
+      <circle class="pulse" cx="480" cy="175" r="3.5" fill="#c5f277"/>
+      <circle cx="415" cy="175" r="2.5" fill="#c5f277"/>
+      <circle cx="545" cy="175" r="2.5" fill="#c5f277"/>
+      <circle cx="480" cy="110" r="2.5" fill="#c5f277"/>
+      <circle cx="480" cy="240" r="2.5" fill="#c5f277"/>
+      <text x="480" y="254" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="8" font-weight="700" letter-spacing="1.5" fill="${C.accent}">STYLE × CONTENT</text>
+    </g>`;
+  }
+
+  if (index === 8) {
+    return `<g>
+      <circle cx="480" cy="175" r="66" fill="hsl(85 65% 58% / .03)" stroke="hsl(85 65% 58% / .2)" stroke-width="1" stroke-dasharray="4 6"/>
+      <path d="M418 175 A62 62 0 0 1 542 175" fill="none" stroke="${C.accent}" stroke-width="1.4" stroke-dasharray="8 6"/>
+      <circle cx="480" cy="120" r="10" fill="hsl(85 65% 58% / .12)" stroke="${C.accent}" stroke-width="1.8"/>
+      <line x1="480" y1="130" x2="480" y2="175" stroke="${C.accent}" stroke-width="2.2"/>
+      <line x1="456" y1="140" x2="504" y2="140" stroke="${C.accent}" stroke-width="2"/>
+      <line x1="456" y1="140" x2="442" y2="162" stroke="${C.accent}" stroke-width="1.8"/>
+      <line x1="442" y1="162" x2="452" y2="182" stroke="${C.accent}" stroke-width="1.8"/>
+      <line x1="504" y1="140" x2="518" y2="160" stroke="${C.accent}" stroke-width="1.8"/>
+      <line x1="518" y1="160" x2="512" y2="182" stroke="${C.accent}" stroke-width="1.8"/>
+      <line x1="466" y1="175" x2="494" y2="175" stroke="${C.accent}" stroke-width="2"/>
+      <line x1="466" y1="175" x2="456" y2="204" stroke="${C.accent}" stroke-width="1.8"/>
+      <line x1="456" y1="204" x2="450" y2="232" stroke="${C.accent}" stroke-width="1.8"/>
+      <line x1="494" y1="175" x2="504" y2="204" stroke="${C.accent}" stroke-width="1.8"/>
+      <line x1="504" y1="204" x2="510" y2="232" stroke="${C.accent}" stroke-width="1.8"/>
+      <circle class="pulse" cx="456" cy="140" r="3.2" fill="#c5f277"/>
+      <circle class="pulse" cx="504" cy="140" r="3.2" fill="#c5f277"/>
+      <circle class="pulse" cx="442" cy="162" r="3.5" fill="#c5f277"/>
+      <circle class="pulse" cx="518" cy="160" r="3.5" fill="#c5f277"/>
+      <circle class="pulse" cx="452" cy="182" r="2.8" fill="#c5f277"/>
+      <circle class="pulse" cx="512" cy="182" r="2.8" fill="#c5f277"/>
+      <circle class="pulse" cx="466" cy="175" r="3" fill="#c5f277"/>
+      <circle class="pulse" cx="494" cy="175" r="3" fill="#c5f277"/>
+      <circle class="pulse" cx="456" cy="204" r="3.5" fill="#c5f277"/>
+      <circle class="pulse" cx="504" cy="204" r="3.5" fill="#c5f277"/>
+      <circle class="pulse" cx="450" cy="232" r="2.8" fill="#c5f277"/>
+      <circle class="pulse" cx="510" cy="232" r="2.8" fill="#c5f277"/>
+      <path d="M440 156 A8 8 0 0 1 448 168" fill="none" stroke="${C.accent}" stroke-width="1.5" stroke-dasharray="2 2"/>
+      <text x="424" y="164" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="7" font-weight="700" fill="${C.accent}">92°</text>
+      <rect x="444" y="240" width="72" height="15" rx="3" fill="hsl(85 65% 58% / .12)" stroke="${C.accent}" stroke-width="1"/>
+      <circle class="pulse" cx="453" cy="247.5" r="2.5" fill="#c5f277"/>
+      <text x="461" y="251" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="7.5" font-weight="700" fill="${C.accent}">POSE TRACKED</text>
+    </g>`;
+  }
+
   return `<g>
-    <g class="spin">
-      <circle cx="480" cy="175" r="65" fill="hsl(85 65% 58% / .04)" stroke="hsl(85 65% 58% / .25)" stroke-width="1" stroke-dasharray="4 6"/>
-    </g>
-    ${lines.join('')}
-    <g class="motion">${pulses.join('')}</g>
-    ${nodes.join('')}
+    <circle cx="480" cy="175" r="54" fill="hsl(85 65% 58% / .04)" stroke="${C.accent}" stroke-width="1.6" stroke-dasharray="4 6"/>
+    <circle cx="480" cy="175" r="24" fill="none" stroke="${C.accent}" stroke-width="1.2"/>
+    <circle class="pulse" cx="480" cy="175" r="6" fill="#c5f277"/>
   </g>`;
 }
 
-function projectCard(repo, index, config, mobile = false) {
+function projectCard(repo, index, config, mobile = false, fullWidth = false) {
   const title = repo.name.replaceAll(/[-_]+/g, ' ').trim();
   const desc = repo.description || 'Explore the source, documentation, and latest changes on GitHub.';
-  const topics = wrap(repo.topics.length ? repo.topics.slice(0, 3).join(' / ') : repo.language || 'Public source', 66, 1)[0];
+  const topics = wrap(repo.topics.length ? repo.topics.slice(0, fullWidth ? 5 : 3).join(' / ') : repo.language || 'Public source', fullWidth ? 90 : 66, 1)[0];
   const art = `<g class="float" style="animation-duration:${8 + index * 2}s">${projectArt(index, repo)}</g>`;
-  const body = mobile ? `<g transform="translate(20 3) scale(.65)">${art}</g>
+
+  if (mobile) {
+    const body = `<g transform="translate(20 3) scale(.65)">${art}</g>
 ${mono(20, 36, repo.language || 'Repository', C.accent, 13)}
 ${lines(20, 158, title, 21, 3, 27, C.text, 34)}
 ${rule(20, 278, 320, 278)}${mono(20, 312, `${repo.stargazers_count} stars`, C.muted, 15)}
-${text(320, 312, 'Explore ↗', `text-anchor="end" font-size="16" fill="${C.accent}"`)}` :
-    `${art}${mono(28, 40, repo.language || 'Repository', C.accent, 14)}
+${text(320, 312, 'Explore ↗', `text-anchor="end" font-size="16" fill="${C.accent}"`)}`;
+    return svg(repo.name, `${repo.description || repo.name}. ${repo.language || 'Source repository'}. ${repo.stargazers_count} stars. Last pushed ${dateLabel(repo.pushed_at)}.`, 340, 340, body, config.accent);
+  }
+
+  if (fullWidth) {
+    const body = `<g transform="translate(480 0)">${art}</g>
+${mono(42, 44, repo.language || 'Repository', C.accent, 14)}
+${lines(42, 130, title, 40, 2, 32, C.text, 38)}
+${lines(42, 215, desc, 74, 3, 17, C.muted, 25)}
+${mono(42, 298, topics, C.muted, 13)}${rule(42, 324, 1158, 324)}
+${mono(42, 351, `${repo.stargazers_count} stars   /   ${repo.forks_count} forks`, C.muted, 13)}
+${text(1158, 351, 'Explore ↗', `text-anchor="end" font-size="14" fill="${C.accent}"`)}`;
+    return svg(repo.name, `${repo.description || repo.name}. ${repo.language || 'Source repository'}. ${repo.stargazers_count} stars. Last pushed ${dateLabel(repo.pushed_at)}.`, 1200, 370, body, config.accent);
+  }
+
+  const body = `${art}${mono(28, 40, repo.language || 'Repository', C.accent, 14)}
 ${lines(28, 161, title, 32, 2, 28, C.text, 34)}
 ${lines(28, 244, desc, 59, 2, 16, C.muted, 24)}
 ${mono(28, 304, topics, C.muted, 12)}${rule(28, 324, 552, 324)}
 ${mono(28, 351, `${repo.stargazers_count} stars   /   ${repo.forks_count} forks`, C.muted, 13)}
 ${text(552, 351, 'Explore ↗', `text-anchor="end" font-size="14" fill="${C.accent}"`)}`;
-  return svg(repo.name, `${repo.description || repo.name}. ${repo.language || 'Source repository'}. ${repo.stargazers_count} stars. Last pushed ${dateLabel(repo.pushed_at)}.`, mobile ? 340 : 580, mobile ? 340 : 370, body, config.accent);
+  return svg(repo.name, `${repo.description || repo.name}. ${repo.language || 'Source repository'}. ${repo.stargazers_count} stars. Last pushed ${dateLabel(repo.pushed_at)}.`, 580, 370, body, config.accent);
 }
 
 export function languagesPanel(snapshot, config, mobile = false) {
@@ -841,7 +952,15 @@ ${embedded('metrics', `${snapshot.user.public_repos} public repositories, ${form
 
 ${snapshot.pinned.length ? 'Featured from my GitHub pins.' : 'A selection of my public work.'}
 
-${Array.from({ length: Math.ceil(projects.length / 2) }, (_, row) => `<p>\n${projects.slice(row * 2, row * 2 + 2).map((repo, col) => `  <a href="${escapeXML(repo.html_url)}">${embedded(`project-${row * 2 + col + 1}`, `${repo.name}: ${repo.description || 'Explore the repository on GitHub.'}`, '49%')}</a>`).join('\n')}\n</p>`).join('\n\n')}
+${Array.from({ length: Math.ceil(projects.length / 2) }, (_, row) => {
+  const rowProjects = projects.slice(row * 2, row * 2 + 2);
+  const isSolo = rowProjects.length === 1;
+  return `<p>\n${rowProjects.map((repo, col) => {
+    const projIndex = row * 2 + col + 1;
+    const width = isSolo ? '100%' : '49%';
+    return `  <a href="${escapeXML(repo.html_url)}">${embedded(`project-${projIndex}`, `${repo.name}: ${repo.description || 'Explore the repository on GitHub.'}`, width)}</a>`;
+  }).join('\n')}\n</p>`;
+}).join('\n\n')}
 
 <details>
 <summary>Project links and descriptions</summary>
@@ -925,6 +1044,24 @@ export function resolveRepositoriesAndProjects(snapshot, config) {
       fork: false,
       private: false,
       featuredOnly: true
+    },
+    {
+      name: 'AI-Resume-ATS',
+      description: 'AI-powered Resume and ATS evaluator to score applicant resumes, match skills against job requirements, and optimize ATS keyword ranking.',
+      language: 'Python',
+      topics: ['artificial-intelligence', 'nlp', 'resume-parser', 'ats-evaluator']
+    },
+    {
+      name: 'Neural-Style-Transfer--NST-',
+      description: 'Deep learning pipeline implementing Neural Style Transfer with Convolutional Neural Networks to blend artistic styles with content images.',
+      language: 'Python',
+      topics: ['deep-learning', 'computer-vision', 'neural-style-transfer', 'pytorch']
+    },
+    {
+      name: 'AI-GYM-Trainer',
+      description: 'Real-time computer vision fitness assistant that tracks workout repetitions, analyzes body pose landmarks, and provides instant posture feedback.',
+      language: 'Python',
+      topics: ['computer-vision', 'pose-estimation', 'fitness-tracker', 'opencv']
     }
   ];
   let allRepos = snapshot.repositories.filter(r => !r.name.toLowerCase().includes('old_readme') && !r.name.toLowerCase().includes('old-readme'));
@@ -954,7 +1091,10 @@ export async function renderProfile(snapshot, config, root) {
     ['contributions.svg', contributionScene(snapshotWithRepos, config)], ['contributions-mobile.svg', contributionScene(snapshotWithRepos, config, true)],
     ['activity.svg', activityPanel(snapshotWithRepos, config)], ['activity-mobile.svg', activityPanel(snapshotWithRepos, config, true)],
     ['footer.svg', footer(snapshotWithRepos, config)], ['footer-mobile.svg', footer(snapshotWithRepos, config, true)],
-    ...projects.map((repo, index) => [`project-${index + 1}.svg`, projectCard(repo, index, config)]),
+    ...projects.map((repo, index) => {
+      const isSolo = (projects.length % 2 === 1 && index === projects.length - 1);
+      return [`project-${index + 1}.svg`, projectCard(repo, index, config, false, isSolo)];
+    }),
     ...projects.map((repo, index) => [`project-${index + 1}-mobile.svg`, projectCard(repo, index, config, true)]),
   ]);
   for (const [name, content] of files) await writeFile(new URL(name, dir), content);

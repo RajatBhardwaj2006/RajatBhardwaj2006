@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="340" viewBox="0 0 340 340" role="img" aria-labelledby="title desc">
+<title id="title">Neural-Style-Transfer--NST-</title><desc id="desc">Deep learning pipeline implementing Neural Style Transfer with Convolutional Neural Networks to blend artistic styles with content images.. Python. 0 stars. Last pushed 07 Nov 2026.</desc>
+<style>
+text{font-family:Arial,Helvetica,sans-serif;font-kerning:normal} .still{display:none}
+@keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes sweep{from{stroke-dashoffset:0}to{stroke-dashoffset:-180}}
+@keyframes breathe{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes spin-rev{from{transform:rotate(360deg)}to{transform:rotate(0deg)}}
+@keyframes tumble{0%{transform:rotate(0deg) scale(1,1)}25%{transform:rotate(90deg) scale(0.32,1)}50%{transform:rotate(180deg) scale(-1,0.5)}75%{transform:rotate(270deg) scale(0.32,-1)}100%{transform:rotate(360deg) scale(1,1)}}
+@keyframes scan-vert{0%,100%{transform:translateY(-42px);opacity:.35}50%{transform:translateY(42px);opacity:1}}
+@keyframes radar{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.float{animation:drift 9s ease-in-out infinite}.flow{animation:sweep 14s linear infinite}.pulse{animation:breathe 6s ease-in-out infinite}
+.spin{transform-origin:480px 175px;animation:spin 18s linear infinite}
+.spin-rev{transform-origin:480px 175px;animation:spin-rev 14s linear infinite}
+.tumble{transform-origin:480px 175px;animation:tumble 8s ease-in-out infinite}
+.scan{transform-origin:480px 175px;animation:scan-vert 3.2s ease-in-out infinite}
+.radar{transform-origin:480px 175px;animation:radar 4s linear infinite}
+@media(prefers-reduced-motion:reduce){.motion{display:none}.still{display:inline}.float,.flow,.pulse,.spin,.spin-rev,.tumble,.scan,.radar{animation:none}}
+</style>
+<rect width="340" height="340" rx="4" fill="#111411"/>
+<g transform="translate(20 3) scale(.65)"><g class="float" style="animation-duration:22s"><g>
+      <rect x="432" y="127" width="96" height="96" rx="12" transform="rotate(45 480 175)" fill="hsl(85 65% 58% / .04)" stroke="hsl(85 65% 58% / .35)" stroke-width="1.4" stroke-dasharray="4 4"/>
+      <g class="spin">
+        <circle cx="480" cy="175" r="58" fill="none" stroke="#c5f277" stroke-width="1.4" stroke-dasharray="14 10 4 10"/>
+        <circle cx="430" cy="145" r="3.5" fill="#c5f277"/>
+        <circle cx="530" cy="205" r="3" fill="#c5f277"/>
+      </g>
+      <g class="spin-rev">
+        <ellipse cx="480" cy="175" rx="48" ry="24" transform="rotate(30 480 175)" fill="none" stroke="#c5f277" stroke-width="1.6"/>
+        <ellipse cx="480" cy="175" rx="24" ry="48" transform="rotate(30 480 175)" fill="none" stroke="hsl(85 65% 58% / .6)" stroke-width="1.2" stroke-dasharray="5 5"/>
+        <circle cx="480" cy="127" r="3" fill="#c5f277"/>
+        <circle cx="480" cy="223" r="3" fill="#c5f277"/>
+      </g>
+      <circle cx="480" cy="175" r="16" fill="#111411" stroke="#c5f277" stroke-width="2"/>
+      <circle class="pulse" cx="480" cy="175" r="8" fill="hsl(85 65% 58% / .25)" stroke="#c5f277" stroke-width="1.4"/>
+      <circle class="pulse" cx="480" cy="175" r="3.5" fill="#c5f277"/>
+      <circle cx="415" cy="175" r="2.5" fill="#c5f277"/>
+      <circle cx="545" cy="175" r="2.5" fill="#c5f277"/>
+      <circle cx="480" cy="110" r="2.5" fill="#c5f277"/>
+      <circle cx="480" cy="240" r="2.5" fill="#c5f277"/>
+      <text x="480" y="254" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="8" font-weight="700" letter-spacing="1.5" fill="#c5f277">STYLE × CONTENT</text>
+    </g></g></g>
+<text x="20" y="36" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#c5f277">Python</text>
+<text x="20" y="158" font-size="27" fill="#f3f6ef">Neural Style Transfer</text><text x="20" y="192" font-size="27" fill="#f3f6ef">NST</text>
+<path d="M20 278H320" stroke="#30382f"/><text x="20" y="312" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="15" fill="#a4afa1">0 stars</text>
+<text x="320" y="312" text-anchor="end" font-size="16" fill="#c5f277">Explore ↗</text>
+</svg>
