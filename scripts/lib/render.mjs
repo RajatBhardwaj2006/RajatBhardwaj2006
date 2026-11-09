@@ -933,25 +933,36 @@ export function readme(snapshot, config, projects) {
     .filter(link => link.label !== 'Instagram')
     .map(link => formatSocialBadge(link));
 
+  const phoneSvg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#c5f277" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.28-.28.67-.36.99-.25 1.03.34 2.15.52 3.3.52a1 1 0 0 1 1 1v3.78a1 1 0 0 1-1 1C10.53 22 2 13.47 2 3a1 1 0 0 1 1-1h3.78a1 1 0 0 1 1 1c.01 1.15.2 2.28.54 3.31.11.32.03.71-.25.99l-2.2 2.1z"/></svg>';
+  const phoneDataUri = `data:image/svg+xml;base64,${Buffer.from(phoneSvg).toString('base64')}`;
+
   const contact = config.contact || {
     email: 'rajatb1008@gmail.com',
-    phones: ['8580412977', '8219253008']
+    whatsapp: '8580412977',
+    phone: '8219253008'
   };
 
   const emailBadge = contact.email ?
     `<a href="mailto:${escapeXML(contact.email)}"><img src="https://img.shields.io/badge/Gmail-c5f277?style=for-the-badge&logo=gmail&logoColor=c5f277&labelColor=111411" alt="${escapeXML(contact.email)}" /></a>` : '';
 
-  const phoneBadges = (contact.phones || []).map(phone => {
-    const cleanPhone = String(phone).replace(/\D/g, '');
-    const intlPhone = cleanPhone.length === 10 ? `91${cleanPhone}` : cleanPhone;
-    return `<a href="https://wa.me/${intlPhone}"><img src="https://img.shields.io/badge/${encodeURIComponent(phone)}-c5f277?style=for-the-badge&logo=whatsapp&logoColor=c5f277&labelColor=111411" alt="WhatsApp / Phone: ${escapeXML(phone)}" /></a>`;
-  });
+  const whatsappNum = contact.whatsapp || contact.phones?.[0] || '8580412977';
+  const cleanWa = String(whatsappNum).replace(/\D/g, '');
+  const intlWa = cleanWa.length === 10 ? `91${cleanWa}` : cleanWa;
+  const waBadge = whatsappNum ?
+    `<a href="https://wa.me/${intlWa}"><img src="https://img.shields.io/badge/${encodeURIComponent(whatsappNum)}-c5f277?style=for-the-badge&logo=whatsapp&logoColor=c5f277&labelColor=111411" alt="WhatsApp: ${escapeXML(whatsappNum)}" /></a>` : '';
+
+  const phoneNum = contact.phone || contact.phones?.[1] || '8219253008';
+  const cleanPhone = String(phoneNum).replace(/\D/g, '');
+  const intlPhone = cleanPhone.length === 10 ? `+91${cleanPhone}` : `+${cleanPhone}`;
+  const callBadge = phoneNum ?
+    `<a href="tel:${intlPhone}"><img src="https://img.shields.io/badge/${encodeURIComponent(phoneNum)}-c5f277?style=for-the-badge&logo=${encodeURIComponent(phoneDataUri)}&logoColor=c5f277&labelColor=111411" alt="Call: ${escapeXML(phoneNum)}" /></a>` : '';
 
   const github = snapshot.user.html_url;
   const allBadges = [
     ...socials,
     ...(emailBadge ? [emailBadge] : []),
-    ...phoneBadges,
+    ...(waBadge ? [waBadge] : []),
+    ...(callBadge ? [callBadge] : []),
     `<a href="${escapeXML(github)}?tab=repositories"><img src="https://img.shields.io/badge/All%20Repositories-c5f277?style=for-the-badge&logo=github&logoColor=c5f277&labelColor=111411" alt="All Repositories" /></a>`
   ];
 
@@ -966,9 +977,11 @@ export function readme(snapshot, config, projects) {
   </picture>
 </a>
 
-<p align="center">
-  ${allBadges.join(' &nbsp; ')}
-</p>
+<table width="100%">
+  <tr>
+${allBadges.map(badge => `    <td align="center">${badge}</td>`).join('\n')}
+  </tr>
+</table>
 
 ${embedded('metrics', `${snapshot.user.public_repos} public repositories, ${format(snapshot.calendar.total)} contributions in the past year, ${snapshot.user.followers} followers, ${snapshot.repositories.reduce((sum, repo) => sum + repo.stargazers_count, 0)} stars across public repositories.`)}
 
