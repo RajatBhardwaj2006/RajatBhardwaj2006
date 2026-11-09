@@ -929,42 +929,39 @@ export function readme(snapshot, config, projects) {
   const startDate = windowDays[0].date;
   const endDate = windowDays.at(-1).date;
   const languages = aggregateLanguages(snapshot.repositories);
-  const socials = safeSocial(snapshot)
-    .filter(link => link.label !== 'Instagram')
-    .map(link => formatSocialBadge(link));
+  const socials = safeSocial(snapshot);
+  const instaAccount = socials.find(s => s.label.toLowerCase() === 'instagram');
+  const linkedinAccount = socials.find(s => s.label.toLowerCase() === 'linkedin');
+  const instaUrl = instaAccount?.url || 'https://www.instagram.com/che.r.r.y.y.y';
+  const linkedinUrl = linkedinAccount?.url || 'https://www.linkedin.com/in/rajatbhardwaj2006';
+  const github = snapshot.user.html_url;
 
   const phoneSvg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#c5f277" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.28-.28.67-.36.99-.25 1.03.34 2.15.52 3.3.52a1 1 0 0 1 1 1v3.78a1 1 0 0 1-1 1C10.53 22 2 13.47 2 3a1 1 0 0 1 1-1h3.78a1 1 0 0 1 1 1c.01 1.15.2 2.28.54 3.31.11.32.03.71-.25.99l-2.2 2.1z"/></svg>';
   const phoneDataUri = `data:image/svg+xml;base64,${Buffer.from(phoneSvg).toString('base64')}`;
+  const linkedinSvg = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2M1ZjI3NyIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8+PC9zdmc+';
 
   const contact = config.contact || {
-    email: 'rajatb1008@gmail.com',
     whatsapp: '8580412977',
     phone: '8219253008'
   };
 
-  const emailBadge = contact.email ?
-    `<a href="mailto:${escapeXML(contact.email)}"><img src="https://img.shields.io/badge/Gmail-c5f277?style=for-the-badge&logo=gmail&logoColor=c5f277&labelColor=111411" alt="${escapeXML(contact.email)}" /></a>` : '';
-
   const whatsappNum = contact.whatsapp || contact.phones?.[0] || '8580412977';
   const cleanWa = String(whatsappNum).replace(/\D/g, '');
   const intlWa = cleanWa.length === 10 ? `91${cleanWa}` : cleanWa;
-  const waBadge = whatsappNum ?
-    `<a href="https://wa.me/${intlWa}"><img src="https://img.shields.io/badge/${encodeURIComponent(whatsappNum)}-c5f277?style=for-the-badge&logo=whatsapp&logoColor=c5f277&labelColor=111411" alt="WhatsApp: ${escapeXML(whatsappNum)}" /></a>` : '';
 
   const phoneNum = contact.phone || contact.phones?.[1] || '8219253008';
   const cleanPhone = String(phoneNum).replace(/\D/g, '');
   const intlPhone = cleanPhone.length === 10 ? `+91${cleanPhone}` : `+${cleanPhone}`;
-  const callBadge = phoneNum ?
-    `<a href="tel:${intlPhone}"><img src="https://img.shields.io/badge/${encodeURIComponent(phoneNum)}-c5f277?style=for-the-badge&logo=${encodeURIComponent(phoneDataUri)}&logoColor=c5f277&labelColor=111411" alt="Call: ${escapeXML(phoneNum)}" /></a>` : '';
 
-  const github = snapshot.user.html_url;
-  const allBadges = [
-    ...socials,
-    ...(emailBadge ? [emailBadge] : []),
-    ...(waBadge ? [waBadge] : []),
-    ...(callBadge ? [callBadge] : []),
-    `<a href="${escapeXML(github)}?tab=repositories"><img src="https://img.shields.io/badge/All%20Repositories-c5f277?style=for-the-badge&logo=github&logoColor=c5f277&labelColor=111411" alt="All Repositories" /></a>`
+  const topRowBadges = [
+    `<a href="${escapeXML(instaUrl)}"><img src="https://img.shields.io/badge/Instagram-c5f277?style=for-the-badge&logo=instagram&logoColor=c5f277&labelColor=111411" alt="Instagram" /></a>`,
+    `<a href="${escapeXML(linkedinUrl)}"><img src="https://img.shields.io/badge/LinkedIn-c5f277?style=for-the-badge&logo=${encodeURIComponent(linkedinSvg)}&logoColor=c5f277&labelColor=111411" alt="LinkedIn" /></a>`,
+    `<a href="${escapeXML(github)}"><img src="https://img.shields.io/badge/GitHub-c5f277?style=for-the-badge&logo=github&logoColor=c5f277&labelColor=111411" alt="GitHub" /></a>`,
+    `<a href="https://wa.me/${intlWa}"><img src="https://img.shields.io/badge/${encodeURIComponent(whatsappNum)}-c5f277?style=for-the-badge&logo=whatsapp&logoColor=c5f277&labelColor=111411" alt="WhatsApp: ${escapeXML(whatsappNum)}" /></a>`,
+    `<a href="tel:${intlPhone}"><img src="https://img.shields.io/badge/${encodeURIComponent(phoneNum)}-c5f277?style=for-the-badge&logo=${encodeURIComponent(phoneDataUri)}&logoColor=c5f277&labelColor=111411" alt="Call: ${escapeXML(phoneNum)}" /></a>`
   ];
+
+  const bottomBadge = `<a href="${escapeXML(github)}?tab=repositories"><img src="https://img.shields.io/badge/All%20Repositories-c5f277?style=for-the-badge&logo=github&logoColor=c5f277&labelColor=111411" alt="All Repositories" /></a>`;
 
   const v = Date.parse(snapshot.fetchedAt);
   const embedded = (name, alt, width = '1200') => `<picture><source media="(max-width: 600px)" srcset="assets/generated/${name}-mobile.svg?v=${v}"><img src="assets/generated/${name}.svg?v=${v}" width="${width}" alt="${escapeXML(alt)}"></picture>`;
@@ -977,11 +974,13 @@ export function readme(snapshot, config, projects) {
   </picture>
 </a>
 
-<table width="100%">
-  <tr>
-${allBadges.map(badge => `    <td align="center">${badge}</td>`).join('\n')}
-  </tr>
-</table>
+<p align="center">
+  ${topRowBadges.join(' &nbsp; ')}
+</p>
+
+<p align="center">
+  ${bottomBadge}
+</p>
 
 ${embedded('metrics', `${snapshot.user.public_repos} public repositories, ${format(snapshot.calendar.total)} contributions in the past year, ${snapshot.user.followers} followers, ${snapshot.repositories.reduce((sum, repo) => sum + repo.stargazers_count, 0)} stars across public repositories.`)}
 
