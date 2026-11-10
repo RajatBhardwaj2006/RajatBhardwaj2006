@@ -6,7 +6,7 @@
     <img src="assets/generated/hero.svg?v=1794285774504" width="1200" alt="Rajat Bhardwaj. Rajat Bhardwaj , Exploring AI, ML. Learning, experimenting, and turning ideas into reality.. Neural network engine mapping consistency, dedication, and hardwork to success.">
   </picture>
 </a>
-
+  
 <table width="100%">
   <tr>
     <td align="center" width="16.66%"><a href="https://che.r.r.y.y.y/"><img src="https://img.shields.io/badge/che.r.r.y.y.y-c5f277?style=for-the-badge&logo=link&logoColor=c5f277&labelColor=111411" alt="che.r.r.y.y.y" /></a></td>
