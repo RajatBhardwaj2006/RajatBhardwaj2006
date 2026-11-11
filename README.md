@@ -2,8 +2,8 @@
 
 <a href="https://github.com/RajatBhardwaj2006">
   <picture>
-    <source media="(max-width: 600px)" srcset="assets/generated/hero-mobile.svg?v=1794342737089">
-    <img src="assets/generated/hero.svg?v=1794342737089" width="1200" alt="Rajat Bhardwaj. Rajat Bhardwaj , Exploring AI, ML. Learning, experimenting, and turning ideas into reality.. Neural network engine mapping consistency, dedication, and hardwork to success.">
+    <source media="(max-width: 600px)" srcset="assets/generated/hero-mobile.svg?v=1794358756154">
+    <img src="assets/generated/hero.svg?v=1794358756154" width="1200" alt="Rajat Bhardwaj. Rajat Bhardwaj , Exploring AI, ML. Learning, experimenting, and turning ideas into reality.. Neural network engine mapping consistency, dedication, and hardwork to success.">
   </picture>
 </a>
 
@@ -18,34 +18,34 @@
   </tr>
 </table>
 
-<picture><source media="(max-width: 600px)" srcset="assets/generated/metrics-mobile.svg?v=1794342737089"><img src="assets/generated/metrics.svg?v=1794342737089" width="1200" alt="18 public repositories, 1,414 contributions in the past year, 9 followers, 4 stars across public repositories."></picture>
+<picture><source media="(max-width: 600px)" srcset="assets/generated/metrics-mobile.svg?v=1794358756154"><img src="assets/generated/metrics.svg?v=1794358756154" width="1200" alt="18 public repositories, 1,414 contributions in the past year, 9 followers, 4 stars across public repositories."></picture>
 
 ## Featured Projects
 
 Featured from my GitHub pins.
 
 <p>
-  <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-1-mobile.svg?v=1794342737089"><img src="assets/generated/project-1.svg?v=1794342737089" width="49%" alt="Artificial-Intelligence-and-Machine-Learning: Artificial Intelligence and Machine Learning focuses on building systems that learn from data to make predictions and decisions. This course covers statistics, data preprocessing, supervised &amp; unsupervised learning, neural networks &amp; modern AI techniques like deep learning and NLP, with practical implementation using Python &amp; AI development tools"></picture></a>
-  <a href="https://github.com/RajatBhardwaj2006/Smart-Medication-Management-Health-Assistant"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-2-mobile.svg?v=1794342737089"><img src="assets/generated/project-2.svg?v=1794342737089" width="49%" alt="Smart-Medication-Management-Health-Assistant: The system helps users search medicines, view medicine details, receive AI-based health suggestions, request unavailable medicines, and allows administrators to manage inventory, sales, and customer requests efficiently."></picture></a>
+  <a href="https://github.com/RajatBhardwaj2006/Artificial-Intelligence-and-Machine-Learning"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-1-mobile.svg?v=1794358756154"><img src="assets/generated/project-1.svg?v=1794358756154" width="49%" alt="Artificial-Intelligence-and-Machine-Learning: Artificial Intelligence and Machine Learning focuses on building systems that learn from data to make predictions and decisions. This course covers statistics, data preprocessing, supervised &amp; unsupervised learning, neural networks &amp; modern AI techniques like deep learning and NLP, with practical implementation using Python &amp; AI development tools"></picture></a>
+  <a href="https://github.com/RajatBhardwaj2006/Smart-Medication-Management-Health-Assistant"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-2-mobile.svg?v=1794358756154"><img src="assets/generated/project-2.svg?v=1794358756154" width="49%" alt="Smart-Medication-Management-Health-Assistant: The system helps users search medicines, view medicine details, receive AI-based health suggestions, request unavailable medicines, and allows administrators to manage inventory, sales, and customer requests efficiently."></picture></a>
 </p>
 
 <p>
-  <a href="https://github.com/RajatBhardwaj2006/VisionInspect-Industrial-Defect-Detection-"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-3-mobile.svg?v=1794342737089"><img src="assets/generated/project-3.svg?v=1794342737089" width="49%" alt="VisionInspect-Industrial-Defect-Detection-: Build an unsupervised visual anomaly-detection pipeline using a Convolutional Autoencoder and/or PatchCore-style feature-based anomaly detection. The system should learn primarily from defect-free images and generate an anomaly score, normal/abnormal decision, and visual anomaly heatmap for test images."></picture></a>
-  <a href="https://github.com/RajatBhardwaj2006/Fraudulent-Online-Transaction-Detection-System"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-4-mobile.svg?v=1794342737089"><img src="assets/generated/project-4.svg?v=1794342737089" width="49%" alt="Fraudulent-Online-Transaction-Detection-System: This Fraud Detection System uses Random Forest to classify transactions as genuine or fraudulent based on amount, frequency, and location. Built with Python and Flask, it provides a web interface for instant predictions."></picture></a>
+  <a href="https://github.com/RajatBhardwaj2006/VisionInspect-Industrial-Defect-Detection-"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-3-mobile.svg?v=1794358756154"><img src="assets/generated/project-3.svg?v=1794358756154" width="49%" alt="VisionInspect-Industrial-Defect-Detection-: Build an unsupervised visual anomaly-detection pipeline using a Convolutional Autoencoder and/or PatchCore-style feature-based anomaly detection. The system should learn primarily from defect-free images and generate an anomaly score, normal/abnormal decision, and visual anomaly heatmap for test images."></picture></a>
+  <a href="https://github.com/RajatBhardwaj2006/Fraudulent-Online-Transaction-Detection-System"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-4-mobile.svg?v=1794358756154"><img src="assets/generated/project-4.svg?v=1794358756154" width="49%" alt="Fraudulent-Online-Transaction-Detection-System: This Fraud Detection System uses Random Forest to classify transactions as genuine or fraudulent based on amount, frequency, and location. Built with Python and Flask, it provides a web interface for instant predictions."></picture></a>
 </p>
 
 <p>
-  <a href="https://github.com/RajatBhardwaj2006/Quick-Attendance"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-5-mobile.svg?v=1794342737089"><img src="assets/generated/project-5.svg?v=1794342737089" width="49%" alt="Quick-Attendance: QuickAttendance is a simple and efficient attendance management application designed to make tracking attendance faster and easier. With a clean interface and intuitive features, it helps users manage attendance records and stay organized without unnecessary complexity."></picture></a>
-  <a href="https://github.com/RajatBhardwaj2006/NeuralView"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-6-mobile.svg?v=1794342737089"><img src="assets/generated/project-6.svg?v=1794342737089" width="49%" alt="NeuralView: Interactive AI, ML and Deep Learning education platform featuring live interactive labs, dynamic mathematical visualizations, and real-time parameter tuning."></picture></a>
+  <a href="https://github.com/RajatBhardwaj2006/Quick-Attendance"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-5-mobile.svg?v=1794358756154"><img src="assets/generated/project-5.svg?v=1794358756154" width="49%" alt="Quick-Attendance: QuickAttendance is a simple and efficient attendance management application designed to make tracking attendance faster and easier. With a clean interface and intuitive features, it helps users manage attendance records and stay organized without unnecessary complexity."></picture></a>
+  <a href="https://github.com/RajatBhardwaj2006/NeuralView"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-6-mobile.svg?v=1794358756154"><img src="assets/generated/project-6.svg?v=1794358756154" width="49%" alt="NeuralView: Interactive AI, ML and Deep Learning education platform featuring live interactive labs, dynamic mathematical visualizations, and real-time parameter tuning."></picture></a>
 </p>
 
 <p>
-  <a href="https://github.com/RajatBhardwaj2006/AI-Resume-ATS"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-7-mobile.svg?v=1794342737089"><img src="assets/generated/project-7.svg?v=1794342737089" width="49%" alt="AI-Resume-ATS: AI-powered Resume and ATS evaluator to score applicant resumes, match skills against job requirements, and optimize ATS keyword ranking."></picture></a>
-  <a href="https://github.com/RajatBhardwaj2006/Neural-Style-Transfer--NST-"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-8-mobile.svg?v=1794342737089"><img src="assets/generated/project-8.svg?v=1794342737089" width="49%" alt="Neural-Style-Transfer--NST-: Deep learning pipeline implementing Neural Style Transfer with Convolutional Neural Networks to blend artistic styles with content images."></picture></a>
+  <a href="https://github.com/RajatBhardwaj2006/AI-Resume-ATS"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-7-mobile.svg?v=1794358756154"><img src="assets/generated/project-7.svg?v=1794358756154" width="49%" alt="AI-Resume-ATS: AI-powered Resume and ATS evaluator to score applicant resumes, match skills against job requirements, and optimize ATS keyword ranking."></picture></a>
+  <a href="https://github.com/RajatBhardwaj2006/Neural-Style-Transfer--NST-"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-8-mobile.svg?v=1794358756154"><img src="assets/generated/project-8.svg?v=1794358756154" width="49%" alt="Neural-Style-Transfer--NST-: Deep learning pipeline implementing Neural Style Transfer with Convolutional Neural Networks to blend artistic styles with content images."></picture></a>
 </p>
 
 <p>
-  <a href="https://github.com/RajatBhardwaj2006/AI-GYM-Trainer"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-9-mobile.svg?v=1794342737089"><img src="assets/generated/project-9.svg?v=1794342737089" width="100%" alt="AI-GYM-Trainer: Real-time computer vision fitness assistant that tracks workout repetitions, analyzes body pose landmarks, and provides instant posture feedback."></picture></a>
+  <a href="https://github.com/RajatBhardwaj2006/AI-GYM-Trainer"><picture><source media="(max-width: 600px)" srcset="assets/generated/project-9-mobile.svg?v=1794358756154"><img src="assets/generated/project-9.svg?v=1794358756154" width="100%" alt="AI-GYM-Trainer: Real-time computer vision fitness assistant that tracks workout repetitions, analyzes body pose landmarks, and provides instant posture feedback."></picture></a>
 </p>
 
 <details>
@@ -273,12 +273,12 @@ Featured from my GitHub pins.
 
 <p>
   <picture>
-    <source media="(max-width: 600px)" srcset="assets/generated/languages-mobile.svg?v=1794342737089">
-    <img src="assets/generated/languages.svg?v=1794342737089" width="49%" alt="Primary language by public repository count, excluding forks: Python 26.3%, C++ 15.8%, Jupyter Notebook 15.8%, Java 10.5%, JavaScript 10.5%. These describe repositories, not proficiency.">
+    <source media="(max-width: 600px)" srcset="assets/generated/languages-mobile.svg?v=1794358756154">
+    <img src="assets/generated/languages.svg?v=1794358756154" width="49%" alt="Primary language by public repository count, excluding forks: Python 26.3%, C++ 15.8%, Jupyter Notebook 15.8%, Java 10.5%, JavaScript 10.5%. These describe repositories, not proficiency.">
   </picture>
   <picture>
-    <source media="(max-width: 600px)" srcset="assets/generated/commits-mobile.svg?v=1794342737089">
-    <img src="assets/generated/commits.svg?v=1794342737089" width="49%" alt="Total commits and active days committed: 1,414 contributions across 238 active days.">
+    <source media="(max-width: 600px)" srcset="assets/generated/commits-mobile.svg?v=1794358756154">
+    <img src="assets/generated/commits.svg?v=1794358756154" width="49%" alt="Total commits and active days committed: 1,414 contributions across 238 active days.">
   </picture>
 </p>
 
@@ -305,15 +305,15 @@ Each owned public repository counts once, using its primary language reported by
 
 <a href="https://github.com/RajatBhardwaj2006?tab=overview">
   <picture>
-    <source media="(max-width: 600px)" srcset="assets/generated/contributions-mobile.svg?v=1794342737089">
-    <img src="assets/generated/contributions.svg?v=1794342737089" width="1200" alt="1,414 contributions, 238 active days, 206-day longest streak, and 45 contributions on the busiest day. A 3D skyline built from GitHub's exact daily counts.">
+    <source media="(max-width: 600px)" srcset="assets/generated/contributions-mobile.svg?v=1794358756154">
+    <img src="assets/generated/contributions.svg?v=1794358756154" width="1200" alt="1,414 contributions, 238 active days, 206-day longest streak, and 45 contributions on the busiest day. A 3D skyline built from GitHub's exact daily counts.">
   </picture>
 </a>
 
 <details>
 <summary>Contribution data and recent repositories</summary>
 
-1,414 contributions across 238 active days in the 365-day calendar window (11 Nov 2025 to 10 Nov 2026). Longest streak within this window: 206 days. Best day: 45 contributions.
+1,414 contributions across 238 active days in the 365-day calendar window (12 Nov 2025 to 11 Nov 2026). Longest streak within this window: 206 days. Best day: 45 contributions.
 
 - [Quick-Attendance](https://github.com/RajatBhardwaj2006/Quick-Attendance) · pushed 08 Nov 2026 - *"Feat: Added ui folder into the project which contain layout for the project."*
 - [AI-Resume-ATS](https://github.com/RajatBhardwaj2006/AI-Resume-ATS) · pushed 07 Nov 2026 - *"Fix header formatting in README.md"*
@@ -323,8 +323,8 @@ Daily counts follow GitHub's contribution calendar visibility and counting rules
 
 </details>
 
-<picture><source media="(max-width: 600px)" srcset="assets/generated/activity-mobile.svg?v=1794342737089"><img src="assets/generated/activity.svg?v=1794342737089" width="1200" alt="Recently pushed public repositories. Text links and dates are available in the contribution details above."></picture>
+<picture><source media="(max-width: 600px)" srcset="assets/generated/activity-mobile.svg?v=1794358756154"><img src="assets/generated/activity.svg?v=1794358756154" width="1200" alt="Recently pushed public repositories. Text links and dates are available in the contribution details above."></picture>
 
-<a href="https://github.com/RajatBhardwaj2006?tab=repositories"><picture><source media="(max-width: 600px)" srcset="assets/generated/footer-mobile.svg?v=1794342737089"><img src="assets/generated/footer.svg?v=1794342737089" width="1200" alt="Explore Rajat Bhardwaj&apos;s repositories on GitHub."></picture></a>
+<a href="https://github.com/RajatBhardwaj2006?tab=repositories"><picture><source media="(max-width: 600px)" srcset="assets/generated/footer-mobile.svg?v=1794358756154"><img src="assets/generated/footer.svg?v=1794358756154" width="1200" alt="Explore Rajat Bhardwaj&apos;s repositories on GitHub."></picture></a>
 
-<sub>GitHub snapshot · 2026-11-10 20:32:17 UTC · refreshed automatically by [GitHub Actions](https://github.com/RajatBhardwaj2006/RajatBhardwaj2006/actions/workflows/sync-profile.yml). [Data & maintenance](docs/MAINTAINING.md)</sub>
+<sub>GitHub snapshot · 2026-11-11 00:59:16 UTC · refreshed automatically by [GitHub Actions](https://github.com/RajatBhardwaj2006/RajatBhardwaj2006/actions/workflows/sync-profile.yml). [Data & maintenance](docs/MAINTAINING.md)</sub>
