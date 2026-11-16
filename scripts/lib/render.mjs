@@ -89,7 +89,7 @@ function neuralEngine(mobile = false) {
           const strokeWidth = isToOutput ? 1.7 : Number((1.1 + (seed % 3) * 0.15).toFixed(2));
           const opacity = isToOutput ? 0.95 : Number((0.45 + (seed % 5) * 0.1).toFixed(2));
 
-          pulses.push(`<line class="flow" x1="${fromX}" y1="${fromY}" x2="${toX}" y2="${toY}" fill="none" stroke="${C.accent}" stroke-width="${strokeWidth}" stroke-dasharray="${dash}" style="animation-delay:-${delay.toFixed(1)}s;animation-duration:${duration}s;opacity:${opacity}"/>`);
+          pulses.push(`<line class="flow" x1="${fromX}" y1="${fromY}" x2="${toX}" y2="${toY}" fill="none" stroke="#F5F5F0" stroke-width="${strokeWidth}" stroke-dasharray="${dash}" style="animation-delay:-${delay.toFixed(1)}s;animation-duration:${duration}s;opacity:${opacity}"/>`);
         }
       }
     }
@@ -151,7 +151,7 @@ ${outputLabel}
         const strokeWidth = isToOutput ? 1.9 : Number((1.2 + (seed % 4) * 0.15).toFixed(2));
         const opacity = isToOutput ? 0.95 : Number((0.45 + (seed % 5) * 0.1).toFixed(2));
 
-        pulses.push(`<line class="flow" x1="${fromX}" y1="${fromY}" x2="${toX}" y2="${toY}" fill="none" stroke="${C.accent}" stroke-width="${strokeWidth}" stroke-dasharray="${dash}" style="animation-delay:-${delay.toFixed(1)}s;animation-duration:${duration}s;opacity:${opacity}"/>`);
+        pulses.push(`<line class="flow" x1="${fromX}" y1="${fromY}" x2="${toX}" y2="${toY}" fill="none" stroke="#F5F5F0" stroke-width="${strokeWidth}" stroke-dasharray="${dash}" style="animation-delay:-${delay.toFixed(1)}s;animation-duration:${duration}s;opacity:${opacity}"/>`);
       }
     }
   }
