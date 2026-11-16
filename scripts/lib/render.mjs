@@ -929,15 +929,25 @@ export function readme(snapshot, config, projects) {
   const startDate = windowDays[0].date;
   const endDate = windowDays.at(-1).date;
   const languages = aggregateLanguages(snapshot.repositories);
-  const socials = safeSocial(snapshot).map(link => formatSocialBadge(link));
+  const socials = safeSocial(snapshot)
+    .filter(link => {
+      const lowerLabel = link.label.toLowerCase();
+      const lowerUrl = link.url.toLowerCase();
+      return lowerLabel !== 'instagram' && !lowerLabel.includes('che.r.r.y') && !lowerUrl.includes('che.r.r.y') && !lowerUrl.includes('instagram.com');
+    })
+    .map(link => formatSocialBadge(link));
 
   const phoneSvg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#c5f277" d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.4-1.1-.6-2.3-.6-3.5 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1z"/></svg>';
   const phoneDataUri = `data:image/svg+xml;base64,${Buffer.from(phoneSvg).toString('base64')}`;
 
   const contact = config.contact || {
+    email: 'rajatb1008@gmail.com',
     whatsapp: '8580412977',
     phone: '8219253008'
   };
+
+  const emailBadge = contact.email ?
+    `<a href="mailto:${escapeXML(contact.email)}"><img src="https://img.shields.io/badge/Gmail-c5f277?style=for-the-badge&logo=gmail&logoColor=c5f277&labelColor=111411" alt="${escapeXML(contact.email)}" /></a>` : '';
 
   const whatsappNum = contact.whatsapp || contact.phones?.[0] || '8580412977';
   const cleanWa = String(whatsappNum).replace(/\D/g, '');
@@ -953,6 +963,7 @@ export function readme(snapshot, config, projects) {
 
   const github = snapshot.user.html_url;
   const allBadges = [
+    ...(emailBadge ? [emailBadge] : []),
     ...socials,
     ...(waBadge ? [waBadge] : []),
     ...(callBadge ? [callBadge] : []),
