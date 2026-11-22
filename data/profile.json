@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "fetchedAt": "2026-11-21T22:00:12.937Z",
+  "fetchedAt": "2026-11-22T02:03:59.161Z",
   "sources": {
     "profile": "https://api.github.com/users/RajatBhardwaj2006",
     "repositories": "https://api.github.com/users/RajatBhardwaj2006/repos",
@@ -315,7 +315,7 @@
       "topics": [],
       "stargazers_count": 0,
       "forks_count": 0,
-      "pushed_at": "2026-11-21T16:54:21Z",
+      "pushed_at": "2026-11-21T22:00:17Z",
       "archived": false,
       "fork": false,
       "private": false
@@ -403,34 +403,6 @@
   "calendar": {
     "total": 1566,
     "days": [
-      {
-        "date": "2025-11-16",
-        "count": 0
-      },
-      {
-        "date": "2025-11-17",
-        "count": 0
-      },
-      {
-        "date": "2025-11-18",
-        "count": 0
-      },
-      {
-        "date": "2025-11-19",
-        "count": 0
-      },
-      {
-        "date": "2025-11-20",
-        "count": 0
-      },
-      {
-        "date": "2025-11-21",
-        "count": 0
-      },
-      {
-        "date": "2025-11-22",
-        "count": 0
-      },
       {
         "date": "2025-11-23",
         "count": 0
@@ -1886,6 +1858,10 @@
       {
         "date": "2026-11-21",
         "count": 9
+      },
+      {
+        "date": "2026-11-22",
+        "count": 0
       }
     ],
     "source": "GitHub GraphQL contribution calendar"
